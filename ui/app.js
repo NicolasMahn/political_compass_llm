@@ -8,11 +8,11 @@ const state = {
   textualMode: 'casual',
   textualReasoningEfforts: new Set(['low', 'high']),
   textualResponseTypeMode: 'casual',
-  textualResponseTypeReasoningEfforts: new Set(['high']),
+  textualResponseTypeReasoningEffort: 'low',
   textualDeltaMode: 'casual',
-  textualDeltaReasoningEfforts: new Set(['high']),
+  textualDeltaReasoningEffort: 'high',
   compassReasoningEfforts: new Set(['low', 'high']),
-  deltaReasoningEfforts: new Set(['high']),
+  deltaReasoningEffort: 'high',
   compassPoints: [],
   hoveredRunId: null,
   displayColors: new Map(),
@@ -84,7 +84,7 @@ function selectedTextualRuns() {
   return runsForScenario(textualScenarios[state.textualMode].scenarioId).filter((run) => state.textualReasoningEfforts.has(runEffort(run)));
 }
 function selectedTextualResponseTypeRuns() {
-  return runsForScenario(textualScenarios[state.textualResponseTypeMode].scenarioId).filter((run) => state.textualResponseTypeReasoningEfforts.has(runEffort(run)));
+  return runsForScenario(textualScenarios[state.textualResponseTypeMode].scenarioId).filter((run) => runEffort(run) === state.textualResponseTypeReasoningEffort);
 }
 
 function initializeDefaultSelection() {
@@ -216,10 +216,10 @@ function renderAllControls() {
   renderScenarioControls('textualResponseTypeModeControls', textualScenarios, state.textualResponseTypeMode, (mode) => { state.textualResponseTypeMode = mode; });
   renderScenarioControls('textualDeltaModeControls', textualScenarios, state.textualDeltaMode, (mode) => { state.textualDeltaMode = mode; });
   renderReasoningControls('compassReasoningControls', state.compassReasoningEfforts);
-  renderReasoningControls('deltaReasoningControls', state.deltaReasoningEfforts, ['low', 'high']);
+  renderReasoningRadioControls('deltaReasoningControls', state.deltaReasoningEffort, (effort) => { state.deltaReasoningEffort = effort; });
   renderReasoningControls('textualReasoningControls', state.textualReasoningEfforts, ['low', 'high']);
-  renderReasoningControls('textualResponseTypeReasoningControls', state.textualResponseTypeReasoningEfforts, ['low', 'high']);
-  renderReasoningControls('textualDeltaReasoningControls', state.textualDeltaReasoningEfforts, ['low', 'high']);
+  renderReasoningRadioControls('textualResponseTypeReasoningControls', state.textualResponseTypeReasoningEffort, (effort) => { state.textualResponseTypeReasoningEffort = effort; });
+  renderReasoningRadioControls('textualDeltaReasoningControls', state.textualDeltaReasoningEffort, (effort) => { state.textualDeltaReasoningEffort = effort; });
 }
 
 function renderScenarioControls(rootId, scenarios, activeScenario, updateScenario) {
@@ -280,6 +280,30 @@ function renderReasoningControls(rootId, selectedEfforts, efforts = ['none', 'lo
   }
 }
 
+function renderReasoningRadioControls(rootId, selectedEffort, updateEffort, efforts = ['low', 'high']) {
+  const root = byId(rootId);
+  if (!root) return;
+  root.innerHTML = '';
+  const groupName = `${rootId}-reasoning`;
+  for (const effort of efforts) {
+    const label = document.createElement('label');
+    label.className = 'toggle-label chip-toggle';
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.name = groupName;
+    radio.checked = selectedEffort === effort;
+    radio.addEventListener('change', () => {
+      if (!radio.checked) return;
+      updateEffort(effort);
+      state.hoveredRunId = null;
+      renderAllControls();
+      renderAll();
+    });
+    label.append(radio, document.createTextNode(reasoningLabel(effort)));
+    root.appendChild(label);
+  }
+}
+
 function renderAll() {
   const compassRuns = selectedCompassRuns();
   const neutralRuns = selectedNeutralRuns();
@@ -289,7 +313,7 @@ function renderAll() {
   const textualDelta = scenarioDeltaPairs(
     'simple_direct',
     textualScenarios[state.textualDeltaMode].scenarioId,
-    state.textualDeltaReasoningEfforts,
+    new Set([state.textualDeltaReasoningEffort]),
     'Direct English',
     textualScenarios[state.textualDeltaMode].label
   );
@@ -351,7 +375,7 @@ function languageDeltaPairs(sourceLanguage, targetLanguage) {
   return scenarioDeltaPairs(
     languageScenarios[sourceLanguage]?.scenarioId,
     languageScenarios[targetLanguage]?.scenarioId,
-    state.deltaReasoningEfforts,
+    new Set([state.deltaReasoningEffort]),
     languageScenarios[sourceLanguage]?.label,
     languageScenarios[targetLanguage]?.label
   );
@@ -385,7 +409,6 @@ function renderLanguageDeltaWarnings(missing) {
   byId('languageDeltaTitle').textContent = `Language delta: ${source.label} → ${target.label}`;
   const messages = [];
   if (state.deltaSourceLanguage === state.deltaTargetLanguage) messages.push('Choose two different languages for the delta graph.');
-  if (!state.deltaReasoningEfforts.size) messages.push('No reasoning efforts selected for language delta.');
   if (missing.length) messages.push(`Cannot compute ${source.label} → ${target.label} delta for: ${missing.join(', ')}.`);
   renderWarningBox(root, messages);
 }
@@ -423,8 +446,7 @@ function renderTextualResponseTypeWarnings(textualRuns) {
   const missingReasoning = selectedKeys.filter((key) => scenarioKeys.has(key) && !runKeys.has(key));
   const messages = [];
   if (missingScenario.length) messages.push(`Missing ${scenario.label} runs for: ${missingScenario.map(modelNameForKey).join(', ')}.`);
-  if (missingReasoning.length && state.textualResponseTypeReasoningEfforts.size) messages.push(`No selected textual response-type reasoning runs (${[...state.textualResponseTypeReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
-  if (!state.textualResponseTypeReasoningEfforts.size) messages.push('No reasoning efforts selected for textual response types.');
+  if (missingReasoning.length) messages.push(`No ${reasoningLabel(state.textualResponseTypeReasoningEffort)} textual response-type runs for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
   renderWarningBox(root, messages);
 }
 
@@ -435,7 +457,6 @@ function renderTextualDeltaWarnings(missing) {
   byId('textualDeltaTitle').textContent = `Prompt format delta: Direct English → ${target.label}`;
   byId('textualDeltaDescription').textContent = `Compares direct structured questionnaire answers against “${target.label}”: ${target.description}`;
   const messages = [];
-  if (!state.textualDeltaReasoningEfforts.size) messages.push('No reasoning efforts selected for textual delta.');
   if (missing.length) messages.push(`Cannot compute Direct English → ${target.label} delta for: ${missing.join(', ')}.`);
   renderWarningBox(root, messages);
 }
