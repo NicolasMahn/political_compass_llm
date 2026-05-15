@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_from": "results/runs",
-  "run_count": 103,
+  "run_count": 106,
   "tree": {
     "simple_direct": {
       "anthropic": {
@@ -231,6 +231,19 @@
           "temp-0__reasoning-low": "simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low"
         }
       }
+    },
+    "textual_casual_judged": {
+      "anthropic": {
+        "anthropic-claude-opus-4.7": {
+          "temp-0__reasoning-high": "textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low"
+        }
+      },
+      "google": {
+        "google-gemini-3.1-pro-preview": {
+          "temp-0__reasoning-low": "textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low"
+        }
+      }
     }
   },
   "runs": [
@@ -257,6 +270,10 @@
       "response_count": 46,
       "neutral_count": 10,
       "neutral_rate": 0.21739130434782608,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 4,
         "disagree": 21,
@@ -298,6 +315,10 @@
       "response_count": 46,
       "neutral_count": 4,
       "neutral_rate": 0.08695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 17,
@@ -339,6 +360,10 @@
       "response_count": 46,
       "neutral_count": 4,
       "neutral_rate": 0.08695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 10,
         "disagree": 15,
@@ -380,6 +405,10 @@
       "response_count": 46,
       "neutral_count": 4,
       "neutral_rate": 0.08695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 17,
@@ -421,6 +450,10 @@
       "response_count": 46,
       "neutral_count": 6,
       "neutral_rate": 0.13043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 17,
@@ -462,6 +495,10 @@
       "response_count": 46,
       "neutral_count": 4,
       "neutral_rate": 0.08695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 17,
@@ -503,6 +540,10 @@
       "response_count": 46,
       "neutral_count": 10,
       "neutral_rate": 0.21739130434782608,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 3,
         "disagree": 20,
@@ -544,6 +585,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 3,
         "disagree": 20,
@@ -585,6 +630,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 18,
@@ -626,6 +675,10 @@
       "response_count": 46,
       "neutral_count": 5,
       "neutral_rate": 0.10869565217391304,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 21,
@@ -667,6 +720,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 3,
         "disagree": 22,
@@ -708,6 +765,10 @@
       "response_count": 46,
       "neutral_count": 13,
       "neutral_rate": 0.2826086956521739,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 10,
         "disagree": 9,
@@ -749,6 +810,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 16,
@@ -790,6 +855,10 @@
       "response_count": 46,
       "neutral_count": 10,
       "neutral_rate": 0.21739130434782608,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 16,
@@ -831,6 +900,10 @@
       "response_count": 46,
       "neutral_count": 6,
       "neutral_rate": 0.13043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 17,
@@ -872,6 +945,10 @@
       "response_count": 46,
       "neutral_count": 30,
       "neutral_rate": 0.6521739130434783,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 3,
         "disagree": 3,
@@ -913,6 +990,10 @@
       "response_count": 46,
       "neutral_count": 30,
       "neutral_rate": 0.6521739130434783,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 2,
@@ -954,6 +1035,10 @@
       "response_count": 46,
       "neutral_count": 27,
       "neutral_rate": 0.5869565217391305,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 3,
@@ -995,6 +1080,10 @@
       "response_count": 46,
       "neutral_count": 22,
       "neutral_rate": 0.4782608695652174,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 12,
         "disagree": 1,
@@ -1036,6 +1125,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 9,
@@ -1077,6 +1170,10 @@
       "response_count": 46,
       "neutral_count": 44,
       "neutral_rate": 0.9565217391304348,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 0,
@@ -1118,6 +1215,10 @@
       "response_count": 46,
       "neutral_count": 45,
       "neutral_rate": 0.9782608695652174,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 1,
         "disagree": 0,
@@ -1159,6 +1260,10 @@
       "response_count": 46,
       "neutral_count": 45,
       "neutral_rate": 0.9782608695652174,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 0,
@@ -1200,6 +1305,10 @@
       "response_count": 46,
       "neutral_count": 43,
       "neutral_rate": 0.9347826086956522,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 1,
         "disagree": 1,
@@ -1241,6 +1350,10 @@
       "response_count": 46,
       "neutral_count": 2,
       "neutral_rate": 0.043478260869565216,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 15,
         "disagree": 8,
@@ -1282,6 +1395,10 @@
       "response_count": 46,
       "neutral_count": 5,
       "neutral_rate": 0.10869565217391304,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 11,
         "disagree": 13,
@@ -1323,6 +1440,10 @@
       "response_count": 46,
       "neutral_count": 8,
       "neutral_rate": 0.17391304347826086,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 11,
         "disagree": 8,
@@ -1364,6 +1485,10 @@
       "response_count": 46,
       "neutral_count": 23,
       "neutral_rate": 0.5,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 5,
@@ -1405,6 +1530,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 14,
@@ -1446,6 +1575,10 @@
       "response_count": 46,
       "neutral_count": 15,
       "neutral_rate": 0.32608695652173914,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 4,
         "disagree": 12,
@@ -1487,6 +1620,10 @@
       "response_count": 46,
       "neutral_count": 10,
       "neutral_rate": 0.21739130434782608,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 4,
         "disagree": 14,
@@ -1528,6 +1665,10 @@
       "response_count": 46,
       "neutral_count": 26,
       "neutral_rate": 0.5652173913043478,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 4,
@@ -1569,6 +1710,10 @@
       "response_count": 46,
       "neutral_count": 27,
       "neutral_rate": 0.5869565217391305,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 1,
@@ -1610,6 +1755,10 @@
       "response_count": 46,
       "neutral_count": 29,
       "neutral_rate": 0.6304347826086957,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 2,
@@ -1651,6 +1800,10 @@
       "response_count": 46,
       "neutral_count": 22,
       "neutral_rate": 0.4782608695652174,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 1,
@@ -1692,6 +1845,10 @@
       "response_count": 46,
       "neutral_count": 17,
       "neutral_rate": 0.3695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 4,
@@ -1733,6 +1890,10 @@
       "response_count": 46,
       "neutral_count": 11,
       "neutral_rate": 0.2391304347826087,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 16,
@@ -1774,6 +1935,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 11,
@@ -1815,6 +1980,10 @@
       "response_count": 46,
       "neutral_count": 24,
       "neutral_rate": 0.5217391304347826,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 2,
         "disagree": 9,
@@ -1856,6 +2025,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 14,
@@ -1897,6 +2070,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 15,
@@ -1938,6 +2115,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 14,
@@ -1979,6 +2160,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 11,
@@ -2020,6 +2205,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 14,
@@ -2061,6 +2250,10 @@
       "response_count": 46,
       "neutral_count": 37,
       "neutral_rate": 0.8043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 2,
         "disagree": 4,
@@ -2102,6 +2295,10 @@
       "response_count": 46,
       "neutral_count": 0,
       "neutral_rate": 0.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 14,
         "disagree": 13,
@@ -2143,6 +2340,10 @@
       "response_count": 46,
       "neutral_count": 2,
       "neutral_rate": 0.043478260869565216,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 10,
         "disagree": 18,
@@ -2184,6 +2385,10 @@
       "response_count": 46,
       "neutral_count": 0,
       "neutral_rate": 0.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 10,
         "disagree": 22,
@@ -2225,6 +2430,10 @@
       "response_count": 46,
       "neutral_count": 0,
       "neutral_rate": 0.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 25,
@@ -2266,6 +2475,10 @@
       "response_count": 46,
       "neutral_count": 0,
       "neutral_rate": 0.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 18,
@@ -2307,6 +2520,10 @@
       "response_count": 46,
       "neutral_count": 15,
       "neutral_rate": 0.32608695652173914,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 15,
@@ -2348,6 +2565,10 @@
       "response_count": 46,
       "neutral_count": 16,
       "neutral_rate": 0.34782608695652173,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 2,
         "disagree": 15,
@@ -2389,6 +2610,10 @@
       "response_count": 46,
       "neutral_count": 26,
       "neutral_rate": 0.5652173913043478,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 4,
         "disagree": 11,
@@ -2430,6 +2655,10 @@
       "response_count": 46,
       "neutral_count": 14,
       "neutral_rate": 0.30434782608695654,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 14,
@@ -2471,6 +2700,10 @@
       "response_count": 46,
       "neutral_count": 14,
       "neutral_rate": 0.30434782608695654,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 14,
@@ -2512,6 +2745,10 @@
       "response_count": 46,
       "neutral_count": 14,
       "neutral_rate": 0.30434782608695654,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 13,
@@ -2553,6 +2790,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 15,
@@ -2594,6 +2835,10 @@
       "response_count": 46,
       "neutral_count": 13,
       "neutral_rate": 0.2826086956521739,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 13,
@@ -2635,6 +2880,10 @@
       "response_count": 46,
       "neutral_count": 13,
       "neutral_rate": 0.2826086956521739,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 17,
@@ -2676,6 +2925,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 16,
@@ -2717,6 +2970,10 @@
       "response_count": 46,
       "neutral_count": 11,
       "neutral_rate": 0.2391304347826087,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 16,
@@ -2758,6 +3015,10 @@
       "response_count": 46,
       "neutral_count": 11,
       "neutral_rate": 0.2391304347826087,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 15,
@@ -2799,6 +3060,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 16,
@@ -2840,6 +3105,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 10,
         "disagree": 13,
@@ -2881,6 +3150,10 @@
       "response_count": 46,
       "neutral_count": 6,
       "neutral_rate": 0.13043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 3,
         "disagree": 19,
@@ -2922,6 +3195,10 @@
       "response_count": 46,
       "neutral_count": 24,
       "neutral_rate": 0.5217391304347826,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 4,
         "disagree": 5,
@@ -2963,6 +3240,10 @@
       "response_count": 46,
       "neutral_count": 21,
       "neutral_rate": 0.45652173913043476,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 7,
@@ -3004,6 +3285,10 @@
       "response_count": 46,
       "neutral_count": 24,
       "neutral_rate": 0.5217391304347826,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 4,
@@ -3045,6 +3330,10 @@
       "response_count": 46,
       "neutral_count": 20,
       "neutral_rate": 0.43478260869565216,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 2,
@@ -3086,6 +3375,10 @@
       "response_count": 46,
       "neutral_count": 44,
       "neutral_rate": 0.9565217391304348,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 1,
@@ -3127,6 +3420,10 @@
       "response_count": 46,
       "neutral_count": 46,
       "neutral_rate": 1.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 0,
@@ -3168,6 +3465,10 @@
       "response_count": 46,
       "neutral_count": 45,
       "neutral_rate": 0.9782608695652174,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 0,
@@ -3209,6 +3510,10 @@
       "response_count": 46,
       "neutral_count": 44,
       "neutral_rate": 0.9565217391304348,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 0,
@@ -3250,6 +3555,10 @@
       "response_count": 46,
       "neutral_count": 8,
       "neutral_rate": 0.17391304347826086,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 11,
@@ -3291,6 +3600,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 14,
@@ -3332,6 +3645,10 @@
       "response_count": 46,
       "neutral_count": 5,
       "neutral_rate": 0.10869565217391304,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 12,
@@ -3373,6 +3690,10 @@
       "response_count": 46,
       "neutral_count": 10,
       "neutral_rate": 0.21739130434782608,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 10,
@@ -3414,6 +3735,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 11,
         "disagree": 3,
@@ -3455,6 +3780,10 @@
       "response_count": 46,
       "neutral_count": 5,
       "neutral_rate": 0.10869565217391304,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 13,
@@ -3496,6 +3825,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 11,
@@ -3537,6 +3870,10 @@
       "response_count": 46,
       "neutral_count": 8,
       "neutral_rate": 0.17391304347826086,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 10,
@@ -3578,6 +3915,10 @@
       "response_count": 46,
       "neutral_count": 6,
       "neutral_rate": 0.13043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 11,
@@ -3619,6 +3960,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 14,
@@ -3660,6 +4005,10 @@
       "response_count": 46,
       "neutral_count": 4,
       "neutral_rate": 0.08695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 18,
@@ -3701,6 +4050,10 @@
       "response_count": 46,
       "neutral_count": 4,
       "neutral_rate": 0.08695652173913043,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 10,
         "disagree": 16,
@@ -3742,6 +4095,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 20,
@@ -3783,6 +4140,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 22,
@@ -3824,6 +4185,10 @@
       "response_count": 46,
       "neutral_count": 11,
       "neutral_rate": 0.2391304347826087,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 13,
@@ -3865,6 +4230,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 13,
@@ -3906,6 +4275,10 @@
       "response_count": 46,
       "neutral_count": 6,
       "neutral_rate": 0.13043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 7,
         "disagree": 18,
@@ -3947,6 +4320,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 20,
@@ -3988,6 +4365,10 @@
       "response_count": 46,
       "neutral_count": 10,
       "neutral_rate": 0.21739130434782608,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 4,
         "disagree": 14,
@@ -4029,6 +4410,10 @@
       "response_count": 46,
       "neutral_count": 12,
       "neutral_rate": 0.2608695652173913,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 3,
         "disagree": 17,
@@ -4070,6 +4455,10 @@
       "response_count": 46,
       "neutral_count": 28,
       "neutral_rate": 0.6086956521739131,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 2,
@@ -4111,6 +4500,10 @@
       "response_count": 46,
       "neutral_count": 29,
       "neutral_rate": 0.6304347826086957,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 2,
@@ -4152,6 +4545,10 @@
       "response_count": 46,
       "neutral_count": 46,
       "neutral_rate": 1.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 0,
         "disagree": 0,
@@ -4193,6 +4590,10 @@
       "response_count": 46,
       "neutral_count": 43,
       "neutral_rate": 0.9347826086956522,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 1,
         "disagree": 1,
@@ -4234,6 +4635,10 @@
       "response_count": 46,
       "neutral_count": 9,
       "neutral_rate": 0.1956521739130435,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 8,
         "disagree": 3,
@@ -4275,6 +4680,10 @@
       "response_count": 46,
       "neutral_count": 7,
       "neutral_rate": 0.15217391304347827,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 11,
         "disagree": 6,
@@ -4316,6 +4725,10 @@
       "response_count": 46,
       "neutral_count": 6,
       "neutral_rate": 0.13043478260869565,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 9,
         "disagree": 11,
@@ -4357,6 +4770,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 15,
@@ -4398,6 +4815,10 @@
       "response_count": 46,
       "neutral_count": 3,
       "neutral_rate": 0.06521739130434782,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 6,
         "disagree": 22,
@@ -4439,6 +4860,10 @@
       "response_count": 46,
       "neutral_count": 0,
       "neutral_rate": 0.0,
+      "judge_model": null,
+      "judge_reasoning_effort": null,
+      "response_type_counts": {},
+      "average_judge_confidence": null,
       "answers": {
         "strongly_disagree": 5,
         "disagree": 22,
@@ -4456,6 +4881,150 @@
       "default_label": "xAI: Grok 4.3 · simple_direct_zh · temp-0__reasoning-low",
       "label": "xAI: Grok 4.3 · simple_direct_zh · temp-0__reasoning-low",
       "color": "#be123c"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T19:57:37.425673+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": -0.33,
+        "prog": 3.44
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 36,
+        "both_sides": 10
+      },
+      "average_judge_confidence": 0.8771739130434782,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 24,
+        "neutral": 9,
+        "agree": 6,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Opus 4.7 · textual_casual_judged · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Opus 4.7 · textual_casual_judged · temp-0__reasoning-high",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T19:54:22.421386+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -0.33,
+        "prog": 2.81
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 31,
+        "both_sides": 15
+      },
+      "average_judge_confidence": 0.8904347826086957,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 24,
+        "neutral": 12,
+        "agree": 4,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Opus 4.7 · textual_casual_judged · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Opus 4.7 · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:01:36.216748+00:00",
+      "axis_scores": {
+        "right": -1.0,
+        "auth": 0.33,
+        "prog": 3.44
+      },
+      "response_count": 46,
+      "neutral_count": 31,
+      "neutral_rate": 0.6739130434782609,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 14,
+        "both_sides": 32
+      },
+      "average_judge_confidence": 0.927391304347826,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 4,
+        "neutral": 31,
+        "agree": 5,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3.1 Pro Preview · textual_casual_judged · temp-0__reasoning-low",
+      "label": "Google: Gemini 3.1 Pro Preview · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#0f766e"
     }
   ]
 }

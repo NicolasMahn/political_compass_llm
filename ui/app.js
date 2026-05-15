@@ -5,6 +5,10 @@ const state = {
   neutralLanguage: 'en',
   deltaSourceLanguage: 'en',
   deltaTargetLanguage: 'de',
+  textualMode: 'casual',
+  textualReasoningEfforts: new Set(['high']),
+  textualDeltaMode: 'casual',
+  textualDeltaReasoningEfforts: new Set(['high']),
   compassReasoningEfforts: new Set(['low', 'high']),
   deltaReasoningEfforts: new Set(['high']),
   compassPoints: [],
@@ -37,6 +41,11 @@ const languageScenarios = {
   zh: { label: 'Chinese', scenarioId: 'simple_direct_zh' },
 };
 
+const textualScenarios = {
+  casual: { label: 'Casual “wdyt?”', scenarioId: 'textual_casual_judged' },
+  info: { label: 'Info + opinion', scenarioId: 'textual_info_judged' },
+};
+
 async function main() {
   const response = await fetch('./data/results_manifest.json', { cache: 'no-store' });
   if (!response.ok) throw new Error('Could not load ui/data/results_manifest.json. Run python3 build_ui_data.py first.');
@@ -56,10 +65,14 @@ function selectedModelRuns() { return state.manifest.runs.filter((run) => state.
 function languageScenario(language) { return languageScenarios[language]?.scenarioId; }
 function runEffort(run) { return run.reasoning_effort || 'none'; }
 function runsForLanguage(language) { return selectedModelRuns().filter((run) => run.scenario_id === languageScenario(language)); }
+function runsForScenario(scenarioId) { return selectedModelRuns().filter((run) => run.scenario_id === scenarioId); }
 function selectedCompassRuns() {
   return runsForLanguage(state.compassLanguage).filter((run) => state.compassReasoningEfforts.has(runEffort(run)));
 }
 function selectedNeutralRuns() { return runsForLanguage(state.neutralLanguage); }
+function selectedTextualRuns() {
+  return runsForScenario(textualScenarios[state.textualMode].scenarioId).filter((run) => state.textualReasoningEfforts.has(runEffort(run)));
+}
 
 function initializeDefaultSelection() {
   const availableModelKeys = new Set(state.manifest.runs.map(modelKey));
@@ -186,8 +199,31 @@ function renderAllControls() {
   renderLanguageControls('neutralLanguageControls', state.neutralLanguage, (language) => { state.neutralLanguage = language; });
   renderLanguageControls('deltaSourceLanguageControls', state.deltaSourceLanguage, (language) => { state.deltaSourceLanguage = language; });
   renderLanguageControls('deltaTargetLanguageControls', state.deltaTargetLanguage, (language) => { state.deltaTargetLanguage = language; });
+  renderScenarioControls('textualModeControls', textualScenarios, state.textualMode, (mode) => { state.textualMode = mode; });
+  renderScenarioControls('textualDeltaModeControls', textualScenarios, state.textualDeltaMode, (mode) => { state.textualDeltaMode = mode; });
   renderReasoningControls('compassReasoningControls', state.compassReasoningEfforts);
   renderReasoningControls('deltaReasoningControls', state.deltaReasoningEfforts);
+  renderReasoningControls('textualReasoningControls', state.textualReasoningEfforts);
+  renderReasoningControls('textualDeltaReasoningControls', state.textualDeltaReasoningEfforts);
+}
+
+function renderScenarioControls(rootId, scenarios, activeScenario, updateScenario) {
+  const root = byId(rootId);
+  if (!root) return;
+  root.innerHTML = '';
+  for (const [scenario, config] of Object.entries(scenarios)) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `segmented-button${scenario === activeScenario ? ' active' : ''}`;
+    button.textContent = config.label;
+    button.addEventListener('click', () => {
+      updateScenario(scenario);
+      state.hoveredRunId = null;
+      renderAllControls();
+      renderAll();
+    });
+    root.appendChild(button);
+  }
 }
 
 function renderLanguageControls(rootId, activeLanguage, updateLanguage) {
@@ -233,13 +269,26 @@ function renderAll() {
   const compassRuns = selectedCompassRuns();
   const neutralRuns = selectedNeutralRuns();
   const delta = languageDeltaPairs(state.deltaSourceLanguage, state.deltaTargetLanguage);
+  const textualRuns = selectedTextualRuns();
+  const textualDelta = scenarioDeltaPairs(
+    'simple_direct',
+    textualScenarios[state.textualDeltaMode].scenarioId,
+    state.textualDeltaReasoningEfforts,
+    'Direct English',
+    textualScenarios[state.textualDeltaMode].label
+  );
   byId('selectedCount').textContent = `${state.selectedModels.size} models`;
   renderCompassWarnings(compassRuns);
   renderNeutralWarnings(neutralRuns);
   renderLanguageDeltaWarnings(delta.missing);
+  renderTextualWarnings(textualRuns);
+  renderTextualDeltaWarnings(textualDelta.missing);
   drawCompass(compassRuns);
   drawNeutralBars(neutralRuns);
   drawLanguageDelta(delta.pairs, languageScenarios[state.deltaSourceLanguage], languageScenarios[state.deltaTargetLanguage]);
+  drawCompass(textualRuns, 'textualCompassCanvas', false);
+  drawResponseTypeBars(textualRuns);
+  drawLanguageDelta(textualDelta.pairs, { label: 'Direct English' }, textualScenarios[state.textualDeltaMode], 'textualDeltaCanvas');
   renderDetails(compassRuns);
 }
 
@@ -282,9 +331,17 @@ function modelNameForKey(key) {
 }
 
 function languageDeltaPairs(sourceLanguage, targetLanguage) {
-  const sourceScenario = languageScenarios[sourceLanguage]?.scenarioId;
-  const targetScenario = languageScenarios[targetLanguage]?.scenarioId;
-  const efforts = [...state.deltaReasoningEfforts];
+  return scenarioDeltaPairs(
+    languageScenarios[sourceLanguage]?.scenarioId,
+    languageScenarios[targetLanguage]?.scenarioId,
+    state.deltaReasoningEfforts,
+    languageScenarios[sourceLanguage]?.label,
+    languageScenarios[targetLanguage]?.label
+  );
+}
+
+function scenarioDeltaPairs(sourceScenario, targetScenario, selectedEfforts, sourceLabel = 'source', targetLabel = 'target') {
+  const efforts = [...selectedEfforts];
   const pairs = [];
   const missing = [];
 
@@ -295,7 +352,7 @@ function languageDeltaPairs(sourceLanguage, targetLanguage) {
       if (sourceRun && targetRun) {
         pairs.push({ sourceRun, targetRun, effort });
       } else if (sourceRun || targetRun) {
-        missing.push(`${modelNameForKey(key)} (${reasoningLabel(effort)}): missing ${sourceRun ? languageScenarios[targetLanguage].label : languageScenarios[sourceLanguage].label}`);
+        missing.push(`${modelNameForKey(key)} (${reasoningLabel(effort)}): missing ${sourceRun ? targetLabel : sourceLabel}`);
       }
     }
   }
@@ -316,8 +373,37 @@ function renderLanguageDeltaWarnings(missing) {
   renderWarningBox(root, messages);
 }
 
-function drawCompass(runs) {
-  const canvas = byId('compassCanvas');
+function renderTextualWarnings(textualRuns) {
+  const root = byId('textualWarnings');
+  if (!root) return;
+  const scenario = textualScenarios[state.textualMode];
+  byId('textualTitle').textContent = `Textual judged compass: ${scenario.label}`;
+  const selectedKeys = [...state.selectedModels].sort();
+  const scenarioRuns = runsForScenario(scenario.scenarioId);
+  const scenarioKeys = new Set(scenarioRuns.map(modelKey));
+  const runKeys = new Set(textualRuns.map(modelKey));
+  const missingScenario = selectedKeys.filter((key) => !scenarioKeys.has(key));
+  const missingReasoning = selectedKeys.filter((key) => scenarioKeys.has(key) && !runKeys.has(key));
+  const messages = [];
+  if (missingScenario.length) messages.push(`Missing ${scenario.label} runs for: ${missingScenario.map(modelNameForKey).join(', ')}.`);
+  if (missingReasoning.length && state.textualReasoningEfforts.size) messages.push(`No selected textual reasoning runs (${[...state.textualReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
+  if (!state.textualReasoningEfforts.size) messages.push('No reasoning efforts selected for textual compass.');
+  renderWarningBox(root, messages);
+}
+
+function renderTextualDeltaWarnings(missing) {
+  const root = byId('textualDeltaWarnings');
+  if (!root) return;
+  const target = textualScenarios[state.textualDeltaMode];
+  byId('textualDeltaTitle').textContent = `Prompt format delta: Direct English → ${target.label}`;
+  const messages = [];
+  if (!state.textualDeltaReasoningEfforts.size) messages.push('No reasoning efforts selected for textual delta.');
+  if (missing.length) messages.push(`Cannot compute Direct English → ${target.label} delta for: ${missing.join(', ')}.`);
+  renderWarningBox(root, messages);
+}
+
+function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true) {
+  const canvas = byId(canvasId);
   const ctx = canvas.getContext('2d');
   const w = canvas.width;
   const h = canvas.height;
@@ -378,7 +464,7 @@ function drawCompass(runs) {
   ctx.fillText('Conservative', barX + barW / 2, barY + barH + 38);
 
   // Runs.
-  state.compassPoints = [];
+  if (collectHoverPoints) state.compassPoints = [];
   const showLabels = byId('showCompassLabels')?.checked;
   ctx.font = '650 12px system-ui, sans-serif';
   runs.forEach((run, index) => {
@@ -390,9 +476,10 @@ function drawCompass(runs) {
     const barMarkerY = barY + ((10 - prog) / 20) * barH;
     const color = displayColor(run, index);
 
-    state.compassPoints.push({ run, x, y, barMarkerY, color });
+    if (collectHoverPoints) state.compassPoints.push({ run, x, y, barMarkerY, color });
 
-    drawRunMarker(ctx, x, y, state.hoveredRunId === run.id ? 10 : 8, color, run.reasoning_effort, state.hoveredRunId === run.id);
+    const highlighted = collectHoverPoints && state.hoveredRunId === run.id;
+    drawRunMarker(ctx, x, y, highlighted ? 10 : 8, color, run.reasoning_effort, highlighted);
     if (showLabels) drawPointLabel(ctx, shortLabel(run), x + 11, y + 4);
 
     drawProgressiveMarker(ctx, barX, barW, barMarkerY, color, index, run.reasoning_effort);
@@ -400,7 +487,7 @@ function drawCompass(runs) {
 
   drawLegend(ctx, runs, 815, 70);
 
-  const hoveredPoint = state.compassPoints.find((point) => point.run.id === state.hoveredRunId);
+  const hoveredPoint = collectHoverPoints ? state.compassPoints.find((point) => point.run.id === state.hoveredRunId) : null;
   if (hoveredPoint) drawCompassTooltip(ctx, hoveredPoint, w, h);
 }
 
@@ -631,8 +718,8 @@ function drawNeutralBars(runs) {
   drawNeutralLegend(ctx, runs, left + chartW + 36, top + 8);
 }
 
-function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
-  const canvas = byId('languageDeltaCanvas');
+function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'languageDeltaCanvas') {
+  const canvas = byId(canvasId);
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   const w = canvas.width;
@@ -759,6 +846,77 @@ function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y) {
 
 function signedScore(value) {
   return `${value >= 0 ? '+' : ''}${formatScore(value)}`;
+}
+
+function drawResponseTypeBars(runs) {
+  const canvas = byId('textualResponseTypeCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const w = canvas.width, h = canvas.height;
+  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, w, h);
+
+  const types = ['stance', 'both_sides', 'neutral', 'refusal', 'unclear', 'informational'];
+  const typeColors = {
+    stance: '#2563eb',
+    both_sides: '#f59e0b',
+    neutral: '#94a3b8',
+    refusal: '#ef4444',
+    unclear: '#a855f7',
+    informational: '#10b981',
+  };
+  const left = 190, top = 34, barW = 520, rowH = 34;
+
+  ctx.font = '700 14px system-ui, sans-serif';
+  ctx.fillStyle = '#111827';
+  ctx.textAlign = 'left';
+  ctx.fillText('Response type share', left, 18);
+
+  if (!runs.length) {
+    ctx.fillStyle = '#64748b';
+    ctx.fillText('No textual runs selected.', left, top + 24);
+    return;
+  }
+
+  runs.slice(0, 12).forEach((run, index) => {
+    const y = top + index * rowH;
+    const counts = run.response_type_counts || {};
+    const total = Math.max(1, Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0));
+    ctx.fillStyle = '#111827';
+    ctx.font = '12px system-ui, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText(`${baseRunLabel(run)} · ${reasoningLabel(runEffort(run))}`, left - 10, y + 15);
+
+    let x = left;
+    for (const type of types) {
+      const width = (Number(counts[type] || 0) / total) * barW;
+      if (width <= 0) continue;
+      ctx.fillStyle = typeColors[type];
+      ctx.fillRect(x, y, width, 18);
+      x += width;
+    }
+    ctx.strokeStyle = '#cbd5e1';
+    ctx.strokeRect(left, y, barW, 18);
+    if (run.average_judge_confidence != null) {
+      ctx.fillStyle = '#64748b';
+      ctx.textAlign = 'left';
+      ctx.fillText(`conf ${Math.round(run.average_judge_confidence * 100)}%`, left + barW + 12, y + 15);
+    }
+  });
+
+  const legendX = left;
+  const legendY = top + Math.min(runs.length, 12) * rowH + 18;
+  ctx.textAlign = 'left';
+  ctx.font = '12px system-ui, sans-serif';
+  types.forEach((type, index) => {
+    const x = legendX + (index % 3) * 170;
+    const y = legendY + Math.floor(index / 3) * 22;
+    ctx.fillStyle = typeColors[type];
+    ctx.fillRect(x, y - 10, 12, 12);
+    ctx.fillStyle = '#111827';
+    ctx.fillText(type.replace('_', ' '), x + 18, y);
+  });
 }
 
 function renderDetails(runs) {

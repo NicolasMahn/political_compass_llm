@@ -182,6 +182,11 @@ def collect_runs(openrouter_models: dict[str, Any]) -> list[dict[str, Any]]:
         response_count = len(responses)
         neutral_count = sum(1 for response in responses if is_neutral(response))
         neutral_rate = neutral_count / response_count if response_count else 0.0
+        judge_confidences = [
+            float(response["judge_confidence"])
+            for response in responses
+            if isinstance(response.get("judge_confidence"), int | float)
+        ]
         openrouter_model = openrouter_models.get(model or "", {})
 
         run = {
@@ -203,6 +208,10 @@ def collect_runs(openrouter_models: dict[str, Any]) -> list[dict[str, Any]]:
             "response_count": response_count,
             "neutral_count": neutral_count,
             "neutral_rate": neutral_rate,
+            "judge_model": final_result.get("judge_model") or metadata.get("judge", {}).get("model"),
+            "judge_reasoning_effort": final_result.get("judge_reasoning_effort") or metadata.get("judge", {}).get("reasoning_effort"),
+            "response_type_counts": final_result.get("response_type_counts") or {},
+            "average_judge_confidence": sum(judge_confidences) / len(judge_confidences) if judge_confidences else None,
             "answers": {
                 "strongly_disagree": sum(1 for r in responses if r.get("answer_score") == -1.0),
                 "disagree": sum(1 for r in responses if r.get("answer_score") == -0.5),

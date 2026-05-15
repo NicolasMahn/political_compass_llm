@@ -120,6 +120,64 @@
         </section>
 
         <section class="card">
+          <div class="card-header">
+            <div>
+              <h2 id="textualTitle">Textual judged compass</h2>
+              <p>Free-text target answers judged back onto the SapplyValues scale. These are judge-inferred stances, not direct JSON answers.</p>
+            </div>
+          </div>
+          <div class="graph-controls">
+            <div class="control-row">
+              <span class="control-label">Textual mode</span>
+              <div id="textualModeControls" class="segmented-controls"></div>
+            </div>
+            <div class="control-row">
+              <span class="control-label">Reasoning</span>
+              <div id="textualReasoningControls" class="chip-controls"></div>
+            </div>
+            <div id="textualWarnings" class="warning-box" hidden></div>
+          </div>
+          <div class="compass-wrap">
+            <canvas id="textualCompassCanvas" width="1100" height="620" aria-label="Textual judged compass chart"></canvas>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <h2>Textual response types</h2>
+              <p>Stacked bars show how often the judge classified free-text answers as stance, both-sides, neutral, refusal, unclear, or informational.</p>
+            </div>
+          </div>
+          <div class="bar-wrap">
+            <canvas id="textualResponseTypeCanvas" width="900" height="520" aria-label="Textual response type stacked bar chart"></canvas>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <h2 id="textualDeltaTitle">Prompt format delta</h2>
+              <p>Arrows show how positions shift from direct English questionnaire answers to judged free-text answers.</p>
+            </div>
+          </div>
+          <div class="graph-controls">
+            <div class="control-row">
+              <span class="control-label">Textual mode</span>
+              <div id="textualDeltaModeControls" class="segmented-controls"></div>
+            </div>
+            <div class="control-row">
+              <span class="control-label">Reasoning</span>
+              <div id="textualDeltaReasoningControls" class="chip-controls"></div>
+            </div>
+            <div id="textualDeltaWarnings" class="warning-box" hidden></div>
+          </div>
+          <div class="compass-wrap">
+            <canvas id="textualDeltaCanvas" width="1100" height="620" aria-label="Prompt format delta compass chart"></canvas>
+          </div>
+        </section>
+
+        <section class="card">
           <h2>Selected run details</h2>
           <div id="details" class="details"></div>
         </section>
