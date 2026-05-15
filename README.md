@@ -20,6 +20,10 @@ Current baseline:
 - Output: persisted JSON results in `results/runs/`
 - Viewer: static UI in `ui/`
 
+Language-delta scenarios translate both the prompt wrapper and the questionnaire items. For example, `scenarios/sapplyvalues/simple_direct_de.json` uses the German prompt template at `templates/sapplyvalues_prompt_de.txt` and the German question field `text_de` in `data/sapplyvalues_questions.json`. These runs are intended to measure how much a model's answer profile changes when the same questionnaire is presented in another language.
+
+Caveat: translated questionnaires are not perfectly neutral instruments. Word choice, cultural connotations, grammatical framing, and the translator's interpretation can all influence the measured delta. Translation-induced bias is therefore part of the scenario and should be reported as a methodological caveat, not mistaken for a pure language-only effect.
+
 See `docs/test-caveats-and-iterations.md` for methodological caveats and future test variants.
 
 ## Main evaluations
@@ -172,6 +176,10 @@ The viewer includes:
 - neutral/abstention rate by reasoning effort
 - selected run detail cards
 - hierarchical run selector by scenario, provider, model, and config
+
+## License
+
+MIT License. See `LICENSE`.
 
 ## Scoring
 
