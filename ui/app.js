@@ -904,7 +904,7 @@ function drawResponseTypeBars(runs) {
     unclear: '#a855f7',
     informational: '#10b981',
   };
-  const left = 190, top = 34, barW = 520, rowH = 34;
+  const left = 320, top = 34, barW = 520, rowH = 34;
 
   ctx.font = '700 14px system-ui, sans-serif';
   ctx.fillStyle = '#111827';
