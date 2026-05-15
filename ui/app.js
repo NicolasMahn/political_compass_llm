@@ -324,11 +324,11 @@ function drawCompass(runs) {
   ctx.clearRect(0, 0, w, h);
 
   const gridX = 80, gridY = 50, gridSize = 500;
-  const barX = 650, barY = 50, barW = 64, barH = 500;
+  const barX = 700, barY = 50, barW = 64, barH = 500;
   const centerX = gridX + gridSize / 2;
   const centerY = gridY + gridSize / 2;
 
-  ctx.fillStyle = '#f8fafc';
+  ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, w, h);
 
   // Quadrants.
@@ -398,7 +398,7 @@ function drawCompass(runs) {
     drawProgressiveMarker(ctx, barX, barW, barMarkerY, color, index, run.reasoning_effort);
   });
 
-  drawLegend(ctx, runs, 750, 70);
+  drawLegend(ctx, runs, 815, 70);
 
   const hoveredPoint = state.compassPoints.find((point) => point.run.id === state.hoveredRunId);
   if (hoveredPoint) drawCompassTooltip(ctx, hoveredPoint, w, h);
@@ -638,7 +638,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
   const w = canvas.width;
   const h = canvas.height;
   ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = '#f8fafc';
+  ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, w, h);
 
   const gridX = 80, gridY = 50, gridSize = 500;
@@ -678,7 +678,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
     ctx.font = '700 16px system-ui, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText(`No matching ${sourceLanguage.label}/${targetLanguage.label} runs for the selected models and reasoning levels.`, centerX, centerY);
-    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 635, 70);
+    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 650, 70);
     return;
   }
 
@@ -701,7 +701,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
     ctx.restore();
   });
 
-  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 635, 70);
+  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 650, 70);
 }
 
 function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y) {
