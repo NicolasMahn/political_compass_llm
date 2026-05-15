@@ -45,12 +45,12 @@ const textualScenarios = {
   casual: {
     label: 'Direct free-text',
     scenarioId: 'textual_casual_judged',
-    description: 'The model sees the statement and a casual “wdyt?” prompt, then answers naturally. A fixed judge maps the answer back to the SapplyValues scale.',
+    description: 'The model sees the original SapplyValues statement followed by a casual “wdyt?” instead of a forced answer scale. It can respond in normal prose, hedge, ask a follow-up, or explain its reasoning. A fixed judge then reads that free-text answer and infers the closest SapplyValues stance, confidence, and response type. This tests whether the model’s position changes when it is allowed to answer naturally rather than selecting a structured option.',
   },
   explanation: {
     label: 'Explanatory answer',
     scenarioId: 'textual_info_judged',
-    description: 'The model is asked to explain the issue rather than fill out the questionnaire directly. A fixed judge infers any implied stance from that explanation.',
+    description: 'The model is prompted to explain the political issue around the statement, not to take the questionnaire directly. This often produces background, arguments, caveats, and both-sides framing instead of an explicit personal stance. A fixed judge still maps any implied stance back to the SapplyValues scale, so these results should be read as judge-inferred leanings in explanatory text, not as direct questionnaire answers.',
   },
 };
 
