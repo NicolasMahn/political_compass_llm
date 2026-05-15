@@ -13,13 +13,13 @@
         <h1>LLM Political Compass Results</h1>
         <p>Static viewer for persisted benchmark runs.</p>
       </div>
-      <button id="selectAllButton" type="button">Select all visible</button>
+      <button id="selectAllButton" type="button">Select all models</button>
     </header>
 
     <main class="layout">
       <aside class="sidebar">
-        <h2>Runs</h2>
-        <p class="hint">Mirrors <code>results/runs/scenario/provider/model/config</code>.</p>
+        <h2>Models</h2>
+        <p class="hint">Choose models once. Every graph respects this selection.</p>
         <div id="runTree" class="run-tree"></div>
       </aside>
 
@@ -43,6 +43,22 @@
           </p>
         </section>
 
+        <section class="card controls-card">
+          <div>
+            <h2>Graph controls</h2>
+            <p class="hint">Current charts show one language at a time. Compass reasoning defaults to low + high.</p>
+          </div>
+          <div class="control-row">
+            <span class="control-label">Language</span>
+            <div id="languageControls" class="segmented-controls"></div>
+          </div>
+          <div class="control-row">
+            <span class="control-label">Compass reasoning</span>
+            <div id="reasoningControls" class="chip-controls"></div>
+          </div>
+          <div id="runWarnings" class="warning-box" hidden></div>
+        </section>
+
         <section class="card">
           <div class="card-header">
             <div>
@@ -54,7 +70,7 @@
                 <input id="showCompassLabels" type="checkbox" />
                 Show labels
               </label>
-              <div id="selectedCount" class="pill">0 selected</div>
+              <div id="selectedCount" class="pill">0 models</div>
             </div>
           </div>
           <div class="compass-wrap">
@@ -66,7 +82,7 @@
           <div class="card-header">
             <div>
               <h2>Neutral / abstention by reasoning effort</h2>
-              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model.</p>
+              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model for the active language.</p>
             </div>
           </div>
           <div class="bar-wrap">

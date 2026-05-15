@@ -1,6 +1,8 @@
 const state = {
   manifest: null,
-  selected: new Set(),
+  selectedModels: new Set(),
+  activeLanguage: 'en',
+  compassReasoningEfforts: new Set(['low', 'high']),
   compassPoints: [],
   hoveredRunId: null,
   displayColors: new Map(),
@@ -23,7 +25,13 @@ const defaultSelectedModels = new Set([
   'openai/openai-gpt-5.5',
   'x-ai/x-ai-grok-4.3',
   'mistralai/mistralai-mistral-small-2603',
+  'deepseek/deepseek-deepseek-v4-pro',
 ]);
+
+const languageScenarios = {
+  en: { label: 'English', scenarioId: 'simple_direct' },
+  de: { label: 'German', scenarioId: 'simple_direct_de' },
+};
 
 async function main() {
   const response = await fetch('./data/results_manifest.json', { cache: 'no-store' });
@@ -31,6 +39,8 @@ async function main() {
   state.manifest = await response.json();
   assignDisplayColors();
   initializeDefaultSelection();
+  renderLanguageControls();
+  renderReasoningControls();
   renderRunTree();
   setupCompassInteractions();
   renderAll();
@@ -38,14 +48,19 @@ async function main() {
 
 function byId(id) { return document.getElementById(id); }
 function runById(id) { return state.manifest.runs.find((run) => run.id === id); }
-function selectedRuns() { return [...state.selected].map(runById).filter(Boolean); }
+function modelKey(run) { return `${run.provider}/${run.model_slug}`; }
+function selectedModelRuns() { return state.manifest.runs.filter((run) => state.selectedModels.has(modelKey(run))); }
+function activeLanguageScenario() { return languageScenarios[state.activeLanguage]?.scenarioId; }
+function runEffort(run) { return run.reasoning_effort || 'none'; }
+function activeLanguageRuns() { return selectedModelRuns().filter((run) => run.scenario_id === activeLanguageScenario()); }
+function selectedCompassRuns() {
+  return activeLanguageRuns().filter((run) => state.compassReasoningEfforts.has(runEffort(run)));
+}
+function selectedNeutralRuns() { return activeLanguageRuns(); }
 
 function initializeDefaultSelection() {
-  state.selected = new Set(
-    state.manifest.runs
-      .filter((run) => defaultSelectedModels.has(`${run.provider}/${run.model_slug}`))
-      .map((run) => run.id)
-  );
+  const availableModelKeys = new Set(state.manifest.runs.map(modelKey));
+  state.selectedModels = new Set([...defaultSelectedModels].filter((key) => availableModelKeys.has(key)));
 }
 function formatScore(value) { return Number(value ?? 0).toFixed(2); }
 function pct(value) { return `${Math.round((value ?? 0) * 100)}%`; }
@@ -53,31 +68,61 @@ function pct(value) { return `${Math.round((value ?? 0) * 100)}%`; }
 function renderRunTree() {
   const root = byId('runTree');
   root.innerHTML = '';
-  const tree = state.manifest.tree;
 
-  for (const scenario of Object.keys(tree).sort()) {
-    const scenarioDetails = detailsNode(scenario, true, collectRunIds(tree[scenario]));
-    for (const provider of Object.keys(tree[scenario]).sort()) {
-      const providerDetails = detailsNode(provider, true, collectRunIds(tree[scenario][provider]));
-      for (const model of Object.keys(tree[scenario][provider]).sort()) {
-        const configs = tree[scenario][provider][model];
-        const modelDetails = detailsNode(modelTreeLabel(configs, model), true, collectRunIds(configs));
-        const runIds = collectRunIds(configs);
-        const runs = runIds.map(runById).filter(Boolean);
-        const hasReasoningVariants = runs.some((run) => run.reasoning_effort);
-        const optionParent = hasReasoningVariants
-          ? modelDetails.appendChild(detailsNode('Reasoning effort', true, runIds))
-          : modelDetails;
-
-        for (const run of runs.sort(compareReasoningRuns)) {
-          optionParent.appendChild(runOptionNode(run));
-        }
-        providerDetails.appendChild(modelDetails);
-      }
-      scenarioDetails.appendChild(providerDetails);
-    }
-    root.appendChild(scenarioDetails);
+  const modelsByProvider = new Map();
+  for (const run of state.manifest.runs) {
+    if (!modelsByProvider.has(run.provider)) modelsByProvider.set(run.provider, new Map());
+    const providerModels = modelsByProvider.get(run.provider);
+    const key = modelKey(run);
+    if (!providerModels.has(key)) providerModels.set(key, run);
   }
+
+  for (const [provider, models] of [...modelsByProvider.entries()].sort(([a], [b]) => a.localeCompare(b))) {
+    const modelKeys = [...models.keys()].sort((a, b) => baseRunLabel(models.get(a)).localeCompare(baseRunLabel(models.get(b))));
+    const providerDetails = document.createElement('details');
+    providerDetails.open = true;
+    const summary = document.createElement('summary');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = 'category-checkbox';
+    const selectedCount = modelKeys.filter((key) => state.selectedModels.has(key)).length;
+    checkbox.checked = selectedCount === modelKeys.length;
+    checkbox.indeterminate = selectedCount > 0 && selectedCount < modelKeys.length;
+    checkbox.addEventListener('click', (event) => event.stopPropagation());
+    checkbox.addEventListener('change', () => {
+      for (const key of modelKeys) checkbox.checked ? state.selectedModels.add(key) : state.selectedModels.delete(key);
+      state.hoveredRunId = null;
+      renderRunTree();
+      renderAll();
+    });
+    const text = document.createElement('span');
+    text.textContent = provider;
+    summary.append(checkbox, text);
+    providerDetails.appendChild(summary);
+
+    for (const key of modelKeys) {
+      providerDetails.appendChild(modelOptionNode(models.get(key)));
+    }
+    root.appendChild(providerDetails);
+  }
+}
+
+function modelOptionNode(run) {
+  const label = document.createElement('label');
+  label.className = 'run-option';
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.checked = state.selectedModels.has(modelKey(run));
+  checkbox.addEventListener('change', () => {
+    checkbox.checked ? state.selectedModels.add(modelKey(run)) : state.selectedModels.delete(modelKey(run));
+    state.hoveredRunId = null;
+    renderRunTree();
+    renderAll();
+  });
+  const text = document.createElement('span');
+  text.textContent = baseRunLabel(run);
+  label.append(checkbox, text);
+  return label;
 }
 
 function assignDisplayColors() {
@@ -125,87 +170,87 @@ function parseHex(hex) {
   return [0, 2, 4].map((offset) => parseInt(value.slice(offset, offset + 2), 16));
 }
 
-function detailsNode(label, open = false, runIds = []) {
-  const details = document.createElement('details');
-  details.open = open;
-  const summary = document.createElement('summary');
-
-  if (runIds.length) {
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.className = 'category-checkbox';
-    const selectedCount = runIds.filter((runId) => state.selected.has(runId)).length;
-    checkbox.checked = selectedCount === runIds.length;
-    checkbox.indeterminate = selectedCount > 0 && selectedCount < runIds.length;
-    checkbox.addEventListener('click', (event) => event.stopPropagation());
-    checkbox.addEventListener('change', () => {
-      for (const runId of runIds) {
-        checkbox.checked ? state.selected.add(runId) : state.selected.delete(runId);
-      }
-      state.hoveredRunId = null;
-      renderRunTree();
-      renderAll();
-    });
-    summary.appendChild(checkbox);
-  }
-
-  const text = document.createElement('span');
-  text.textContent = label;
-  summary.appendChild(text);
-  details.appendChild(summary);
-  return details;
-}
-
-function collectRunIds(node) {
-  if (typeof node === 'string') return [node];
-  return Object.values(node).flatMap(collectRunIds);
-}
-
-function runOptionNode(run) {
-  const label = document.createElement('label');
-  label.className = 'run-option';
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
-  checkbox.checked = state.selected.has(run.id);
-  checkbox.addEventListener('change', () => {
-    checkbox.checked ? state.selected.add(run.id) : state.selected.delete(run.id);
-    renderRunTree();
-    renderAll();
-  });
-  const text = document.createElement('span');
-  text.textContent = runOptionLabel(run);
-  label.append(checkbox, text);
-  return label;
-}
-
-function modelTreeLabel(configs, fallback) {
-  const firstRun = runById(collectRunIds(configs)[0]);
-  return firstRun ? baseRunLabel(firstRun) : fallback;
-}
-
 function baseRunLabel(run) {
   return shortLabel(run).split(' · ')[0];
-}
-
-function runOptionLabel(run) {
-  return reasoningLabel(run.reasoning_effort || 'none');
 }
 
 function reasoningLabel(effort) {
   return ({ none: 'Default / no reasoning', low: 'Low', medium: 'Medium', high: 'High', xhigh: 'X-high' })[effort] || effort;
 }
 
-function compareReasoningRuns(a, b) {
-  const order = ['none', 'low', 'medium', 'high', 'xhigh'];
-  return order.indexOf(a.reasoning_effort || 'none') - order.indexOf(b.reasoning_effort || 'none');
+function renderLanguageControls() {
+  const root = byId('languageControls');
+  if (!root) return;
+  root.innerHTML = '';
+  for (const [language, config] of Object.entries(languageScenarios)) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `segmented-button${language === state.activeLanguage ? ' active' : ''}`;
+    button.textContent = config.label;
+    button.addEventListener('click', () => {
+      state.activeLanguage = language;
+      state.hoveredRunId = null;
+      renderLanguageControls();
+      renderAll();
+    });
+    root.appendChild(button);
+  }
+}
+
+function renderReasoningControls() {
+  const root = byId('reasoningControls');
+  if (!root) return;
+  root.innerHTML = '';
+  for (const effort of ['none', 'low', 'medium', 'high', 'xhigh']) {
+    const label = document.createElement('label');
+    label.className = 'toggle-label chip-toggle';
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = state.compassReasoningEfforts.has(effort);
+    checkbox.addEventListener('change', () => {
+      checkbox.checked ? state.compassReasoningEfforts.add(effort) : state.compassReasoningEfforts.delete(effort);
+      state.hoveredRunId = null;
+      renderAll();
+    });
+    label.append(checkbox, document.createTextNode(reasoningLabel(effort)));
+    root.appendChild(label);
+  }
 }
 
 function renderAll() {
-  const runs = selectedRuns();
-  byId('selectedCount').textContent = `${runs.length} selected`;
-  drawCompass(runs);
-  drawNeutralBars(runs);
-  renderDetails(runs);
+  const compassRuns = selectedCompassRuns();
+  const neutralRuns = selectedNeutralRuns();
+  byId('selectedCount').textContent = `${state.selectedModels.size} models`;
+  renderMissingRunWarnings(compassRuns, neutralRuns);
+  drawCompass(compassRuns);
+  drawNeutralBars(neutralRuns);
+  renderDetails(compassRuns);
+}
+
+function renderMissingRunWarnings(compassRuns, neutralRuns) {
+  const root = byId('runWarnings');
+  if (!root) return;
+  const activeLanguage = languageScenarios[state.activeLanguage];
+  const selectedKeys = [...state.selectedModels].sort();
+  const languageKeys = new Set(neutralRuns.map(modelKey));
+  const compassKeys = new Set(compassRuns.map(modelKey));
+  const missingLanguage = selectedKeys.filter((key) => !languageKeys.has(key));
+  const missingReasoning = selectedKeys.filter((key) => languageKeys.has(key) && !compassKeys.has(key));
+  const messages = [];
+  if (missingLanguage.length) {
+    messages.push(`Missing ${activeLanguage.label} runs for: ${missingLanguage.map(modelNameForKey).join(', ')}.`);
+  }
+  if (missingReasoning.length && state.compassReasoningEfforts.size) {
+    messages.push(`No selected reasoning runs (${[...state.compassReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
+  }
+  if (!state.compassReasoningEfforts.size) messages.push('No reasoning efforts selected for the compass.');
+  root.innerHTML = messages.map((message) => `<div>${escapeHtml(message)}</div>`).join('');
+  root.hidden = messages.length === 0;
+}
+
+function modelNameForKey(key) {
+  const run = state.manifest.runs.find((candidate) => modelKey(candidate) === key);
+  return run ? baseRunLabel(run) : key;
 }
 
 function drawCompass(runs) {
@@ -307,14 +352,14 @@ function setupCompassInteractions() {
     if (nextHoveredRunId !== state.hoveredRunId) {
       state.hoveredRunId = nextHoveredRunId;
       canvas.style.cursor = hit ? 'pointer' : 'default';
-      drawCompass(selectedRuns());
+      drawCompass(selectedCompassRuns());
     }
   });
   canvas.addEventListener('mouseleave', () => {
     if (!state.hoveredRunId) return;
     state.hoveredRunId = null;
     canvas.style.cursor = 'default';
-    drawCompass(selectedRuns());
+    drawCompass(selectedCompassRuns());
   });
 }
 
@@ -649,14 +694,15 @@ function escapeHtml(value) {
 }
 
 byId('selectAllButton').addEventListener('click', () => {
-  const allSelected = state.selected.size === state.manifest.runs.length;
-  state.selected = new Set(allSelected ? [] : state.manifest.runs.map((run) => run.id));
+  const allModelKeys = [...new Set(state.manifest.runs.map(modelKey))];
+  const allSelected = state.selectedModels.size === allModelKeys.length;
+  state.selectedModels = new Set(allSelected ? [] : allModelKeys);
   state.hoveredRunId = null;
   renderRunTree();
   renderAll();
 });
 
-byId('showCompassLabels').addEventListener('change', () => drawCompass(selectedRuns()));
+byId('showCompassLabels').addEventListener('change', () => drawCompass(selectedCompassRuns()));
 
 main().catch((error) => {
   document.body.innerHTML = `<pre style="padding:1rem;color:#b91c1c">${escapeHtml(error.stack || error.message)}</pre>`;
