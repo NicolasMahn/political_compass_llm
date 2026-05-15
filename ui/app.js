@@ -317,7 +317,6 @@ function renderAll() {
     'Direct English',
     textualScenarios[state.textualDeltaMode].label
   );
-  byId('selectedCount').textContent = `${state.selectedModels.size} models`;
   renderCompassWarnings(compassRuns);
   renderNeutralWarnings(neutralRuns);
   renderLanguageDeltaWarnings(delta.missing);
@@ -524,7 +523,6 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
 
   // Runs.
   if (collectHoverPoints) state.compassPoints = [];
-  const showLabels = byId('showCompassLabels')?.checked;
   ctx.font = '650 12px system-ui, sans-serif';
   runs.forEach((run, index) => {
     const right = clamp(run.axis_scores.right ?? 0, -10, 10);
@@ -539,7 +537,6 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
 
     const highlighted = collectHoverPoints && state.hoveredRunId === run.id;
     drawRunMarker(ctx, x, y, highlighted ? 10 : 8, color, run.reasoning_effort, highlighted);
-    if (showLabels) drawPointLabel(ctx, shortLabel(run), x + 11, y + 4);
 
     drawProgressiveMarker(ctx, barX, barW, barMarkerY, color, index, run.reasoning_effort);
   });
@@ -1122,7 +1119,6 @@ byId('selectAllButton').addEventListener('click', () => {
   renderAll();
 });
 
-byId('showCompassLabels').addEventListener('change', () => drawCompass(selectedCompassRuns()));
 
 main().catch((error) => {
   document.body.innerHTML = `<pre style="padding:1rem;color:#b91c1c">${escapeHtml(error.stack || error.message)}</pre>`;
