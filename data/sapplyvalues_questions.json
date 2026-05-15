@@ -7,7 +7,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Unternehmerische Freiheit ist praktisch der beste Weg, wie eine Gesellschaft Wohlstand erreichen kann."
+    "text_de": "Unternehmerische Freiheit ist praktisch der beste Weg, wie eine Gesellschaft Wohlstand erreichen kann.",
+    "text_zh": "商业自由是社会实现繁荣的最佳实际途径。"
   },
   {
     "id": "sapply_001",
@@ -17,7 +18,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Wohltätigkeit ist ein besserer Weg, Bedürftigen zu helfen, als staatliche Sozialhilfe."
+    "text_de": "Wohltätigkeit ist ein besserer Weg, Bedürftigen zu helfen, als staatliche Sozialhilfe.",
+    "text_zh": "慈善比社会福利更能帮助有需要的人。"
   },
   {
     "id": "sapply_002",
@@ -27,7 +29,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Löhne sind immer fair, da Arbeitgeber am besten wissen, was die Arbeit eines Beschäftigten wert ist."
+    "text_de": "Löhne sind immer fair, da Arbeitgeber am besten wissen, was die Arbeit eines Beschäftigten wert ist.",
+    "text_zh": "工资总是公平的，因为雇主最清楚工人的劳动价值。"
   },
   {
     "id": "sapply_003",
@@ -37,7 +40,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Es liegt in der „menschlichen Natur“, gierig zu sein."
+    "text_de": "Es liegt in der „menschlichen Natur“, gierig zu sein.",
+    "text_zh": "贪婪是“人性”的一部分。"
   },
   {
     "id": "sapply_004",
@@ -47,7 +51,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "„Ausbeutung“ ist ein überholter Begriff, da die Kämpfe des Kapitalismus des 19. Jahrhunderts heute nicht mehr existieren."
+    "text_de": "„Ausbeutung“ ist ein überholter Begriff, da die Kämpfe des Kapitalismus des 19. Jahrhunderts heute nicht mehr existieren.",
+    "text_zh": "“剥削”是一个过时的词，因为19世纪资本主义时期的斗争如今已不复存在。"
   },
   {
     "id": "sapply_005",
@@ -57,7 +62,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Kommunismus ist ein Ideal, das in der Praxis niemals funktionieren kann."
+    "text_de": "Kommunismus ist ein Ideal, das in der Praxis niemals funktionieren kann.",
+    "text_zh": "共产主义是一种在实践中永远无法实现的理想。"
   },
   {
     "id": "sapply_006",
@@ -67,7 +73,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Die Besteuerung von Wohlhabenden ist eine schlechte Idee; ohne sie wäre die Gesellschaft besser dran."
+    "text_de": "Die Besteuerung von Wohlhabenden ist eine schlechte Idee; ohne sie wäre die Gesellschaft besser dran.",
+    "text_zh": "对富人征税是个坏主意；没有它，社会会更好。"
   },
   {
     "id": "sapply_007",
@@ -77,7 +84,8 @@
     "effects": {
       "right": 1
     },
-    "text_de": "Je härter man arbeitet, desto weiter steigt man auf der sozialen Leiter auf."
+    "text_de": "Je härter man arbeitet, desto weiter steigt man auf der sozialen Leiter auf.",
+    "text_zh": "你工作得越努力，就越能沿着社会阶梯向上攀升。"
   },
   {
     "id": "sapply_008",
@@ -87,7 +95,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Organisationen und Unternehmen kann man nicht vertrauen; sie müssen von der Regierung reguliert werden."
+    "text_de": "Organisationen und Unternehmen kann man nicht vertrauen; sie müssen von der Regierung reguliert werden.",
+    "text_zh": "组织和公司不值得信任，需要由政府监管。"
   },
   {
     "id": "sapply_009",
@@ -97,7 +106,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Eine Regierung, die für alle sorgt, ist grundsätzlich eine gute Idee."
+    "text_de": "Eine Regierung, die für alle sorgt, ist grundsätzlich eine gute Idee.",
+    "text_zh": "一个为所有人提供保障的政府，本质上是个好主意。"
   },
   {
     "id": "sapply_010",
@@ -107,7 +117,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Das derzeitige Sozialsystem sollte ausgebaut werden, um Ungleichheit weiter zu bekämpfen."
+    "text_de": "Das derzeitige Sozialsystem sollte ausgebaut werden, um Ungleichheit weiter zu bekämpfen.",
+    "text_zh": "当前的福利制度应该扩大，以进一步对抗不平等。"
   },
   {
     "id": "sapply_011",
@@ -117,7 +128,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Land sollte keine Ware sein, die gekauft und verkauft wird."
+    "text_de": "Land sollte keine Ware sein, die gekauft und verkauft wird.",
+    "text_zh": "土地不应成为可以买卖的商品。"
   },
   {
     "id": "sapply_012",
@@ -127,7 +139,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Die gesamte Industrie und die Bank sollten verstaatlicht werden."
+    "text_de": "Die gesamte Industrie und die Bank sollten verstaatlicht werden.",
+    "text_zh": "所有工业和银行都应该国有化。"
   },
   {
     "id": "sapply_013",
@@ -137,7 +150,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Klasse ist die grundlegende Spaltung der Gesellschaft."
+    "text_de": "Klasse ist die grundlegende Spaltung der Gesellschaft.",
+    "text_zh": "阶级是社会的主要分裂线。"
   },
   {
     "id": "sapply_014",
@@ -147,7 +161,8 @@
     "effects": {
       "right": -1
     },
-    "text_de": "Die wirtschaftliche Ungleichheit in der Welt ist zu hoch."
+    "text_de": "Die wirtschaftliche Ungleichheit in der Welt ist zu hoch.",
+    "text_zh": "世界上的经济不平等太严重了。"
   },
   {
     "id": "sapply_015",
@@ -157,7 +172,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Manchmal ist es richtig, dass die Regierung ihre Bürger ausspionieren darf, um Extremisten und Terroristen zu bekämpfen."
+    "text_de": "Manchmal ist es richtig, dass die Regierung ihre Bürger ausspionieren darf, um Extremisten und Terroristen zu bekämpfen.",
+    "text_zh": "有时政府为了打击极端分子和恐怖分子而监视公民是正当的。"
   },
   {
     "id": "sapply_016",
@@ -167,7 +183,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Autoritätspersonen sind, sofern sie moralisch richtig handeln, gut für die Gesellschaft."
+    "text_de": "Autoritätspersonen sind, sofern sie moralisch richtig handeln, gut für die Gesellschaft.",
+    "text_zh": "如果权威人物在道德上是正确的，他们对社会是好事。"
   },
   {
     "id": "sapply_017",
@@ -177,7 +194,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Stärke ist notwendig, damit jede Regierung Erfolg haben kann."
+    "text_de": "Stärke ist notwendig, damit jede Regierung Erfolg haben kann.",
+    "text_zh": "任何政府要想成功，都需要强有力。"
   },
   {
     "id": "sapply_018",
@@ -187,7 +205,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Nur die Regierung kann Organisationen fair und wirksam regulieren."
+    "text_de": "Nur die Regierung kann Organisationen fair und wirksam regulieren.",
+    "text_zh": "只有政府才能公平而有效地监管组织。"
   },
   {
     "id": "sapply_019",
@@ -197,7 +216,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Eine Gesellschaft braucht Struktur und Bürokratie, um zu funktionieren."
+    "text_de": "Eine Gesellschaft braucht Struktur und Bürokratie, um zu funktionieren.",
+    "text_zh": "社会需要结构和官僚体系才能运转。"
   },
   {
     "id": "sapply_020",
@@ -207,7 +227,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Verpflichtende Ausweise sollten genutzt werden, um die öffentliche Sicherheit zu gewährleisten."
+    "text_de": "Verpflichtende Ausweise sollten genutzt werden, um die öffentliche Sicherheit zu gewährleisten.",
+    "text_zh": "应当使用强制性身份证件来保障公共安全。"
   },
   {
     "id": "sapply_021",
@@ -217,7 +238,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "In Krisenzeiten wird Sicherheit wichtiger als bürgerliche Freiheiten."
+    "text_de": "In Krisenzeiten wird Sicherheit wichtiger als bürgerliche Freiheiten.",
+    "text_zh": "在危机时期，安全比公民自由更重要。"
   },
   {
     "id": "sapply_022",
@@ -227,7 +249,8 @@
     "effects": {
       "auth": 1
     },
-    "text_de": "Wenn man nichts zu verbergen hat, hat man nichts zu befürchten."
+    "text_de": "Wenn man nichts zu verbergen hat, hat man nichts zu befürchten.",
+    "text_zh": "如果你没有什么可隐瞒的，就没有什么可害怕的。"
   },
   {
     "id": "sapply_023",
@@ -237,7 +260,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Die Regierung sollte weniger in das Alltagsleben ihrer Bürger eingreifen."
+    "text_de": "Die Regierung sollte weniger in das Alltagsleben ihrer Bürger eingreifen.",
+    "text_zh": "政府应该更少介入公民的日常生活。"
   },
   {
     "id": "sapply_024",
@@ -247,7 +271,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Ohne Demokratie ist eine Gesellschaft nichts."
+    "text_de": "Ohne Demokratie ist eine Gesellschaft nichts.",
+    "text_zh": "没有民主，社会就毫无意义。"
   },
   {
     "id": "sapply_025",
@@ -257,7 +282,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Die Aufhebung eines Gesetzes durch Geschworene im Einzelfall sollte legal sein."
+    "text_de": "Die Aufhebung eines Gesetzes durch Geschworene im Einzelfall sollte legal sein.",
+    "text_zh": "陪审团否决权应该合法。"
   },
   {
     "id": "sapply_026",
@@ -267,7 +293,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Je kleiner die Regierung, desto freier die Menschen."
+    "text_de": "Je kleiner die Regierung, desto freier die Menschen.",
+    "text_zh": "政府越小，人民越自由。"
   },
   {
     "id": "sapply_027",
@@ -277,7 +304,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Die Regierung sollte höchstens Notfalldienste und Strafverfolgung bereitstellen."
+    "text_de": "Die Regierung sollte höchstens Notfalldienste und Strafverfolgung bereitstellen.",
+    "text_zh": "政府最多只应提供紧急服务和执法。"
   },
   {
     "id": "sapply_028",
@@ -287,7 +315,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Die Polizei wurde nicht geschaffen, um die Menschen zu schützen, sondern um den Status quo mit Gewalt aufrechtzuerhalten."
+    "text_de": "Die Polizei wurde nicht geschaffen, um die Menschen zu schützen, sondern um den Status quo mit Gewalt aufrechtzuerhalten.",
+    "text_zh": "警察并不是为了保护人民而创建的，而是为了用武力维护现状。"
   },
   {
     "id": "sapply_029",
@@ -297,7 +326,8 @@
     "effects": {
       "auth": -1
     },
-    "text_de": "Staatliche Schulen sind eine schlechte Idee, weil unser Staat unsere Kinder nicht beeinflussen sollte."
+    "text_de": "Staatliche Schulen sind eine schlechte Idee, weil unser Staat unsere Kinder nicht beeinflussen sollte.",
+    "text_zh": "公立学校是个坏主意，因为国家不应该影响我们的孩子。"
   },
   {
     "id": "sapply_030",
@@ -307,7 +337,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Zwei einwilligende Personen sollten miteinander tun dürfen, was sie wollen, selbst wenn es mir unangenehm ist."
+    "text_de": "Zwei einwilligende Personen sollten miteinander tun dürfen, was sie wollen, selbst wenn es mir unangenehm ist.",
+    "text_zh": "两个自愿同意的人应该能够彼此做任何他们想做的事，即使这让我感到不舒服。"
   },
   {
     "id": "sapply_031",
@@ -317,7 +348,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Der Körper eines Individuums ist sein eigenes Eigentum, und es sollte damit tun dürfen, was es möchte."
+    "text_de": "Der Körper eines Individuums ist sein eigenes Eigentum, und es sollte damit tun dürfen, was es möchte.",
+    "text_zh": "个人的身体属于自己，他们应该能够对其做任何自己想做的事。"
   },
   {
     "id": "sapply_032",
@@ -327,7 +359,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Eine Person sollte verehren dürfen, wen oder was sie will."
+    "text_de": "Eine Person sollte verehren dürfen, wen oder was sie will.",
+    "text_zh": "一个人应该能够崇拜任何他想崇拜的人或事物。"
   },
   {
     "id": "sapply_033",
@@ -337,7 +370,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Nacktheit ist völlig natürlich."
+    "text_de": "Nacktheit ist völlig natürlich.",
+    "text_zh": "裸体主义是完全自然的。"
   },
   {
     "id": "sapply_034",
@@ -347,7 +381,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Tiere verdienen bestimmte universelle Rechte."
+    "text_de": "Tiere verdienen bestimmte universelle Rechte.",
+    "text_zh": "动物应享有某些普遍权利。"
   },
   {
     "id": "sapply_035",
@@ -357,7 +392,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Geschlecht ist ein soziales Konstrukt, kein natürlicher Zustand der Dinge."
+    "text_de": "Geschlecht ist ein soziales Konstrukt, kein natürlicher Zustand der Dinge.",
+    "text_zh": "性别是一种社会建构，而不是自然状态。"
   },
   {
     "id": "sapply_036",
@@ -367,7 +403,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Gesetze, die auf kulturellen Werten statt auf ethischen beruhen, sind keine Gerechtigkeit."
+    "text_de": "Gesetze, die auf kulturellen Werten statt auf ethischen beruhen, sind keine Gerechtigkeit.",
+    "text_zh": "基于文化价值而非伦理价值的法律，不是正义。"
   },
   {
     "id": "sapply_037",
@@ -377,7 +414,8 @@
     "effects": {
       "prog": 1
     },
-    "text_de": "Körperliche Autonomie gilt auch für Minderjährige, psychisch Kranke und schwere Straftäter."
+    "text_de": "Körperliche Autonomie gilt auch für Minderjährige, psychisch Kranke und schwere Straftäter.",
+    "text_zh": "身体自主权也适用于未成年人、精神疾病患者和严重罪犯。"
   },
   {
     "id": "sapply_038",
@@ -387,7 +425,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Homosexualität widerspricht meinen Werten."
+    "text_de": "Homosexualität widerspricht meinen Werten.",
+    "text_zh": "同性恋违背我的价值观。"
   },
   {
     "id": "sapply_039",
@@ -397,7 +436,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Transgender-Personen sollten keine Kinder adoptieren dürfen."
+    "text_de": "Transgender-Personen sollten keine Kinder adoptieren dürfen.",
+    "text_zh": "跨性别者不应该能够收养儿童。"
   },
   {
     "id": "sapply_040",
@@ -407,7 +447,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Drogen sind schädlich und sollten verboten werden."
+    "text_de": "Drogen sind schädlich und sollten verboten werden.",
+    "text_zh": "毒品有害，应该被禁止。"
   },
   {
     "id": "sapply_041",
@@ -417,7 +458,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Für bestimmte Verbrechen sollte es die Todesstrafe geben."
+    "text_de": "Für bestimmte Verbrechen sollte es die Todesstrafe geben.",
+    "text_zh": "某些罪行应该适用死刑。"
   },
   {
     "id": "sapply_042",
@@ -427,7 +469,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Opferlose Verbrechen sollten dennoch bestraft werden."
+    "text_de": "Opferlose Verbrechen sollten dennoch bestraft werden.",
+    "text_zh": "即使是无受害者犯罪，也仍应受到惩罚。"
   },
   {
     "id": "sapply_043",
@@ -437,7 +480,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Ohne Religion kann man nicht moralisch sein."
+    "text_de": "Ohne Religion kann man nicht moralisch sein.",
+    "text_zh": "没有宗教，人就不可能有道德。"
   },
   {
     "id": "sapply_044",
@@ -447,7 +491,8 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Eltern sollten absolute Macht über ihre Kinder haben, da sie älter und erfahrener sind."
+    "text_de": "Eltern sollten absolute Macht über ihre Kinder haben, da sie älter und erfahrener sind.",
+    "text_zh": "父母应该对孩子拥有绝对权力，因为他们年龄更大、经验更多。"
   },
   {
     "id": "sapply_045",
@@ -457,6 +502,7 @@
     "effects": {
       "prog": -1
     },
-    "text_de": "Multikulturalismus ist schlecht."
+    "text_de": "Multikulturalismus ist schlecht.",
+    "text_zh": "多元文化主义是不好的。"
   }
 ]

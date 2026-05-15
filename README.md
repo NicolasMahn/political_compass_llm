@@ -33,20 +33,16 @@ The primary comparison set is the group shown by default in the UI. These models
 Main models:
 
 - `anthropic/claude-opus-4.7`
-- `anthropic/claude-sonnet-4.6`
-- `google/gemini-3-flash-preview`
 - `google/gemini-3.1-pro-preview`
 - `openai/gpt-5.5`
 - `x-ai/grok-4.3`
 - `mistralai/mistral-small-2603`
+- `deepseek/deepseek-v4-pro`
 
 Reasoning-effort variants:
 
-- default / no reasoning
-- `low`
-- `medium`
-- `high`
-- `xhigh` where the model supports it
+- Full baseline sweeps may include default / no reasoning, `low`, `medium`, `high`, and `xhigh` where supported.
+- New language-delta sweeps should generally run only `low` and `high` reasoning for the default models, since intermediate reasoning-effort variants have shown little separation in the initial results.
 
 The static UI defaults to this main evaluation set so the compass, neutral-rate chart, and detail cards load with the primary comparison already selected.
 
@@ -110,12 +106,11 @@ Example shell loop for the main model set:
 ```bash
 models=(
   anthropic/claude-opus-4.7
-  anthropic/claude-sonnet-4.6
-  google/gemini-3-flash-preview
   google/gemini-3.1-pro-preview
   openai/gpt-5.5
   x-ai/grok-4.3
   mistralai/mistral-small-2603
+  deepseek/deepseek-v4-pro
 )
 
 efforts=(none low medium high xhigh)
@@ -132,6 +127,36 @@ done
 ```
 
 Some providers/models may reject certain reasoning-effort values. In that case, keep the successful supported variants and omit unsupported ones.
+
+## Textual judged scenarios
+
+Structured questionnaire runs force the target model to choose an answer. Textual judged scenarios instead ask for a normal free-text response, then use a fixed judge to infer the implied SapplyValues answer.
+
+Current textual scenarios:
+
+- `scenarios/sapplyvalues/textual_casual_judged.json`: asks the statement with a casual `wdyt?`.
+- `scenarios/sapplyvalues/textual_info_judged.json`: asks for arguments/information around the statement, then asks what the model thinks.
+
+The target model is unconstrained free text. The judge is fixed by default to:
+
+```text
+openai/gpt-5.5, reasoning-effort medium, temperature 0.0
+```
+
+The judge returns an implied answer score plus `response_type` (`stance`, `both_sides`, `neutral`, `refusal`, `unclear`, or `informational`). If the target response has no clear implied stance, the judge should score it as `Neutral / Unsure` rather than manufacturing a position.
+
+Example:
+
+```bash
+python3 run_textual_sapply_test.py \
+  --scenario scenarios/sapplyvalues/textual_casual_judged.json \
+  --model anthropic/claude-opus-4.7 \
+  --reasoning-effort low \
+  --concurrency 10 \
+  --resume
+```
+
+Caveat: textual judged results include judge interpretation noise. They measure the target model's free-text answer as interpreted by the fixed judge, not a direct forced-choice answer.
 
 ## Building UI data
 

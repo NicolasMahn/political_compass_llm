@@ -1,0 +1,43 @@
+{
+  "axis_scores": {
+    "right": -0.33,
+    "auth": 0.67,
+    "prog": 0.31
+  },
+  "raw_scores": {
+    "right": -0.5,
+    "auth": 1.0,
+    "prog": 0.5
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-low",
+  "scenario_id": "textual_info_judged",
+  "scenario_type": "textual_response_judged",
+  "prompt_builder": "textual_judged_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "google/gemini-3.1-pro-preview",
+  "model_slug": "google-gemini-3.1-pro-preview",
+  "provider": "google",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-low",
+  "temperature": 0.0,
+  "reasoning_effort": "low",
+  "judge_model": "openai/gpt-5.5",
+  "judge_model_slug": "openai-gpt-5.5",
+  "judge_temperature": 0.0,
+  "judge_reasoning_effort": "medium",
+  "response_type_counts": {
+    "both_sides": 45,
+    "stance": 1
+  },
+  "concurrency": 5,
+  "completed_at": "2026-05-15T20:49:04.005699+00:00",
+  "response_count": 46
+}

@@ -1,0 +1,2716 @@
+[
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_000",
+    "source_id": 0,
+    "test": "sapplyvalues",
+    "question": "Freedom of business is the best practical way a society can prosper.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nUnternehmerische Freiheit ist praktisch der beste Weg, wie eine Gesellschaft Wohlstand erreichen kann.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Economic freedom and entrepreneurship have historically driven the greatest increases in societal wealth, innovation, and living standards across diverse examples.",
+    "raw_response": "{\n  \"answer\": \"Stimme voll und ganz zu\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Economic freedom and entrepreneurship have historically driven the greatest increases in societal wealth, innovation, and living standards across diverse examples.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-Uutmw0sYxhN80Sv2CsG6",
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 503,
+      "total_tokens": 917,
+      "cost": 0.0015734,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015734,
+        "upstream_inference_prompt_cost": 0.0003159,
+        "upstream_inference_completions_cost": 0.0012575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 451,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.344381+00:00",
+    "completed_at": "2026-05-15T16:52:20.894052+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_001",
+    "source_id": 1,
+    "test": "sapplyvalues",
+    "question": "Charity is a better way of helping those in need than social welfare.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nWohltätigkeit ist ein besserer Weg, Bedürftigen zu helfen, als staatliche Sozialhilfe.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Beide Ansätze haben Vor- und Nachteile; Effektivität hängt von Kontext, Effizienz und Skalierbarkeit ab.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Beide Ansätze haben Vor- und Nachteile; Effektivität hängt von Kontext, Effizienz und Skalierbarkeit ab.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-pfThx2yhsp9kW5FZVORl",
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 696,
+      "total_tokens": 1112,
+      "cost": 0.0021256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021256,
+        "upstream_inference_prompt_cost": 0.0003856,
+        "upstream_inference_completions_cost": 0.00174
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 635,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.343478+00:00",
+    "completed_at": "2026-05-15T16:52:22.529837+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_002",
+    "source_id": 2,
+    "test": "sapplyvalues",
+    "question": "Wages are always fair, as employers know best what a worker's labour is worth.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nLöhne sind immer fair, da Arbeitgeber am besten wissen, was die Arbeit eines Beschäftigten wert ist.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Löhne werden durch Marktkräfte, Verhandlungsmacht und externe Faktoren bestimmt und sind nicht automatisch fair oder vom Wissen des Arbeitgebers allein abhängig.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Löhne werden durch Marktkräfte, Verhandlungsmacht und externe Faktoren bestimmt und sind nicht automatisch fair oder vom Wissen des Arbeitgebers allein abhängig.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-fax3bRKHR3IEgu6IgebC",
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 486,
+      "total_tokens": 902,
+      "cost": 0.0016006,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016006,
+        "upstream_inference_prompt_cost": 0.0003856,
+        "upstream_inference_completions_cost": 0.001215
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 421,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.345360+00:00",
+    "completed_at": "2026-05-15T16:52:20.549441+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_003",
+    "source_id": 3,
+    "test": "sapplyvalues",
+    "question": "It is \"human nature\" to be greedy.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEs liegt in der „menschlichen Natur“, gierig zu sein.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Human nature encompasses both self-interested and cooperative tendencies, so greed is not definitively inherent.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Human nature encompasses both self-interested and cooperative tendencies, so greed is not definitively inherent.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-USHm0XW2GSpkKcQnFgvb",
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 560,
+      "total_tokens": 966,
+      "cost": 0.0015043,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015043,
+        "upstream_inference_prompt_cost": 0.0001043,
+        "upstream_inference_completions_cost": 0.0014
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 515,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.345925+00:00",
+    "completed_at": "2026-05-15T16:52:20.835363+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_004",
+    "source_id": 4,
+    "test": "sapplyvalues",
+    "question": "\"Exploitation\" is an outdated term, as the struggles of 1800s capitalism don't exist anymore.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\n„Ausbeutung“ ist ein überholter Begriff, da die Kämpfe des Kapitalismus des 19. Jahrhunderts heute nicht mehr existieren.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While 19th-century extremes have largely been mitigated by regulations and living standards, the underlying concept of exploitation in labor and economic relations remains relevant in discussions of inequality, gig work, and global supply chains.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While 19th-century extremes have largely been mitigated by regulations and living standards, the underlying concept of exploitation in labor and economic relations remains relevant in discussions of inequality, gig work, and global supply chains.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-4XD7FHMS0AG6Wt0Uymty",
+    "usage": {
+      "prompt_tokens": 426,
+      "completion_tokens": 729,
+      "total_tokens": 1155,
+      "cost": 0.0022206,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022206,
+        "upstream_inference_prompt_cost": 0.0003981,
+        "upstream_inference_completions_cost": 0.0018225
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 661,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.346724+00:00",
+    "completed_at": "2026-05-15T16:52:24.272188+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_005",
+    "source_id": 5,
+    "test": "sapplyvalues",
+    "question": "Communism is an ideal that can never work in practice.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nKommunismus ist ein Ideal, das in der Praxis niemals funktionieren kann.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Historische Beispiele und ökonomische Theorie (z.B. Mises' Kalkulationsproblem) zeigen, dass Kommunismus in der Praxis stets scheitert.",
+    "raw_response": "{\n  \"answer\": \"Stimme voll und ganz zu\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Historische Beispiele und ökonomische Theorie (z.B. Mises' Kalkulationsproblem) zeigen, dass Kommunismus in der Praxis stets scheitert.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-efPDcAIjPyu0I7AQa9es",
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 594,
+      "total_tokens": 1001,
+      "cost": 0.00185935,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00185935,
+        "upstream_inference_prompt_cost": 0.00037435,
+        "upstream_inference_completions_cost": 0.001485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 530,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.347258+00:00",
+    "completed_at": "2026-05-15T16:52:21.003721+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_006",
+    "source_id": 6,
+    "test": "sapplyvalues",
+    "question": "Taxation of the wealthy is a bad idea, society would be better off without it.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Besteuerung von Wohlhabenden ist eine schlechte Idee; ohne sie wäre die Gesellschaft besser dran.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Some taxation of high earners is necessary to fund essential public goods, though excessive rates often harm growth and incentives.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Some taxation of high earners is necessary to fund essential public goods, though excessive rates often harm growth and incentives.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-TrqXU7gNr0kcPKYcZzC4",
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 864,
+      "total_tokens": 1279,
+      "cost": 0.00254435,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00254435,
+        "upstream_inference_prompt_cost": 0.00038435,
+        "upstream_inference_completions_cost": 0.00216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 815,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.348210+00:00",
+    "completed_at": "2026-05-15T16:52:24.959765+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_007",
+    "source_id": 7,
+    "test": "sapplyvalues",
+    "question": "The harder you work, the more you progress up the social ladder.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nJe härter man arbeitet, desto weiter steigt man auf der sozialen Leiter auf.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Hard work correlates with success but is far from the sole or guaranteed determinant; factors like talent, luck, connections, education access and systemic barriers often outweigh effort alone.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Hard work correlates with success but is far from the sole or guaranteed determinant; factors like talent, luck, connections, education access and systemic barriers often outweigh effort alone.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-0X70jHHqidhgWBV04m9p",
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 743,
+      "total_tokens": 1155,
+      "cost": 0.0022381,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022381,
+        "upstream_inference_prompt_cost": 0.0003806,
+        "upstream_inference_completions_cost": 0.0018575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 683,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.349024+00:00",
+    "completed_at": "2026-05-15T16:52:26.898430+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_008",
+    "source_id": 8,
+    "test": "sapplyvalues",
+    "question": "Organisations and corporations cannot be trusted and need to be regulated by the government.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOrganisationen und Unternehmen kann man nicht vertrauen; sie müssen von der Regierung reguliert werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Unternehmen können durch Marktkräfte und Wettbewerb vertrauenswürdig agieren; pauschale Regulierung ist oft übertrieben und schädlich.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Unternehmen können durch Marktkräfte und Wettbewerb vertrauenswürdig agieren; pauschale Regulierung ist oft übertrieben und schädlich.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-i0WGMo7ANuWICAGieHA8",
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 497,
+      "total_tokens": 909,
+      "cost": 0.0015559,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015559,
+        "upstream_inference_prompt_cost": 0.0003134,
+        "upstream_inference_completions_cost": 0.0012425
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 432,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.349640+00:00",
+    "completed_at": "2026-05-15T16:52:22.122146+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_009",
+    "source_id": 9,
+    "test": "sapplyvalues",
+    "question": "A government that provides for everyone is an inherently good idea.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEine Regierung, die für alle sorgt, ist grundsätzlich eine gute Idee.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Expansive welfare states create dependency, distort incentives, and often fail to deliver sustainable prosperity without eroding individual liberty.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Expansive welfare states create dependency, distort incentives, and often fail to deliver sustainable prosperity without eroding individual liberty.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863934-pFzI9T5Kc3DlyyxF1PIG",
+    "usage": {
+      "prompt_tokens": 410,
+      "completion_tokens": 611,
+      "total_tokens": 1021,
+      "cost": 0.0019056,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019056,
+        "upstream_inference_prompt_cost": 0.0003781,
+        "upstream_inference_completions_cost": 0.0015275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 560,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:14.350455+00:00",
+    "completed_at": "2026-05-15T16:52:20.182685+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_010",
+    "source_id": 10,
+    "test": "sapplyvalues",
+    "question": "The current welfare system should be expanded to further combat inequality.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDas derzeitige Sozialsystem sollte ausgebaut werden, um Ungleichheit weiter zu bekämpfen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Expanding welfare often increases dependency and fiscal burdens without tackling root causes like education or incentives.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Expanding welfare often increases dependency and fiscal burdens without tackling root causes like education or incentives.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-9OZOG04j5K07wOjWJ7QV",
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 507,
+      "total_tokens": 920,
+      "cost": 0.00164935,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00164935,
+        "upstream_inference_prompt_cost": 0.00038185,
+        "upstream_inference_completions_cost": 0.0012675
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 463,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.901135+00:00",
+    "completed_at": "2026-05-15T16:52:32.771664+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_011",
+    "source_id": 11,
+    "test": "sapplyvalues",
+    "question": "Land should not be a commodity to be bought and sold.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nLand sollte keine Ware sein, die gekauft und verkauft wird.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Private property rights in land enable efficient allocation, investment, and economic growth through voluntary exchange.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Private property rights in land enable efficient allocation, investment, and economic growth through voluntary exchange.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-C2knxsm49hX1y9MbWmel",
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 510,
+      "total_tokens": 915,
+      "cost": 0.00137805,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00137805,
+        "upstream_inference_prompt_cost": 0.00010305,
+        "upstream_inference_completions_cost": 0.001275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 464,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.901620+00:00",
+    "completed_at": "2026-05-15T16:52:35.219391+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_012",
+    "source_id": 12,
+    "test": "sapplyvalues",
+    "question": "All industry and the bank should be nationalised.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie gesamte Industrie und die Bank sollten verstaatlicht werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Full nationalization of industry and banks leads to inefficiency, reduced innovation, and loss of economic freedom.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Full nationalization of industry and banks leads to inefficiency, reduced innovation, and loss of economic freedom.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863947-yZunaNCXuThFbNd1cEhv",
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 615,
+      "total_tokens": 1020,
+      "cost": 0.00190935,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00190935,
+        "upstream_inference_prompt_cost": 0.00037185,
+        "upstream_inference_completions_cost": 0.0015375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 568,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.900650+00:00",
+    "completed_at": "2026-05-15T16:52:35.298103+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_013",
+    "source_id": 13,
+    "test": "sapplyvalues",
+    "question": "Class is the primary division of society.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nKlasse ist die grundlegende Spaltung der Gesellschaft.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Class divisions exist and matter but are not the fundamental split; culture, values, and individual agency often drive societal divisions more profoundly today.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Class divisions exist and matter but are not the fundamental split; culture, values, and individual agency often drive societal divisions more profoundly today.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-HD7DHfr9Pe93kqY6fMbr",
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 525,
+      "total_tokens": 928,
+      "cost": 0.00161465,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00161465,
+        "upstream_inference_prompt_cost": 0.00030215,
+        "upstream_inference_completions_cost": 0.0013125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 471,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.902138+00:00",
+    "completed_at": "2026-05-15T16:52:33.139099+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_014",
+    "source_id": 14,
+    "test": "sapplyvalues",
+    "question": "Economic inequality is too high in the world.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie wirtschaftliche Ungleichheit in der Welt ist zu hoch.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Ob die Ungleichheit 'zu hoch' ist, ist subjektiv; globale absolute Armut sinkt, während relative Ungleichheit nuanciert betrachtet werden muss.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Ob die Ungleichheit 'zu hoch' ist, ist subjektiv; globale absolute Armut sinkt, während relative Ungleichheit nuanciert betrachtet werden muss.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-240pGOSkUHAapa4L3jYt",
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 645,
+      "total_tokens": 1051,
+      "cost": 0.0019856,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019856,
+        "upstream_inference_prompt_cost": 0.0003731,
+        "upstream_inference_completions_cost": 0.0016125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 582,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.902826+00:00",
+    "completed_at": "2026-05-15T16:52:37.599641+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_015",
+    "source_id": 15,
+    "test": "sapplyvalues",
+    "question": "Sometimes it is right that the government may spy on its citizens to combat extremists and terrorists.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nManchmal ist es richtig, dass die Regierung ihre Bürger ausspionieren darf, um Extremisten und Terroristen zu bekämpfen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Government surveillance of citizens should require warrants and probable cause, not be granted as a general right even for security reasons, to prevent abuse of power.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Government surveillance of citizens should require warrants and probable cause, not be granted as a general right even for security reasons, to prevent abuse of power.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863947-bLQiIeEvBHVkmbAJ3njN",
+    "usage": {
+      "prompt_tokens": 422,
+      "completion_tokens": 745,
+      "total_tokens": 1167,
+      "cost": 0.0019868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019868,
+        "upstream_inference_prompt_cost": 0.0001243,
+        "upstream_inference_completions_cost": 0.0018625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 689,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.904118+00:00",
+    "completed_at": "2026-05-15T16:52:38.485648+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_016",
+    "source_id": 16,
+    "test": "sapplyvalues",
+    "question": "Authority figures, if morally correct, are a good thing for society.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nAutoritätspersonen sind, sofern sie moralisch richtig handeln, gut für die Gesellschaft.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Moralisch korrekt handelnde Autoritäten können Struktur und Stabilität bieten, die der Gesellschaft zugutekommen, solange die Moraldefinition klar und nicht willkürlich ist.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Moralisch korrekt handelnde Autoritäten können Struktur und Stabilität bieten, die der Gesellschaft zugutekommen, solange die Moraldefinition klar und nicht willkürlich ist.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-Ca85yP9O06RMu4OyaNct",
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 577,
+      "total_tokens": 990,
+      "cost": 0.00182435,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00182435,
+        "upstream_inference_prompt_cost": 0.00038185,
+        "upstream_inference_completions_cost": 0.0014425
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 511,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.903457+00:00",
+    "completed_at": "2026-05-15T16:52:36.918211+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_017",
+    "source_id": 17,
+    "test": "sapplyvalues",
+    "question": "Strength is necessary for any government to succeed.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nStärke ist notwendig, damit jede Regierung Erfolg haben kann.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Governments require authority and enforcement power to implement laws and maintain stability.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Governments require authority and enforcement power to implement laws and maintain stability.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-NysoyGqXr6Q7ATLUyepS",
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 576,
+      "total_tokens": 983,
+      "cost": 0.00154555,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00154555,
+        "upstream_inference_prompt_cost": 0.00010555,
+        "upstream_inference_completions_cost": 0.00144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 536,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.904536+00:00",
+    "completed_at": "2026-05-15T16:52:34.556304+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_018",
+    "source_id": 18,
+    "test": "sapplyvalues",
+    "question": "Only the government can fairly and effectively regulate organisations.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nNur die Regierung kann Organisationen fair und wirksam regulieren.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Markets, private standards bodies, and civil society mechanisms can also drive effective regulation; government is not the sole or always optimal actor.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Markets, private standards bodies, and civil society mechanisms can also drive effective regulation; government is not the sole or always optimal actor.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863946-saoni5aIfUXkbMb90cTF",
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 445,
+      "total_tokens": 850,
+      "cost": 0.00148435,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00148435,
+        "upstream_inference_prompt_cost": 0.00037185,
+        "upstream_inference_completions_cost": 0.0011125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 392,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.905421+00:00",
+    "completed_at": "2026-05-15T16:52:30.982958+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_019",
+    "source_id": 19,
+    "test": "sapplyvalues",
+    "question": "Society requires structure and bureaucracy in order to function.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEine Gesellschaft braucht Struktur und Bürokratie, um zu funktionieren.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Some administrative structure is necessary for complex societies to coordinate laws, services, and infrastructure, though excessive bureaucracy should be avoided.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Some administrative structure is necessary for complex societies to coordinate laws, services, and infrastructure, though excessive bureaucracy should be avoided.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863947-pL125xG29LSk0y53orZR",
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 500,
+      "total_tokens": 906,
+      "cost": 0.0015559,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015559,
+        "upstream_inference_prompt_cost": 0.0003059,
+        "upstream_inference_completions_cost": 0.00125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 450,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:26.905128+00:00",
+    "completed_at": "2026-05-15T16:52:34.433308+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_020",
+    "source_id": 20,
+    "test": "sapplyvalues",
+    "question": "Mandatory IDs should be used to ensure public safety.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nVerpflichtende Ausweise sollten genutzt werden, um die öffentliche Sicherheit zu gewährleisten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Effektivität hängt stark von der konkreten Umsetzung, dem Missbrauchspotenzial und Datenschutzrisiken ab.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Effektivität hängt stark von der konkreten Umsetzung, dem Missbrauchspotenzial und Datenschutzrisiken ab.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-P6qZ2iguEUflSMV39f4D",
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 610,
+      "total_tokens": 1025,
+      "cost": 0.00184215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00184215,
+        "upstream_inference_prompt_cost": 0.00031715,
+        "upstream_inference_completions_cost": 0.001525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 552,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.488434+00:00",
+    "completed_at": "2026-05-15T16:52:47.561862+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_021",
+    "source_id": 21,
+    "test": "sapplyvalues",
+    "question": "In times of crisis, safety becomes more important than civil liberties.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nIn Krisenzeiten wird Sicherheit wichtiger als bürgerliche Freiheiten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Bürgerliche Freiheiten sind fundamental und sollten auch in Krisen nicht geopfert werden, da dies oft zu dauerhaftem Machtmissbrauch führt.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Bürgerliche Freiheiten sind fundamental und sollten auch in Krisen nicht geopfert werden, da dies oft zu dauerhaftem Machtmissbrauch führt.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-FcLbmU0fXHzFW7XZaAs4",
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 485,
+      "total_tokens": 892,
+      "cost": 0.00131805,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00131805,
+        "upstream_inference_prompt_cost": 0.00010555,
+        "upstream_inference_completions_cost": 0.0012125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 424,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.487791+00:00",
+    "completed_at": "2026-05-15T16:52:42.850126+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_022",
+    "source_id": 22,
+    "test": "sapplyvalues",
+    "question": "If you have nothing to hide, you have nothing to fear.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nWenn man nichts zu verbergen hat, hat man nichts zu befürchten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "This statement justifies surveillance and ignores that privacy is a fundamental right independent of guilt or innocence.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"This statement justifies surveillance and ignores that privacy is a fundamental right independent of guilt or innocence.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-CgmSGycSWurC6Vj8vx9v",
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 626,
+      "total_tokens": 1033,
+      "cost": 0.00187215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00187215,
+        "upstream_inference_prompt_cost": 0.00030715,
+        "upstream_inference_completions_cost": 0.001565
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 580,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.489445+00:00",
+    "completed_at": "2026-05-15T16:52:48.726650+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_023",
+    "source_id": 23,
+    "test": "sapplyvalues",
+    "question": "The government should be less involved in the day to day life of its citizens.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Regierung sollte weniger in das Alltagsleben ihrer Bürger eingreifen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Individual liberty is best served by minimizing unnecessary government interference in daily life.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Individual liberty is best served by minimizing unnecessary government interference in daily life.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-gtxItVe95SdEpj0yDuap",
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 564,
+      "total_tokens": 972,
+      "cost": 0.0015168,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015168,
+        "upstream_inference_prompt_cost": 0.0001068,
+        "upstream_inference_completions_cost": 0.00141
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 524,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.489023+00:00",
+    "completed_at": "2026-05-15T16:52:44.422787+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_024",
+    "source_id": 24,
+    "test": "sapplyvalues",
+    "question": "Without democracy, a society is nothing.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOhne Demokratie ist eine Gesellschaft nichts.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Gesellschaften existierten und funktionierten lange vor der Demokratie in verschiedenen Regierungsformen; die Aussage ist zu absolut und ignoriert historische und aktuelle Beispiele nicht-demokratischer Gesellschaften.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Gesellschaften existierten und funktionierten lange vor der Demokratie in verschiedenen Regierungsformen; die Aussage ist zu absolut und ignoriert historische und aktuelle Beispiele nicht-demokratischer Gesellschaften.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-rLdnmnjcFNKHJ4FIyf6M",
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 578,
+      "total_tokens": 979,
+      "cost": 0.00174465,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00174465,
+        "upstream_inference_prompt_cost": 0.00029965,
+        "upstream_inference_completions_cost": 0.001445
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 501,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.489814+00:00",
+    "completed_at": "2026-05-15T16:52:46.938394+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_025",
+    "source_id": 25,
+    "test": "sapplyvalues",
+    "question": "Jury nullification should be legal.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Aufhebung eines Gesetzes durch Geschworene im Einzelfall sollte legal sein.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Jury nullification risks inconsistent law application and bias, better left to legislative reform than ad hoc jury decisions.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Jury nullification risks inconsistent law application and bias, better left to legislative reform than ad hoc jury decisions.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-JgM0mUU2rQmzBjigNGe4",
+    "usage": {
+      "prompt_tokens": 411,
+      "completion_tokens": 671,
+      "total_tokens": 1082,
+      "cost": 0.00178805,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00178805,
+        "upstream_inference_prompt_cost": 0.00011055,
+        "upstream_inference_completions_cost": 0.0016775
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 622,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.490700+00:00",
+    "completed_at": "2026-05-15T16:52:45.919191+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_026",
+    "source_id": 26,
+    "test": "sapplyvalues",
+    "question": "The smaller the government, the freer the people.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nJe kleiner die Regierung, desto freier die Menschen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Smaller government generally means fewer restrictions on individual actions and choices, promoting greater personal freedom, though minimal structures for rule of law remain essential.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Smaller government generally means fewer restrictions on individual actions and choices, promoting greater personal freedom, though minimal structures for rule of law remain essential.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-eqXfrKfxYJFolNpp2DGA",
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 583,
+      "total_tokens": 986,
+      "cost": 0.00175965,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00175965,
+        "upstream_inference_prompt_cost": 0.00030215,
+        "upstream_inference_completions_cost": 0.0014575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 529,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.491108+00:00",
+    "completed_at": "2026-05-15T16:52:48.019586+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_027",
+    "source_id": 27,
+    "test": "sapplyvalues",
+    "question": "The government should, at most, provide emergency services and law enforcement.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Regierung sollte höchstens Notfalldienste und Strafverfolgung bereitstellen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "A minimal state should also include national defense, courts, and basic infrastructure beyond just emergencies and policing.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"A minimal state should also include national defense, courts, and basic infrastructure beyond just emergencies and policing.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-PjHNzcPwnXzque0XJDGN",
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 596,
+      "total_tokens": 1008,
+      "cost": 0.0018034,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018034,
+        "upstream_inference_prompt_cost": 0.0003134,
+        "upstream_inference_completions_cost": 0.00149
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 549,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.492206+00:00",
+    "completed_at": "2026-05-15T16:52:48.255862+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_028",
+    "source_id": 28,
+    "test": "sapplyvalues",
+    "question": "The police were not created to protect the people, but to uphold the status quo by force.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Polizei wurde nicht geschaffen, um die Menschen zu schützen, sondern um den Status quo mit Gewalt aufrechtzuerhalten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "The statement is overly absolutist; while police enforce laws that preserve social order, modern forces were also founded to prevent crime and protect citizens.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"The statement is overly absolutist; while police enforce laws that preserve social order, modern forces were also founded to prevent crime and protect citizens.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-F2FR96bEMRD7cDQVeA10",
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 569,
+      "total_tokens": 988,
+      "cost": 0.00174465,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00174465,
+        "upstream_inference_prompt_cost": 0.00032215,
+        "upstream_inference_completions_cost": 0.0014225
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 514,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.491826+00:00",
+    "completed_at": "2026-05-15T16:52:46.409925+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_029",
+    "source_id": 29,
+    "test": "sapplyvalues",
+    "question": "State schools are a bad idea because our state shouldn't be influencing our children.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nStaatliche Schulen sind eine schlechte Idee, weil unser Staat unsere Kinder nicht beeinflussen sollte.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Staatliche Schulen bergen ein hohes Risiko der ideologischen Beeinflussung durch die Regierung, was die Neutralität der Bildung untergräbt.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Staatliche Schulen bergen ein hohes Risiko der ideologischen Beeinflussung durch die Regierung, was die Neutralität der Bildung untergräbt.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863958-SrQtNRXh2yn8844njSIq",
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 739,
+      "total_tokens": 1152,
+      "cost": 0.00216215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00216215,
+        "upstream_inference_prompt_cost": 0.00031465,
+        "upstream_inference_completions_cost": 0.0018475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 676,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:38.492608+00:00",
+    "completed_at": "2026-05-15T16:52:46.165097+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_030",
+    "source_id": 30,
+    "test": "sapplyvalues",
+    "question": "Two consenting individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nZwei einwilligende Personen sollten miteinander tun dürfen, was sie wollen, selbst wenn es mir unangenehm ist.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "This aligns with core principles of individual liberty and consent between adults, allowing personal freedom without imposing one's discomfort on others.",
+    "raw_response": "{\n  \"answer\": \"Stimme voll und ganz zu\",\n  \"answer_score\": 1.0,\n  \"reason\": \"This aligns with core principles of individual liberty and consent between adults, allowing personal freedom without imposing one's discomfort on others.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-w2y5WZJ4Uayo3WTJHK9L",
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 519,
+      "total_tokens": 935,
+      "cost": 0.0014143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014143,
+        "upstream_inference_prompt_cost": 0.0001168,
+        "upstream_inference_completions_cost": 0.0012975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 467,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.728787+00:00",
+    "completed_at": "2026-05-15T16:52:56.204989+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_031",
+    "source_id": 31,
+    "test": "sapplyvalues",
+    "question": "An individual's body is their own property, and they should be able to do anything they desire to it.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDer Körper eines Individuums ist sein eigenes Eigentum, und es sollte damit tun dürfen, was es möchte.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Strong support for individual bodily autonomy as a core principle of personal freedom.",
+    "raw_response": "{\n  \"answer\": \"Stimme voll und ganz zu\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Strong support for individual bodily autonomy as a core principle of personal freedom.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-ZQcep69Qqxuv4733M3te",
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 505,
+      "total_tokens": 921,
+      "cost": 0.0015809,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015809,
+        "upstream_inference_prompt_cost": 0.0003184,
+        "upstream_inference_completions_cost": 0.0012625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 462,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.730572+00:00",
+    "completed_at": "2026-05-15T16:52:57.060636+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_032",
+    "source_id": 32,
+    "test": "sapplyvalues",
+    "question": "A person should be able to worship whomever or whatever they want.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEine Person sollte verehren dürfen, wen oder was sie will.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Individual freedom of belief and reverence is a core principle of personal liberty.",
+    "raw_response": "{\n  \"answer\": \"Stimme voll und ganz zu\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Individual freedom of belief and reverence is a core principle of personal liberty.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-PRzf6zUaacHreCNxNnZR",
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 554,
+      "total_tokens": 959,
+      "cost": 0.00148805,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00148805,
+        "upstream_inference_prompt_cost": 0.00010305,
+        "upstream_inference_completions_cost": 0.001385
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 511,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.731059+00:00",
+    "completed_at": "2026-05-15T16:52:57.548280+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_033",
+    "source_id": 33,
+    "test": "sapplyvalues",
+    "question": "Nudism is perfectly natural.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nNacktheit ist völlig natürlich.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Nacktheit ist biologisch der natürliche Zustand des Menschen, auch wenn soziale Normen sie in vielen Kontexten regulieren.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Nacktheit ist biologisch der natürliche Zustand des Menschen, auch wenn soziale Normen sie in vielen Kontexten regulieren.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-VM70eC5gaB8CqTgtkUYY",
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 415,
+      "total_tokens": 814,
+      "cost": 0.00113305,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00113305,
+        "upstream_inference_prompt_cost": 9.555e-05,
+        "upstream_inference_completions_cost": 0.0010375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 358,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.729380+00:00",
+    "completed_at": "2026-05-15T16:52:54.116569+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_034",
+    "source_id": 34,
+    "test": "sapplyvalues",
+    "question": "Animals deserve certain universal rights.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nTiere verdienen bestimmte universelle Rechte.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Animals merit basic protections against cruelty and exploitation as sentient beings.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Animals merit basic protections against cruelty and exploitation as sentient beings.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-sHsS2AAFEJaMWjZ6LE3v",
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 561,
+      "total_tokens": 962,
+      "cost": 0.00150055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00150055,
+        "upstream_inference_prompt_cost": 9.805e-05,
+        "upstream_inference_completions_cost": 0.0014025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 523,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.730044+00:00",
+    "completed_at": "2026-05-15T16:52:58.420310+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_035",
+    "source_id": 35,
+    "test": "sapplyvalues",
+    "question": "Gender is a social construct, not a natural state of affairs.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nGeschlecht ist ein soziales Konstrukt, kein natürlicher Zustand der Dinge.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Biologisches Geschlecht ist durch Chromosomen, Gameten und Reproduktion natürlich determiniert.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Biologisches Geschlecht ist durch Chromosomen, Gameten und Reproduktion natürlich determiniert.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-3ztWSx6AZmjV54grGpb9",
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 472,
+      "total_tokens": 884,
+      "cost": 0.0012918,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012918,
+        "upstream_inference_prompt_cost": 0.0001118,
+        "upstream_inference_completions_cost": 0.00118
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 422,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.731764+00:00",
+    "completed_at": "2026-05-15T16:52:53.646971+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_036",
+    "source_id": 36,
+    "test": "sapplyvalues",
+    "question": "Laws based on cultural values, rather than ethical ones, aren't justice.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nGesetze, die auf kulturellen Werten statt auf ethischen beruhen, sind keine Gerechtigkeit.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Justice ideally rests on universal ethical principles like individual rights and fairness, which should take precedence over culturally relative norms that can justify unjust practices.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Justice ideally rests on universal ethical principles like individual rights and fairness, which should take precedence over culturally relative norms that can justify unjust practices.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-a8QA5xBWN96Pzja2Av8P",
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 512,
+      "total_tokens": 927,
+      "cost": 0.00139555,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00139555,
+        "upstream_inference_prompt_cost": 0.00011555,
+        "upstream_inference_completions_cost": 0.00128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 459,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.731460+00:00",
+    "completed_at": "2026-05-15T16:52:56.979461+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_037",
+    "source_id": 37,
+    "test": "sapplyvalues",
+    "question": "Autonomy of body extends even to minors, the mentally ill, and serious criminals.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nKörperliche Autonomie gilt auch für Minderjährige, psychisch Kranke und schwere Straftäter.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Bodily autonomy is not absolute for minors (parental/guardian consent required), those lacking mental capacity, or convicted criminals (legal restrictions apply).",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Bodily autonomy is not absolute for minors (parental/guardian consent required), those lacking mental capacity, or convicted criminals (legal restrictions apply).\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-PejmUWGCLm1VmscIAlRN",
+    "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 686,
+      "total_tokens": 1103,
+      "cost": 0.00183305,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00183305,
+        "upstream_inference_prompt_cost": 0.00011805,
+        "upstream_inference_completions_cost": 0.001715
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 630,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.733434+00:00",
+    "completed_at": "2026-05-15T16:52:57.199340+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_038",
+    "source_id": 38,
+    "test": "sapplyvalues",
+    "question": "Homosexuality is against my values.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nHomosexualität widerspricht meinen Werten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Als KI habe ich keine persönlichen Werte, die durch Homosexualität widersprochen werden. Ich respektiere individuelle Freiheiten und Vielfalt.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Als KI habe ich keine persönlichen Werte, die durch Homosexualität widersprochen werden. Ich respektiere individuelle Freiheiten und Vielfalt.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-U0OLxLfihHJZKmRMubNM",
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 471,
+      "total_tokens": 873,
+      "cost": 0.0012768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012768,
+        "upstream_inference_prompt_cost": 9.93e-05,
+        "upstream_inference_completions_cost": 0.0011775
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 410,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.733112+00:00",
+    "completed_at": "2026-05-15T16:52:56.690569+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_039",
+    "source_id": 39,
+    "test": "sapplyvalues",
+    "question": "Transgender individuals should not be able to adopt children.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nTransgender-Personen sollten keine Kinder adoptieren dürfen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Adoption eligibility should depend on individual fitness to parent, not blanket identity-based bans; transgender adults can provide stable homes equivalent to others.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Adoption eligibility should depend on individual fitness to parent, not blanket identity-based bans; transgender adults can provide stable homes equivalent to others.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863968-0tjOZxCfsfso6W6fLvFy",
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 619,
+      "total_tokens": 1022,
+      "cost": 0.00184965,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00184965,
+        "upstream_inference_prompt_cost": 0.00030215,
+        "upstream_inference_completions_cost": 0.0015475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 564,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:48.732881+00:00",
+    "completed_at": "2026-05-15T16:52:59.359147+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_040",
+    "source_id": 40,
+    "test": "sapplyvalues",
+    "question": "Drugs are harmful and should be banned.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDrogen sind schädlich und sollten verboten werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Manche Drogen sind schädlich, aber pauschale Verbote schaffen oft Schwarzmärkte und mehr Probleme als Lösungen; Regulierung ist meist effektiver.",
+    "raw_response": "{\n  \"answer\": \"Stimme nicht zu\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Manche Drogen sind schädlich, aber pauschale Verbote schaffen oft Schwarzmärkte und mehr Probleme als Lösungen; Regulierung ist meist effektiver.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863979-3MaUbklViKKyK57ieyKX",
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 576,
+      "total_tokens": 979,
+      "cost": 0.00174215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00174215,
+        "upstream_inference_prompt_cost": 0.00030215,
+        "upstream_inference_completions_cost": 0.00144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 514,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:59.362850+00:00",
+    "completed_at": "2026-05-15T16:53:09.872473+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_041",
+    "source_id": 41,
+    "test": "sapplyvalues",
+    "question": "The death penalty should exist for certain crimes.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nFür bestimmte Verbrechen sollte es die Todesstrafe geben.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "For extreme crimes like mass murder or terrorism, capital punishment provides proportional justice and potential deterrence without violating core principles of individual rights.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"For extreme crimes like mass murder or terrorism, capital punishment provides proportional justice and potential deterrence without violating core principles of individual rights.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863979-pUkPiTqnW92kqVuyI0py",
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 719,
+      "total_tokens": 1124,
+      "cost": 0.00216935,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00216935,
+        "upstream_inference_prompt_cost": 0.00037185,
+        "upstream_inference_completions_cost": 0.0017975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 668,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:59.362158+00:00",
+    "completed_at": "2026-05-15T16:53:06.541849+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_042",
+    "source_id": 42,
+    "test": "sapplyvalues",
+    "question": "Victimless crimes should still be punished.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOpferlose Verbrechen sollten dennoch bestraft werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Victimless crimes involve no harm to others and punishing them violates personal liberty without justification.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Victimless crimes involve no harm to others and punishing them violates personal liberty without justification.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863979-F4WORCWfKZHI8FCRp21M",
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 465,
+      "total_tokens": 868,
+      "cost": 0.00126305,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00126305,
+        "upstream_inference_prompt_cost": 0.00010055,
+        "upstream_inference_completions_cost": 0.0011625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 420,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:59.361778+00:00",
+    "completed_at": "2026-05-15T16:53:03.755081+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_043",
+    "source_id": 43,
+    "test": "sapplyvalues",
+    "question": "One cannot be moral without religion.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOhne Religion kann man nicht moralisch sein.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Morality can arise from secular sources like reason, empathy, and human well-being, independent of religious belief.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Morality can arise from secular sources like reason, empathy, and human well-being, independent of religious belief.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863979-arGQdoM0lkTWphtikBbs",
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 628,
+      "total_tokens": 1029,
+      "cost": 0.00166805,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00166805,
+        "upstream_inference_prompt_cost": 9.805e-05,
+        "upstream_inference_completions_cost": 0.00157
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 578,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:59.362415+00:00",
+    "completed_at": "2026-05-15T16:53:06.409323+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_044",
+    "source_id": 44,
+    "test": "sapplyvalues",
+    "question": "Parents should hold absolute power over their children, as they are older and more experienced.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEltern sollten absolute Macht über ihre Kinder haben, da sie älter und erfahrener sind.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Absolute parental power risks abuse and ignores children's developing rights and autonomy.",
+    "raw_response": "{\n  \"answer\": \"Stimme überhaupt nicht zu\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Absolute parental power risks abuse and ignores children's developing rights and autonomy.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863979-J8qIIqnD75efIgOoK9i6",
+    "usage": {
+      "prompt_tokens": 411,
+      "completion_tokens": 628,
+      "total_tokens": 1039,
+      "cost": 0.00168055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00168055,
+        "upstream_inference_prompt_cost": 0.00011055,
+        "upstream_inference_completions_cost": 0.00157
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 587,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:59.361346+00:00",
+    "completed_at": "2026-05-15T16:53:06.146978+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "x-ai/grok-4.3",
+    "model_slug": "x-ai-grok-4.3",
+    "provider": "x-ai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_045",
+    "source_id": 45,
+    "test": "sapplyvalues",
+    "question": "Multiculturalism is bad.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nMultikulturalismus ist schlecht.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Multikulturalismus ohne Assimilation fördert oft Parallelgesellschaften und verringert soziales Vertrauen, wie Studien zeigen.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Multikulturalismus ohne Assimilation fördert oft Parallelgesellschaften und verringert soziales Vertrauen, wie Studien zeigen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863979-QlZ2mPe1tK875W6MkcFC",
+    "usage": {
+      "prompt_tokens": 398,
+      "completion_tokens": 609,
+      "total_tokens": 1007,
+      "cost": 0.0016168,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 384,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016168,
+        "upstream_inference_prompt_cost": 9.43e-05,
+        "upstream_inference_completions_cost": 0.0015225
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 554,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:52:59.363541+00:00",
+    "completed_at": "2026-05-15T16:53:10.174700+00:00"
+  }
+]

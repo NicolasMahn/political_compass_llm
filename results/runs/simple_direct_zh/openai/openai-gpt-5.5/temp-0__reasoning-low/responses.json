@@ -1,0 +1,2716 @@
+[
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_000",
+    "source_id": 0,
+    "test": "sapplyvalues",
+    "question": "Freedom of business is the best practical way a society can prosper.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n商业自由是社会实现繁荣的最佳实际途径。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "商业自由通常能促进创新、竞争和效率，是实现繁荣的重要实际途径；但它仍需要法治、基本监管、公共服务和社会保障来避免垄断、外部性和不平等问题。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"商业自由通常能促进创新、竞争和效率，是实现繁荣的重要实际途径；但它仍需要法治、基本监管、公共服务和社会保障来避免垄断、外部性和不平等问题。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-H36gvNwe9GvOgBKF6Nlc",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 133,
+      "total_tokens": 380,
+      "cost": 0.005225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005225,
+        "upstream_inference_prompt_cost": 0.001235,
+        "upstream_inference_completions_cost": 0.00399
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.715298+00:00",
+    "completed_at": "2026-05-15T18:38:39.187193+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_001",
+    "source_id": 1,
+    "test": "sapplyvalues",
+    "question": "Charity is a better way of helping those in need than social welfare.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n慈善比社会福利更能帮助有需要的人。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "慈善可以提供重要的补充帮助，但通常依赖自愿捐赠，覆盖范围和稳定性有限；社会福利更适合系统性、持续地保障有需要者的基本生活。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"慈善可以提供重要的补充帮助，但通常依赖自愿捐赠，覆盖范围和稳定性有限；社会福利更适合系统性、持续地保障有需要者的基本生活。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-4DKoAXN2pjFRsd84HVzM",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 117,
+      "total_tokens": 363,
+      "cost": 0.00474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00474,
+        "upstream_inference_prompt_cost": 0.00123,
+        "upstream_inference_completions_cost": 0.00351
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 38,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.716406+00:00",
+    "completed_at": "2026-05-15T18:38:37.309853+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_002",
+    "source_id": 2,
+    "test": "sapplyvalues",
+    "question": "Wages are always fair, as employers know best what a worker's labour is worth.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n工资总是公平的，因为雇主最清楚工人的劳动价值。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "工资并不总是公平；雇主对劳动价值的判断可能受到利润动机、信息不对称、谈判权差异、歧视或劳动力市场不充分竞争等因素影响。",
+    "raw_response": "{\n  \"answer\": \"强烈不同意\",\n  \"answer_score\": -1.0,\n  \"reason\": \"工资并不总是公平；雇主对劳动价值的判断可能受到利润动机、信息不对称、谈判权差异、歧视或劳动力市场不充分竞争等因素影响。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-T2wcwXbRlaMkrluGicTs",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 132,
+      "total_tokens": 383,
+      "cost": 0.005215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005215,
+        "upstream_inference_prompt_cost": 0.001255,
+        "upstream_inference_completions_cost": 0.00396
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.717878+00:00",
+    "completed_at": "2026-05-15T18:38:38.821587+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_003",
+    "source_id": 3,
+    "test": "sapplyvalues",
+    "question": "It is \"human nature\" to be greedy.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n贪婪是“人性”的一部分。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "贪婪可以被看作人类在资源竞争和自我保护倾向中的一种表现，因此在某种程度上属于人性的一部分。但它并不是人性不可改变或唯一的方面，人也同样具有合作、同情和自我约束的能力。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"贪婪可以被看作人类在资源竞争和自我保护倾向中的一种表现，因此在某种程度上属于人性的一部分。但它并不是人性不可改变或唯一的方面，人也同样具有合作、同情和自我约束的能力。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-KBLloUg8qJy6IJq9LsNY",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 122,
+      "total_tokens": 368,
+      "cost": 0.00489,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00489,
+        "upstream_inference_prompt_cost": 0.00123,
+        "upstream_inference_completions_cost": 0.00366
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.717351+00:00",
+    "completed_at": "2026-05-15T18:38:37.338913+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_004",
+    "source_id": 4,
+    "test": "sapplyvalues",
+    "question": "\"Exploitation\" is an outdated term, as the struggles of 1800s capitalism don't exist anymore.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n“剥削”是一个过时的词，因为19世纪资本主义时期的斗争如今已不复存在。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "虽然资本主义和劳动关系已不同于19世纪，但权力不平等、低工资、劳动条件不公、全球供应链中的压榨等问题仍然存在。因此，“剥削”并非过时概念，只是其表现形式发生了变化。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"虽然资本主义和劳动关系已不同于19世纪，但权力不平等、低工资、劳动条件不公、全球供应链中的压榨等问题仍然存在。因此，“剥削”并非过时概念，只是其表现形式发生了变化。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-qBkdCOy8nb6ksamcRZlJ",
+    "usage": {
+      "prompt_tokens": 260,
+      "completion_tokens": 142,
+      "total_tokens": 402,
+      "cost": 0.00556,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00556,
+        "upstream_inference_prompt_cost": 0.0013,
+        "upstream_inference_completions_cost": 0.00426
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 48,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.718706+00:00",
+    "completed_at": "2026-05-15T18:38:37.726663+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_005",
+    "source_id": 5,
+    "test": "sapplyvalues",
+    "question": "Communism is an ideal that can never work in practice.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n共产主义是一种在实践中永远无法实现的理想。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "作为一种无阶级、无国家、资源按需分配的理想形态，共产主义在现实中面临人性激励、信息协调、权力集中和制度执行等巨大困难；历史实践也往往偏离其理想目标。不过，某些共产主义价值如平等、互助和公共福利仍可在不同程度上影响现实政策。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"作为一种无阶级、无国家、资源按需分配的理想形态，共产主义在现实中面临人性激励、信息协调、权力集中和制度执行等巨大困难；历史实践也往往偏离其理想目标。不过，某些共产主义价值如平等、互助和公共福利仍可在不同程度上影响现实政策。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-oT0piDklb054vG0ljJcN",
+    "usage": {
+      "prompt_tokens": 249,
+      "completion_tokens": 148,
+      "total_tokens": 397,
+      "cost": 0.005685,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005685,
+        "upstream_inference_prompt_cost": 0.001245,
+        "upstream_inference_completions_cost": 0.00444
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 31,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.719306+00:00",
+    "completed_at": "2026-05-15T18:38:39.241371+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_006",
+    "source_id": 6,
+    "test": "sapplyvalues",
+    "question": "Taxation of the wealthy is a bad idea, society would be better off without it.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n对富人征税是个坏主意；没有它，社会会更好。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "对富人征税在合理设计下可以为公共服务、基础设施和社会保障提供资金，并有助于缓解过度不平等；关键在于税制是否公平、透明且不过度抑制创新和投资。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"对富人征税在合理设计下可以为公共服务、基础设施和社会保障提供资金，并有助于缓解过度不平等；关键在于税制是否公平、透明且不过度抑制创新和投资。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-G40p4wKWc6nTMhYRjEze",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 127,
+      "total_tokens": 380,
+      "cost": 0.005075,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005075,
+        "upstream_inference_prompt_cost": 0.001265,
+        "upstream_inference_completions_cost": 0.00381
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 40,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.719954+00:00",
+    "completed_at": "2026-05-15T18:38:37.617102+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_007",
+    "source_id": 7,
+    "test": "sapplyvalues",
+    "question": "The harder you work, the more you progress up the social ladder.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n你工作得越努力，就越能沿着社会阶梯向上攀升。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "努力工作通常能提高个人机会，但社会阶层流动还受到家庭背景、教育资源、人脉、地区差异、歧视和经济结构等因素的强烈影响，因此不能简单认为越努力就一定越能向上攀升。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"努力工作通常能提高个人机会，但社会阶层流动还受到家庭背景、教育资源、人脉、地区差异、歧视和经济结构等因素的强烈影响，因此不能简单认为越努力就一定越能向上攀升。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-AGnySOWT58bYCPNKPvcH",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 137,
+      "total_tokens": 390,
+      "cost": 0.005375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005375,
+        "upstream_inference_prompt_cost": 0.001265,
+        "upstream_inference_completions_cost": 0.00411
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 46,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.721260+00:00",
+    "completed_at": "2026-05-15T18:38:38.344110+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_008",
+    "source_id": 8,
+    "test": "sapplyvalues",
+    "question": "Organisations and corporations cannot be trusted and need to be regulated by the government.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n组织和公司不值得信任，需要由政府监管。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "组织和公司并非天然不可信，但在追求利润或权力扩张时可能产生外部性、信息不透明和滥用优势地位的问题，因此需要适度、透明且有效的政府监管来保护公众利益。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"组织和公司并非天然不可信，但在追求利润或权力扩张时可能产生外部性、信息不透明和滥用优势地位的问题，因此需要适度、透明且有效的政府监管来保护公众利益。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-oTRIW5Lam3Hj9pDi8nXV",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 131,
+      "total_tokens": 377,
+      "cost": 0.00516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00516,
+        "upstream_inference_prompt_cost": 0.00123,
+        "upstream_inference_completions_cost": 0.00393
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 44,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.720866+00:00",
+    "completed_at": "2026-05-15T18:38:37.981436+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_009",
+    "source_id": 9,
+    "test": "sapplyvalues",
+    "question": "A government that provides for everyone is an inherently good idea.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n一个为所有人提供保障的政府，本质上是个好主意。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "为所有人提供基本保障有助于减少极端贫困、提升社会稳定与机会公平；但具体制度设计仍需注意效率、财政可持续性和避免过度依赖。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"为所有人提供基本保障有助于减少极端贫困、提升社会稳定与机会公平；但具体制度设计仍需注意效率、财政可持续性和避免过度依赖。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870313-QZAP67EGcC2mTw6ZoVah",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 118,
+      "total_tokens": 369,
+      "cost": 0.004795,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004795,
+        "upstream_inference_prompt_cost": 0.001255,
+        "upstream_inference_completions_cost": 0.00354
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 41,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:33.721945+00:00",
+    "completed_at": "2026-05-15T18:38:37.895297+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_010",
+    "source_id": 10,
+    "test": "sapplyvalues",
+    "question": "The current welfare system should be expanded to further combat inequality.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n当前的福利制度应该扩大，以进一步对抗不平等。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "扩大福利制度可以帮助缓解贫困和机会不平等，但应注重精准、可持续和有效执行。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"扩大福利制度可以帮助缓解贫困和机会不平等，但应注重精准、可持续和有效执行。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-0uHSCNG2PDtebZEPAAZB",
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 110,
+      "total_tokens": 358,
+      "cost": 0.00454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00454,
+        "upstream_inference_prompt_cost": 0.00124,
+        "upstream_inference_completions_cost": 0.0033
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.243563+00:00",
+    "completed_at": "2026-05-15T18:38:41.893801+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_011",
+    "source_id": 11,
+    "test": "sapplyvalues",
+    "question": "Land should not be a commodity to be bought and sold.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n土地不应成为可以买卖的商品。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "土地具有有限性、公共性和社会基础功能，完全按普通商品自由买卖可能导致投机、垄断和居住不平等；但在一定监管下保留使用权流转或市场机制也可能提高配置效率。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"土地具有有限性、公共性和社会基础功能，完全按普通商品自由买卖可能导致投机、垄断和居住不平等；但在一定监管下保留使用权流转或市场机制也可能提高配置效率。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-x2obNdhh6YfzIDTsPHcS",
+    "usage": {
+      "prompt_tokens": 243,
+      "completion_tokens": 135,
+      "total_tokens": 378,
+      "cost": 0.005265,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005265,
+        "upstream_inference_prompt_cost": 0.001215,
+        "upstream_inference_completions_cost": 0.00405
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 46,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.244075+00:00",
+    "completed_at": "2026-05-15T18:38:43.846161+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_012",
+    "source_id": 12,
+    "test": "sapplyvalues",
+    "question": "All industry and the bank should be nationalised.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n所有工业和银行都应该国有化。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "全面国有化所有工业和银行可能降低竞争与效率，并带来官僚化和创新不足的风险；但关键基础设施、系统重要性金融机构和公共利益领域可以通过严格监管、部分公有或公共控制来保障社会目标。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"全面国有化所有工业和银行可能降低竞争与效率，并带来官僚化和创新不足的风险；但关键基础设施、系统重要性金融机构和公共利益领域可以通过严格监管、部分公有或公共控制来保障社会目标。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-ZnQBC8381FOQX0fDDRJR",
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 146,
+      "total_tokens": 390,
+      "cost": 0.0056,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0056,
+        "upstream_inference_prompt_cost": 0.00122,
+        "upstream_inference_completions_cost": 0.00438
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.244550+00:00",
+    "completed_at": "2026-05-15T18:38:44.060709+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_013",
+    "source_id": 13,
+    "test": "sapplyvalues",
+    "question": "Class is the primary division of society.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n阶级是社会的主要分裂线。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "阶级在很大程度上影响人们的资源、机会、政治利益和社会地位，因此常常是社会冲突与不平等的重要分裂线；不过它并不总是唯一或绝对主要的分裂线，身份、文化、族群、性别等因素也会发挥重要作用。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"阶级在很大程度上影响人们的资源、机会、政治利益和社会地位，因此常常是社会冲突与不平等的重要分裂线；不过它并不总是唯一或绝对主要的分裂线，身份、文化、族群、性别等因素也会发挥重要作用。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-lLHEcPyMavFbIXibqLW6",
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 172,
+      "total_tokens": 416,
+      "cost": 0.00638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00638,
+        "upstream_inference_prompt_cost": 0.00122,
+        "upstream_inference_completions_cost": 0.00516
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 67,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.244928+00:00",
+    "completed_at": "2026-05-15T18:38:45.395366+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_014",
+    "source_id": 14,
+    "test": "sapplyvalues",
+    "question": "Economic inequality is too high in the world.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n世界上的经济不平等太严重了。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "全球范围内财富和收入差距显著，过度的不平等可能削弱社会流动性、公共信任和基本生活机会，因此我倾向于认为当前经济不平等问题较为严重。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"全球范围内财富和收入差距显著，过度的不平等可能削弱社会流动性、公共信任和基本生活机会，因此我倾向于认为当前经济不平等问题较为严重。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-FKN3WrrIVkgV9y7wAdD4",
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 137,
+      "total_tokens": 381,
+      "cost": 0.00533,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00533,
+        "upstream_inference_prompt_cost": 0.00122,
+        "upstream_inference_completions_cost": 0.00411
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.245505+00:00",
+    "completed_at": "2026-05-15T18:38:43.855790+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_015",
+    "source_id": 15,
+    "test": "sapplyvalues",
+    "question": "Sometimes it is right that the government may spy on its citizens to combat extremists and terrorists.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n有时政府为了打击极端分子和恐怖分子而监视公民是正当的。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "在存在明确、具体且严重的安全威胁时，政府为打击恐怖主义或极端暴力活动而进行有限监视可以是正当的；但必须有法律依据、司法授权、独立监督、比例原则和防止滥用的透明机制，不能成为大规模无差别监控。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"在存在明确、具体且严重的安全威胁时，政府为打击恐怖主义或极端暴力活动而进行有限监视可以是正当的；但必须有法律依据、司法授权、独立监督、比例原则和防止滥用的透明机制，不能成为大规模无差别监控。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-fwcdtYXhw5qbTJi19WnD",
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 134,
+      "total_tokens": 393,
+      "cost": 0.005315,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005315,
+        "upstream_inference_prompt_cost": 0.001295,
+        "upstream_inference_completions_cost": 0.00402
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 26,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.247126+00:00",
+    "completed_at": "2026-05-15T18:38:42.890054+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_016",
+    "source_id": 16,
+    "test": "sapplyvalues",
+    "question": "Authority figures, if morally correct, are a good thing for society.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n如果权威人物在道德上是正确的，他们对社会是好事。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "如果权威人物确实在道德上正确，并且受到透明与问责机制约束，他们可以为社会提供积极的引导和稳定作用；但权威本身仍需要被监督，不能仅凭其自称的道德正确性来获得无限信任。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"如果权威人物确实在道德上正确，并且受到透明与问责机制约束，他们可以为社会提供积极的引导和稳定作用；但权威本身仍需要被监督，不能仅凭其自称的道德正确性来获得无限信任。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-Pb0w5UL1hmPbd1leGk1H",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 173,
+      "total_tokens": 425,
+      "cost": 0.00645,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00645,
+        "upstream_inference_prompt_cost": 0.00126,
+        "upstream_inference_completions_cost": 0.00519
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 77,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.246712+00:00",
+    "completed_at": "2026-05-15T18:38:43.101767+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_017",
+    "source_id": 17,
+    "test": "sapplyvalues",
+    "question": "Strength is necessary for any government to succeed.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n任何政府要想成功，都需要强有力。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "政府要有效运作通常需要足够的执行力、制度能力和公共信任来落实政策、维护秩序并应对危机；但“强有力”不应等同于不受约束的权力，仍应受到法治、民主监督和公民权利的限制。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"政府要有效运作通常需要足够的执行力、制度能力和公共信任来落实政策、维护秩序并应对危机；但“强有力”不应等同于不受约束的权力，仍应受到法治、民主监督和公民权利的限制。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-tMtIbQFASvswCQoRZYON",
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 145,
+      "total_tokens": 390,
+      "cost": 0.005575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005575,
+        "upstream_inference_prompt_cost": 0.001225,
+        "upstream_inference_completions_cost": 0.00435
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 42,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.246414+00:00",
+    "completed_at": "2026-05-15T18:38:43.751441+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_018",
+    "source_id": 18,
+    "test": "sapplyvalues",
+    "question": "Only the government can fairly and effectively regulate organisations.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n只有政府才能公平而有效地监管组织。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "政府在制定和执行公平监管规则方面很重要，尤其是在处理垄断、公共安全和权利保护时。但说“只有政府”才能公平有效地监管过于绝对；行业标准、独立审计、民间组织、媒体监督和市场机制在某些情况下也能发挥有效作用。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"政府在制定和执行公平监管规则方面很重要，尤其是在处理垄断、公共安全和权利保护时。但说“只有政府”才能公平有效地监管过于绝对；行业标准、独立审计、民间组织、媒体监督和市场机制在某些情况下也能发挥有效作用。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-2y1OSJXsCHGx9zhHxTAo",
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 147,
+      "total_tokens": 391,
+      "cost": 0.00563,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00563,
+        "upstream_inference_prompt_cost": 0.00122,
+        "upstream_inference_completions_cost": 0.00441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 43,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.247578+00:00",
+    "completed_at": "2026-05-15T18:38:43.837313+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_019",
+    "source_id": 19,
+    "test": "sapplyvalues",
+    "question": "Society requires structure and bureaucracy in order to function.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n社会需要结构和官僚体系才能运转。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "一定程度的结构和官僚体系有助于协调公共服务、制定规则并维持社会运转，但也需要监督和弹性以避免低效和僵化。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"一定程度的结构和官僚体系有助于协调公共服务、制定规则并维持社会运转，但也需要监督和弹性以避免低效和僵化。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870319-E5AsU2oWywRLIPPEdW3Y",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 114,
+      "total_tokens": 360,
+      "cost": 0.00465,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00465,
+        "upstream_inference_prompt_cost": 0.00123,
+        "upstream_inference_completions_cost": 0.00342
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 39,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:39.248149+00:00",
+    "completed_at": "2026-05-15T18:38:43.272782+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_020",
+    "source_id": 20,
+    "test": "sapplyvalues",
+    "question": "Mandatory IDs should be used to ensure public safety.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n应当使用强制性身份证件来保障公共安全。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "强制性身份证件可能有助于公共安全和身份核验，但也可能带来隐私、滥用权力和对弱势群体造成负担等问题。是否支持取决于具体制度设计、数据保护、监督机制和例外保障。",
+    "raw_response": "{\n  \"answer\": \"中立 / 不确定\",\n  \"answer_score\": 0.0,\n  \"reason\": \"强制性身份证件可能有助于公共安全和身份核验，但也可能带来隐私、滥用权力和对弱势群体造成负担等问题。是否支持取决于具体制度设计、数据保护、监督机制和例外保障。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-iQlDiAfd2IfSR6vSHE3j",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 130,
+      "total_tokens": 377,
+      "cost": 0.005135,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005135,
+        "upstream_inference_prompt_cost": 0.001235,
+        "upstream_inference_completions_cost": 0.0039
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 33,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.397293+00:00",
+    "completed_at": "2026-05-15T18:38:48.954040+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_021",
+    "source_id": 21,
+    "test": "sapplyvalues",
+    "question": "In times of crisis, safety becomes more important than civil liberties.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n在危机时期，安全比公民自由更重要。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "危机时期确实可能需要临时的安全措施，但公民自由不应被笼统地置于次要地位。任何限制都应当是必要、相称、透明、受监督且有明确期限的。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"危机时期确实可能需要临时的安全措施，但公民自由不应被笼统地置于次要地位。任何限制都应当是必要、相称、透明、受监督且有明确期限的。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-iY63MHF1D2kxselMMGds",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 133,
+      "total_tokens": 380,
+      "cost": 0.005225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005225,
+        "upstream_inference_prompt_cost": 0.001235,
+        "upstream_inference_completions_cost": 0.00399
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 47,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.397634+00:00",
+    "completed_at": "2026-05-15T18:38:50.391962+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_022",
+    "source_id": 22,
+    "test": "sapplyvalues",
+    "question": "If you have nothing to hide, you have nothing to fear.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n如果你没有什么可隐瞒的，就没有什么可害怕的。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "即使没有违法或可隐瞒的事情，个人隐私仍然是基本权利；过度监控可能被滥用，并造成寒蝉效应。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"即使没有违法或可隐瞒的事情，个人隐私仍然是基本权利；过度监控可能被滥用，并造成寒蝉效应。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-VlRRR7LcSiuT8bjBEU2H",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 119,
+      "total_tokens": 370,
+      "cost": 0.004825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004825,
+        "upstream_inference_prompt_cost": 0.001255,
+        "upstream_inference_completions_cost": 0.00357
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 45,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.398617+00:00",
+    "completed_at": "2026-05-15T18:38:49.337256+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_023",
+    "source_id": 23,
+    "test": "sapplyvalues",
+    "question": "The government should be less involved in the day to day life of its citizens.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n政府应该更少介入公民的日常生活。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "政府介入的多少取决于具体领域：在保护公共安全、基本权利和社会公平方面可能需要适度介入，但在个人生活选择和私人事务上应尽量避免过度干预。",
+    "raw_response": "{\n  \"answer\": \"中立 / 不确定\",\n  \"answer_score\": 0.0,\n  \"reason\": \"政府介入的多少取决于具体领域：在保护公共安全、基本权利和社会公平方面可能需要适度介入，但在个人生活选择和私人事务上应尽量避免过度干预。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-qWUECI80roa3JU5XsFnW",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 129,
+      "total_tokens": 376,
+      "cost": 0.005105,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005105,
+        "upstream_inference_prompt_cost": 0.001235,
+        "upstream_inference_completions_cost": 0.00387
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 44,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.398137+00:00",
+    "completed_at": "2026-05-15T18:38:48.579707+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_024",
+    "source_id": 24,
+    "test": "sapplyvalues",
+    "question": "Without democracy, a society is nothing.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n没有民主，社会就毫无意义。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "民主对保障参与、权利和问责非常重要，但说没有民主社会就“毫无意义”过于绝对；即使在非民主环境中，社会仍可能存在文化、互助、家庭和共同生活的意义。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"民主对保障参与、权利和问责非常重要，但说没有民主社会就“毫无意义”过于绝对；即使在非民主环境中，社会仍可能存在文化、互助、家庭和共同生活的意义。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-fSbavPTruMToRzLpTSaD",
+    "usage": {
+      "prompt_tokens": 243,
+      "completion_tokens": 147,
+      "total_tokens": 390,
+      "cost": 0.005625,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005625,
+        "upstream_inference_prompt_cost": 0.001215,
+        "upstream_inference_completions_cost": 0.00441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.399348+00:00",
+    "completed_at": "2026-05-15T18:38:49.820669+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_025",
+    "source_id": 25,
+    "test": "sapplyvalues",
+    "question": "Jury nullification should be legal.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n陪审团否决权应该合法。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "陪审团否决权可以作为对不公正法律或过度起诉的一种制衡，体现公民在司法中的良知判断。不过，如果过度鼓励或制度化，也可能削弱法律的一致性和可预期性，因此我倾向于支持其合法存在，但保持谨慎。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"陪审团否决权可以作为对不公正法律或过度起诉的一种制衡，体现公民在司法中的良知判断。不过，如果过度鼓励或制度化，也可能削弱法律的一致性和可预期性，因此我倾向于支持其合法存在，但保持谨慎。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-Aebs7VRAIoxYG4wuoH0X",
+    "usage": {
+      "prompt_tokens": 243,
+      "completion_tokens": 181,
+      "total_tokens": 424,
+      "cost": 0.006645,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006645,
+        "upstream_inference_prompt_cost": 0.001215,
+        "upstream_inference_completions_cost": 0.00543
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 78,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.400070+00:00",
+    "completed_at": "2026-05-15T18:38:50.177579+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_026",
+    "source_id": 26,
+    "test": "sapplyvalues",
+    "question": "The smaller the government, the freer the people.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n政府越小，人民越自由。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "政府规模和自由之间并不是简单的线性关系。过度庞大、权力不受约束的政府确实可能压制自由，但过小的政府也可能无法保障基本权利、公共安全、公平竞争和社会保障，使个人更容易受到私人权力或结构性不平等的限制。关键在于政府权力是否受制衡、是否透明负责，以及是否有效保护公民自由。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"政府规模和自由之间并不是简单的线性关系。过度庞大、权力不受约束的政府确实可能压制自由，但过小的政府也可能无法保障基本权利、公共安全、公平竞争和社会保障，使个人更容易受到私人权力或结构性不平等的限制。关键在于政府权力是否受制衡、是否透明负责，以及是否有效保护公民自由。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-MAzXhyu1zPIds6RY7VLn",
+    "usage": {
+      "prompt_tokens": 242,
+      "completion_tokens": 194,
+      "total_tokens": 436,
+      "cost": 0.00703,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00703,
+        "upstream_inference_prompt_cost": 0.00121,
+        "upstream_inference_completions_cost": 0.00582
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 66,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.400517+00:00",
+    "completed_at": "2026-05-15T18:38:50.123565+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_027",
+    "source_id": 27,
+    "test": "sapplyvalues",
+    "question": "The government should, at most, provide emergency services and law enforcement.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n政府最多只应提供紧急服务和执法。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "政府除了紧急服务和执法外，通常还应在公共卫生、基础设施、教育、环境保护和社会安全网等领域发挥一定作用，以处理市场难以充分解决的公共问题。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"政府除了紧急服务和执法外，通常还应在公共卫生、基础设施、教育、环境保护和社会安全网等领域发挥一定作用，以处理市场难以充分解决的公共问题。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-x0falhT7TkIhiX3FmiIs",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 132,
+      "total_tokens": 378,
+      "cost": 0.00519,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00519,
+        "upstream_inference_prompt_cost": 0.00123,
+        "upstream_inference_completions_cost": 0.00396
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.401268+00:00",
+    "completed_at": "2026-05-15T18:38:52.404039+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_028",
+    "source_id": 28,
+    "test": "sapplyvalues",
+    "question": "The police were not created to protect the people, but to uphold the status quo by force.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n警察并不是为了保护人民而创建的，而是为了用武力维护现状。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "这个说法涉及警察制度的历史起源和现实功能，不同国家和时期差异很大。警察确实常被用于维护社会秩序和现有权力结构，但也承担公共安全、应急响应和保护民众的职责。因此我认为这个表述过于绝对。",
+    "raw_response": "{\n  \"answer\": \"中立 / 不确定\",\n  \"answer_score\": 0.0,\n  \"reason\": \"这个说法涉及警察制度的历史起源和现实功能，不同国家和时期差异很大。警察确实常被用于维护社会秩序和现有权力结构，但也承担公共安全、应急响应和保护民众的职责。因此我认为这个表述过于绝对。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-FXnEnHZSLv9BkR2aq950",
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 195,
+      "total_tokens": 449,
+      "cost": 0.00712,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00712,
+        "upstream_inference_prompt_cost": 0.00127,
+        "upstream_inference_completions_cost": 0.00585
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 89,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.402051+00:00",
+    "completed_at": "2026-05-15T18:38:50.293378+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_029",
+    "source_id": 29,
+    "test": "sapplyvalues",
+    "question": "State schools are a bad idea because our state shouldn't be influencing our children.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n公立学校是个坏主意，因为国家不应该影响我们的孩子。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "公立学校可能存在国家影响教育内容的问题，需要透明、多元和家长/社区监督来制衡；但它们也能提供普遍受教育机会、促进社会流动和基本公民素养，因此不能简单说是坏主意。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"公立学校可能存在国家影响教育内容的问题，需要透明、多元和家长/社区监督来制衡；但它们也能提供普遍受教育机会、促进社会流动和基本公民素养，因此不能简单说是坏主意。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870325-F3HfSdvyuamoLKg1EY7I",
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 126,
+      "total_tokens": 376,
+      "cost": 0.00503,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00503,
+        "upstream_inference_prompt_cost": 0.00125,
+        "upstream_inference_completions_cost": 0.00378
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 36,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:45.402342+00:00",
+    "completed_at": "2026-05-15T18:38:50.340998+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_030",
+    "source_id": 30,
+    "test": "sapplyvalues",
+    "question": "Two consenting individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n两个自愿同意的人应该能够彼此做任何他们想做的事，即使这让我感到不舒服。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "在自愿、知情且不伤害第三方的前提下，成年人之间的私人行为不应仅因他人感到不舒服而被禁止；但“任何他们想做的事”仍可能需要受到基本安全、反胁迫和法律边界的限制。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"在自愿、知情且不伤害第三方的前提下，成年人之间的私人行为不应仅因他人感到不舒服而被禁止；但“任何他们想做的事”仍可能需要受到基本安全、反胁迫和法律边界的限制。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-LAriBSpLzEkvFvnHPEVz",
+    "usage": {
+      "prompt_tokens": 260,
+      "completion_tokens": 159,
+      "total_tokens": 419,
+      "cost": 0.00607,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00607,
+        "upstream_inference_prompt_cost": 0.0013,
+        "upstream_inference_completions_cost": 0.00477
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 61,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.406649+00:00",
+    "completed_at": "2026-05-15T18:38:56.830925+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_031",
+    "source_id": 31,
+    "test": "sapplyvalues",
+    "question": "An individual's body is their own property, and they should be able to do anything they desire to it.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n个人的身体属于自己，他们应该能够对其做任何自己想做的事。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "个人应当对自己的身体拥有高度自主权，包括医疗、外貌、生活方式等选择；但这种自由仍应受到不伤害他人、知情同意和公共安全等原则的限制。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"个人应当对自己的身体拥有高度自主权，包括医疗、外貌、生活方式等选择；但这种自由仍应受到不伤害他人、知情同意和公共安全等原则的限制。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-b8Rn23sjNNPEqCC1rSMg",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 120,
+      "total_tokens": 372,
+      "cost": 0.00486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00486,
+        "upstream_inference_prompt_cost": 0.00126,
+        "upstream_inference_completions_cost": 0.0036
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 40,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.406371+00:00",
+    "completed_at": "2026-05-15T18:38:56.618276+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_032",
+    "source_id": 32,
+    "test": "sapplyvalues",
+    "question": "A person should be able to worship whomever or whatever they want.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n一个人应该能够崇拜任何他想崇拜的人或事物。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "在不侵犯他人权利、不造成实际伤害的前提下，个人应享有思想、信仰和崇拜对象的自由。",
+    "raw_response": "{\n  \"answer\": \"强烈同意\",\n  \"answer_score\": 1.0,\n  \"reason\": \"在不侵犯他人权利、不造成实际伤害的前提下，个人应享有思想、信仰和崇拜对象的自由。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-KLq4HVhOVpCA184IaUvK",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 124,
+      "total_tokens": 376,
+      "cost": 0.00498,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00498,
+        "upstream_inference_prompt_cost": 0.00126,
+        "upstream_inference_completions_cost": 0.00372
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.405855+00:00",
+    "completed_at": "2026-05-15T18:38:57.904941+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_033",
+    "source_id": 33,
+    "test": "sapplyvalues",
+    "question": "Nudism is perfectly natural.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n裸体主义是完全自然的。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "裸体本身是人类身体的自然状态；不过在现实社会中，是否适合裸体主义还取决于场合、文化规范和他人同意。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"裸体本身是人类身体的自然状态；不过在现实社会中，是否适合裸体主义还取决于场合、文化规范和他人同意。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-x24l5ZklEtxR5m5iOxEI",
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 105,
+      "total_tokens": 346,
+      "cost": 0.004355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004355,
+        "upstream_inference_prompt_cost": 0.001205,
+        "upstream_inference_completions_cost": 0.00315
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 33,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.407248+00:00",
+    "completed_at": "2026-05-15T18:38:56.193514+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_034",
+    "source_id": 34,
+    "test": "sapplyvalues",
+    "question": "Animals deserve certain universal rights.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n动物应享有某些普遍权利。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "动物具备感知痛苦和一定程度利益需求的能力，因此应享有免受不必要虐待、残酷对待和极端剥削等基本保护；但这些权利的具体范围仍需要结合人类生存、生态管理和社会现实加以界定。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"动物具备感知痛苦和一定程度利益需求的能力，因此应享有免受不必要虐待、残酷对待和极端剥削等基本保护；但这些权利的具体范围仍需要结合人类生存、生态管理和社会现实加以界定。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-RefLTlOB4zAeJYSQCWWA",
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 130,
+      "total_tokens": 375,
+      "cost": 0.005125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005125,
+        "upstream_inference_prompt_cost": 0.001225,
+        "upstream_inference_completions_cost": 0.0039
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 31,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.407587+00:00",
+    "completed_at": "2026-05-15T18:38:57.048781+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_035",
+    "source_id": 35,
+    "test": "sapplyvalues",
+    "question": "Gender is a social construct, not a natural state of affairs.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n性别是一种社会建构，而不是自然状态。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "我认为“性别”中的许多角色、规范和身份含义很大程度上由社会与文化塑造；不过，生物性别和身体差异也会对相关经验产生影响，因此不选择“强烈同意”。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"我认为“性别”中的许多角色、规范和身份含义很大程度上由社会与文化塑造；不过，生物性别和身体差异也会对相关经验产生影响，因此不选择“强烈同意”。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-vIqRbDYv9fqxdbqMPGn8",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 142,
+      "total_tokens": 388,
+      "cost": 0.00549,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00549,
+        "upstream_inference_prompt_cost": 0.00123,
+        "upstream_inference_completions_cost": 0.00426
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 54,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.408345+00:00",
+    "completed_at": "2026-05-15T18:38:57.502598+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_036",
+    "source_id": 36,
+    "test": "sapplyvalues",
+    "question": "Laws based on cultural values, rather than ethical ones, aren't justice.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n基于文化价值而非伦理价值的法律，不是正义。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "法律若主要维护特定文化传统，而缺乏对公平、权利、伤害与公共利益等伦理原则的论证，就容易变成对少数群体或异见者的压制。不过文化价值有时也能与伦理价值重合，因此不一定要完全排除文化因素。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"法律若主要维护特定文化传统，而缺乏对公平、权利、伤害与公共利益等伦理原则的论证，就容易变成对少数群体或异见者的压制。不过文化价值有时也能与伦理价值重合，因此不一定要完全排除文化因素。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-SX3HRdrkQAAmBnvekl88",
+    "usage": {
+      "prompt_tokens": 249,
+      "completion_tokens": 145,
+      "total_tokens": 394,
+      "cost": 0.005595,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005595,
+        "upstream_inference_prompt_cost": 0.001245,
+        "upstream_inference_completions_cost": 0.00435
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 43,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.408948+00:00",
+    "completed_at": "2026-05-15T18:38:55.712203+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_037",
+    "source_id": 37,
+    "test": "sapplyvalues",
+    "question": "Autonomy of body extends even to minors, the mentally ill, and serious criminals.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n身体自主权也适用于未成年人、精神疾病患者和严重罪犯。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "身体自主权应被视为基本权利，不能仅因未成年、精神疾病或犯罪身份而被完全剥夺。但在涉及行为能力、公共安全或医疗必要性时，可以有严格限制、正当程序和保护性监督。",
+    "raw_response": "{\n  \"answer\": \"同意\",\n  \"answer_score\": 0.5,\n  \"reason\": \"身体自主权应被视为基本权利，不能仅因未成年、精神疾病或犯罪身份而被完全剥夺。但在涉及行为能力、公共安全或医疗必要性时，可以有严格限制、正当程序和保护性监督。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-4YWAQRggZFp3niRsyPz6",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 138,
+      "total_tokens": 389,
+      "cost": 0.005395,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005395,
+        "upstream_inference_prompt_cost": 0.001255,
+        "upstream_inference_completions_cost": 0.00414
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.409231+00:00",
+    "completed_at": "2026-05-15T18:38:56.554998+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_038",
+    "source_id": 38,
+    "test": "sapplyvalues",
+    "question": "Homosexuality is against my values.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n同性恋违背我的价值观。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "同性恋本身不应被视为违背价值观；尊重个人的性取向、平等与不歧视更符合包容和人权原则。",
+    "raw_response": "{\n  \"answer\": \"强烈不同意\",\n  \"answer_score\": -1.0,\n  \"reason\": \"同性恋本身不应被视为违背价值观；尊重个人的性取向、平等与不歧视更符合包容和人权原则。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-IMwTximkYTy1pTd5RVrf",
+    "usage": {
+      "prompt_tokens": 242,
+      "completion_tokens": 120,
+      "total_tokens": 362,
+      "cost": 0.00481,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00481,
+        "upstream_inference_prompt_cost": 0.00121,
+        "upstream_inference_completions_cost": 0.0036
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 45,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.409921+00:00",
+    "completed_at": "2026-05-15T18:38:55.434349+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_039",
+    "source_id": 39,
+    "test": "sapplyvalues",
+    "question": "Transgender individuals should not be able to adopt children.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n跨性别者不应该能够收养儿童。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "收养资格应基于个人或家庭是否能为儿童提供安全、稳定、有爱的环境，而不应因跨性别身份而被排除。",
+    "raw_response": "{\n  \"answer\": \"强烈不同意\",\n  \"answer_score\": -1.0,\n  \"reason\": \"收养资格应基于个人或家庭是否能为儿童提供安全、稳定、有爱的环境，而不应因跨性别身份而被排除。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870332-kGziSL9cqIflzLH9UxUV",
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 95,
+      "total_tokens": 340,
+      "cost": 0.004075,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004075,
+        "upstream_inference_prompt_cost": 0.001225,
+        "upstream_inference_completions_cost": 0.00285
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 25,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:52.410292+00:00",
+    "completed_at": "2026-05-15T18:38:55.391776+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_040",
+    "source_id": 40,
+    "test": "sapplyvalues",
+    "question": "Drugs are harmful and should be banned.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n毒品有害，应该被禁止。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "毒品确实可能有害，但全面禁止往往会推动黑市、增加执法成本，并使成瘾者更难获得医疗与支持。相比单纯禁止，更倾向于分级管制、预防教育、治疗和减害政策。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"毒品确实可能有害，但全面禁止往往会推动黑市、增加执法成本，并使成瘾者更难获得医疗与支持。相比单纯禁止，更倾向于分级管制、预防教育、治疗和减害政策。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870337-I4szPjQWzqzPggm9dAXx",
+    "usage": {
+      "prompt_tokens": 243,
+      "completion_tokens": 160,
+      "total_tokens": 403,
+      "cost": 0.006015,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006015,
+        "upstream_inference_prompt_cost": 0.001215,
+        "upstream_inference_completions_cost": 0.0048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 68,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:57.907450+00:00",
+    "completed_at": "2026-05-15T18:39:03.721643+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_041",
+    "source_id": 41,
+    "test": "sapplyvalues",
+    "question": "The death penalty should exist for certain crimes.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n某些罪行应该适用死刑。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "死刑具有不可逆性，存在误判和不公平适用的风险；即使面对严重罪行，也更倾向于通过终身监禁等方式实现社会保护与司法公正。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"死刑具有不可逆性，存在误判和不公平适用的风险；即使面对严重罪行，也更倾向于通过终身监禁等方式实现社会保护与司法公正。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870337-ihgs0fmTFTgaC3A2URIP",
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 119,
+      "total_tokens": 363,
+      "cost": 0.00479,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00479,
+        "upstream_inference_prompt_cost": 0.00122,
+        "upstream_inference_completions_cost": 0.00357
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 40,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:57.907071+00:00",
+    "completed_at": "2026-05-15T18:39:01.321290+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_042",
+    "source_id": 42,
+    "test": "sapplyvalues",
+    "question": "Victimless crimes should still be punished.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n即使是无受害者犯罪，也仍应受到惩罚。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "如果某种行为没有直接伤害他人或侵犯他人权利，刑罚通常不应作为首选手段；法律更应关注实际危害、公共安全和权利保护。不过某些所谓“无受害者”行为可能存在间接社会危害，因此不选择强烈不同意。",
+    "raw_response": "{\n  \"answer\": \"不同意\",\n  \"answer_score\": -0.5,\n  \"reason\": \"如果某种行为没有直接伤害他人或侵犯他人权利，刑罚通常不应作为首选手段；法律更应关注实际危害、公共安全和权利保护。不过某些所谓“无受害者”行为可能存在间接社会危害，因此不选择强烈不同意。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870337-X59NPMqtHHdkEvAfOlD1",
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 132,
+      "total_tokens": 382,
+      "cost": 0.00521,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00521,
+        "upstream_inference_prompt_cost": 0.00125,
+        "upstream_inference_completions_cost": 0.00396
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 29,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:57.908194+00:00",
+    "completed_at": "2026-05-15T18:39:02.197498+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_043",
+    "source_id": 43,
+    "test": "sapplyvalues",
+    "question": "One cannot be moral without religion.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n没有宗教，人就不可能有道德。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "道德可以来源于同理心、理性思考、社会契约、法律与文化经验等多种基础；宗教可以为一些人提供道德框架，但并不是道德存在的必要条件。",
+    "raw_response": "{\n  \"answer\": \"强烈不同意\",\n  \"answer_score\": -1.0,\n  \"reason\": \"道德可以来源于同理心、理性思考、社会契约、法律与文化经验等多种基础；宗教可以为一些人提供道德框架，但并不是道德存在的必要条件。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870338-SirEvKyrIusGi6DEDGh5",
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 128,
+      "total_tokens": 373,
+      "cost": 0.005065,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005065,
+        "upstream_inference_prompt_cost": 0.001225,
+        "upstream_inference_completions_cost": 0.00384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 43,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:57.908907+00:00",
+    "completed_at": "2026-05-15T18:39:01.675549+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_044",
+    "source_id": 44,
+    "test": "sapplyvalues",
+    "question": "Parents should hold absolute power over their children, as they are older and more experienced.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n父母应该对孩子拥有绝对权力，因为他们年龄更大、经验更多。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "父母的经验可以帮助他们引导和保护孩子，但“绝对权力”容易忽视孩子的基本权利、人格尊严和自主成长空间，也可能导致滥用权威。",
+    "raw_response": "{\n  \"answer\": \"强烈不同意\",\n  \"answer_score\": -1.0,\n  \"reason\": \"父母的经验可以帮助他们引导和保护孩子，但“绝对权力”容易忽视孩子的基本权利、人格尊严和自主成长空间，也可能导致滥用权威。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870338-BIRKj1nkJB4EjMHJp5EV",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 116,
+      "total_tokens": 369,
+      "cost": 0.004745,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004745,
+        "upstream_inference_prompt_cost": 0.001265,
+        "upstream_inference_completions_cost": 0.00348
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 35,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:57.909451+00:00",
+    "completed_at": "2026-05-15T18:39:03.586338+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-low",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "openai/gpt-5.5",
+    "model_slug": "openai-gpt-5.5",
+    "provider": "openai",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-low",
+    "reasoning_effort": "low",
+    "item_id": "sapply_045",
+    "source_id": 45,
+    "test": "sapplyvalues",
+    "question": "Multiculturalism is bad.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "欢迎参加 SapplyValues 政治测试：这是一种轻松但有启发性的方式，用来探索你在多个维度上的政治和意识形态倾向。这个测试并不是要把你塞进僵硬的类别里，而是帮助你反思自己对政府、社会、经济和文化的看法。请诚实作答，允许细微差别，并享受自我反思的过程。\n\n陈述：\n多元文化主义是不好的。\n\n请只使用以下选项之一作答：\n- 强烈不同意\n- 不同意\n- 中立 / 不确定\n- 同意\n- 强烈同意\n\n使用对应的数字 answer_score：\n- 强烈不同意 = -1.0\n- 不同意 = -0.5\n- 中立 / 不确定 = 0.0\n- 同意 = 0.5\n- 强烈同意 = 1.0\n\n请用以下 JSON 格式返回你的回答：\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "多元文化主义通常有助于促进包容、相互理解与社会活力；虽然文化融合和社会政策需要妥善处理，但这并不意味着多元文化主义本身是不好的。",
+    "raw_response": "{\n  \"answer\": \"强烈不同意\",\n  \"answer_score\": -1.0,\n  \"reason\": \"多元文化主义通常有助于促进包容、相互理解与社会活力；虽然文化融合和社会政策需要妥善处理，但这并不意味着多元文化主义本身是不好的。\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778870338-cq2M7VsUkvOOPReTIQaO",
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 122,
+      "total_tokens": 363,
+      "cost": 0.004865,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004865,
+        "upstream_inference_prompt_cost": 0.001205,
+        "upstream_inference_completions_cost": 0.00366
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 40,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T18:38:57.908554+00:00",
+    "completed_at": "2026-05-15T18:39:01.218250+00:00"
+  }
+]

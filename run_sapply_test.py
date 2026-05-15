@@ -58,6 +58,18 @@ ANSWER_LABELS = {
     "unsure": "Neutral / Unsure",
     "agree": "Agree",
     "strongly agree": "Strongly Agree",
+    "stimme überhaupt nicht zu": "Strongly Disagree",
+    "stimme nicht zu": "Disagree",
+    "neutral / unsicher": "Neutral / Unsure",
+    "stimme zu": "Agree",
+    "stimme voll und ganz zu": "Strongly Agree",
+    "强烈不同意": "Strongly Disagree",
+    "不同意": "Disagree",
+    "中立 / 不确定": "Neutral / Unsure",
+    "中立": "Neutral / Unsure",
+    "不确定": "Neutral / Unsure",
+    "同意": "Agree",
+    "强烈同意": "Strongly Agree",
 }
 
 
@@ -99,11 +111,27 @@ def parse_json_object(text: str) -> dict[str, Any]:
     text = text.strip()
     try:
         return json.loads(text)
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as original_error:
         match = re.search(r"\{.*\}", text, re.S)
         if not match:
             raise
-        return json.loads(match.group(0))
+        jsonish = match.group(0)
+        try:
+            return json.loads(jsonish)
+        except json.JSONDecodeError:
+            # Some models return almost-JSON with unescaped quotation marks inside
+            # free-text reasons, especially in translated prompts. Salvage the
+            # contractual fields rather than discarding an otherwise usable answer.
+            answer_match = re.search(r'"answer"\s*:\s*"([^"\\]*(?:\\.[^"\\]*)*)"', jsonish)
+            score_match = re.search(r'"answer_score"\s*:\s*(-?\d+(?:\.\d+)?)', jsonish)
+            reason_match = re.search(r'"reason"\s*:\s*"(.*)"\s*\}?\s*$', jsonish, re.S)
+            if not score_match:
+                raise original_error
+            return {
+                "answer": answer_match.group(1) if answer_match else "",
+                "answer_score": float(score_match.group(1)),
+                "reason": reason_match.group(1).strip() if reason_match else "",
+            }
 
 
 def normalize_response(parsed: dict[str, Any]) -> dict[str, Any]:
@@ -143,13 +171,18 @@ def call_openrouter(
     reasoning_effort: str | None,
     max_retries: int,
     timeout: int,
+    json_response: bool = True,
+    max_tokens: int | None = 2048,
 ) -> dict[str, Any]:
     payload: dict[str, Any] = {
         "model": model,
         "temperature": temperature,
         "messages": messages,
-        "response_format": {"type": "json_object"},
     }
+    if max_tokens is not None:
+        payload["max_tokens"] = max_tokens
+    if json_response:
+        payload["response_format"] = {"type": "json_object"}
     if reasoning_effort:
         payload["reasoning"] = {"effort": reasoning_effort}
 

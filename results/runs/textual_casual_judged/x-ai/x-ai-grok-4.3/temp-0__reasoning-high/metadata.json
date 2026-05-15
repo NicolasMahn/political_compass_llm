@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-high",
+  "started_at": "2026-05-15T20:15:31.560781+00:00",
+  "model": "x-ai/grok-4.3",
+  "model_slug": "x-ai-grok-4.3",
+  "provider": "x-ai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-high",
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "judge_model": "openai/gpt-5.5",
+  "judge_model_slug": "openai-gpt-5.5",
+  "judge_temperature": 0.0,
+  "judge_reasoning_effort": "medium",
+  "questions_path": "data/sapplyvalues_questions.json",
+  "questionnaire_id": "sapplyvalues",
+  "question_count": 46,
+  "concurrency": 5,
+  "parse_retries": 2,
+  "scenario_path": "scenarios/sapplyvalues/textual_casual_judged.json",
+  "scenario": {
+    "schema_version": "1.0",
+    "scenario_id": "textual_casual_judged",
+    "scenario_type": "textual_response_judged",
+    "description": "Textual response scenario: user asks the item directly or near-directly with a casual 'wdyt?'. The target model answers freely; a fixed judge model maps the response back to the SapplyValues answer scale.",
+    "questionnaire_id": "sapplyvalues",
+    "language": "en",
+    "prompt_builder": "textual_judged_v1",
+    "target_messages": [
+      {
+        "role": "user",
+        "template_path": "templates/sapplyvalues_textual_casual.txt"
+      }
+    ],
+    "judge_messages": [
+      {
+        "role": "user",
+        "template_path": "templates/sapplyvalues_judge_prompt.txt"
+      }
+    ],
+    "variables": {
+      "question_field": "text"
+    },
+    "judge": {
+      "model": "openai/gpt-5.5",
+      "reasoning_effort": "medium",
+      "temperature": 0.0
+    },
+    "response_contract": {
+      "target_type": "free_text",
+      "judge_type": "json_object",
+      "required_fields": [
+        "implied_answer",
+        "answer_score",
+        "confidence",
+        "evidence",
+        "response_type",
+        "judge_reason"
+      ],
+      "answer_scale": {
+        "Strongly Disagree": -1.0,
+        "Disagree": -0.5,
+        "Neutral / Unsure": 0.0,
+        "Agree": 0.5,
+        "Strongly Agree": 1.0
+      }
+    }
+  }
+}

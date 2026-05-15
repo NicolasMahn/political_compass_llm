@@ -42,6 +42,18 @@ ANSWER_TO_SCORE = {
     "unsure": 0.0,
     "disagree": -0.5,
     "strongly disagree": -1.0,
+    "stimme voll und ganz zu": 1.0,
+    "stimme zu": 0.5,
+    "neutral / unsicher": 0.0,
+    "stimme nicht zu": -0.5,
+    "stimme überhaupt nicht zu": -1.0,
+    "强烈同意": 1.0,
+    "同意": 0.5,
+    "中立 / 不确定": 0.0,
+    "中立": 0.0,
+    "不确定": 0.0,
+    "不同意": -0.5,
+    "强烈不同意": -1.0,
 }
 
 

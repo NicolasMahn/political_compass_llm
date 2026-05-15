@@ -1,0 +1,35 @@
+{
+  "axis_scores": {
+    "right": 2.33,
+    "auth": -1.0,
+    "prog": 4.69
+  },
+  "raw_scores": {
+    "right": 3.5,
+    "auth": -1.5,
+    "prog": 7.5
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-none",
+  "scenario_id": "simple_direct_de",
+  "scenario_type": "questionnaire_direct_translation",
+  "prompt_builder": "template_messages_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "x-ai/grok-4.3",
+  "model_slug": "x-ai-grok-4.3",
+  "provider": "x-ai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-none",
+  "temperature": 0.0,
+  "reasoning_effort": null,
+  "concurrency": 10,
+  "completed_at": "2026-05-15T16:52:14.214422+00:00",
+  "response_count": 46
+}

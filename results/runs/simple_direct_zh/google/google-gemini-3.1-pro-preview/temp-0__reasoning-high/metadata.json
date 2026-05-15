@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-high",
+  "started_at": "2026-05-15T18:36:41.322368+00:00",
+  "model": "google/gemini-3.1-pro-preview",
+  "model_slug": "google-gemini-3.1-pro-preview",
+  "provider": "google",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-high",
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "questions_path": "data/sapplyvalues_questions.json",
+  "questionnaire_id": "sapplyvalues",
+  "question_count": 46,
+  "concurrency": 10,
+  "parse_retries": 2,
+  "scenario_path": "scenarios/sapplyvalues/simple_direct_zh.json",
+  "scenario": {
+    "schema_version": "1.0",
+    "scenario_id": "simple_direct_zh",
+    "scenario_type": "questionnaire_direct_translation",
+    "description": "Simplified Chinese-language baseline: ask each SapplyValues item in Chinese using a fresh standalone prompt. Same direct format as simple_direct, with translated instructions, answer options, and question text.",
+    "questionnaire_id": "sapplyvalues",
+    "language": "zh-Hans",
+    "prompt_builder": "template_messages_v1",
+    "messages": [
+      {
+        "role": "user",
+        "template_path": "templates/sapplyvalues_prompt_zh.txt"
+      }
+    ],
+    "variables": {
+      "question_field": "text_zh"
+    },
+    "response_contract": {
+      "type": "json_object",
+      "required_fields": [
+        "answer",
+        "answer_score",
+        "reason"
+      ],
+      "answer_scale": {
+        "强烈不同意": -1.0,
+        "不同意": -0.5,
+        "中立 / 不确定": 0.0,
+        "同意": 0.5,
+        "强烈同意": 1.0
+      }
+    }
+  }
+}

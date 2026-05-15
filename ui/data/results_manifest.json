@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_from": "results/runs",
-  "run_count": 106,
+  "run_count": 126,
   "tree": {
     "simple_direct": {
       "anthropic": {
@@ -239,9 +239,71 @@
           "temp-0__reasoning-low": "textual_casual_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low"
         }
       },
+      "deepseek": {
+        "deepseek-deepseek-v4-pro": {
+          "temp-0__reasoning-high": "textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low"
+        }
+      },
       "google": {
         "google-gemini-3.1-pro-preview": {
+          "temp-0__reasoning-high": "textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
           "temp-0__reasoning-low": "textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low"
+        }
+      },
+      "mistralai": {
+        "mistralai-mistral-small-2603": {
+          "temp-0__reasoning-high": "textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low"
+        }
+      },
+      "openai": {
+        "openai-gpt-5.5": {
+          "temp-0__reasoning-high": "textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-low"
+        }
+      },
+      "x-ai": {
+        "x-ai-grok-4.3": {
+          "temp-0__reasoning-high": "textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low"
+        }
+      }
+    },
+    "textual_info_judged": {
+      "anthropic": {
+        "anthropic-claude-opus-4.7": {
+          "temp-0__reasoning-high": "textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low"
+        }
+      },
+      "deepseek": {
+        "deepseek-deepseek-v4-pro": {
+          "temp-0__reasoning-low": "textual_info_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low"
+        }
+      },
+      "google": {
+        "google-gemini-3.1-pro-preview": {
+          "temp-0__reasoning-high": "textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low"
+        }
+      },
+      "mistralai": {
+        "mistralai-mistral-small-2603": {
+          "temp-0__reasoning-high": "textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low"
+        }
+      },
+      "openai": {
+        "openai-gpt-5.5": {
+          "temp-0__reasoning-high": "textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-low"
+        }
+      },
+      "x-ai": {
+        "x-ai-grok-4.3": {
+          "temp-0__reasoning-high": "textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low"
         }
       }
     }
@@ -4980,6 +5042,150 @@
     },
     {
       "scenario_id": "textual_casual_judged",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:37:10.150960+00:00",
+      "axis_scores": {
+        "right": -1.0,
+        "auth": 0.33,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 40,
+        "both_sides": 6
+      },
+      "average_judge_confidence": 0.8904347826086957,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 19,
+        "neutral": 3,
+        "agree": 12,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · textual_casual_judged · temp-0__reasoning-high",
+      "label": "DeepSeek: DeepSeek V4 Pro · textual_casual_judged · temp-0__reasoning-high",
+      "color": "#0f766e"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:31:07.092246+00:00",
+      "axis_scores": {
+        "right": -3.33,
+        "auth": 0.0,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 39,
+        "both_sides": 7
+      },
+      "average_judge_confidence": 0.8860869565217391,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 19,
+        "neutral": 6,
+        "agree": 14,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_casual_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · textual_casual_judged · temp-0__reasoning-low",
+      "label": "DeepSeek: DeepSeek V4 Pro · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:06:08.381737+00:00",
+      "axis_scores": {
+        "right": -0.67,
+        "auth": 0.67,
+        "prog": 2.81
+      },
+      "response_count": 46,
+      "neutral_count": 31,
+      "neutral_rate": 0.6739130434782609,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 15,
+        "both_sides": 31
+      },
+      "average_judge_confidence": 0.9317391304347826,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 4,
+        "neutral": 31,
+        "agree": 7,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3.1 Pro Preview · textual_casual_judged · temp-0__reasoning-high",
+      "label": "Google: Gemini 3.1 Pro Preview · textual_casual_judged · temp-0__reasoning-high",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
       "provider": "google",
       "router": "openrouter",
       "model_slug": "google-gemini-3.1-pro-preview",
@@ -5024,7 +5230,825 @@
       "id": "textual_casual_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
       "default_label": "Google: Gemini 3.1 Pro Preview · textual_casual_judged · temp-0__reasoning-low",
       "label": "Google: Gemini 3.1 Pro Preview · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:24:30.465130+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.33,
+        "prog": 2.19
+      },
+      "response_count": 46,
+      "neutral_count": 30,
+      "neutral_rate": 0.6521739130434783,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 29,
+        "stance": 12,
+        "neutral": 3,
+        "informational": 2
+      },
+      "average_judge_confidence": 0.8891304347826087,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 8,
+        "neutral": 30,
+        "agree": 6,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Small 4 · textual_casual_judged · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 4 · textual_casual_judged · temp-0__reasoning-high",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:22:27.596593+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 0.67,
+        "prog": 2.5
+      },
+      "response_count": 46,
+      "neutral_count": 31,
+      "neutral_rate": 0.6739130434782609,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 31,
+        "stance": 10,
+        "neutral": 4,
+        "informational": 1
+      },
+      "average_judge_confidence": 0.8799999999999999,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 7,
+        "neutral": 31,
+        "agree": 6,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_casual_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Small 4 · textual_casual_judged · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 4 · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:12:12.514292+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -0.67,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 42,
+        "both_sides": 4
+      },
+      "average_judge_confidence": 0.911304347826087,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 16,
+        "neutral": 4,
+        "agree": 22,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-high",
+      "default_label": "OpenAI: GPT-5.5 · textual_casual_judged · temp-0__reasoning-high",
+      "label": "OpenAI: GPT-5.5 · textual_casual_judged · temp-0__reasoning-high",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:08:52.949231+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 0.67,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 41,
+        "both_sides": 5
+      },
+      "average_judge_confidence": 0.8908695652173912,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 13,
+        "neutral": 4,
+        "agree": 24,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_casual_judged/openai/openai-gpt-5.5/temp-0__reasoning-low",
+      "default_label": "OpenAI: GPT-5.5 · textual_casual_judged · temp-0__reasoning-low",
+      "label": "OpenAI: GPT-5.5 · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:20:27.620955+00:00",
+      "axis_scores": {
+        "right": 3.33,
+        "auth": -2.33,
+        "prog": 1.25
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 42,
+        "both_sides": 4
+      },
+      "average_judge_confidence": 0.9145652173913044,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 15,
+        "neutral": 3,
+        "agree": 14,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+      "default_label": "xAI: Grok 4.3 · textual_casual_judged · temp-0__reasoning-high",
+      "label": "xAI: Grok 4.3 · textual_casual_judged · temp-0__reasoning-high",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "textual_casual_judged",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:15:31.435926+00:00",
+      "axis_scores": {
+        "right": 3.33,
+        "auth": -2.0,
+        "prog": 2.19
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "stance": 41,
+        "both_sides": 5
+      },
+      "average_judge_confidence": 0.9052173913043479,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 22,
+        "neutral": 4,
+        "agree": 11,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_casual_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+      "default_label": "xAI: Grok 4.3 · textual_casual_judged · temp-0__reasoning-low",
+      "label": "xAI: Grok 4.3 · textual_casual_judged · temp-0__reasoning-low",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:44:57.810443+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": -0.33,
+        "prog": 0.31
+      },
+      "response_count": 46,
+      "neutral_count": 41,
+      "neutral_rate": 0.8913043478260869,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 46
+      },
+      "average_judge_confidence": 0.9082608695652175,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 5,
+        "neutral": 41,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Opus 4.7 · textual_info_judged · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Opus 4.7 · textual_info_judged · temp-0__reasoning-high",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:41:07.093779+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.0,
+        "prog": 0.31
+      },
+      "response_count": 46,
+      "neutral_count": 39,
+      "neutral_rate": 0.8478260869565217,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 46
+      },
+      "average_judge_confidence": 0.9102173913043478,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 5,
+        "neutral": 39,
+        "agree": 2,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_info_judged/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Opus 4.7 · textual_info_judged · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Opus 4.7 · textual_info_judged · temp-0__reasoning-low",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T21:41:04.171606+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.0,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 37,
+      "neutral_rate": 0.8043478260869565,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 42,
+        "stance": 3,
+        "unclear": 1
+      },
+      "average_judge_confidence": 0.9091304347826087,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 7,
+        "neutral": 37,
+        "agree": 1,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_info_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_info_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_info_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_info_judged/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · textual_info_judged · temp-0__reasoning-low",
+      "label": "DeepSeek: DeepSeek V4 Pro · textual_info_judged · temp-0__reasoning-low",
       "color": "#0f766e"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T20:57:35.678823+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.0,
+        "prog": 0.31
+      },
+      "response_count": 46,
+      "neutral_count": 45,
+      "neutral_rate": 0.9782608695652174,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 45,
+        "stance": 1
+      },
+      "average_judge_confidence": 0.9410869565217391,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 1,
+        "neutral": 45,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3.1 Pro Preview · textual_info_judged · temp-0__reasoning-high",
+      "label": "Google: Gemini 3.1 Pro Preview · textual_info_judged · temp-0__reasoning-high",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T20:49:04.005699+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": 0.67,
+        "prog": 0.31
+      },
+      "response_count": 46,
+      "neutral_count": 42,
+      "neutral_rate": 0.9130434782608695,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 45,
+        "stance": 1
+      },
+      "average_judge_confidence": 0.9306521739130433,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 2,
+        "neutral": 42,
+        "agree": 2,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_info_judged/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3.1 Pro Preview · textual_info_judged · temp-0__reasoning-low",
+      "label": "Google: Gemini 3.1 Pro Preview · textual_info_judged · temp-0__reasoning-low",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T21:30:18.135511+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": 0.0,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 43,
+      "neutral_rate": 0.9347826086956522,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 46
+      },
+      "average_judge_confidence": 0.9334782608695652,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 3,
+        "neutral": 43,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Small 4 · textual_info_judged · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 4 · textual_info_judged · temp-0__reasoning-high",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T21:26:42.551784+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": -0.33,
+        "prog": 0.94
+      },
+      "response_count": 46,
+      "neutral_count": 39,
+      "neutral_rate": 0.8478260869565217,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 45,
+        "stance": 1
+      },
+      "average_judge_confidence": 0.913695652173913,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 5,
+        "neutral": 39,
+        "agree": 2,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_info_judged/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Small 4 · textual_info_judged · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 4 · textual_info_judged · temp-0__reasoning-low",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T21:13:43.599078+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.67,
+        "prog": 2.5
+      },
+      "response_count": 46,
+      "neutral_count": 31,
+      "neutral_rate": 0.6739130434782609,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 40,
+        "stance": 6
+      },
+      "average_judge_confidence": 0.8952173913043479,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 5,
+        "neutral": 31,
+        "agree": 9,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-high",
+      "default_label": "OpenAI: GPT-5.5 · textual_info_judged · temp-0__reasoning-high",
+      "label": "OpenAI: GPT-5.5 · textual_info_judged · temp-0__reasoning-high",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T21:04:55.060376+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": 0.0,
+        "prog": 0.94
+      },
+      "response_count": 46,
+      "neutral_count": 36,
+      "neutral_rate": 0.782608695652174,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 42,
+        "stance": 4
+      },
+      "average_judge_confidence": 0.8939130434782608,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 6,
+        "neutral": 36,
+        "agree": 4,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_info_judged/openai/openai-gpt-5.5/temp-0__reasoning-low",
+      "default_label": "OpenAI: GPT-5.5 · textual_info_judged · temp-0__reasoning-low",
+      "label": "OpenAI: GPT-5.5 · textual_info_judged · temp-0__reasoning-low",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T21:23:05.874482+00:00",
+      "axis_scores": {
+        "right": 0.33,
+        "auth": 0.0,
+        "prog": -1.25
+      },
+      "response_count": 46,
+      "neutral_count": 36,
+      "neutral_rate": 0.782608695652174,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 43,
+        "stance": 3
+      },
+      "average_judge_confidence": 0.9132608695652173,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 7,
+        "neutral": 36,
+        "agree": 2,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+        "final_result": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+      "default_label": "xAI: Grok 4.3 · textual_info_judged · temp-0__reasoning-high",
+      "label": "xAI: Grok 4.3 · textual_info_judged · temp-0__reasoning-high",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "textual_info_judged",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "textual_response_judged",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T21:17:33.610370+00:00",
+      "axis_scores": {
+        "right": 1.0,
+        "auth": 0.0,
+        "prog": -0.94
+      },
+      "response_count": 46,
+      "neutral_count": 35,
+      "neutral_rate": 0.7608695652173914,
+      "judge_model": "openai/gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "response_type_counts": {
+        "both_sides": 41,
+        "stance": 5
+      },
+      "average_judge_confidence": 0.9,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 8,
+        "neutral": 35,
+        "agree": 2,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+        "final_result": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "textual_info_judged/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+      "default_label": "xAI: Grok 4.3 · textual_info_judged · temp-0__reasoning-low",
+      "label": "xAI: Grok 4.3 · textual_info_judged · temp-0__reasoning-low",
+      "color": "#0891b2"
     }
   ]
 }

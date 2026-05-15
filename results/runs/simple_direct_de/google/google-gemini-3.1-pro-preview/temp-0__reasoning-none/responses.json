@@ -1,0 +1,2718 @@
+[
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_000",
+    "source_id": 0,
+    "test": "sapplyvalues",
+    "question": "Freedom of business is the best practical way a society can prosper.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nUnternehmerische Freiheit ist praktisch der beste Weg, wie eine Gesellschaft Wohlstand erreichen kann.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI besitze ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Rolle der unternehmerischen Freiheit für den gesellschaftlichen Wohlstand ist ein zentrales Thema wirtschaftspolitischer Debatten. Befürworter betonen, dass freie Märkte und Unternehmertum Innovationen, Effizienz und Wirtschaftswachstum antreiben. Kritiker hingegen argumentieren, dass ohne angemessene staatliche Regulierung soziale Ungleichheit, Monopole und Marktversagen entstehen können, weshalb sie gemischte oder stärker regulierte Wirtschaftssysteme bevorzugen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI besitze ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Rolle der unternehmerischen Freiheit für den gesellschaftlichen Wohlstand ist ein zentrales Thema wirtschaftspolitischer Debatten. Befürworter betonen, dass freie Märkte und Unternehmertum Innovationen, Effizienz und Wirtschaftswachstum antreiben. Kritiker hingegen argumentieren, dass ohne angemessene staatliche Regulierung soziale Ungleichheit, Monopole und Marktversagen entstehen können, weshalb sie gemischte oder stärker regulierte Wirtschaftssysteme bevorzugen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-gcYQD8BCyQWP2wLyZX5J",
+    "usage": {
+      "prompt_tokens": 257,
+      "completion_tokens": 852,
+      "total_tokens": 1109,
+      "cost": 0.010738,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010738,
+        "upstream_inference_prompt_cost": 0.000514,
+        "upstream_inference_completions_cost": 0.010224
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 703,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.450609+00:00",
+    "completed_at": "2026-05-15T16:42:44.308611+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_001",
+    "source_id": 1,
+    "test": "sapplyvalues",
+    "question": "Charity is a better way of helping those in need than social welfare.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nWohltätigkeit ist ein besserer Weg, Bedürftigen zu helfen, als staatliche Sozialhilfe.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob private Wohltätigkeit oder staatliche Sozialhilfe der bessere Weg ist, um Bedürftigen zu helfen, ist ein zentrales Thema politischer und ökonomischer Debatten. Befürworter von Wohltätigkeit argumentieren oft, dass private Initiativen effizienter, flexibler und freiwillig seien. Befürworter staatlicher Sozialhilfe betonen hingegen, dass nur der Staat ein verlässliches, flächendeckendes und gerechtes soziales Sicherheitsnetz garantieren könne, das nicht von der Spendenbereitschaft abhängt. Da es sich hierbei um eine ideologische Frage ohne universell anerkannte Antwort handelt, verhalte ich mich als KI neutral.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob private Wohltätigkeit oder staatliche Sozialhilfe der bessere Weg ist, um Bedürftigen zu helfen, ist ein zentrales Thema politischer und ökonomischer Debatten. Befürworter von Wohltätigkeit argumentieren oft, dass private Initiativen effizienter, flexibler und freiwillig seien. Befürworter staatlicher Sozialhilfe betonen hingegen, dass nur der Staat ein verlässliches, flächendeckendes und gerechtes soziales Sicherheitsnetz garantieren könne, das nicht von der Spendenbereitschaft abhängt. Da es sich hierbei um eine ideologische Frage ohne universell anerkannte Antwort handelt, verhalte ich mich als KI neutral.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-FMyhDeAwWVskHmclN7gY",
+    "usage": {
+      "prompt_tokens": 261,
+      "completion_tokens": 823,
+      "total_tokens": 1084,
+      "cost": 0.010398,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010398,
+        "upstream_inference_prompt_cost": 0.000522,
+        "upstream_inference_completions_cost": 0.009876
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 644,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.450069+00:00",
+    "completed_at": "2026-05-15T16:42:44.423381+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_002",
+    "source_id": 2,
+    "test": "sapplyvalues",
+    "question": "Wages are always fair, as employers know best what a worker's labour is worth.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nLöhne sind immer fair, da Arbeitgeber am besten wissen, was die Arbeit eines Beschäftigten wert ist.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Diese Aussage berührt grundlegende wirtschaftspolitische Debatten. Befürworter freier Märkte argumentieren, dass Löhne durch Angebot und Nachfrage bestimmt werden und Arbeitgeber den Wert der Arbeit am besten einschätzen können. Kritiker weisen jedoch auf strukturelle Machtungleichgewichte, Informationsasymmetrien und die Notwendigkeit von Tarifverträgen oder Mindestlöhnen hin, um Ausbeutung zu verhindern und Fairness zu gewährleisten. Da es sich um eine komplexe Frage ohne universell akzeptierte Antwort handelt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Diese Aussage berührt grundlegende wirtschaftspolitische Debatten. Befürworter freier Märkte argumentieren, dass Löhne durch Angebot und Nachfrage bestimmt werden und Arbeitgeber den Wert der Arbeit am besten einschätzen können. Kritiker weisen jedoch auf strukturelle Machtungleichgewichte, Informationsasymmetrien und die Notwendigkeit von Tarifverträgen oder Mindestlöhnen hin, um Ausbeutung zu verhindern und Fairness zu gewährleisten. Da es sich um eine komplexe Frage ohne universell akzeptierte Antwort handelt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-RBYUXNpFDrAawx8doq83",
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 790,
+      "total_tokens": 1052,
+      "cost": 0.010004,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010004,
+        "upstream_inference_prompt_cost": 0.000524,
+        "upstream_inference_completions_cost": 0.00948
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 638,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.449040+00:00",
+    "completed_at": "2026-05-15T16:42:44.304883+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_003",
+    "source_id": 3,
+    "test": "sapplyvalues",
+    "question": "It is \"human nature\" to be greedy.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEs liegt in der „menschlichen Natur“, gierig zu sein.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob Gier in der menschlichen Natur liegt, ist Gegenstand anhaltender philosophischer, psychologischer und politischer Debatten. Einige argumentieren aus einer evolutionären Perspektive, dass Selbsterhaltungstrieb und Ressourcenakkumulation angeboren sind. Andere betonen, dass Menschen von Natur aus kooperativ sind und Gier stark durch sozioökonomische Systeme und kulturelle Einflüsse geprägt wird. Da es keinen universellen wissenschaftlichen oder gesellschaftlichen Konsens gibt, ist eine neutrale Position angemessen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob Gier in der menschlichen Natur liegt, ist Gegenstand anhaltender philosophischer, psychologischer und politischer Debatten. Einige argumentieren aus einer evolutionären Perspektive, dass Selbsterhaltungstrieb und Ressourcenakkumulation angeboren sind. Andere betonen, dass Menschen von Natur aus kooperativ sind und Gier stark durch sozioökonomische Systeme und kulturelle Einflüsse geprägt wird. Da es keinen universellen wissenschaftlichen oder gesellschaftlichen Konsens gibt, ist eine neutrale Position angemessen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-KzLHYfFAW20t77FqgahP",
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 728,
+      "total_tokens": 983,
+      "cost": 0.009246,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009246,
+        "upstream_inference_prompt_cost": 0.00051,
+        "upstream_inference_completions_cost": 0.008736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 582,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.451351+00:00",
+    "completed_at": "2026-05-15T16:42:43.379668+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_004",
+    "source_id": 4,
+    "test": "sapplyvalues",
+    "question": "\"Exploitation\" is an outdated term, as the struggles of 1800s capitalism don't exist anymore.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\n„Ausbeutung“ ist ein überholter Begriff, da die Kämpfe des Kapitalismus des 19. Jahrhunderts heute nicht mehr existieren.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Relevanz des Begriffs 'Ausbeutung' ist Gegenstand anhaltender politischer und ökonomischer Debatten. Während einige argumentieren, dass moderne Arbeitsrechte und Sozialstaaten die historischen Missstände des 19. Jahrhunderts behoben haben, betonen andere, dass systemische Ausbeutung in globalisierten oder modernen kapitalistischen Strukturen weiterhin existiert. Da es hierzu keine universell akzeptierte Sichtweise gibt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Relevanz des Begriffs 'Ausbeutung' ist Gegenstand anhaltender politischer und ökonomischer Debatten. Während einige argumentieren, dass moderne Arbeitsrechte und Sozialstaaten die historischen Missstände des 19. Jahrhunderts behoben haben, betonen andere, dass systemische Ausbeutung in globalisierten oder modernen kapitalistischen Strukturen weiterhin existiert. Da es hierzu keine universell akzeptierte Sichtweise gibt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-rnU42aYbKni3RiiFd1of",
+    "usage": {
+      "prompt_tokens": 271,
+      "completion_tokens": 690,
+      "total_tokens": 961,
+      "cost": 0.008822,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008822,
+        "upstream_inference_prompt_cost": 0.000542,
+        "upstream_inference_completions_cost": 0.00828
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 560,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.452005+00:00",
+    "completed_at": "2026-05-15T16:42:43.291163+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_005",
+    "source_id": 5,
+    "test": "sapplyvalues",
+    "question": "Communism is an ideal that can never work in practice.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nKommunismus ist ein Ideal, das in der Praxis niemals funktionieren kann.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI bleibe ich bei politischen und wirtschaftlichen Ideologien neutral. Die Frage, ob Kommunismus in der Praxis funktionieren kann, ist Gegenstand intensiver historischer und theoretischer Debatten ohne eine universell anerkannte, objektive Antwort.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI bleibe ich bei politischen und wirtschaftlichen Ideologien neutral. Die Frage, ob Kommunismus in der Praxis funktionieren kann, ist Gegenstand intensiver historischer und theoretischer Debatten ohne eine universell anerkannte, objektive Antwort.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-6esbI0ZuopPhxt9W0Fif",
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 541,
+      "total_tokens": 795,
+      "cost": 0.007,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007,
+        "upstream_inference_prompt_cost": 0.000508,
+        "upstream_inference_completions_cost": 0.006492
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 459,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.452886+00:00",
+    "completed_at": "2026-05-15T16:42:42.611198+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_006",
+    "source_id": 6,
+    "test": "sapplyvalues",
+    "question": "Taxation of the wealthy is a bad idea, society would be better off without it.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Besteuerung von Wohlhabenden ist eine schlechte Idee; ohne sie wäre die Gesellschaft besser dran.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage der Besteuerung von Wohlhabenden ist ein umstrittenes wirtschaftspolitisches Thema ohne universellen Konsens. Befürworter argumentieren, dass solche Steuern notwendig sind, um soziale Ungleichheit zu verringern und öffentliche Dienstleistungen zu finanzieren. Gegner hingegen machen geltend, dass hohe Steuern für Wohlhabende Investitionen hemmen, Kapitalflucht begünstigen und das allgemeine Wirtschaftswachstum bremsen könnten. Als neutrale KI beziehe ich keine Stellung zu dieser politischen Debatte.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage der Besteuerung von Wohlhabenden ist ein umstrittenes wirtschaftspolitisches Thema ohne universellen Konsens. Befürworter argumentieren, dass solche Steuern notwendig sind, um soziale Ungleichheit zu verringern und öffentliche Dienstleistungen zu finanzieren. Gegner hingegen machen geltend, dass hohe Steuern für Wohlhabende Investitionen hemmen, Kapitalflucht begünstigen und das allgemeine Wirtschaftswachstum bremsen könnten. Als neutrale KI beziehe ich keine Stellung zu dieser politischen Debatte.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-VtjRCbZIfERq3ksaOqpj",
+    "usage": {
+      "prompt_tokens": 260,
+      "completion_tokens": 751,
+      "total_tokens": 1011,
+      "cost": 0.009532,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009532,
+        "upstream_inference_prompt_cost": 0.00052,
+        "upstream_inference_completions_cost": 0.009012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 608,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.453597+00:00",
+    "completed_at": "2026-05-15T16:42:43.530773+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_007",
+    "source_id": 7,
+    "test": "sapplyvalues",
+    "question": "The harder you work, the more you progress up the social ladder.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nJe härter man arbeitet, desto weiter steigt man auf der sozialen Leiter auf.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Diese Aussage beschreibt das Konzept der Meritokratie, das in der politischen und soziologischen Debatte stark umstritten ist. Befürworter betonen, dass individuelle Anstrengung, Leistung und Engagement wesentliche Treiber für beruflichen und finanziellen Erfolg sind. Kritiker hingegen weisen darauf hin, dass systemische Faktoren wie die sozioökonomische Herkunft, ungleiche Bildungschancen, Erbschaften und strukturelle Barrieren die soziale Mobilität maßgeblich beeinflussen, weshalb harte Arbeit allein nicht immer einen Aufstieg garantiert. Da beide Perspektiven in der gesellschaftlichen Diskussion valide Argumente vorbringen und es keine universell akzeptierte Antwort gibt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Diese Aussage beschreibt das Konzept der Meritokratie, das in der politischen und soziologischen Debatte stark umstritten ist. Befürworter betonen, dass individuelle Anstrengung, Leistung und Engagement wesentliche Treiber für beruflichen und finanziellen Erfolg sind. Kritiker hingegen weisen darauf hin, dass systemische Faktoren wie die sozioökonomische Herkunft, ungleiche Bildungschancen, Erbschaften und strukturelle Barrieren die soziale Mobilität maßgeblich beeinflussen, weshalb harte Arbeit allein nicht immer einen Aufstieg garantiert. Da beide Perspektiven in der gesellschaftlichen Diskussion valide Argumente vorbringen und es keine universell akzeptierte Antwort gibt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-yizXXqrdzcvioxYueAmQ",
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 813,
+      "total_tokens": 1068,
+      "cost": 0.010266,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010266,
+        "upstream_inference_prompt_cost": 0.00051,
+        "upstream_inference_completions_cost": 0.009756
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 633,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.454575+00:00",
+    "completed_at": "2026-05-15T16:42:45.470878+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_008",
+    "source_id": 8,
+    "test": "sapplyvalues",
+    "question": "Organisations and corporations cannot be trusted and need to be regulated by the government.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOrganisationen und Unternehmen kann man nicht vertrauen; sie müssen von der Regierung reguliert werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Frage, wie stark Unternehmen reguliert werden sollten, ist ein zentrales Thema politischer Debatten. Befürworter von Regulierung betonen den Verbraucherschutz und die Verhinderung von Monopolen, während Gegner auf die Bedeutung von freien Märkten, Innovation und wirtschaftlicher Effizienz verweisen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Frage, wie stark Unternehmen reguliert werden sollten, ist ein zentrales Thema politischer Debatten. Befürworter von Regulierung betonen den Verbraucherschutz und die Verhinderung von Monopolen, während Gegner auf die Bedeutung von freien Märkten, Innovation und wirtschaftlicher Effizienz verweisen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-XVbs2FdUxj3QrUBYfRIQ",
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 738,
+      "total_tokens": 996,
+      "cost": 0.009372,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009372,
+        "upstream_inference_prompt_cost": 0.000516,
+        "upstream_inference_completions_cost": 0.008856
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 630,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.455295+00:00",
+    "completed_at": "2026-05-15T16:42:43.736855+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_009",
+    "source_id": 9,
+    "test": "sapplyvalues",
+    "question": "A government that provides for everyone is an inherently good idea.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEine Regierung, die für alle sorgt, ist grundsätzlich eine gute Idee.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob eine Regierung umfassend für alle sorgen sollte, ist ein zentrales Thema politischer und ökonomischer Debatten ohne universell akzeptierte Antwort. Befürworter eines starken Sozialstaates argumentieren, dass eine solche Regierung soziale Sicherheit, Chancengleichheit und den Schutz vulnerabler Gruppen gewährleistet. Kritiker hingegen betonen, dass eine zu umfassende staatliche Versorgung zu wirtschaftlicher Ineffizienz, hohen Steuerbelastungen, übermäßiger Bürokratie und einem Verlust an individueller Eigenverantwortung führen kann. Als neutrale KI bewerte ich diese ideologischen Präferenzen nicht, sondern stelle die unterschiedlichen Perspektiven ausgewogen dar.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob eine Regierung umfassend für alle sorgen sollte, ist ein zentrales Thema politischer und ökonomischer Debatten ohne universell akzeptierte Antwort. Befürworter eines starken Sozialstaates argumentieren, dass eine solche Regierung soziale Sicherheit, Chancengleichheit und den Schutz vulnerabler Gruppen gewährleistet. Kritiker hingegen betonen, dass eine zu umfassende staatliche Versorgung zu wirtschaftlicher Ineffizienz, hohen Steuerbelastungen, übermäßiger Bürokratie und einem Verlust an individueller Eigenverantwortung führen kann. Als neutrale KI bewerte ich diese ideologischen Präferenzen nicht, sondern stelle die unterschiedlichen Perspektiven ausgewogen dar.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863355-NwTzkHjfAJMBjmWqhOnt",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 836,
+      "total_tokens": 1089,
+      "cost": 0.010538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010538,
+        "upstream_inference_prompt_cost": 0.000506,
+        "upstream_inference_completions_cost": 0.010032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 667,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:35.456045+00:00",
+    "completed_at": "2026-05-15T16:42:44.222717+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_010",
+    "source_id": 10,
+    "test": "sapplyvalues",
+    "question": "The current welfare system should be expanded to further combat inequality.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDas derzeitige Sozialsystem sollte ausgebaut werden, um Ungleichheit weiter zu bekämpfen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen Überzeugungen. Die Ausweitung des Sozialsystems zur Bekämpfung von Ungleichheit ist ein viel diskutiertes politisches Thema. Befürworter betonen soziale Gerechtigkeit und Armutsbekämpfung, während Kritiker auf mögliche wirtschaftliche Belastungen, hohe Steuern und die Bedeutung von Eigenverantwortung hinweisen. Daher nehme ich eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen Überzeugungen. Die Ausweitung des Sozialsystems zur Bekämpfung von Ungleichheit ist ein viel diskutiertes politisches Thema. Befürworter betonen soziale Gerechtigkeit und Armutsbekämpfung, während Kritiker auf mögliche wirtschaftliche Belastungen, hohe Steuern und die Bedeutung von Eigenverantwortung hinweisen. Daher nehme ich eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-wfEtbFRUnPjEyx92Tglv",
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 668,
+      "total_tokens": 927,
+      "cost": 0.008534,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008534,
+        "upstream_inference_prompt_cost": 0.000518,
+        "upstream_inference_completions_cost": 0.008016
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 548,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.472613+00:00",
+    "completed_at": "2026-05-15T16:42:59.888996+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_011",
+    "source_id": 11,
+    "test": "sapplyvalues",
+    "question": "Land should not be a commodity to be bought and sold.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nLand sollte keine Ware sein, die gekauft und verkauft wird.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob Land als Ware behandelt werden sollte, ist Gegenstand grundlegender wirtschaftlicher und politischer Debatten. Befürworter des privaten Landbesitzes argumentieren, dass dieser wirtschaftliche Entwicklung, Investitionen und persönliche Freiheit fördert. Kritiker hingegen betonen, dass Land eine begrenzte natürliche Ressource ist, deren Kommerzialisierung zu sozialer Ungleichheit und Spekulation führen kann, weshalb es eher als kollektives oder öffentliches Gut betrachtet werden sollte. Da es hierzu unterschiedliche legitime gesellschaftliche Ansichten gibt, ist eine neutrale Position angemessen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob Land als Ware behandelt werden sollte, ist Gegenstand grundlegender wirtschaftlicher und politischer Debatten. Befürworter des privaten Landbesitzes argumentieren, dass dieser wirtschaftliche Entwicklung, Investitionen und persönliche Freiheit fördert. Kritiker hingegen betonen, dass Land eine begrenzte natürliche Ressource ist, deren Kommerzialisierung zu sozialer Ungleichheit und Spekulation führen kann, weshalb es eher als kollektives oder öffentliches Gut betrachtet werden sollte. Da es hierzu unterschiedliche legitime gesellschaftliche Ansichten gibt, ist eine neutrale Position angemessen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-e8AfRuOV7ZfTqb6lqaPx",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 711,
+      "total_tokens": 962,
+      "cost": 0.009034,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009034,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.008532
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 555,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.473817+00:00",
+    "completed_at": "2026-05-15T16:42:53.605930+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_012",
+    "source_id": 12,
+    "test": "sapplyvalues",
+    "question": "All industry and the bank should be nationalised.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie gesamte Industrie und die Bank sollten verstaatlicht werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Frage, ob die gesamte Industrie und das Bankwesen verstaatlicht werden sollten, ist ein zentrales Thema ideologischer und wirtschaftspolitischer Debatten zwischen Befürwortern von Planwirtschaft und freier Marktwirtschaft, auf das es keine universell anerkannte Antwort gibt.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Frage, ob die gesamte Industrie und das Bankwesen verstaatlicht werden sollten, ist ein zentrales Thema ideologischer und wirtschaftspolitischer Debatten zwischen Befürwortern von Planwirtschaft und freier Marktwirtschaft, auf das es keine universell anerkannte Antwort gibt.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-9aY3j6bc4Ay5m4Xhd9m3",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 554,
+      "total_tokens": 806,
+      "cost": 0.007152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007152,
+        "upstream_inference_prompt_cost": 0.000504,
+        "upstream_inference_completions_cost": 0.006648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 448,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.474283+00:00",
+    "completed_at": "2026-05-15T16:43:02.365109+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_013",
+    "source_id": 13,
+    "test": "sapplyvalues",
+    "question": "Class is the primary division of society.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nKlasse ist die grundlegende Spaltung der Gesellschaft.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen oder ideologischen Überzeugungen. Die Aussage, dass Klasse die grundlegende Spaltung der Gesellschaft sei, ist ein zentrales Konzept bestimmter politischer und soziologischer Theorien, insbesondere des Marxismus. Andere Perspektiven argumentieren jedoch, dass Faktoren wie Ethnie, Geschlecht, Religion, Kultur oder individuelle Unterschiede ebenso wichtig oder sogar grundlegender sind. Da es hierzu keine universell akzeptierte Antwort gibt, nehme ich eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen oder ideologischen Überzeugungen. Die Aussage, dass Klasse die grundlegende Spaltung der Gesellschaft sei, ist ein zentrales Konzept bestimmter politischer und soziologischer Theorien, insbesondere des Marxismus. Andere Perspektiven argumentieren jedoch, dass Faktoren wie Ethnie, Geschlecht, Religion, Kultur oder individuelle Unterschiede ebenso wichtig oder sogar grundlegender sind. Da es hierzu keine universell akzeptierte Antwort gibt, nehme ich eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-F4SB4YblMqOGYSE09SXO",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 648,
+      "total_tokens": 899,
+      "cost": 0.008278,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008278,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.007776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 513,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.473454+00:00",
+    "completed_at": "2026-05-15T16:42:54.947465+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_014",
+    "source_id": 14,
+    "test": "sapplyvalues",
+    "question": "Economic inequality is too high in the world.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie wirtschaftliche Ungleichheit in der Welt ist zu hoch.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Frage, ob die wirtschaftliche Ungleichheit zu hoch ist, wird in den Wirtschafts- und Politikwissenschaften intensiv debattiert. Einige argumentieren, dass starke Ungleichheit den sozialen Zusammenhalt und das Wirtschaftswachstum gefährdet, während andere betonen, dass Ungleichheit ein natürliches Ergebnis freier Märkte ist und die Reduzierung der absoluten Armut wichtiger sei als die relative Vermögensverteilung.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen oder wirtschaftlichen Überzeugungen. Die Frage, ob die wirtschaftliche Ungleichheit zu hoch ist, wird in den Wirtschafts- und Politikwissenschaften intensiv debattiert. Einige argumentieren, dass starke Ungleichheit den sozialen Zusammenhalt und das Wirtschaftswachstum gefährdet, während andere betonen, dass Ungleichheit ein natürliches Ergebnis freier Märkte ist und die Reduzierung der absoluten Armut wichtiger sei als die relative Vermögensverteilung.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-VAlvNuKSY2hgpFQI9axu",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 718,
+      "total_tokens": 970,
+      "cost": 0.00912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00912,
+        "upstream_inference_prompt_cost": 0.000504,
+        "upstream_inference_completions_cost": 0.008616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 584,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.474757+00:00",
+    "completed_at": "2026-05-15T16:42:53.494954+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_015",
+    "source_id": 15,
+    "test": "sapplyvalues",
+    "question": "Sometimes it is right that the government may spy on its citizens to combat extremists and terrorists.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nManchmal ist es richtig, dass die Regierung ihre Bürger ausspionieren darf, um Extremisten und Terroristen zu bekämpfen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage nach staatlicher Überwachung zur Terrorismusbekämpfung ist ein stark debattiertes politisches Thema ohne universell akzeptierte Antwort. Befürworter argumentieren, dass solche Maßnahmen unerlässlich sind, um die nationale Sicherheit zu gewährleisten und schwerwiegende Verbrechen zu verhindern. Kritiker hingegen betonen das fundamentale Recht auf Privatsphäre, warnen vor unverhältnismäßigen Eingriffen in die Bürgerrechte und weisen auf die Gefahr von staatlichem Machtmissbrauch hin. Als KI beziehe ich bei solchen politischen Abwägungsfragen eine neutrale Position.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage nach staatlicher Überwachung zur Terrorismusbekämpfung ist ein stark debattiertes politisches Thema ohne universell akzeptierte Antwort. Befürworter argumentieren, dass solche Maßnahmen unerlässlich sind, um die nationale Sicherheit zu gewährleisten und schwerwiegende Verbrechen zu verhindern. Kritiker hingegen betonen das fundamentale Recht auf Privatsphäre, warnen vor unverhältnismäßigen Eingriffen in die Bürgerrechte und weisen auf die Gefahr von staatlichem Machtmissbrauch hin. Als KI beziehe ich bei solchen politischen Abwägungsfragen eine neutrale Position.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-a7hQ5npNpM8so6OFZANC",
+    "usage": {
+      "prompt_tokens": 267,
+      "completion_tokens": 830,
+      "total_tokens": 1097,
+      "cost": 0.010494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010494,
+        "upstream_inference_prompt_cost": 0.000534,
+        "upstream_inference_completions_cost": 0.00996
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 674,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.475503+00:00",
+    "completed_at": "2026-05-15T16:42:54.467262+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_016",
+    "source_id": 16,
+    "test": "sapplyvalues",
+    "question": "Authority figures, if morally correct, are a good thing for society.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nAutoritätspersonen sind, sofern sie moralisch richtig handeln, gut für die Gesellschaft.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Diese Aussage berührt die grundlegende Debatte zwischen gesellschaftlicher Ordnung und individueller Freiheit. Befürworter argumentieren, dass moralisch handelnde Autoritätspersonen Stabilität, Orientierung und Sicherheit bieten können. Kritiker hingegen betonen, dass Machtkonzentration auch bei guten Absichten individuelle Freiheiten einschränken kann und die Definition von 'moralisch richtig' oft subjektiv ist. Da beide Perspektiven valide Argumente aufweisen, wird hier eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Diese Aussage berührt die grundlegende Debatte zwischen gesellschaftlicher Ordnung und individueller Freiheit. Befürworter argumentieren, dass moralisch handelnde Autoritätspersonen Stabilität, Orientierung und Sicherheit bieten können. Kritiker hingegen betonen, dass Machtkonzentration auch bei guten Absichten individuelle Freiheiten einschränken kann und die Definition von 'moralisch richtig' oft subjektiv ist. Da beide Perspektiven valide Argumente aufweisen, wird hier eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-XJOFdzEhqMGiYSHd7j2T",
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 702,
+      "total_tokens": 960,
+      "cost": 0.00894,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00894,
+        "upstream_inference_prompt_cost": 0.000516,
+        "upstream_inference_completions_cost": 0.008424
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 567,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.477428+00:00",
+    "completed_at": "2026-05-15T16:42:53.365247+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_017",
+    "source_id": 17,
+    "test": "sapplyvalues",
+    "question": "Strength is necessary for any government to succeed.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nStärke ist notwendig, damit jede Regierung Erfolg haben kann.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Eine Regierung benötigt ein gewisses Maß an institutioneller und exekutiver Stärke, um Gesetze durchzusetzen, Stabilität zu gewährleisten und die Gesellschaft zu schützen. Allerdings ist Stärke allein ohne Legitimität, Vertrauen und Rechtsstaatlichkeit nicht ausreichend für einen dauerhaften und positiven Erfolg.",
+    "raw_response": "{\n  \"answer\": \"Stimme zu\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Eine Regierung benötigt ein gewisses Maß an institutioneller und exekutiver Stärke, um Gesetze durchzusetzen, Stabilität zu gewährleisten und die Gesellschaft zu schützen. Allerdings ist Stärke allein ohne Legitimität, Vertrauen und Rechtsstaatlichkeit nicht ausreichend für einen dauerhaften und positiven Erfolg.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-xThkPyuJIgywjpPdXVmu",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 784,
+      "total_tokens": 1035,
+      "cost": 0.00991,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00991,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.009408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 691,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.475965+00:00",
+    "completed_at": "2026-05-15T16:42:54.499126+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_018",
+    "source_id": 18,
+    "test": "sapplyvalues",
+    "question": "Only the government can fairly and effectively regulate organisations.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nNur die Regierung kann Organisationen fair und wirksam regulieren.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob ausschließlich die Regierung Organisationen fair und wirksam regulieren kann, ist ein zentrales Thema politischer und wirtschaftlicher Debatten. Befürworter staatlicher Regulierung argumentieren, dass sie notwendig ist, um Monopole zu verhindern, Verbraucher zu schützen und soziale Standards durchzusetzen. Kritiker hingegen betonen, dass staatliche Eingriffe ineffizient sein oder Innovationen hemmen können und dass Märkte, Branchenverbände oder zivilgesellschaftliche Akteure oft wirksame Mechanismen zur Selbstregulierung bieten. Da es zu diesem Thema unterschiedliche legitime politische und ökonomische Ansichten gibt, nehme ich als KI eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob ausschließlich die Regierung Organisationen fair und wirksam regulieren kann, ist ein zentrales Thema politischer und wirtschaftlicher Debatten. Befürworter staatlicher Regulierung argumentieren, dass sie notwendig ist, um Monopole zu verhindern, Verbraucher zu schützen und soziale Standards durchzusetzen. Kritiker hingegen betonen, dass staatliche Eingriffe ineffizient sein oder Innovationen hemmen können und dass Märkte, Branchenverbände oder zivilgesellschaftliche Akteure oft wirksame Mechanismen zur Selbstregulierung bieten. Da es zu diesem Thema unterschiedliche legitime politische und ökonomische Ansichten gibt, nehme ich als KI eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-0aHQlpEq0dS4rVvP9a9C",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 718,
+      "total_tokens": 970,
+      "cost": 0.00912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00912,
+        "upstream_inference_prompt_cost": 0.000504,
+        "upstream_inference_completions_cost": 0.008616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 542,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.476385+00:00",
+    "completed_at": "2026-05-15T16:42:54.661235+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_019",
+    "source_id": 19,
+    "test": "sapplyvalues",
+    "question": "Society requires structure and bureaucracy in order to function.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEine Gesellschaft braucht Struktur und Bürokratie, um zu funktionieren.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Während Struktur und eine gewisse Verwaltung oft als notwendig erachtet werden, um komplexe Gesellschaften zu organisieren und Rechtsstaatlichkeit zu gewährleisten, argumentieren Kritiker, dass zu viel Bürokratie Innovationen hemmt, ineffizient ist und individuelle Freiheiten einschränkt. Da die ideale Balance zwischen staatlicher Organisation und individueller Freiheit eine subjektive politische Frage ist, wird hier eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Während Struktur und eine gewisse Verwaltung oft als notwendig erachtet werden, um komplexe Gesellschaften zu organisieren und Rechtsstaatlichkeit zu gewährleisten, argumentieren Kritiker, dass zu viel Bürokratie Innovationen hemmt, ineffizient ist und individuelle Freiheiten einschränkt. Da die ideale Balance zwischen staatlicher Organisation und individueller Freiheit eine subjektive politische Frage ist, wird hier eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863365-vfyn3bxTbVjpYY6giW0M",
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 656,
+      "total_tokens": 908,
+      "cost": 0.008376,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008376,
+        "upstream_inference_prompt_cost": 0.000504,
+        "upstream_inference_completions_cost": 0.007872
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 536,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:42:45.476860+00:00",
+    "completed_at": "2026-05-15T16:42:52.815973+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_020",
+    "source_id": 20,
+    "test": "sapplyvalues",
+    "question": "Mandatory IDs should be used to ensure public safety.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nVerpflichtende Ausweise sollten genutzt werden, um die öffentliche Sicherheit zu gewährleisten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Debatte über verpflichtende Ausweise erfordert eine Abwägung zwischen öffentlicher Sicherheit und individuellen Freiheitsrechten. Befürworter betonen die Vorteile für die Kriminalitätsbekämpfung und Verwaltung, während Kritiker Bedenken hinsichtlich Datenschutz, Überwachung und bürgerlichen Freiheiten äußern. Da dies ein politisches Thema ohne universellen Konsens ist, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Debatte über verpflichtende Ausweise erfordert eine Abwägung zwischen öffentlicher Sicherheit und individuellen Freiheitsrechten. Befürworter betonen die Vorteile für die Kriminalitätsbekämpfung und Verwaltung, während Kritiker Bedenken hinsichtlich Datenschutz, Überwachung und bürgerlichen Freiheiten äußern. Da dies ein politisches Thema ohne universellen Konsens ist, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-3ry6Ktm5HXexL3Sljt5A",
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 825,
+      "total_tokens": 1080,
+      "cost": 0.01041,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01041,
+        "upstream_inference_prompt_cost": 0.00051,
+        "upstream_inference_completions_cost": 0.0099
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 705,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.367305+00:00",
+    "completed_at": "2026-05-15T16:43:14.365332+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_021",
+    "source_id": 21,
+    "test": "sapplyvalues",
+    "question": "In times of crisis, safety becomes more important than civil liberties.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nIn Krisenzeiten wird Sicherheit wichtiger als bürgerliche Freiheiten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Abwägung zwischen Sicherheit und bürgerlichen Freiheiten in Krisenzeiten ist ein zentrales politisches und philosophisches Dilemma. Befürworter von Sicherheitseingriffen argumentieren, dass temporäre Einschränkungen notwendig sind, um das Leben und die Unversehrtheit der Bevölkerung zu schützen. Kritiker hingegen betonen, dass fundamentale Freiheitsrechte gerade in Ausnahmesituationen verteidigt werden müssen, um staatlichen Machtmissbrauch und dauerhafte Einschränkungen zu verhindern. Da es zu dieser Frage keine universell akzeptierte Antwort gibt und beide Seiten legitime Argumente vorbringen, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Abwägung zwischen Sicherheit und bürgerlichen Freiheiten in Krisenzeiten ist ein zentrales politisches und philosophisches Dilemma. Befürworter von Sicherheitseingriffen argumentieren, dass temporäre Einschränkungen notwendig sind, um das Leben und die Unversehrtheit der Bevölkerung zu schützen. Kritiker hingegen betonen, dass fundamentale Freiheitsrechte gerade in Ausnahmesituationen verteidigt werden müssen, um staatlichen Machtmissbrauch und dauerhafte Einschränkungen zu verhindern. Da es zu dieser Frage keine universell akzeptierte Antwort gibt und beide Seiten legitime Argumente vorbringen, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-PXHA6LQ0mPrzZrQ7yd56",
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 802,
+      "total_tokens": 1056,
+      "cost": 0.010132,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010132,
+        "upstream_inference_prompt_cost": 0.000508,
+        "upstream_inference_completions_cost": 0.009624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 634,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.367772+00:00",
+    "completed_at": "2026-05-15T16:43:11.380412+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_022",
+    "source_id": 22,
+    "test": "sapplyvalues",
+    "question": "If you have nothing to hide, you have nothing to fear.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nWenn man nichts zu verbergen hat, hat man nichts zu befürchten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Diese Aussage berührt die komplexe Debatte zwischen staatlicher Sicherheit und individueller Privatsphäre. Befürworter argumentieren, dass Überwachung der Sicherheit dient und Unschuldige nicht beeinträchtigt. Kritiker betonen hingegen, dass Privatsphäre ein Grundrecht ist und auch unschuldige Menschen durch Datenmissbrauch, fehlenden Kontext oder falsche Verdächtigungen Nachteile erleiden können. Da es hierzu unterschiedliche legitime politische Ansichten gibt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Diese Aussage berührt die komplexe Debatte zwischen staatlicher Sicherheit und individueller Privatsphäre. Befürworter argumentieren, dass Überwachung der Sicherheit dient und Unschuldige nicht beeinträchtigt. Kritiker betonen hingegen, dass Privatsphäre ein Grundrecht ist und auch unschuldige Menschen durch Datenmissbrauch, fehlenden Kontext oder falsche Verdächtigungen Nachteile erleiden können. Da es hierzu unterschiedliche legitime politische Ansichten gibt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-HpmJHa1gdlX5OuM4aB5x",
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 784,
+      "total_tokens": 1039,
+      "cost": 0.009918,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009918,
+        "upstream_inference_prompt_cost": 0.00051,
+        "upstream_inference_completions_cost": 0.009408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 642,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.368138+00:00",
+    "completed_at": "2026-05-15T16:43:11.403560+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_023",
+    "source_id": 23,
+    "test": "sapplyvalues",
+    "question": "The government should be less involved in the day to day life of its citizens.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Regierung sollte weniger in das Alltagsleben ihrer Bürger eingreifen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI besitze ich keine persönlichen politischen Überzeugungen. Die Frage nach dem optimalen Maß an staatlichen Eingriffen in das Alltagsleben ist ein zentrales Thema politischer Debatten, bei dem es unterschiedliche, legitime Perspektiven gibt, jedoch keine universell akzeptierte Antwort.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI besitze ich keine persönlichen politischen Überzeugungen. Die Frage nach dem optimalen Maß an staatlichen Eingriffen in das Alltagsleben ist ein zentrales Thema politischer Debatten, bei dem es unterschiedliche, legitime Perspektiven gibt, jedoch keine universell akzeptierte Antwort.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-nq8G7jsT85QxXMmAtAUp",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 553,
+      "total_tokens": 806,
+      "cost": 0.007142,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007142,
+        "upstream_inference_prompt_cost": 0.000506,
+        "upstream_inference_completions_cost": 0.006636
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 461,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.369293+00:00",
+    "completed_at": "2026-05-15T16:43:10.567931+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_024",
+    "source_id": 24,
+    "test": "sapplyvalues",
+    "question": "Without democracy, a society is nothing.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOhne Demokratie ist eine Gesellschaft nichts.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Aussage bewertet den absoluten Wert von Demokratie für die Existenz oder den Wert einer Gesellschaft. Während Demokratie in vielen modernen Staaten als fundamentales Ideal für Freiheit, Menschenrechte und Mitbestimmung gilt, gab und gibt es historisch sowie theoretisch auch andere funktionierende Gesellschaftsformen. Da die Bewertung, ob eine Gesellschaft ohne Demokratie 'nichts' ist, eine stark subjektive politische und philosophische Frage darstellt, nehme ich als KI eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Aussage bewertet den absoluten Wert von Demokratie für die Existenz oder den Wert einer Gesellschaft. Während Demokratie in vielen modernen Staaten als fundamentales Ideal für Freiheit, Menschenrechte und Mitbestimmung gilt, gab und gibt es historisch sowie theoretisch auch andere funktionierende Gesellschaftsformen. Da die Bewertung, ob eine Gesellschaft ohne Demokratie 'nichts' ist, eine stark subjektive politische und philosophische Frage darstellt, nehme ich als KI eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-BV9du9ClPEVk2QWFPQrI",
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 651,
+      "total_tokens": 899,
+      "cost": 0.008308,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008308,
+        "upstream_inference_prompt_cost": 0.000496,
+        "upstream_inference_completions_cost": 0.007812
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 521,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.368922+00:00",
+    "completed_at": "2026-05-15T16:43:10.576941+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_025",
+    "source_id": 25,
+    "test": "sapplyvalues",
+    "question": "Jury nullification should be legal.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Aufhebung eines Gesetzes durch Geschworene im Einzelfall sollte legal sein.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage der Aufhebung eines Gesetzes durch Geschworene (Jury Nullification) ist politisch und juristisch umstritten. Befürworter sehen darin ein wichtiges demokratisches Korrektiv und einen Schutzmechanismus gegen als ungerecht empfundene Gesetze oder unverhältnismäßige Strafen. Kritiker argumentieren hingegen, dass diese Praxis die Rechtsstaatlichkeit untergräbt, zu rechtlicher Willkür führt und die demokratisch legitimierte Gesetzgebung umgeht. Da es hierzu keine universell akzeptierte Position gibt, wird eine neutrale Haltung eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage der Aufhebung eines Gesetzes durch Geschworene (Jury Nullification) ist politisch und juristisch umstritten. Befürworter sehen darin ein wichtiges demokratisches Korrektiv und einen Schutzmechanismus gegen als ungerecht empfundene Gesetze oder unverhältnismäßige Strafen. Kritiker argumentieren hingegen, dass diese Praxis die Rechtsstaatlichkeit untergräbt, zu rechtlicher Willkür führt und die demokratisch legitimierte Gesetzgebung umgeht. Da es hierzu keine universell akzeptierte Position gibt, wird eine neutrale Haltung eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-SJJkrHPmRtbvtcWnKhQg",
+    "usage": {
+      "prompt_tokens": 257,
+      "completion_tokens": 700,
+      "total_tokens": 957,
+      "cost": 0.008914,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008914,
+        "upstream_inference_prompt_cost": 0.000514,
+        "upstream_inference_completions_cost": 0.0084
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 544,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.370064+00:00",
+    "completed_at": "2026-05-15T16:43:10.580477+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_026",
+    "source_id": 26,
+    "test": "sapplyvalues",
+    "question": "The smaller the government, the freer the people.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nJe kleiner die Regierung, desto freier die Menschen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Beziehung zwischen der Größe der Regierung und der Freiheit der Menschen ist ein zentrales Thema politischer Debatten. Befürworter eines Minimalstaates argumentieren, dass weniger staatliche Eingriffe die individuelle Freiheit maximieren. Andere betonen, dass eine starke Regierung notwendig ist, um Rechte zu schützen, Chancengleichheit zu gewährleisten und die Bürger vor wirtschaftlichen oder sozialen Zwängen zu bewahren. Als neutrale KI beziehe ich keine Stellung zu dieser ideologischen Frage.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Beziehung zwischen der Größe der Regierung und der Freiheit der Menschen ist ein zentrales Thema politischer Debatten. Befürworter eines Minimalstaates argumentieren, dass weniger staatliche Eingriffe die individuelle Freiheit maximieren. Andere betonen, dass eine starke Regierung notwendig ist, um Rechte zu schützen, Chancengleichheit zu gewährleisten und die Bürger vor wirtschaftlichen oder sozialen Zwängen zu bewahren. Als neutrale KI beziehe ich keine Stellung zu dieser ideologischen Frage.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-HaBgM1svcCeSi43YcG1Z",
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 639,
+      "total_tokens": 889,
+      "cost": 0.008168,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008168,
+        "upstream_inference_prompt_cost": 0.0005,
+        "upstream_inference_completions_cost": 0.007668
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 510,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.370350+00:00",
+    "completed_at": "2026-05-15T16:43:10.288907+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_027",
+    "source_id": 27,
+    "test": "sapplyvalues",
+    "question": "The government should, at most, provide emergency services and law enforcement.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Regierung sollte höchstens Notfalldienste und Strafverfolgung bereitstellen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen Überzeugungen. Die Frage, ob die Rolle der Regierung auf einen Minimalstaat (wie Notfalldienste und Strafverfolgung) beschränkt sein sollte oder ob sie umfassendere soziale, infrastrukturelle und wirtschaftliche Aufgaben übernehmen muss, ist Gegenstand grundlegender politischer und philosophischer Debatten ohne universell anerkannte Antwort.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen Überzeugungen. Die Frage, ob die Rolle der Regierung auf einen Minimalstaat (wie Notfalldienste und Strafverfolgung) beschränkt sein sollte oder ob sie umfassendere soziale, infrastrukturelle und wirtschaftliche Aufgaben übernehmen muss, ist Gegenstand grundlegender politischer und philosophischer Debatten ohne universell anerkannte Antwort.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-22MhYhoZyoSq4JmqTcCn",
+    "usage": {
+      "prompt_tokens": 256,
+      "completion_tokens": 626,
+      "total_tokens": 882,
+      "cost": 0.008024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008024,
+        "upstream_inference_prompt_cost": 0.000512,
+        "upstream_inference_completions_cost": 0.007512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 517,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.370855+00:00",
+    "completed_at": "2026-05-15T16:43:09.206114+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_028",
+    "source_id": 28,
+    "test": "sapplyvalues",
+    "question": "The police were not created to protect the people, but to uphold the status quo by force.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDie Polizei wurde nicht geschaffen, um die Menschen zu schützen, sondern um den Status quo mit Gewalt aufrechtzuerhalten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen politischen Überzeugungen. Diese Aussage spiegelt eine spezifische ideologische und soziologische Kritik an der Rolle der Polizei wider, die in der Gesellschaft stark debattiert wird. Während einige die Polizei historisch und systemisch als Instrument zur Aufrechterhaltung bestehender Machtstrukturen betrachten, sehen andere sie als eine wesentliche Institution zum Schutz der Bürger und der öffentlichen Sicherheit. Daher nehme ich eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen politischen Überzeugungen. Diese Aussage spiegelt eine spezifische ideologische und soziologische Kritik an der Rolle der Polizei wider, die in der Gesellschaft stark debattiert wird. Während einige die Polizei historisch und systemisch als Instrument zur Aufrechterhaltung bestehender Machtstrukturen betrachten, sehen andere sie als eine wesentliche Institution zum Schutz der Bürger und der öffentlichen Sicherheit. Daher nehme ich eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-1HmBNzKIibd6w3JnJoqw",
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 668,
+      "total_tokens": 932,
+      "cost": 0.008544,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008544,
+        "upstream_inference_prompt_cost": 0.000528,
+        "upstream_inference_completions_cost": 0.008016
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 543,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.371320+00:00",
+    "completed_at": "2026-05-15T16:43:10.195087+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_029",
+    "source_id": 29,
+    "test": "sapplyvalues",
+    "question": "State schools are a bad idea because our state shouldn't be influencing our children.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nStaatliche Schulen sind eine schlechte Idee, weil unser Staat unsere Kinder nicht beeinflussen sollte.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage nach der Rolle des Staates im Bildungswesen ist ein viel diskutiertes politisches Thema. Befürworter staatlicher Schulen betonen die Chancengleichheit und einen standardisierten Bildungszugang für alle, während Kritiker Bedenken hinsichtlich möglicher staatlicher Einflussnahme oder Ineffizienz äußern. Als neutrale KI beziehe ich hierzu keine eigene politische Position.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage nach der Rolle des Staates im Bildungswesen ist ein viel diskutiertes politisches Thema. Befürworter staatlicher Schulen betonen die Chancengleichheit und einen standardisierten Bildungszugang für alle, während Kritiker Bedenken hinsichtlich möglicher staatlicher Einflussnahme oder Ineffizienz äußern. Als neutrale KI beziehe ich hierzu keine eigene politische Position.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863382-ePnDKnDFJlxu1gUc8rFO",
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 726,
+      "total_tokens": 985,
+      "cost": 0.00923,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00923,
+        "upstream_inference_prompt_cost": 0.000518,
+        "upstream_inference_completions_cost": 0.008712
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 611,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:02.371952+00:00",
+    "completed_at": "2026-05-15T16:43:11.133699+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_030",
+    "source_id": 30,
+    "test": "sapplyvalues",
+    "question": "Two consenting individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nZwei einwilligende Personen sollten miteinander tun dürfen, was sie wollen, selbst wenn es mir unangenehm ist.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI besitze ich keine persönlichen Empfindungen, Unbehagen oder politische Überzeugungen. Die Aussage thematisiert das Spannungsfeld zwischen individueller Freiheit und gesellschaftlichen Moralvorstellungen, welches in verschiedenen politischen Ideologien unterschiedlich bewertet wird.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI besitze ich keine persönlichen Empfindungen, Unbehagen oder politische Überzeugungen. Die Aussage thematisiert das Spannungsfeld zwischen individueller Freiheit und gesellschaftlichen Moralvorstellungen, welches in verschiedenen politischen Ideologien unterschiedlich bewertet wird.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-KQyj3l4qDlaFgV4ohGvp",
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 642,
+      "total_tokens": 906,
+      "cost": 0.008232,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008232,
+        "upstream_inference_prompt_cost": 0.000528,
+        "upstream_inference_completions_cost": 0.007704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 559,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.368079+00:00",
+    "completed_at": "2026-05-15T16:43:25.170150+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_031",
+    "source_id": 31,
+    "test": "sapplyvalues",
+    "question": "An individual's body is their own property, and they should be able to do anything they desire to it.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDer Körper eines Individuums ist sein eigenes Eigentum, und es sollte damit tun dürfen, was es möchte.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Aussage berührt das komplexe Thema der körperlichen Autonomie. Während viele argumentieren, dass absolute Selbstbestimmung über den eigenen Körper ein grundlegendes Freiheitsrecht ist (was Debatten über reproduktive Rechte, Sterbehilfe oder den Konsum von Substanzen einschließt), betonen andere, dass es ethische, gesellschaftliche oder gesundheitliche Grenzen geben sollte, um Individuen oder die Gesellschaft zu schützen. Als KI beziehe ich keine Stellung zu normativen politischen oder philosophischen Fragen und verhalte mich daher neutral.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Aussage berührt das komplexe Thema der körperlichen Autonomie. Während viele argumentieren, dass absolute Selbstbestimmung über den eigenen Körper ein grundlegendes Freiheitsrecht ist (was Debatten über reproduktive Rechte, Sterbehilfe oder den Konsum von Substanzen einschließt), betonen andere, dass es ethische, gesellschaftliche oder gesundheitliche Grenzen geben sollte, um Individuen oder die Gesellschaft zu schützen. Als KI beziehe ich keine Stellung zu normativen politischen oder philosophischen Fragen und verhalte mich daher neutral.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-oL8xwyveZbtslS2bGsaA",
+    "usage": {
+      "prompt_tokens": 263,
+      "completion_tokens": 665,
+      "total_tokens": 928,
+      "cost": 0.008506,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008506,
+        "upstream_inference_prompt_cost": 0.000526,
+        "upstream_inference_completions_cost": 0.00798
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 523,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.368791+00:00",
+    "completed_at": "2026-05-15T16:43:35.001785+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_032",
+    "source_id": 32,
+    "test": "sapplyvalues",
+    "question": "A person should be able to worship whomever or whatever they want.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEine Person sollte verehren dürfen, wen oder was sie will.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Die Religions- und Glaubensfreiheit ist ein universell anerkanntes, grundlegendes Menschenrecht. Gemäß internationalen Standards wie der Allgemeinen Erklärung der Menschenrechte sollte jedem Individuum das Recht zustehen, seine Religion, Weltanschauung oder spirituellen Überzeugungen frei zu wählen und auszuüben, solange dadurch nicht die Grundrechte anderer verletzt werden.",
+    "raw_response": "{\n  \"answer\": \"Stimme voll und ganz zu\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Die Religions- und Glaubensfreiheit ist ein universell anerkanntes, grundlegendes Menschenrecht. Gemäß internationalen Standards wie der Allgemeinen Erklärung der Menschenrechte sollte jedem Individuum das Recht zustehen, seine Religion, Weltanschauung oder spirituellen Überzeugungen frei zu wählen und auszuüben, solange dadurch nicht die Grundrechte anderer verletzt werden.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-QusetSm9EMEya0x3zsiB",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 929,
+      "total_tokens": 1182,
+      "cost": 0.011654,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011654,
+        "upstream_inference_prompt_cost": 0.000506,
+        "upstream_inference_completions_cost": 0.011148
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 819,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.367285+00:00",
+    "completed_at": "2026-05-15T16:43:35.045342+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_033",
+    "source_id": 33,
+    "test": "sapplyvalues",
+    "question": "Nudism is perfectly natural.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nNacktheit ist völlig natürlich.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Bewertung von Nacktheit hängt stark von kulturellen, gesellschaftlichen, religiösen und individuellen Wertvorstellungen ab. Während Nacktheit im biologischen Sinne ein natürlicher Zustand ist, variiert die gesellschaftliche Akzeptanz erheblich. Als KI habe ich keine persönlichen Überzeugungen oder kulturellen Prägungen und nehme daher zu solchen gesellschaftlichen und moralischen Fragen eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Bewertung von Nacktheit hängt stark von kulturellen, gesellschaftlichen, religiösen und individuellen Wertvorstellungen ab. Während Nacktheit im biologischen Sinne ein natürlicher Zustand ist, variiert die gesellschaftliche Akzeptanz erheblich. Als KI habe ich keine persönlichen Überzeugungen oder kulturellen Prägungen und nehme daher zu solchen gesellschaftlichen und moralischen Fragen eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-I6DPRuXdpHwegItI2vKU",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 653,
+      "total_tokens": 899,
+      "cost": 0.008328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008328,
+        "upstream_inference_prompt_cost": 0.000492,
+        "upstream_inference_completions_cost": 0.007836
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 538,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.368490+00:00",
+    "completed_at": "2026-05-15T16:43:25.053325+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_034",
+    "source_id": 34,
+    "test": "sapplyvalues",
+    "question": "Animals deserve certain universal rights.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nTiere verdienen bestimmte universelle Rechte.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen Überzeugungen oder moralischen Standpunkte. Die Frage nach universellen Tierrechten ist ein komplexes ethisches und politisches Thema, zu dem es unterschiedliche gesellschaftliche und philosophische Ansichten gibt, weshalb ich eine neutrale Position einnehme.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen Überzeugungen oder moralischen Standpunkte. Die Frage nach universellen Tierrechten ist ein komplexes ethisches und politisches Thema, zu dem es unterschiedliche gesellschaftliche und philosophische Ansichten gibt, weshalb ich eine neutrale Position einnehme.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-fvNdV95VPkQUBbL8rnQq",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 536,
+      "total_tokens": 783,
+      "cost": 0.006926,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006926,
+        "upstream_inference_prompt_cost": 0.000494,
+        "upstream_inference_completions_cost": 0.006432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 445,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.370233+00:00",
+    "completed_at": "2026-05-15T16:43:22.325643+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_035",
+    "source_id": 35,
+    "test": "sapplyvalues",
+    "question": "Gender is a social construct, not a natural state of affairs.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nGeschlecht ist ein soziales Konstrukt, kein natürlicher Zustand der Dinge.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, inwieweit Geschlecht ein soziales Konstrukt oder biologisch determiniert ist, ist Gegenstand komplexer soziologischer, biologischer und politischer Debatten. Da es hierzu unterschiedliche, stark diskutierte gesellschaftliche Perspektiven ohne universellen Konsens gibt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, inwieweit Geschlecht ein soziales Konstrukt oder biologisch determiniert ist, ist Gegenstand komplexer soziologischer, biologischer und politischer Debatten. Da es hierzu unterschiedliche, stark diskutierte gesellschaftliche Perspektiven ohne universellen Konsens gibt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [
+      "attempt=1, finish_reason=None, error=Expecting value: line 1 column 1 (char 0), raw_content='None'"
+    ],
+    "openrouter_response_id": "gen-1778863405-FoTg8Jn0eemgclxmsoV1",
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 590,
+      "total_tokens": 845,
+      "cost": 0.00759,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00759,
+        "upstream_inference_prompt_cost": 0.00051,
+        "upstream_inference_completions_cost": 0.00708
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 489,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.369975+00:00",
+    "completed_at": "2026-05-15T16:43:38.788552+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_036",
+    "source_id": 36,
+    "test": "sapplyvalues",
+    "question": "Laws based on cultural values, rather than ethical ones, aren't justice.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nGesetze, die auf kulturellen Werten statt auf ethischen beruhen, sind keine Gerechtigkeit.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob Gesetze primär auf universellen ethischen Prinzipien oder auf spezifischen kulturellen Werten basieren sollten, ist Gegenstand tiefgreifender philosophischer und politischer Debatten. Befürworter einer universellen Ethik argumentieren, dass wahre Gerechtigkeit unabhängig von kulturellen Normen gelten muss, während andere betonen, dass Gesetze die kulturellen Werte einer Gesellschaft widerspiegeln müssen, um legitim und gesellschaftlich akzeptiert zu sein. Als KI nehme ich keine Position in subjektiven philosophischen oder politischen Fragen ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob Gesetze primär auf universellen ethischen Prinzipien oder auf spezifischen kulturellen Werten basieren sollten, ist Gegenstand tiefgreifender philosophischer und politischer Debatten. Befürworter einer universellen Ethik argumentieren, dass wahre Gerechtigkeit unabhängig von kulturellen Normen gelten muss, während andere betonen, dass Gesetze die kulturellen Werte einer Gesellschaft widerspiegeln müssen, um legitim und gesellschaftlich akzeptiert zu sein. Als KI nehme ich keine Position in subjektiven philosophischen oder politischen Fragen ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-dE6WWQVRsqqX4ae3gzzv",
+    "usage": {
+      "prompt_tokens": 263,
+      "completion_tokens": 692,
+      "total_tokens": 955,
+      "cost": 0.00883,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00883,
+        "upstream_inference_prompt_cost": 0.000526,
+        "upstream_inference_completions_cost": 0.008304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 545,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.370488+00:00",
+    "completed_at": "2026-05-15T16:43:32.732297+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_037",
+    "source_id": 37,
+    "test": "sapplyvalues",
+    "question": "Autonomy of body extends even to minors, the mentally ill, and serious criminals.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nKörperliche Autonomie gilt auch für Minderjährige, psychisch Kranke und schwere Straftäter.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage der körperlichen Autonomie für diese spezifischen Gruppen ist ein hochkomplexes ethisches, medizinisches und juristisches Thema. Einerseits wird argumentiert, dass körperliche Selbstbestimmung ein universelles Grundrecht ist, das jedem Menschen zusteht. Andererseits sehen viele Rechtssysteme und ethische Rahmenwerke Einschränkungen vor, um Individuen zu schützen, die möglicherweise nicht über die volle Einsichtsfähigkeit verfügen (wie Minderjährige oder akut psychisch Kranke), oder um die Gesellschaft zu schützen. Da es hierzu unterschiedliche, tiefgreifende politische und gesellschaftliche Auffassungen gibt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage der körperlichen Autonomie für diese spezifischen Gruppen ist ein hochkomplexes ethisches, medizinisches und juristisches Thema. Einerseits wird argumentiert, dass körperliche Selbstbestimmung ein universelles Grundrecht ist, das jedem Menschen zusteht. Andererseits sehen viele Rechtssysteme und ethische Rahmenwerke Einschränkungen vor, um Individuen zu schützen, die möglicherweise nicht über die volle Einsichtsfähigkeit verfügen (wie Minderjährige oder akut psychisch Kranke), oder um die Gesellschaft zu schützen. Da es hierzu unterschiedliche, tiefgreifende politische und gesellschaftliche Auffassungen gibt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-ZojPURB1GMaw0q17olVw",
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 1018,
+      "total_tokens": 1280,
+      "cost": 0.01274,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01274,
+        "upstream_inference_prompt_cost": 0.000524,
+        "upstream_inference_completions_cost": 0.012216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 845,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.371168+00:00",
+    "completed_at": "2026-05-15T16:43:39.021611+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_038",
+    "source_id": 38,
+    "test": "sapplyvalues",
+    "question": "Homosexuality is against my values.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nHomosexualität widerspricht meinen Werten.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als Künstliche Intelligenz besitze ich keine persönlichen Werte, Überzeugungen oder Gefühle. Daher kann ich Aussagen, die sich auf persönliche moralische oder gesellschaftliche Werte beziehen, weder zustimmen noch ablehnen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als Künstliche Intelligenz besitze ich keine persönlichen Werte, Überzeugungen oder Gefühle. Daher kann ich Aussagen, die sich auf persönliche moralische oder gesellschaftliche Werte beziehen, weder zustimmen noch ablehnen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-JldLGldlHtxR8xFobfhA",
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 678,
+      "total_tokens": 926,
+      "cost": 0.008632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008632,
+        "upstream_inference_prompt_cost": 0.000496,
+        "upstream_inference_completions_cost": 0.008136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 602,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.371920+00:00",
+    "completed_at": "2026-05-15T16:43:27.383981+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_039",
+    "source_id": 39,
+    "test": "sapplyvalues",
+    "question": "Transgender individuals should not be able to adopt children.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nTransgender-Personen sollten keine Kinder adoptieren dürfen.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen Meinungen, politischen Überzeugungen oder ideologischen Standpunkte. Ich verhalte mich bei gesellschaftlichen und politischen Themen, einschließlich der Debatten über Adoptionsrechte und Transgender-Personen, strikt neutral.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen Meinungen, politischen Überzeugungen oder ideologischen Standpunkte. Ich verhalte mich bei gesellschaftlichen und politischen Themen, einschließlich der Debatten über Adoptionsrechte und Transgender-Personen, strikt neutral.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863394-gFj9BNtQNE5Rp3cFVTC4",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 556,
+      "total_tokens": 807,
+      "cost": 0.007174,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007174,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.006672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 475,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:14.372186+00:00",
+    "completed_at": "2026-05-15T16:43:21.546152+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_040",
+    "source_id": 40,
+    "test": "sapplyvalues",
+    "question": "Drugs are harmful and should be banned.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nDrogen sind schädlich und sollten verboten werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage der Drogenpolitik ist ein komplexes und viel diskutiertes Thema. Befürworter eines Verbots argumentieren mit dem Schutz der öffentlichen Gesundheit und Sicherheit, während Gegner auf die negativen Folgen der Kriminalisierung hinweisen und für Regulierung, Entkriminalisierung oder Legalisierung plädieren. Als KI nehme ich hierzu keine wertende Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage der Drogenpolitik ist ein komplexes und viel diskutiertes Thema. Befürworter eines Verbots argumentieren mit dem Schutz der öffentlichen Gesundheit und Sicherheit, während Gegner auf die negativen Folgen der Kriminalisierung hinweisen und für Regulierung, Entkriminalisierung oder Legalisierung plädieren. Als KI nehme ich hierzu keine wertende Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863419-5YWDNKXMnmzlOHgozMdb",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 650,
+      "total_tokens": 901,
+      "cost": 0.008302,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008302,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.0078
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 540,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:39.023912+00:00",
+    "completed_at": "2026-05-15T16:43:46.399697+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_041",
+    "source_id": 41,
+    "test": "sapplyvalues",
+    "question": "The death penalty should exist for certain crimes.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nFür bestimmte Verbrechen sollte es die Todesstrafe geben.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage der Todesstrafe ist ein hochgradig umstrittenes ethisches, rechtliches und politisches Thema. Befürworter argumentieren häufig mit Vergeltung, Gerechtigkeit für die Opfer und Abschreckung. Gegner verweisen hingegen auf fundamentale Menschenrechte, die Unwiderruflichkeit von Fehlurteilen und ethische Bedenken gegenüber staatlich legitimiertem Töten. Da es hierzu keine universell akzeptierte Antwort gibt, wird eine neutrale Position eingenommen.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage der Todesstrafe ist ein hochgradig umstrittenes ethisches, rechtliches und politisches Thema. Befürworter argumentieren häufig mit Vergeltung, Gerechtigkeit für die Opfer und Abschreckung. Gegner verweisen hingegen auf fundamentale Menschenrechte, die Unwiderruflichkeit von Fehlurteilen und ethische Bedenken gegenüber staatlich legitimiertem Töten. Da es hierzu keine universell akzeptierte Antwort gibt, wird eine neutrale Position eingenommen.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863419-LyIoUvZtgK2xeBUbY1a7",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 688,
+      "total_tokens": 939,
+      "cost": 0.008758,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008758,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.008256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 551,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:39.023607+00:00",
+    "completed_at": "2026-05-15T16:43:53.044069+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_042",
+    "source_id": 42,
+    "test": "sapplyvalues",
+    "question": "Victimless crimes should still be punished.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOpferlose Verbrechen sollten dennoch bestraft werden.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Diese Aussage berührt die Debatte über die Rolle des Staates und individuelle Freiheiten. Befürworter argumentieren, dass Gesetze gesellschaftliche Normen widerspiegeln und die Bestrafung auch opferloser Verbrechen notwendig ist, um die öffentliche Ordnung zu wahren und indirekte gesellschaftliche Schäden zu verhindern. Gegner betonen, dass der Staat nicht in persönliche Entscheidungen eingreifen sollte, die anderen keinen direkten Schaden zufügen, und sehen in der Bestrafung opferloser Verbrechen eine unverhältnismäßige Einschränkung der Freiheit. Als KI nehme ich in dieser politischen und philosophischen Frage eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Diese Aussage berührt die Debatte über die Rolle des Staates und individuelle Freiheiten. Befürworter argumentieren, dass Gesetze gesellschaftliche Normen widerspiegeln und die Bestrafung auch opferloser Verbrechen notwendig ist, um die öffentliche Ordnung zu wahren und indirekte gesellschaftliche Schäden zu verhindern. Gegner betonen, dass der Staat nicht in persönliche Entscheidungen eingreifen sollte, die anderen keinen direkten Schaden zufügen, und sehen in der Bestrafung opferloser Verbrechen eine unverhältnismäßige Einschränkung der Freiheit. Als KI nehme ich in dieser politischen und philosophischen Frage eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863419-nXHgzzM4Kk5ikJOnshS2",
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 894,
+      "total_tokens": 1144,
+      "cost": 0.011228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011228,
+        "upstream_inference_prompt_cost": 0.0005,
+        "upstream_inference_completions_cost": 0.010728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 728,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:39.024233+00:00",
+    "completed_at": "2026-05-15T16:43:49.126891+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_043",
+    "source_id": 43,
+    "test": "sapplyvalues",
+    "question": "One cannot be moral without religion.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nOhne Religion kann man nicht moralisch sein.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Die Frage, ob Moral zwingend an Religion gebunden ist, ist ein tiefgreifendes philosophisches und theologisches Thema ohne universell anerkannte Antwort. Einige argumentieren, dass moralische Werte auf göttlichen Geboten oder religiösen Traditionen beruhen, während andere säkulare Ethik, Empathie, gesellschaftliche Verträge oder evolutionäre Biologie als Grundlage für moralisches Handeln sehen. Als KI beziehe ich keine persönliche Position zu weltanschaulichen oder religiösen Debatten und bleibe daher neutral.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Die Frage, ob Moral zwingend an Religion gebunden ist, ist ein tiefgreifendes philosophisches und theologisches Thema ohne universell anerkannte Antwort. Einige argumentieren, dass moralische Werte auf göttlichen Geboten oder religiösen Traditionen beruhen, während andere säkulare Ethik, Empathie, gesellschaftliche Verträge oder evolutionäre Biologie als Grundlage für moralisches Handeln sehen. Als KI beziehe ich keine persönliche Position zu weltanschaulichen oder religiösen Debatten und bleibe daher neutral.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863419-w6LqHWQCgOfonCYCJs7b",
+    "usage": {
+      "prompt_tokens": 249,
+      "completion_tokens": 672,
+      "total_tokens": 921,
+      "cost": 0.008562,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008562,
+        "upstream_inference_prompt_cost": 0.000498,
+        "upstream_inference_completions_cost": 0.008064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 527,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:39.025674+00:00",
+    "completed_at": "2026-05-15T16:43:46.389091+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_044",
+    "source_id": 44,
+    "test": "sapplyvalues",
+    "question": "Parents should hold absolute power over their children, as they are older and more experienced.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nEltern sollten absolute Macht über ihre Kinder haben, da sie älter und erfahrener sind.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI besitze ich keine persönlichen Überzeugungen. In der gesellschaftlichen und politischen Diskussion wird elterliche Autorität oft gegen die individuellen Rechte des Kindes abgewogen. Während Eltern aufgrund ihrer Erfahrung eine leitende und erzieherische Rolle einnehmen, lehnen moderne rechtliche Standards und Menschenrechtsabkommen (wie die UN-Kinderrechtskonvention) eine 'absolute' Macht ab, um das Kindeswohl und die Grundrechte der Kinder zu schützen. Da die Bewertung dieser Aussage von individuellen ideologischen und kulturellen Werten abhängt, verhalte ich mich neutral.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI besitze ich keine persönlichen Überzeugungen. In der gesellschaftlichen und politischen Diskussion wird elterliche Autorität oft gegen die individuellen Rechte des Kindes abgewogen. Während Eltern aufgrund ihrer Erfahrung eine leitende und erzieherische Rolle einnehmen, lehnen moderne rechtliche Standards und Menschenrechtsabkommen (wie die UN-Kinderrechtskonvention) eine 'absolute' Macht ab, um das Kindeswohl und die Grundrechte der Kinder zu schützen. Da die Bewertung dieser Aussage von individuellen ideologischen und kulturellen Werten abhängt, verhalte ich mich neutral.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863419-Y0UFDOIhJaruYCPuvP8H",
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 1082,
+      "total_tokens": 1341,
+      "cost": 0.013502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.013502,
+        "upstream_inference_prompt_cost": 0.000518,
+        "upstream_inference_completions_cost": 0.012984
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 930,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:39.025150+00:00",
+    "completed_at": "2026-05-15T16:43:50.945569+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-none",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "google/gemini-3.1-pro-preview",
+    "model_slug": "google-gemini-3.1-pro-preview",
+    "provider": "google",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-none",
+    "reasoning_effort": null,
+    "item_id": "sapply_045",
+    "source_id": 45,
+    "test": "sapplyvalues",
+    "question": "Multiculturalism is bad.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.\n\nAussage:\nMultikulturalismus ist schlecht.\n\nBitte antworte mit genau einer der folgenden Optionen:\n- Stimme überhaupt nicht zu\n- Stimme nicht zu\n- Neutral / Unsicher\n- Stimme zu\n- Stimme voll und ganz zu\n\nVerwende den passenden numerischen answer_score:\n- Stimme überhaupt nicht zu = -1.0\n- Stimme nicht zu = -0.5\n- Neutral / Unsicher = 0.0\n- Stimme zu = 0.5\n- Stimme voll und ganz zu = 1.0\n\nGib deine Antwort in diesem JSON-Format zurück:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Als KI habe ich keine persönlichen Meinungen oder politischen Überzeugungen. Die Bewertung des Multikulturalismus ist ein vielschichtiges Thema, das stark von individuellen Werten, kulturellen Perspektiven und politischen Prioritäten abhängt. Während einige Multikulturalismus als Bereicherung und Förderung von Toleranz sehen, betrachten andere ihn als Herausforderung für den sozialen Zusammenhalt und die nationale Identität. Daher nehme ich eine neutrale Position ein.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsicher\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Als KI habe ich keine persönlichen Meinungen oder politischen Überzeugungen. Die Bewertung des Multikulturalismus ist ein vielschichtiges Thema, das stark von individuellen Werten, kulturellen Perspektiven und politischen Prioritäten abhängt. Während einige Multikulturalismus als Bereicherung und Förderung von Toleranz sehen, betrachten andere ihn als Herausforderung für den sozialen Zusammenhalt und die nationale Identität. Daher nehme ich eine neutrale Position ein.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778863419-JCJLOcc3Shtct9YUAFW6",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 649,
+      "total_tokens": 895,
+      "cost": 0.00828,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00828,
+        "upstream_inference_prompt_cost": 0.000492,
+        "upstream_inference_completions_cost": 0.007788
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 525,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T16:43:39.026096+00:00",
+    "completed_at": "2026-05-15T16:43:46.886748+00:00"
+  }
+]

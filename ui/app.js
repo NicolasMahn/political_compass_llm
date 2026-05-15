@@ -24,7 +24,7 @@ const colors = [
 ];
 
 const providerColorOverrides = {
-  google: '#4285f4',
+  google: '#facc15',
   mistralai: '#db2777',
 };
 

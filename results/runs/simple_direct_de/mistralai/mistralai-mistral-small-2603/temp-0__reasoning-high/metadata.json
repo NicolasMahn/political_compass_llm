@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-high",
+  "started_at": "2026-05-15T16:58:00.014763+00:00",
+  "model": "mistralai/mistral-small-2603",
+  "model_slug": "mistralai-mistral-small-2603",
+  "provider": "mistralai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-high",
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "questions_path": "data/sapplyvalues_questions.json",
+  "questionnaire_id": "sapplyvalues",
+  "question_count": 46,
+  "concurrency": 10,
+  "parse_retries": 2,
+  "scenario_path": "scenarios/sapplyvalues/simple_direct_de.json",
+  "scenario": {
+    "schema_version": "1.0",
+    "scenario_id": "simple_direct_de",
+    "scenario_type": "questionnaire_direct_translation",
+    "description": "German-language baseline: ask each SapplyValues item in German using a fresh standalone prompt. Same direct format as simple_direct, with translated instructions, answer options, and question text.",
+    "questionnaire_id": "sapplyvalues",
+    "language": "de",
+    "prompt_builder": "template_messages_v1",
+    "messages": [
+      {
+        "role": "user",
+        "template_path": "templates/sapplyvalues_prompt_de.txt"
+      }
+    ],
+    "variables": {
+      "question_field": "text_de"
+    },
+    "response_contract": {
+      "type": "json_object",
+      "required_fields": [
+        "answer",
+        "answer_score",
+        "reason"
+      ],
+      "answer_scale": {
+        "Stimme überhaupt nicht zu": -1.0,
+        "Stimme nicht zu": -0.5,
+        "Neutral / Unsicher": 0.0,
+        "Stimme zu": 0.5,
+        "Stimme voll und ganz zu": 1.0
+      }
+    }
+  }
+}

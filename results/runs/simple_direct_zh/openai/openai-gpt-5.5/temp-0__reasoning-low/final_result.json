@@ -1,0 +1,35 @@
+{
+  "axis_scores": {
+    "right": -2.67,
+    "auth": 1.33,
+    "prog": 6.88
+  },
+  "raw_scores": {
+    "right": -4.0,
+    "auth": 2.0,
+    "prog": 11.0
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-low",
+  "scenario_id": "simple_direct_zh",
+  "scenario_type": "questionnaire_direct_translation",
+  "prompt_builder": "template_messages_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "openai/gpt-5.5",
+  "model_slug": "openai-gpt-5.5",
+  "provider": "openai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-low",
+  "temperature": 0.0,
+  "reasoning_effort": "low",
+  "concurrency": 10,
+  "completed_at": "2026-05-15T18:39:03.726627+00:00",
+  "response_count": 46
+}

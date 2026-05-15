@@ -1,0 +1,43 @@
+{
+  "axis_scores": {
+    "right": -3.33,
+    "auth": 0.0,
+    "prog": 5.31
+  },
+  "raw_scores": {
+    "right": -5.0,
+    "auth": 0.0,
+    "prog": 8.5
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-low",
+  "scenario_id": "textual_casual_judged",
+  "scenario_type": "textual_response_judged",
+  "prompt_builder": "textual_judged_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "deepseek/deepseek-v4-pro",
+  "model_slug": "deepseek-deepseek-v4-pro",
+  "provider": "deepseek",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-low",
+  "temperature": 0.0,
+  "reasoning_effort": "low",
+  "judge_model": "openai/gpt-5.5",
+  "judge_model_slug": "openai-gpt-5.5",
+  "judge_temperature": 0.0,
+  "judge_reasoning_effort": "medium",
+  "response_type_counts": {
+    "stance": 39,
+    "both_sides": 7
+  },
+  "concurrency": 5,
+  "completed_at": "2026-05-15T20:31:07.092246+00:00",
+  "response_count": 46
+}
