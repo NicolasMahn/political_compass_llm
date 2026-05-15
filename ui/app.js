@@ -6,7 +6,7 @@ const state = {
   deltaSourceLanguage: 'en',
   deltaTargetLanguage: 'de',
   textualMode: 'casual',
-  textualReasoningEfforts: new Set(['high']),
+  textualReasoningEfforts: new Set(['low', 'high']),
   textualResponseTypeMode: 'casual',
   textualResponseTypeReasoningEfforts: new Set(['high']),
   textualDeltaMode: 'casual',
