@@ -216,10 +216,10 @@ function renderAllControls() {
   renderScenarioControls('textualResponseTypeModeControls', textualScenarios, state.textualResponseTypeMode, (mode) => { state.textualResponseTypeMode = mode; });
   renderScenarioControls('textualDeltaModeControls', textualScenarios, state.textualDeltaMode, (mode) => { state.textualDeltaMode = mode; });
   renderReasoningControls('compassReasoningControls', state.compassReasoningEfforts);
-  renderReasoningControls('deltaReasoningControls', state.deltaReasoningEfforts);
-  renderReasoningControls('textualReasoningControls', state.textualReasoningEfforts);
-  renderReasoningControls('textualResponseTypeReasoningControls', state.textualResponseTypeReasoningEfforts);
-  renderReasoningControls('textualDeltaReasoningControls', state.textualDeltaReasoningEfforts);
+  renderReasoningControls('deltaReasoningControls', state.deltaReasoningEfforts, ['low', 'high']);
+  renderReasoningControls('textualReasoningControls', state.textualReasoningEfforts, ['low', 'high']);
+  renderReasoningControls('textualResponseTypeReasoningControls', state.textualResponseTypeReasoningEfforts, ['low', 'high']);
+  renderReasoningControls('textualDeltaReasoningControls', state.textualDeltaReasoningEfforts, ['low', 'high']);
 }
 
 function renderScenarioControls(rootId, scenarios, activeScenario, updateScenario) {
@@ -260,11 +260,11 @@ function renderLanguageControls(rootId, activeLanguage, updateLanguage) {
   }
 }
 
-function renderReasoningControls(rootId, selectedEfforts) {
+function renderReasoningControls(rootId, selectedEfforts, efforts = ['none', 'low', 'medium', 'high', 'xhigh']) {
   const root = byId(rootId);
   if (!root) return;
   root.innerHTML = '';
-  for (const effort of ['none', 'low', 'medium', 'high', 'xhigh']) {
+  for (const effort of efforts) {
     const label = document.createElement('label');
     label.className = 'toggle-label chip-toggle';
     const checkbox = document.createElement('input');
