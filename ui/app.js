@@ -6,7 +6,7 @@ const state = {
   deltaSourceLanguage: 'en',
   deltaTargetLanguage: 'de',
   compassReasoningEfforts: new Set(['low', 'high']),
-  deltaReasoningEfforts: new Set(['low', 'high']),
+  deltaReasoningEfforts: new Set(['high']),
   compassPoints: [],
   hoveredRunId: null,
   displayColors: new Map(),
