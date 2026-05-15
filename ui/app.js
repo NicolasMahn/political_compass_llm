@@ -945,7 +945,7 @@ function drawResponseTypeBars(runs) {
     ctx.fillStyle = '#111827';
     ctx.font = '12px system-ui, sans-serif';
     ctx.textAlign = 'right';
-    ctx.fillText(`${baseRunLabel(run)} · ${reasoningLabel(runEffort(run))}`, left - 10, y + 15);
+    ctx.fillText(baseRunLabel(run), left - 10, y + 15);
 
     let x = left;
     for (const type of types) {
