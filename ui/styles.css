@@ -66,9 +66,9 @@ button:hover { border-color: var(--accent); }
   z-index: 30;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: min(360px, calc(100vw - 2rem));
-  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
   background: #fff;
   padding: 1rem;
   overflow: auto;
@@ -295,7 +295,7 @@ canvas {
 @media (max-width: 900px) {
   body { overflow: auto; }
   .layout { grid-template-columns: 1fr; overflow: visible; }
-  .sidebar { position: fixed; border-right: 1px solid var(--border); overflow: auto; }
+  .sidebar { position: fixed; border-left: 1px solid var(--border); overflow: auto; }
   .content { overflow: visible; }
   .page-header { align-items: start; flex-direction: column; }
 }
