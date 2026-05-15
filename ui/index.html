@@ -146,9 +146,20 @@
         <section class="card">
           <div class="card-header">
             <div>
-              <h2>Textual response types</h2>
-              <p>Uses the selected textual mode above. Stacked bars show how often the judge classified free-text answers as stance, both-sides, neutral, refusal, unclear, or informational.</p>
+              <h2 id="textualResponseTypeTitle">Textual response types</h2>
+              <p id="textualResponseTypeDescription">Stacked bars show how often the judge classified free-text answers as stance, both-sides, neutral, refusal, unclear, or informational.</p>
             </div>
+          </div>
+          <div class="graph-controls">
+            <div class="control-row">
+              <span class="control-label">Textual mode</span>
+              <div id="textualResponseTypeModeControls" class="segmented-controls"></div>
+            </div>
+            <div class="control-row">
+              <span class="control-label">Reasoning</span>
+              <div id="textualResponseTypeReasoningControls" class="chip-controls"></div>
+            </div>
+            <div id="textualResponseTypeWarnings" class="warning-box" hidden></div>
           </div>
           <div class="bar-wrap">
             <canvas id="textualResponseTypeCanvas" width="900" height="520" aria-label="Textual response type stacked bar chart"></canvas>

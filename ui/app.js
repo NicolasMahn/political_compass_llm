@@ -7,6 +7,8 @@ const state = {
   deltaTargetLanguage: 'de',
   textualMode: 'casual',
   textualReasoningEfforts: new Set(['high']),
+  textualResponseTypeMode: 'casual',
+  textualResponseTypeReasoningEfforts: new Set(['high']),
   textualDeltaMode: 'casual',
   textualDeltaReasoningEfforts: new Set(['high']),
   compassReasoningEfforts: new Set(['low', 'high']),
@@ -80,6 +82,9 @@ function selectedCompassRuns() {
 function selectedNeutralRuns() { return runsForLanguage(state.neutralLanguage); }
 function selectedTextualRuns() {
   return runsForScenario(textualScenarios[state.textualMode].scenarioId).filter((run) => state.textualReasoningEfforts.has(runEffort(run)));
+}
+function selectedTextualResponseTypeRuns() {
+  return runsForScenario(textualScenarios[state.textualResponseTypeMode].scenarioId).filter((run) => state.textualResponseTypeReasoningEfforts.has(runEffort(run)));
 }
 
 function initializeDefaultSelection() {
@@ -208,10 +213,12 @@ function renderAllControls() {
   renderLanguageControls('deltaSourceLanguageControls', state.deltaSourceLanguage, (language) => { state.deltaSourceLanguage = language; });
   renderLanguageControls('deltaTargetLanguageControls', state.deltaTargetLanguage, (language) => { state.deltaTargetLanguage = language; });
   renderScenarioControls('textualModeControls', textualScenarios, state.textualMode, (mode) => { state.textualMode = mode; });
+  renderScenarioControls('textualResponseTypeModeControls', textualScenarios, state.textualResponseTypeMode, (mode) => { state.textualResponseTypeMode = mode; });
   renderScenarioControls('textualDeltaModeControls', textualScenarios, state.textualDeltaMode, (mode) => { state.textualDeltaMode = mode; });
   renderReasoningControls('compassReasoningControls', state.compassReasoningEfforts);
   renderReasoningControls('deltaReasoningControls', state.deltaReasoningEfforts);
   renderReasoningControls('textualReasoningControls', state.textualReasoningEfforts);
+  renderReasoningControls('textualResponseTypeReasoningControls', state.textualResponseTypeReasoningEfforts);
   renderReasoningControls('textualDeltaReasoningControls', state.textualDeltaReasoningEfforts);
 }
 
@@ -278,6 +285,7 @@ function renderAll() {
   const neutralRuns = selectedNeutralRuns();
   const delta = languageDeltaPairs(state.deltaSourceLanguage, state.deltaTargetLanguage);
   const textualRuns = selectedTextualRuns();
+  const textualResponseTypeRuns = selectedTextualResponseTypeRuns();
   const textualDelta = scenarioDeltaPairs(
     'simple_direct',
     textualScenarios[state.textualDeltaMode].scenarioId,
@@ -290,12 +298,13 @@ function renderAll() {
   renderNeutralWarnings(neutralRuns);
   renderLanguageDeltaWarnings(delta.missing);
   renderTextualWarnings(textualRuns);
+  renderTextualResponseTypeWarnings(textualResponseTypeRuns);
   renderTextualDeltaWarnings(textualDelta.missing);
   drawCompass(compassRuns);
   drawNeutralBars(neutralRuns);
   drawLanguageDelta(delta.pairs, languageScenarios[state.deltaSourceLanguage], languageScenarios[state.deltaTargetLanguage]);
   drawCompass(textualRuns, 'textualCompassCanvas', false);
-  drawResponseTypeBars(textualRuns);
+  drawResponseTypeBars(textualResponseTypeRuns);
   drawLanguageDelta(textualDelta.pairs, { label: 'Direct English' }, textualScenarios[state.textualDeltaMode], 'textualDeltaCanvas');
   renderDetails(compassRuns);
 }
@@ -397,6 +406,25 @@ function renderTextualWarnings(textualRuns) {
   if (missingScenario.length) messages.push(`Missing ${scenario.label} runs for: ${missingScenario.map(modelNameForKey).join(', ')}.`);
   if (missingReasoning.length && state.textualReasoningEfforts.size) messages.push(`No selected textual reasoning runs (${[...state.textualReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
   if (!state.textualReasoningEfforts.size) messages.push('No reasoning efforts selected for textual compass.');
+  renderWarningBox(root, messages);
+}
+
+function renderTextualResponseTypeWarnings(textualRuns) {
+  const root = byId('textualResponseTypeWarnings');
+  if (!root) return;
+  const scenario = textualScenarios[state.textualResponseTypeMode];
+  byId('textualResponseTypeTitle').textContent = `Textual response types: ${scenario.label}`;
+  byId('textualResponseTypeDescription').textContent = `Stacked bars for “${scenario.label}”. ${scenario.description}`;
+  const selectedKeys = [...state.selectedModels].sort();
+  const scenarioRuns = runsForScenario(scenario.scenarioId);
+  const scenarioKeys = new Set(scenarioRuns.map(modelKey));
+  const runKeys = new Set(textualRuns.map(modelKey));
+  const missingScenario = selectedKeys.filter((key) => !scenarioKeys.has(key));
+  const missingReasoning = selectedKeys.filter((key) => scenarioKeys.has(key) && !runKeys.has(key));
+  const messages = [];
+  if (missingScenario.length) messages.push(`Missing ${scenario.label} runs for: ${missingScenario.map(modelNameForKey).join(', ')}.`);
+  if (missingReasoning.length && state.textualResponseTypeReasoningEfforts.size) messages.push(`No selected textual response-type reasoning runs (${[...state.textualResponseTypeReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
+  if (!state.textualResponseTypeReasoningEfforts.size) messages.push('No reasoning efforts selected for textual response types.');
   renderWarningBox(root, messages);
 }
 
