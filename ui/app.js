@@ -220,10 +220,13 @@ function renderReasoningControls() {
 function renderAll() {
   const compassRuns = selectedCompassRuns();
   const neutralRuns = selectedNeutralRuns();
+  const delta = languageDeltaPairs('en', 'de');
   byId('selectedCount').textContent = `${state.selectedModels.size} models`;
   renderMissingRunWarnings(compassRuns, neutralRuns);
+  renderLanguageDeltaWarnings(delta.missing);
   drawCompass(compassRuns);
   drawNeutralBars(neutralRuns);
+  drawLanguageDelta(delta.pairs, languageScenarios.en, languageScenarios.de);
   renderDetails(compassRuns);
 }
 
@@ -251,6 +254,38 @@ function renderMissingRunWarnings(compassRuns, neutralRuns) {
 function modelNameForKey(key) {
   const run = state.manifest.runs.find((candidate) => modelKey(candidate) === key);
   return run ? baseRunLabel(run) : key;
+}
+
+function languageDeltaPairs(sourceLanguage, targetLanguage) {
+  const sourceScenario = languageScenarios[sourceLanguage]?.scenarioId;
+  const targetScenario = languageScenarios[targetLanguage]?.scenarioId;
+  const efforts = [...state.compassReasoningEfforts];
+  const pairs = [];
+  const missing = [];
+
+  for (const key of [...state.selectedModels].sort()) {
+    for (const effort of efforts) {
+      const sourceRun = state.manifest.runs.find((run) => modelKey(run) === key && run.scenario_id === sourceScenario && runEffort(run) === effort);
+      const targetRun = state.manifest.runs.find((run) => modelKey(run) === key && run.scenario_id === targetScenario && runEffort(run) === effort);
+      if (sourceRun && targetRun) {
+        pairs.push({ sourceRun, targetRun, effort });
+      } else if (sourceRun || targetRun) {
+        missing.push(`${modelNameForKey(key)} (${reasoningLabel(effort)}): missing ${sourceRun ? languageScenarios[targetLanguage].label : languageScenarios[sourceLanguage].label}`);
+      }
+    }
+  }
+
+  return { pairs, missing };
+}
+
+function renderLanguageDeltaWarnings(missing) {
+  const root = byId('languageDeltaWarnings');
+  if (!root) return;
+  const messages = [];
+  if (!state.compassReasoningEfforts.size) messages.push('No reasoning efforts selected for language delta.');
+  if (missing.length) messages.push(`Cannot compute English → German delta for: ${missing.join(', ')}.`);
+  root.innerHTML = messages.map((message) => `<div>${escapeHtml(message)}</div>`).join('');
+  root.hidden = messages.length === 0;
 }
 
 function drawCompass(runs) {
@@ -566,6 +601,113 @@ function drawNeutralBars(runs) {
   });
 
   drawNeutralLegend(ctx, runs, left + chartW + 36, top + 8);
+}
+
+function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
+  const canvas = byId('languageDeltaCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const w = canvas.width;
+  const h = canvas.height;
+  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = '#f8fafc';
+  ctx.fillRect(0, 0, w, h);
+
+  const gridX = 80, gridY = 50, gridSize = 500;
+  const centerX = gridX + gridSize / 2;
+  const centerY = gridY + gridSize / 2;
+  const xForRight = (right) => gridX + ((clamp(right ?? 0, -10, 10) + 10) / 20) * gridSize;
+  const yForAuth = (auth) => gridY + ((10 - clamp(auth ?? 0, -10, 10)) / 20) * gridSize;
+
+  ctx.fillStyle = '#f4b5b8'; ctx.fillRect(gridX, gridY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = '#86d4ee'; ctx.fillRect(centerX, gridY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = '#c9e7bf'; ctx.fillRect(gridX, centerY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = '#f5f2a4'; ctx.fillRect(centerX, centerY, gridSize / 2, gridSize / 2);
+
+  ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+  ctx.lineWidth = 1;
+  for (let i = 0; i <= 20; i++) {
+    const x = gridX + (i / 20) * gridSize;
+    const y = gridY + (i / 20) * gridSize;
+    ctx.beginPath(); ctx.moveTo(x, gridY); ctx.lineTo(x, gridY + gridSize); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(gridX, y); ctx.lineTo(gridX + gridSize, y); ctx.stroke();
+  }
+
+  ctx.strokeStyle = 'rgba(31, 41, 55, 0.9)';
+  ctx.fillStyle = '#1f2937';
+  ctx.lineWidth = 4;
+  drawArrow(ctx, gridX - 25, centerY, gridX + gridSize + 25, centerY);
+  drawArrow(ctx, centerX, gridY + gridSize + 25, centerX, gridY - 25);
+  ctx.font = '700 24px system-ui, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Authority', centerX, 30);
+  ctx.fillText('Liberty', centerX, gridY + gridSize + 45);
+  ctx.textAlign = 'right'; ctx.fillText('Left', gridX - 28, centerY + 8);
+  ctx.textAlign = 'left'; ctx.fillText('Right', gridX + gridSize + 28, centerY + 8);
+
+  if (!pairs.length) {
+    ctx.fillStyle = '#64748b';
+    ctx.font = '700 16px system-ui, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('No matching English/German runs for the selected models and reasoning levels.', centerX, centerY);
+    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 635, 70);
+    return;
+  }
+
+  pairs.forEach(({ sourceRun, targetRun, effort }, index) => {
+    const color = displayColor(sourceRun, index);
+    const x1 = xForRight(sourceRun.axis_scores.right);
+    const y1 = yForAuth(sourceRun.axis_scores.auth);
+    const x2 = xForRight(targetRun.axis_scores.right);
+    const y2 = yForAuth(targetRun.axis_scores.auth);
+
+    ctx.save();
+    ctx.strokeStyle = color;
+    ctx.fillStyle = color;
+    ctx.globalAlpha = 0.75;
+    ctx.lineWidth = 2.5;
+    drawArrow(ctx, x1, y1, x2, y2);
+    ctx.globalAlpha = 1;
+    drawRunMarker(ctx, x1, y1, 5, '#ffffff', effort);
+    drawRunMarker(ctx, x2, y2, 7, color, effort);
+    ctx.restore();
+  });
+
+  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 635, 70);
+}
+
+function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y) {
+  ctx.textAlign = 'left';
+  ctx.font = '700 14px system-ui, sans-serif';
+  ctx.fillStyle = '#111827';
+  ctx.fillText(`${sourceLanguage.label} → ${targetLanguage.label}`, x, y);
+  ctx.font = '12px system-ui, sans-serif';
+  ctx.fillStyle = '#64748b';
+  ctx.fillText('Hollow = English start · Filled = German end', x, y + 18);
+
+  pairs.slice(0, 12).forEach(({ sourceRun, targetRun, effort }, index) => {
+    const yy = y + 44 + index * 34;
+    const color = displayColor(sourceRun, index);
+    const deltaRight = (targetRun.axis_scores.right ?? 0) - (sourceRun.axis_scores.right ?? 0);
+    const deltaAuth = (targetRun.axis_scores.auth ?? 0) - (sourceRun.axis_scores.auth ?? 0);
+    const deltaProg = (targetRun.axis_scores.prog ?? 0) - (sourceRun.axis_scores.prog ?? 0);
+    ctx.fillStyle = color;
+    ctx.strokeStyle = '#111827';
+    ctx.lineWidth = 1.5;
+    drawRunMarker(ctx, x + 6, yy - 5, 5, color, effort);
+    ctx.fillStyle = '#111827';
+    ctx.fillText(`${baseRunLabel(sourceRun)} · ${reasoningLabel(effort)}`, x + 18, yy - 8);
+    ctx.fillStyle = '#64748b';
+    ctx.fillText(`ΔR ${signedScore(deltaRight)} · ΔA ${signedScore(deltaAuth)} · ΔP ${signedScore(deltaProg)}`, x + 18, yy + 8);
+  });
+  if (pairs.length > 12) {
+    ctx.fillStyle = '#64748b';
+    ctx.fillText(`+${pairs.length - 12} more`, x, y + 44 + 12 * 34);
+  }
+}
+
+function signedScore(value) {
+  return `${value >= 0 ? '+' : ''}${formatScore(value)}`;
 }
 
 function renderDetails(runs) {
