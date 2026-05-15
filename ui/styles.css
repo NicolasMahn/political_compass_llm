@@ -64,6 +64,13 @@ button:hover { border-color: var(--accent); }
 }
 
 .sidebar h2, .card h2 { margin: 0 0 0.35rem; }
+.sidebar > details > summary {
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.sidebar > details > summary::marker { color: var(--muted); }
+.sidebar button { margin: 0.35rem 0 0.75rem; }
 .hint { color: var(--muted); font-size: 0.88rem; margin-top: 0; }
 code { background: #eef2ff; padding: 0.08rem 0.25rem; border-radius: 0.25rem; }
 

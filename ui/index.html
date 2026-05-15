@@ -13,14 +13,16 @@
         <h1>LLM Political Compass Results</h1>
         <p>Static viewer for persisted benchmark runs.</p>
       </div>
-      <button id="selectAllButton" type="button">Select all models</button>
     </header>
 
     <main class="layout">
       <aside class="sidebar">
-        <h2>Models</h2>
-        <p class="hint">Choose models once. Every graph respects this selection.</p>
-        <div id="runTree" class="run-tree"></div>
+        <details id="modelSelectorDetails">
+          <summary>Models</summary>
+          <p class="hint">Choose models once. Every graph respects this selection.</p>
+          <button id="selectAllButton" type="button">Select all models</button>
+          <div id="runTree" class="run-tree"></div>
+        </details>
       </aside>
 
       <section class="content">
