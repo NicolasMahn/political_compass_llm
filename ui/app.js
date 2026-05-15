@@ -642,10 +642,12 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
   ctx.fillRect(0, 0, w, h);
 
   const gridX = 80, gridY = 50, gridSize = 500;
+  const barX = 670, barY = 50, barW = 64, barH = 500;
   const centerX = gridX + gridSize / 2;
   const centerY = gridY + gridSize / 2;
   const xForRight = (right) => gridX + ((clamp(right ?? 0, -10, 10) + 10) / 20) * gridSize;
   const yForAuth = (auth) => gridY + ((10 - clamp(auth ?? 0, -10, 10)) / 20) * gridSize;
+  const yForProg = (prog) => barY + ((10 - clamp(prog ?? 0, -10, 10)) / 20) * barH;
 
   ctx.fillStyle = '#f4b5b8'; ctx.fillRect(gridX, gridY, gridSize / 2, gridSize / 2);
   ctx.fillStyle = '#86d4ee'; ctx.fillRect(centerX, gridY, gridSize / 2, gridSize / 2);
@@ -673,12 +675,27 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
   ctx.textAlign = 'right'; ctx.fillText('Left', gridX - 28, centerY + 8);
   ctx.textAlign = 'left'; ctx.fillText('Right', gridX + gridSize + 28, centerY + 8);
 
+  const gradient = ctx.createLinearGradient(0, barY, 0, barY + barH);
+  gradient.addColorStop(0, '#14c814');
+  gradient.addColorStop(0.35, '#37e95d');
+  gradient.addColorStop(0.55, '#3b82f6');
+  gradient.addColorStop(0.75, '#1d0ea4');
+  gradient.addColorStop(1, '#100a4d');
+  ctx.fillStyle = gradient;
+  ctx.fillRect(barX, barY, barW, barH);
+  ctx.strokeStyle = '#111827'; ctx.lineWidth = 1; ctx.strokeRect(barX, barY, barW, barH);
+  ctx.fillStyle = '#1f2937';
+  ctx.textAlign = 'center';
+  ctx.font = '700 24px system-ui, sans-serif';
+  ctx.fillText('Progressive', barX + barW / 2, 30);
+  ctx.fillText('Conservative', barX + barW / 2, barY + barH + 38);
+
   if (!pairs.length) {
     ctx.fillStyle = '#64748b';
     ctx.font = '700 16px system-ui, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText(`No matching ${sourceLanguage.label}/${targetLanguage.label} runs for the selected models and reasoning levels.`, centerX, centerY);
-    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 650, 70);
+    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70);
     return;
   }
 
@@ -688,6 +705,9 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
     const y1 = yForAuth(sourceRun.axis_scores.auth);
     const x2 = xForRight(targetRun.axis_scores.right);
     const y2 = yForAuth(targetRun.axis_scores.auth);
+    const sourceProgY = yForProg(sourceRun.axis_scores.prog);
+    const targetProgY = yForProg(targetRun.axis_scores.prog);
+    const progX = barX + barW / 2 + ((index % 5) - 2) * 9;
 
     ctx.save();
     ctx.strokeStyle = color;
@@ -695,13 +715,16 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
     ctx.globalAlpha = 0.75;
     ctx.lineWidth = 2.5;
     drawArrow(ctx, x1, y1, x2, y2);
+    drawArrow(ctx, progX, sourceProgY, progX, targetProgY);
     ctx.globalAlpha = 1;
     drawRunMarker(ctx, x1, y1, 5, '#ffffff', effort);
     drawRunMarker(ctx, x2, y2, 7, color, effort);
+    drawRunMarker(ctx, progX, sourceProgY, 4, '#ffffff', effort);
+    drawRunMarker(ctx, progX, targetProgY, 5, color, effort);
     ctx.restore();
   });
 
-  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 650, 70);
+  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70);
 }
 
 function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y) {
