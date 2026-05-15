@@ -73,6 +73,22 @@ code { background: #eef2ff; padding: 0.08rem 0.25rem; border-radius: 0.25rem; }
   padding: 1rem;
 }
 
+a { color: var(--accent); font-weight: 700; }
+a:hover { color: #1d4ed8; }
+
+.explanation-card p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.explanation-card .link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
