@@ -16,13 +16,15 @@
     </header>
 
     <main class="layout">
-      <aside class="sidebar">
-        <details id="modelSelectorDetails">
-          <summary>Models</summary>
-          <p class="hint">Choose models once. Every graph respects this selection.</p>
-          <button id="selectAllButton" type="button">Select all models</button>
-          <div id="runTree" class="run-tree"></div>
-        </details>
+      <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-controls="modelSidebar" aria-expanded="false">☰ Models</button>
+      <aside id="modelSidebar" class="sidebar" hidden>
+        <div class="sidebar-header">
+          <h2>Models</h2>
+          <button id="sidebarClose" class="sidebar-close" type="button" aria-label="Hide model selector">×</button>
+        </div>
+        <p class="hint">Choose models once. Every graph respects this selection.</p>
+        <button id="selectAllButton" type="button">Select all models</button>
+        <div id="runTree" class="run-tree"></div>
       </aside>
 
       <section class="content">

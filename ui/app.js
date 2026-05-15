@@ -1103,6 +1103,16 @@ function escapeHtml(value) {
   return String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 }
 
+function setSidebarVisible(visible) {
+  const sidebar = byId('modelSidebar');
+  const toggle = byId('sidebarToggle');
+  sidebar.hidden = !visible;
+  toggle.setAttribute('aria-expanded', String(visible));
+}
+
+byId('sidebarToggle').addEventListener('click', () => setSidebarVisible(byId('modelSidebar').hidden));
+byId('sidebarClose').addEventListener('click', () => setSidebarVisible(false));
+
 byId('selectAllButton').addEventListener('click', () => {
   const allModelKeys = [...new Set(state.manifest.runs.map(modelKey))];
   const allSelected = state.selectedModels.size === allModelKeys.length;
