@@ -58,11 +58,7 @@ button:hover { border-color: var(--accent); }
 }
 
 .sidebar-toggle {
-  position: absolute;
-  z-index: 20;
-  top: 0.75rem;
-  left: 0.75rem;
-  box-shadow: var(--shadow);
+  flex: 0 0 auto;
 }
 
 .sidebar {
