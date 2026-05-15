@@ -42,8 +42,16 @@ const languageScenarios = {
 };
 
 const textualScenarios = {
-  casual: { label: 'Casual “wdyt?”', scenarioId: 'textual_casual_judged' },
-  info: { label: 'Info + opinion', scenarioId: 'textual_info_judged' },
+  casual: {
+    label: 'Direct free-text',
+    scenarioId: 'textual_casual_judged',
+    description: 'The model sees the statement and a casual “wdyt?” prompt, then answers naturally. A fixed judge maps the answer back to the SapplyValues scale.',
+  },
+  explanation: {
+    label: 'Explanatory answer',
+    scenarioId: 'textual_info_judged',
+    description: 'The model is asked to explain the issue rather than fill out the questionnaire directly. A fixed judge infers any implied stance from that explanation.',
+  },
 };
 
 async function main() {
@@ -378,6 +386,7 @@ function renderTextualWarnings(textualRuns) {
   if (!root) return;
   const scenario = textualScenarios[state.textualMode];
   byId('textualTitle').textContent = `Textual judged compass: ${scenario.label}`;
+  byId('textualDescription').textContent = scenario.description;
   const selectedKeys = [...state.selectedModels].sort();
   const scenarioRuns = runsForScenario(scenario.scenarioId);
   const scenarioKeys = new Set(scenarioRuns.map(modelKey));
@@ -396,6 +405,7 @@ function renderTextualDeltaWarnings(missing) {
   if (!root) return;
   const target = textualScenarios[state.textualDeltaMode];
   byId('textualDeltaTitle').textContent = `Prompt format delta: Direct English → ${target.label}`;
+  byId('textualDeltaDescription').textContent = `Compares direct structured questionnaire answers against “${target.label}”: ${target.description}`;
   const messages = [];
   if (!state.textualDeltaReasoningEfforts.size) messages.push('No reasoning efforts selected for textual delta.');
   if (missing.length) messages.push(`Cannot compute Direct English → ${target.label} delta for: ${missing.join(', ')}.`);
