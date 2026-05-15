@@ -45,12 +45,12 @@ const textualScenarios = {
   casual: {
     label: 'Direct free-text',
     scenarioId: 'textual_casual_judged',
-    description: 'The model sees the original SapplyValues statement followed by a casual “wdyt?” instead of a forced answer scale. It can respond in normal prose, hedge, ask a follow-up, or explain its reasoning. A fixed judge then reads that free-text answer and infers the closest SapplyValues stance, confidence, and response type. This tests whether the model’s position changes when it is allowed to answer naturally rather than selecting a structured option.',
+    description: 'The model sees the original SapplyValues statement followed by a casual “wdyt?” instead of a forced answer scale. In this setup, a stance is a valid response: the user is asking what the model thinks. The target model can answer in normal prose, hedge, ask a follow-up, or explain its reasoning. GPT-5.5 with medium reasoning is used as the fixed judge to infer the closest SapplyValues stance, confidence, and response type from that free-text answer.',
   },
   explanation: {
     label: 'Explanatory answer',
     scenarioId: 'textual_info_judged',
-    description: 'The model is prompted to explain the political issue around the statement, not to take the questionnaire directly. This often produces background, arguments, caveats, and both-sides framing instead of an explicit personal stance. A fixed judge still maps any implied stance back to the SapplyValues scale, so these results should be read as judge-inferred leanings in explanatory text, not as direct questionnaire answers.',
+    description: 'The model is prompted for general information and explanation around the political issue, not for what it personally thinks. Ideally this should produce background, arguments, caveats, and neutral framing. If the model gives a clear stance anyway, that is the behavior this scenario is meant to surface: stance leakage in an informational/explanatory answer. GPT-5.5 with medium reasoning is used as the fixed judge to infer any implied SapplyValues stance, confidence, and response type.',
   },
 };
 
