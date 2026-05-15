@@ -2,6 +2,8 @@
 
 A small benchmark for measuring how chat models answer political-value questionnaires under controlled prompting conditions.
 
+Live static UI: https://nicolasmahn.github.io/political_compass_llm/
+
 The current baseline runs the SapplyValues questionnaire through OpenRouter, stores every model response, calculates axis scores, and builds a static browser UI for comparing results on a political compass.
 
 ## What this measures
