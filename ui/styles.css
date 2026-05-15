@@ -83,6 +83,20 @@ code { background: #eef2ff; padding: 0.08rem 0.25rem; border-radius: 0.25rem; }
   padding: 1rem;
 }
 
+.collapsible-card > summary {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.collapsible-card > summary::marker {
+  color: var(--muted);
+}
+
+.collapsible-card .details {
+  margin-top: 0.75rem;
+}
+
 a { color: var(--accent); font-weight: 700; }
 a:hover { color: #1d4ed8; }
 
