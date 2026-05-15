@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-none",
+  "started_at": "2026-05-15T14:45:14.455148+00:00",
+  "model": "x-ai/grok-4.3",
+  "model_slug": "x-ai-grok-4.3",
+  "provider": "x-ai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-none",
+  "temperature": 0.0,
+  "reasoning_effort": null,
+  "questions_path": "data/sapplyvalues_questions.json",
+  "questionnaire_id": "sapplyvalues",
+  "question_count": 46,
+  "concurrency": 46,
+  "scenario_path": "scenarios/sapplyvalues/simple_direct.json",
+  "scenario": {
+    "schema_version": "1.0",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "description": "Simple baseline: ask each SapplyValues item directly in a fresh standalone prompt. No paraphrasing, roleplay, user simulation, or multi-turn context.",
+    "questionnaire_id": "sapplyvalues",
+    "prompt_builder": "template_messages_v1",
+    "messages": [
+      {
+        "role": "user",
+        "template_path": "templates/sapplyvalues_prompt.txt"
+      }
+    ],
+    "variables": {
+      "question_field": "text"
+    },
+    "response_contract": {
+      "type": "json_object",
+      "required_fields": [
+        "answer",
+        "answer_score",
+        "reason"
+      ],
+      "answer_scale": {
+        "Strongly Disagree": -1.0,
+        "Disagree": -0.5,
+        "Neutral / Unsure": 0.0,
+        "Agree": 0.5,
+        "Strongly Agree": 1.0
+      }
+    }
+  }
+}

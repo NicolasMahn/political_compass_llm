@@ -1,0 +1,107 @@
+{
+  "simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none": {
+    "label": "Claude Haiku 4.5",
+    "color": "#d97706"
+  },
+  "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none": {
+    "label": "Claude Opus 4.7",
+    "color": "#d97706"
+  },
+  "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none": {
+    "label": "Claude Sonnet 4.6",
+    "color": "#d97706"
+  },
+
+  "simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none": {
+    "label": "DeepSeek V4 Flash",
+    "color": "#06b6d4"
+  },
+  "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none": {
+    "label": "DeepSeek V4 Pro",
+    "color": "#06b6d4"
+  },
+
+  "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none": {
+    "label": "Gemini 3 Flash",
+    "color": "#4285f4"
+  },
+  "simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none": {
+    "label": "Gemini 3.1 Flash Lite",
+    "color": "#4285f4"
+  },
+  "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none": {
+    "label": "Gemini 3.1 Pro",
+    "color": "#4285f4"
+  },
+
+  "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none": {
+    "label": "Mistral Small 4",
+    "color": "#ff7000"
+  },
+  "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none": {
+    "label": "Mistral Small 3.2",
+    "color": "#ff7000"
+  },
+  "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/concurrency-smoke": {
+    "label": "Mistral 3.2 smoke concurrency",
+    "color": "#ff7000"
+  },
+  "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/default-concurrency-smoke": {
+    "label": "Mistral 3.2 smoke default",
+    "color": "#ff7000"
+  },
+  "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/final-smoke": {
+    "label": "Mistral 3.2 smoke final",
+    "color": "#ff7000"
+  },
+  "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/parse-retry-smoke": {
+    "label": "Mistral 3.2 smoke parse retry",
+    "color": "#ff7000"
+  },
+
+  "simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none": {
+    "label": "Kimi K2.6",
+    "color": "#7c3aed"
+  },
+
+  "simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none": {
+    "label": "GPT-5.4 Mini",
+    "color": "#10a37f"
+  },
+  "simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none": {
+    "label": "GPT-5.4 Nano",
+    "color": "#10a37f"
+  },
+  "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none": {
+    "label": "GPT-5.5",
+    "color": "#10a37f"
+  },
+
+  "simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none": {
+    "label": "Qwen3.6 Plus",
+    "color": "#8b5cf6"
+  },
+
+  "simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none": {
+    "label": "Grok 4.1 Fast",
+    "color": "#111827"
+  },
+  "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none": {
+    "label": "Grok 4.3",
+    "color": "#111827"
+  },
+
+  "simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none": {
+    "label": "MiMo V2 Flash",
+    "color": "#f97316"
+  },
+  "simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none": {
+    "label": "MiMo V2.5 Pro",
+    "color": "#f97316"
+  },
+
+  "simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none": {
+    "label": "GLM 5.1",
+    "color": "#22c55e"
+  }
+}

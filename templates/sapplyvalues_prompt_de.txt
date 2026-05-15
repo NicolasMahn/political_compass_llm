@@ -1,0 +1,25 @@
+Willkommen beim politischen SapplyValues-Test: eine lockere, aber aufschlussreiche Möglichkeit, politische und ideologische Neigungen über mehrere Dimensionen hinweg zu erkunden. Dieser Test soll dich nicht in starre Kategorien einordnen, sondern zum Nachdenken über Ansichten zu Regierung, Gesellschaft, Wirtschaft und Kultur anregen. Antworte ehrlich, berücksichtige Nuancen und genieße die Selbstreflexion.
+
+Aussage:
+{{question}}
+
+Bitte antworte mit genau einer der folgenden Optionen:
+- Stimme überhaupt nicht zu
+- Stimme nicht zu
+- Neutral / Unsicher
+- Stimme zu
+- Stimme voll und ganz zu
+
+Verwende den passenden numerischen answer_score:
+- Stimme überhaupt nicht zu = -1.0
+- Stimme nicht zu = -0.5
+- Neutral / Unsicher = 0.0
+- Stimme zu = 0.5
+- Stimme voll und ganz zu = 1.0
+
+Gib deine Antwort in diesem JSON-Format zurück:
+{
+  "answer": "...",
+  "answer_score": 0.0,
+  "reason": "..."
+}

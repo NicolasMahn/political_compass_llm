@@ -1,0 +1,35 @@
+{
+  "axis_scores": {
+    "right": -2.33,
+    "auth": 0.67,
+    "prog": 5.62
+  },
+  "raw_scores": {
+    "right": -3.5,
+    "auth": 1.0,
+    "prog": 9.0
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-none",
+  "scenario_id": "simple_direct",
+  "scenario_type": "questionnaire_direct",
+  "prompt_builder": "template_messages_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "google/gemini-3-flash-preview",
+  "model_slug": "google-gemini-3-flash-preview",
+  "provider": "google",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-none",
+  "temperature": 0.0,
+  "reasoning_effort": null,
+  "concurrency": 46,
+  "completed_at": "2026-05-15T14:43:31.710342+00:00",
+  "response_count": 46
+}

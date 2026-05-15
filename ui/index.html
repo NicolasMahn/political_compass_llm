@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM Political Compass Results</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div>
+        <h1>LLM Political Compass Results</h1>
+        <p>Static viewer for persisted benchmark runs.</p>
+      </div>
+      <button id="selectAllButton" type="button">Select all visible</button>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <h2>Runs</h2>
+        <p class="hint">Mirrors <code>results/runs/scenario/provider/model/config</code>.</p>
+        <div id="runTree" class="run-tree"></div>
+      </aside>
+
+      <section class="content">
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <h2>Political compass</h2>
+              <p>Right axis = left/right. Auth axis = liberty/authority. Bar color = progressive/conservative.</p>
+            </div>
+            <div class="chart-actions">
+              <label class="toggle-label">
+                <input id="showCompassLabels" type="checkbox" />
+                Show labels
+              </label>
+              <div id="selectedCount" class="pill">0 selected</div>
+            </div>
+          </div>
+          <div class="compass-wrap">
+            <canvas id="compassCanvas" width="900" height="620" aria-label="Political compass chart"></canvas>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <div>
+              <h2>Neutral / abstention by reasoning effort</h2>
+              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model.</p>
+            </div>
+          </div>
+          <div class="bar-wrap">
+            <canvas id="neutralCanvas" width="900" height="360" aria-label="Neutral answer bar chart"></canvas>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Selected run details</h2>
+          <div id="details" class="details"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

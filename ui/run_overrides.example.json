@@ -1,0 +1,11 @@
+{
+  "README": "Copy to ui/run_overrides.json. Keys may be full run ids, model ids, model slugs, provider/model/config paths, or scenario/provider/model/config paths.",
+  "mistralai/mistral-small-2603": {
+    "label": "Mistral Small",
+    "color": "#ff7000"
+  },
+  "simple_direct/mistral/mistralai-mistral-small-2603/temp-0__reasoning-none": {
+    "label": "Mistral Small · direct",
+    "color": "#2563eb"
+  }
+}

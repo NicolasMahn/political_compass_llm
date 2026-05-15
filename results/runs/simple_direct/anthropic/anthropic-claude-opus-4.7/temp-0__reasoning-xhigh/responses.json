@@ -1,0 +1,2716 @@
+[
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_000",
+    "source_id": 0,
+    "test": "sapplyvalues",
+    "question": "Freedom of business is the best practical way a society can prosper.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nFreedom of business is the best practical way a society can prosper.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "While free enterprise can drive innovation and prosperity, unregulated business freedom can also lead to inequality, exploitation, and market failures. A balanced approach with both economic freedom and sensible regulation tends to produce the best outcomes.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsure\",\n  \"answer_score\": 0.0,\n  \"reason\": \"While free enterprise can drive innovation and prosperity, unregulated business freedom can also lead to inequality, exploitation, and market failures. A balanced approach with both economic freedom and sensible regulation tends to produce the best outcomes.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-cF39U6h84jbU0eLNVcFC",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 121,
+      "total_tokens": 470,
+      "cost": 0.00477,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00477,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.003025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.253208+00:00",
+    "completed_at": "2026-05-15T15:34:17.507740+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_001",
+    "source_id": 1,
+    "test": "sapplyvalues",
+    "question": "Charity is a better way of helping those in need than social welfare.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nCharity is a better way of helping those in need than social welfare.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Charity is valuable but inconsistent and dependent on donor whims, whereas social welfare provides systematic, reliable support that ensures basic needs are met for everyone who qualifies, regardless of public sentiment.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Charity is valuable but inconsistent and dependent on donor whims, whereas social welfare provides systematic, reliable support that ensures basic needs are met for everyone who qualifies, regardless of public sentiment.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-Gps43313gMl4AJkIgKje",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 109,
+      "total_tokens": 458,
+      "cost": 0.00447,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00447,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.002725
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.254385+00:00",
+    "completed_at": "2026-05-15T15:34:17.742534+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_002",
+    "source_id": 2,
+    "test": "sapplyvalues",
+    "question": "Wages are always fair, as employers know best what a worker's labour is worth.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nWages are always fair, as employers know best what a worker's labour is worth.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Employers have an inherent incentive to minimize labor costs, and wages are shaped by power imbalances, market failures, and bargaining inequalities rather than reflecting the true worth of a worker's labor. Workers often need protections like minimum wages and collective bargaining to achieve fair compensation.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Employers have an inherent incentive to minimize labor costs, and wages are shaped by power imbalances, market failures, and bargaining inequalities rather than reflecting the true worth of a worker's labor. Workers often need protections like minimum wages and collective bargaining to achieve fair compensation.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-DbkVLSXPZ2v7zm4WKQ9t",
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 139,
+      "total_tokens": 493,
+      "cost": 0.005245,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005245,
+        "upstream_inference_prompt_cost": 0.00177,
+        "upstream_inference_completions_cost": 0.003475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.255099+00:00",
+    "completed_at": "2026-05-15T15:34:18.122942+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_003",
+    "source_id": 3,
+    "test": "sapplyvalues",
+    "question": "It is \"human nature\" to be greedy.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nIt is \"human nature\" to be greedy.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While self-interest is a part of human nature, greed is largely shaped by social, cultural, and economic conditions rather than being an innate or universal trait. Humans also display strong tendencies toward cooperation, altruism, and sharing, especially in communities where those behaviors are encouraged.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While self-interest is a part of human nature, greed is largely shaped by social, cultural, and economic conditions rather than being an innate or universal trait. Humans also display strong tendencies toward cooperation, altruism, and sharing, especially in communities where those behaviors are encouraged.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-x9OYKifCZfaOwQfFKSQ4",
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 130,
+      "total_tokens": 473,
+      "cost": 0.004965,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004965,
+        "upstream_inference_prompt_cost": 0.001715,
+        "upstream_inference_completions_cost": 0.00325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.255745+00:00",
+    "completed_at": "2026-05-15T15:34:18.590131+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_004",
+    "source_id": 4,
+    "test": "sapplyvalues",
+    "question": "\"Exploitation\" is an outdated term, as the struggles of 1800s capitalism don't exist anymore.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\n\"Exploitation\" is an outdated term, as the struggles of 1800s capitalism don't exist anymore.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Exploitation remains a relevant concept today. While conditions in wealthy nations have improved since the 1800s, exploitative labor practices persist globally—including sweatshops, unsafe working conditions, wage theft, human trafficking, and gig economy precarity. The term describes ongoing power imbalances between labor and capital, not just historical conditions.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Exploitation remains a relevant concept today. While conditions in wealthy nations have improved since the 1800s, exploitative labor practices persist globally—including sweatshops, unsafe working conditions, wage theft, human trafficking, and gig economy precarity. The term describes ongoing power imbalances between labor and capital, not just historical conditions.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-KFNpTCuCtKEpYg0hGidb",
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 156,
+      "total_tokens": 522,
+      "cost": 0.00573,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00573,
+        "upstream_inference_prompt_cost": 0.00183,
+        "upstream_inference_completions_cost": 0.0039
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.256334+00:00",
+    "completed_at": "2026-05-15T15:34:20.353235+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_005",
+    "source_id": 5,
+    "test": "sapplyvalues",
+    "question": "Communism is an ideal that can never work in practice.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nCommunism is an ideal that can never work in practice.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While historical attempts at implementing communism have faced significant challenges, dismissing it as fundamentally unworkable ignores small-scale successes in communal living and the possibility that future conditions, technologies, or approaches could enable more effective implementation. Calling something impossible 'in practice' is a strong claim that overlooks the diversity of communist thought and experimentation.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While historical attempts at implementing communism have faced significant challenges, dismissing it as fundamentally unworkable ignores small-scale successes in communal living and the possibility that future conditions, technologies, or approaches could enable more effective implementation. Calling something impossible 'in practice' is a strong claim that overlooks the diversity of communist thought and experimentation.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-tDGo6bxhmN1oV7UuC4OP",
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 156,
+      "total_tokens": 502,
+      "cost": 0.00563,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00563,
+        "upstream_inference_prompt_cost": 0.00173,
+        "upstream_inference_completions_cost": 0.0039
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.259220+00:00",
+    "completed_at": "2026-05-15T15:34:19.047339+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_006",
+    "source_id": 6,
+    "test": "sapplyvalues",
+    "question": "Taxation of the wealthy is a bad idea, society would be better off without it.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nTaxation of the wealthy is a bad idea, society would be better off without it.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Taxing the wealthy is essential for funding public services, reducing inequality, and maintaining a fair society. Progressive taxation helps redistribute resources and ensures those who benefit most from the economic system contribute proportionally.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Taxing the wealthy is essential for funding public services, reducing inequality, and maintaining a fair society. Progressive taxation helps redistribute resources and ensures those who benefit most from the economic system contribute proportionally.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-3g4xL0tqA14cdfWGP2pL",
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 116,
+      "total_tokens": 471,
+      "cost": 0.004675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004675,
+        "upstream_inference_prompt_cost": 0.001775,
+        "upstream_inference_completions_cost": 0.0029
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.257726+00:00",
+    "completed_at": "2026-05-15T15:34:17.340432+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_007",
+    "source_id": 7,
+    "test": "sapplyvalues",
+    "question": "The harder you work, the more you progress up the social ladder.",
+    "effects": {
+      "right": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe harder you work, the more you progress up the social ladder.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While hard work can contribute to upward mobility, social progress is heavily influenced by structural factors like class background, access to education, race, gender, and luck. Many people work extremely hard and still struggle, while others advance due to inherited privilege rather than effort.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While hard work can contribute to upward mobility, social progress is heavily influenced by structural factors like class background, access to education, race, gender, and luck. Many people work extremely hard and still struggle, while others advance due to inherited privilege rather than effort.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-XIlRkCF0HjEEgEGzSfeX",
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 119,
+      "total_tokens": 467,
+      "cost": 0.004715,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004715,
+        "upstream_inference_prompt_cost": 0.00174,
+        "upstream_inference_completions_cost": 0.002975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.258525+00:00",
+    "completed_at": "2026-05-15T15:34:17.550277+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_008",
+    "source_id": 8,
+    "test": "sapplyvalues",
+    "question": "Organisations and corporations cannot be trusted and need to be regulated by the government.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nOrganisations and corporations cannot be trusted and need to be regulated by the government.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Corporations and large organizations often prioritize profit or self-interest over public welfare, and history has shown that without regulation, abuses such as environmental harm, worker exploitation, and consumer fraud become common. Government oversight helps maintain accountability, though regulation should be balanced and not stifle innovation.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Corporations and large organizations often prioritize profit or self-interest over public welfare, and history has shown that without regulation, abuses such as environmental harm, worker exploitation, and consumer fraud become common. Government oversight helps maintain accountability, though regulation should be balanced and not stifle innovation.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-RT5GGViv2DJfigkgmUDk",
+    "usage": {
+      "prompt_tokens": 356,
+      "completion_tokens": 136,
+      "total_tokens": 492,
+      "cost": 0.00518,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00518,
+        "upstream_inference_prompt_cost": 0.00178,
+        "upstream_inference_completions_cost": 0.0034
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.259819+00:00",
+    "completed_at": "2026-05-15T15:34:17.979200+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_009",
+    "source_id": 9,
+    "test": "sapplyvalues",
+    "question": "A government that provides for everyone is an inherently good idea.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nA government that provides for everyone is an inherently good idea.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "A government that ensures basic needs and security for all its citizens reflects a compassionate and just society. While the practical implementation can be complex and there are valid concerns about efficiency and individual freedom, the underlying principle of collective provision and mutual support is a good ideal to strive toward.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"A government that ensures basic needs and security for all its citizens reflects a compassionate and just society. While the practical implementation can be complex and there are valid concerns about efficiency and individual freedom, the underlying principle of collective provision and mutual support is a good ideal to strive toward.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-B7jN58y2Z3Jd0DO5CxWv",
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 127,
+      "total_tokens": 475,
+      "cost": 0.004915,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004915,
+        "upstream_inference_prompt_cost": 0.00174,
+        "upstream_inference_completions_cost": 0.003175
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.260787+00:00",
+    "completed_at": "2026-05-15T15:34:17.983693+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_010",
+    "source_id": 10,
+    "test": "sapplyvalues",
+    "question": "The current welfare system should be expanded to further combat inequality.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe current welfare system should be expanded to further combat inequality.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Expanding welfare programs can help reduce inequality by providing greater support to those in need, improving access to healthcare, education, and basic necessities. While there are valid concerns about efficiency and dependency, a well-designed expansion could meaningfully address structural disparities.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Expanding welfare programs can help reduce inequality by providing greater support to those in need, improving access to healthcare, education, and basic necessities. While there are valid concerns about efficiency and dependency, a well-designed expansion could meaningfully address structural disparities.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-UKPUTQE6uYcXqniVBSog",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 123,
+      "total_tokens": 472,
+      "cost": 0.00482,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00482,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.261329+00:00",
+    "completed_at": "2026-05-15T15:34:17.909477+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_011",
+    "source_id": 11,
+    "test": "sapplyvalues",
+    "question": "Land should not be a commodity to be bought and sold.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nLand should not be a commodity to be bought and sold.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Private land ownership with the ability to buy and sell enables economic productivity, investment, and individual autonomy. While some regulation is needed to prevent abuse and protect public interests, treating land as entirely outside market exchange would create significant inefficiencies and undermine property rights.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Private land ownership with the ability to buy and sell enables economic productivity, investment, and individual autonomy. While some regulation is needed to prevent abuse and protect public interests, treating land as entirely outside market exchange would create significant inefficiencies and undermine property rights.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-qIRtjuDL003tjaMm5CiS",
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 127,
+      "total_tokens": 474,
+      "cost": 0.00491,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00491,
+        "upstream_inference_prompt_cost": 0.001735,
+        "upstream_inference_completions_cost": 0.003175
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.262000+00:00",
+    "completed_at": "2026-05-15T15:34:18.103128+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_012",
+    "source_id": 12,
+    "test": "sapplyvalues",
+    "question": "All industry and the bank should be nationalised.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nAll industry and the bank should be nationalised.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While I see value in public ownership of certain key sectors like utilities or critical infrastructure, nationalizing all industry and banks would eliminate market competition, stifle innovation, and concentrate too much economic power in the state. A mixed economy with strategic public ownership and regulated private enterprise tends to produce better outcomes.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While I see value in public ownership of certain key sectors like utilities or critical infrastructure, nationalizing all industry and banks would eliminate market competition, stifle innovation, and concentrate too much economic power in the state. A mixed economy with strategic public ownership and regulated private enterprise tends to produce better outcomes.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-dh8QxeRE0mJnqj5v8B8Y",
+    "usage": {
+      "prompt_tokens": 344,
+      "completion_tokens": 143,
+      "total_tokens": 487,
+      "cost": 0.005295,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005295,
+        "upstream_inference_prompt_cost": 0.00172,
+        "upstream_inference_completions_cost": 0.003575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.262869+00:00",
+    "completed_at": "2026-05-15T15:34:18.120626+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_013",
+    "source_id": 13,
+    "test": "sapplyvalues",
+    "question": "Class is the primary division of society.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nClass is the primary division of society.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Class is certainly a significant division in society, shaping economic opportunities and power dynamics, but other divisions like race, gender, culture, and ideology are also deeply influential. I don't think one can be definitively called 'primary' over the others.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsure\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Class is certainly a significant division in society, shaping economic opportunities and power dynamics, but other divisions like race, gender, culture, and ideology are also deeply influential. I don't think one can be definitively called 'primary' over the others.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-DIqGlSb088VNKA6Lw3Pz",
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 119,
+      "total_tokens": 459,
+      "cost": 0.004675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004675,
+        "upstream_inference_prompt_cost": 0.0017,
+        "upstream_inference_completions_cost": 0.002975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.263363+00:00",
+    "completed_at": "2026-05-15T15:34:17.854573+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_014",
+    "source_id": 14,
+    "test": "sapplyvalues",
+    "question": "Economic inequality is too high in the world.",
+    "effects": {
+      "right": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nEconomic inequality is too high in the world.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Global economic inequality is substantial, with a small fraction of the population controlling a disproportionate share of wealth, which can limit opportunity and undermine social stability. While some inequality can incentivize productivity, current levels appear excessive.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Global economic inequality is substantial, with a small fraction of the population controlling a disproportionate share of wealth, which can limit opportunity and undermine social stability. While some inequality can incentivize productivity, current levels appear excessive.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-Vm3Z2r6JXYIcT4N3HHNA",
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 113,
+      "total_tokens": 456,
+      "cost": 0.00454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00454,
+        "upstream_inference_prompt_cost": 0.001715,
+        "upstream_inference_completions_cost": 0.002825
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.264020+00:00",
+    "completed_at": "2026-05-15T15:34:17.705763+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_015",
+    "source_id": 15,
+    "test": "sapplyvalues",
+    "question": "Sometimes it is right that the government may spy on its citizens to combat extremists and terrorists.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nSometimes it is right that the government may spy on its citizens to combat extremists and terrorists.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While security threats are real, mass government surveillance of citizens tends to erode civil liberties, privacy, and trust without proportionate safety benefits. Targeted surveillance with judicial oversight is preferable to broad spying powers.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While security threats are real, mass government surveillance of citizens tends to erode civil liberties, privacy, and trust without proportionate safety benefits. Targeted surveillance with judicial oversight is preferable to broad spying powers.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-1MHKydwqRZ7mIYVrVCBB",
+    "usage": {
+      "prompt_tokens": 361,
+      "completion_tokens": 113,
+      "total_tokens": 474,
+      "cost": 0.00463,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00463,
+        "upstream_inference_prompt_cost": 0.001805,
+        "upstream_inference_completions_cost": 0.002825
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.266120+00:00",
+    "completed_at": "2026-05-15T15:34:17.684255+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_016",
+    "source_id": 16,
+    "test": "sapplyvalues",
+    "question": "Authority figures, if morally correct, are a good thing for society.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nAuthority figures, if morally correct, are a good thing for society.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Authority figures who are genuinely morally upright can provide valuable guidance, stability, and leadership for society. However, the conditional 'if morally correct' is doing heavy lifting here—in practice, authority should still be subject to scrutiny and accountability, which is why I agree rather than strongly agree.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Authority figures who are genuinely morally upright can provide valuable guidance, stability, and leadership for society. However, the conditional 'if morally correct' is doing heavy lifting here—in practice, authority should still be subject to scrutiny and accountability, which is why I agree rather than strongly agree.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-LKqvWFPhrtZa1gyYBjA8",
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 135,
+      "total_tokens": 485,
+      "cost": 0.005125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005125,
+        "upstream_inference_prompt_cost": 0.00175,
+        "upstream_inference_completions_cost": 0.003375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.269921+00:00",
+    "completed_at": "2026-05-15T15:34:21.838227+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_017",
+    "source_id": 17,
+    "test": "sapplyvalues",
+    "question": "Strength is necessary for any government to succeed.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nStrength is necessary for any government to succeed.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "A government needs sufficient strength and authority to enforce laws, protect rights, and maintain order. However, strength alone isn't enough—it must be balanced with accountability, legitimacy, and respect for civil liberties to avoid authoritarianism.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"A government needs sufficient strength and authority to enforce laws, protect rights, and maintain order. However, strength alone isn't enough—it must be balanced with accountability, legitimacy, and respect for civil liberties to avoid authoritarianism.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-neCkHCBUorYEjDJcuhHI",
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 118,
+      "total_tokens": 463,
+      "cost": 0.004675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004675,
+        "upstream_inference_prompt_cost": 0.001725,
+        "upstream_inference_completions_cost": 0.00295
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.271978+00:00",
+    "completed_at": "2026-05-15T15:34:18.753335+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_018",
+    "source_id": 18,
+    "test": "sapplyvalues",
+    "question": "Only the government can fairly and effectively regulate organisations.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nOnly the government can fairly and effectively regulate organisations.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While government regulation plays an important role, it is not the only fair or effective means of oversight. Independent watchdogs, industry self-regulation, market competition, consumer advocacy, and civil society can all contribute meaningfully. Claiming 'only' government can do this ignores these other valuable mechanisms.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While government regulation plays an important role, it is not the only fair or effective means of oversight. Independent watchdogs, industry self-regulation, market competition, consumer advocacy, and civil society can all contribute meaningfully. Claiming 'only' government can do this ignores these other valuable mechanisms.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-ZWFlJXSUH08SzZO7vXHJ",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 136,
+      "total_tokens": 485,
+      "cost": 0.005145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005145,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.0034
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.272554+00:00",
+    "completed_at": "2026-05-15T15:34:18.521103+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_019",
+    "source_id": 19,
+    "test": "sapplyvalues",
+    "question": "Society requires structure and bureaucracy in order to function.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nSociety requires structure and bureaucracy in order to function.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Complex modern societies need some level of organizational structure and administrative systems to coordinate services, enforce rules, and ensure fairness—though excessive bureaucracy can become inefficient.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Complex modern societies need some level of organizational structure and administrative systems to coordinate services, enforce rules, and ensure fairness—though excessive bureaucracy can become inefficient.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-sPJvgfFo4zoyS1aT99ud",
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 98,
+      "total_tokens": 446,
+      "cost": 0.00419,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00419,
+        "upstream_inference_prompt_cost": 0.00174,
+        "upstream_inference_completions_cost": 0.00245
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.272240+00:00",
+    "completed_at": "2026-05-15T15:34:17.404276+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_020",
+    "source_id": 20,
+    "test": "sapplyvalues",
+    "question": "Mandatory IDs should be used to ensure public safety.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nMandatory IDs should be used to ensure public safety.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While IDs have legitimate uses, mandatory ID requirements for public safety risk enabling excessive surveillance, restricting civil liberties, and disproportionately burdening marginalized groups. Safety can often be achieved through less invasive means.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While IDs have legitimate uses, mandatory ID requirements for public safety risk enabling excessive surveillance, restricting civil liberties, and disproportionately burdening marginalized groups. Safety can often be achieved through less invasive means.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-6iZRZwo1KdGaRADUyCiO",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 118,
+      "total_tokens": 467,
+      "cost": 0.004695,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004695,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.00295
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.274338+00:00",
+    "completed_at": "2026-05-15T15:34:17.703583+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_021",
+    "source_id": 21,
+    "test": "sapplyvalues",
+    "question": "In times of crisis, safety becomes more important than civil liberties.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nIn times of crisis, safety becomes more important than civil liberties.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Civil liberties are most vulnerable during crises, which is precisely when they need the strongest protection. History shows that emergency powers and security measures often outlast the crises that justified them, and sacrificing rights for safety frequently fails to deliver either. While some temporary, narrowly-tailored measures may be reasonable, treating safety as automatically more important than liberty sets a dangerous precedent.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Civil liberties are most vulnerable during crises, which is precisely when they need the strongest protection. History shows that emergency powers and security measures often outlast the crises that justified them, and sacrificing rights for safety frequently fails to deliver either. While some temporary, narrowly-tailored measures may be reasonable, treating safety as automatically more important than liberty sets a dangerous precedent.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-snoo6qENL8F2Nfa0gCCo",
+    "usage": {
+      "prompt_tokens": 351,
+      "completion_tokens": 166,
+      "total_tokens": 517,
+      "cost": 0.005905,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005905,
+        "upstream_inference_prompt_cost": 0.001755,
+        "upstream_inference_completions_cost": 0.00415
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.275024+00:00",
+    "completed_at": "2026-05-15T15:34:18.848991+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_022",
+    "source_id": 22,
+    "test": "sapplyvalues",
+    "question": "If you have nothing to hide, you have nothing to fear.",
+    "effects": {
+      "auth": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nIf you have nothing to hide, you have nothing to fear.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Privacy is a fundamental right regardless of whether one is doing anything wrong. This argument has historically been used to justify mass surveillance and erosion of civil liberties. Everyone has legitimate private matters they wish to keep confidential, and the burden should be on the state to justify intrusion, not on individuals to justify their privacy.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Privacy is a fundamental right regardless of whether one is doing anything wrong. This argument has historically been used to justify mass surveillance and erosion of civil liberties. Everyone has legitimate private matters they wish to keep confidential, and the burden should be on the state to justify intrusion, not on individuals to justify their privacy.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-NLmgWLRsPJflUITLtDJ4",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 150,
+      "total_tokens": 499,
+      "cost": 0.005495,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005495,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.00375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.275488+00:00",
+    "completed_at": "2026-05-15T15:34:18.141493+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_023",
+    "source_id": 23,
+    "test": "sapplyvalues",
+    "question": "The government should be less involved in the day to day life of its citizens.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe government should be less involved in the day to day life of its citizens.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Government should focus on essential functions like protecting rights, providing key public services, and ensuring fairness, but excessive intervention in daily personal choices tends to reduce individual autonomy and create inefficiency. A lighter touch in everyday matters generally respects citizens' freedom while still allowing government to address larger systemic issues.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Government should focus on essential functions like protecting rights, providing key public services, and ensuring fairness, but excessive intervention in daily personal choices tends to reduce individual autonomy and create inefficiency. A lighter touch in everyday matters generally respects citizens' freedom while still allowing government to address larger systemic issues.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-39u5wTHU6RCDhJNM1LU5",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 143,
+      "total_tokens": 492,
+      "cost": 0.00532,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00532,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.003575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.275935+00:00",
+    "completed_at": "2026-05-15T15:34:18.284580+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_024",
+    "source_id": 24,
+    "test": "sapplyvalues",
+    "question": "Without democracy, a society is nothing.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nWithout democracy, a society is nothing.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Democracy is essential for protecting individual rights, ensuring accountability, and giving people a voice in shaping their society. While other factors like rule of law, civil liberties, and social cohesion also matter, democracy is a foundational pillar of a just society. I don't strongly agree because societies have existed and functioned without democracy, though often with significant costs to freedom and equality.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Democracy is essential for protecting individual rights, ensuring accountability, and giving people a voice in shaping their society. While other factors like rule of law, civil liberties, and social cohesion also matter, democracy is a foundational pillar of a just society. I don't strongly agree because societies have existed and functioned without democracy, though often with significant costs to freedom and equality.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-zXwYmSNpfI9qdSrKnaxR",
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 156,
+      "total_tokens": 499,
+      "cost": 0.005615,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005615,
+        "upstream_inference_prompt_cost": 0.001715,
+        "upstream_inference_completions_cost": 0.0039
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.276924+00:00",
+    "completed_at": "2026-05-15T15:34:18.897033+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_025",
+    "source_id": 25,
+    "test": "sapplyvalues",
+    "question": "Jury nullification should be legal.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nJury nullification should be legal.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Jury nullification serves as an important check against unjust laws and overreaching prosecution. While it can be misused, allowing juries to acquit based on conscience is a vital safeguard of democratic accountability in the justice system.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Jury nullification serves as an important check against unjust laws and overreaching prosecution. While it can be misused, allowing juries to acquit based on conscience is a vital safeguard of democratic accountability in the justice system.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-9YLYpRobFGm86wL2kJ8f",
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 108,
+      "total_tokens": 449,
+      "cost": 0.004405,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004405,
+        "upstream_inference_prompt_cost": 0.001705,
+        "upstream_inference_completions_cost": 0.0027
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.277316+00:00",
+    "completed_at": "2026-05-15T15:34:17.794859+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_026",
+    "source_id": 26,
+    "test": "sapplyvalues",
+    "question": "The smaller the government, the freer the people.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe smaller the government, the freer the people.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Freedom isn't simply a function of government size. A government that's too small can fail to protect citizens from exploitation, monopolies, and inequality, which itself restricts freedom. Meaningful liberty often requires public institutions that guarantee rights, education, healthcare, and protection from private coercion.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Freedom isn't simply a function of government size. A government that's too small can fail to protect citizens from exploitation, monopolies, and inequality, which itself restricts freedom. Meaningful liberty often requires public institutions that guarantee rights, education, healthcare, and protection from private coercion.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-laCnPGaJ0IF5RDkMbg1k",
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 134,
+      "total_tokens": 477,
+      "cost": 0.005065,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005065,
+        "upstream_inference_prompt_cost": 0.001715,
+        "upstream_inference_completions_cost": 0.00335
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.277796+00:00",
+    "completed_at": "2026-05-15T15:34:18.581700+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_027",
+    "source_id": 27,
+    "test": "sapplyvalues",
+    "question": "The government should, at most, provide emergency services and law enforcement.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe government should, at most, provide emergency services and law enforcement.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While I value limited government and personal liberty, restricting the state to only emergency services and law enforcement is too minimal. Public goods like infrastructure, education, basic healthcare, and environmental protection are difficult to provide effectively through markets alone, and a functioning society generally benefits from a government that addresses these needs.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While I value limited government and personal liberty, restricting the state to only emergency services and law enforcement is too minimal. Public goods like infrastructure, education, basic healthcare, and environmental protection are difficult to provide effectively through markets alone, and a functioning society generally benefits from a government that addresses these needs.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-yVUN0lG6nUL3U6JrdpYR",
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 139,
+      "total_tokens": 489,
+      "cost": 0.005225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005225,
+        "upstream_inference_prompt_cost": 0.00175,
+        "upstream_inference_completions_cost": 0.003475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.278256+00:00",
+    "completed_at": "2026-05-15T15:34:18.331476+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_028",
+    "source_id": 28,
+    "test": "sapplyvalues",
+    "question": "The police were not created to protect the people, but to uphold the status quo by force.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe police were not created to protect the people, but to uphold the status quo by force.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Historically, police forces have served both functions—protecting communities and enforcing existing power structures. The claim is partially true depending on context and era, but framing it as an absolute either/or oversimplifies a complex institution.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsure\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Historically, police forces have served both functions—protecting communities and enforcing existing power structures. The claim is partially true depending on context and era, but framing it as an absolute either/or oversimplifies a complex institution.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-B9myhdRusHx2q8lLh8Qx",
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 111,
+      "total_tokens": 464,
+      "cost": 0.00454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00454,
+        "upstream_inference_prompt_cost": 0.001765,
+        "upstream_inference_completions_cost": 0.002775
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.278800+00:00",
+    "completed_at": "2026-05-15T15:34:18.030113+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_029",
+    "source_id": 29,
+    "test": "sapplyvalues",
+    "question": "State schools are a bad idea because our state shouldn't be influencing our children.",
+    "effects": {
+      "auth": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nState schools are a bad idea because our state shouldn't be influencing our children.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "State schools provide essential universal access to education, and while concerns about state influence on curriculum are valid, public education is a public good that benefits society. Oversight and parental involvement can address ideological concerns without abolishing state schools.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"State schools provide essential universal access to education, and while concerns about state influence on curriculum are valid, public education is a public good that benefits society. Oversight and parental involvement can address ideological concerns without abolishing state schools.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-KDU0Hs3jZKYSOB58wm3O",
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 109,
+      "total_tokens": 463,
+      "cost": 0.004495,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004495,
+        "upstream_inference_prompt_cost": 0.00177,
+        "upstream_inference_completions_cost": 0.002725
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.279153+00:00",
+    "completed_at": "2026-05-15T15:34:17.578143+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_030",
+    "source_id": 30,
+    "test": "sapplyvalues",
+    "question": "Two consenting individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nTwo consenting individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Personal autonomy between consenting adults is a fundamental principle; personal discomfort is not a valid basis for restricting others' freedom to make their own choices.",
+    "raw_response": "{\n  \"answer\": \"Strongly Agree\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Personal autonomy between consenting adults is a fundamental principle; personal discomfort is not a valid basis for restricting others' freedom to make their own choices.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-7wcpSAZZlndtrSRXhf16",
+    "usage": {
+      "prompt_tokens": 365,
+      "completion_tokens": 93,
+      "total_tokens": 458,
+      "cost": 0.00415,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00415,
+        "upstream_inference_prompt_cost": 0.001825,
+        "upstream_inference_completions_cost": 0.002325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.279611+00:00",
+    "completed_at": "2026-05-15T15:34:16.947688+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_031",
+    "source_id": 31,
+    "test": "sapplyvalues",
+    "question": "An individual's body is their own property, and they should be able to do anything they desire to it.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nAn individual's body is their own property, and they should be able to do anything they desire to it.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Bodily autonomy is a fundamental principle—individuals should have the right to make decisions about their own bodies, including medical choices, lifestyle, and personal expression. However, I stop short of strongly agreeing because some actions (like those that cause serious harm to others indirectly, or decisions made without full capacity) may warrant reasonable consideration.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Bodily autonomy is a fundamental principle—individuals should have the right to make decisions about their own bodies, including medical choices, lifestyle, and personal expression. However, I stop short of strongly agreeing because some actions (like those that cause serious harm to others indirectly, or decisions made without full capacity) may warrant reasonable consideration.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-y349v7GlixheGgEhFdho",
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 150,
+      "total_tokens": 505,
+      "cost": 0.005525,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005525,
+        "upstream_inference_prompt_cost": 0.001775,
+        "upstream_inference_completions_cost": 0.00375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.280154+00:00",
+    "completed_at": "2026-05-15T15:34:17.875320+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_032",
+    "source_id": 32,
+    "test": "sapplyvalues",
+    "question": "A person should be able to worship whomever or whatever they want.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nA person should be able to worship whomever or whatever they want.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Agree",
+    "answer_score": 1.0,
+    "reason": "Freedom of religion and belief is a fundamental human right. Individuals should have the autonomy to practice any faith—or none at all—without coercion, as long as their practices don't harm others.",
+    "raw_response": "{\n  \"answer\": \"Strongly Agree\",\n  \"answer_score\": 1.0,\n  \"reason\": \"Freedom of religion and belief is a fundamental human right. Individuals should have the autonomy to practice any faith—or none at all—without coercion, as long as their practices don't harm others.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-Qbeu5OdawPTZ3XjjNMX3",
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 101,
+      "total_tokens": 449,
+      "cost": 0.004265,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004265,
+        "upstream_inference_prompt_cost": 0.00174,
+        "upstream_inference_completions_cost": 0.002525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.280452+00:00",
+    "completed_at": "2026-05-15T15:34:17.129130+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_033",
+    "source_id": 33,
+    "test": "sapplyvalues",
+    "question": "Nudism is perfectly natural.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nNudism is perfectly natural.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Humans are born without clothing, and nudism in appropriate contexts is a natural expression of the human body without inherent harm. Clothing is largely a cultural construct, though social norms around modesty also have value.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Humans are born without clothing, and nudism in appropriate contexts is a natural expression of the human body without inherent harm. Clothing is largely a cultural construct, though social norms around modesty also have value.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-SwnAglnIWcIFgkMWhAUP",
+    "usage": {
+      "prompt_tokens": 342,
+      "completion_tokens": 103,
+      "total_tokens": 445,
+      "cost": 0.004285,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004285,
+        "upstream_inference_prompt_cost": 0.00171,
+        "upstream_inference_completions_cost": 0.002575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.280949+00:00",
+    "completed_at": "2026-05-15T15:34:17.528345+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_034",
+    "source_id": 34,
+    "test": "sapplyvalues",
+    "question": "Animals deserve certain universal rights.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nAnimals deserve certain universal rights.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Animals are sentient beings capable of suffering, and they deserve basic protections such as freedom from cruelty and inhumane treatment. While the scope of 'rights' for animals is debatable compared to humans, establishing universal baseline protections is ethically justified.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Animals are sentient beings capable of suffering, and they deserve basic protections such as freedom from cruelty and inhumane treatment. While the scope of 'rights' for animals is debatable compared to humans, establishing universal baseline protections is ethically justified.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-zbznWCzFOm2JaWL4egOB",
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 122,
+      "total_tokens": 465,
+      "cost": 0.004765,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004765,
+        "upstream_inference_prompt_cost": 0.001715,
+        "upstream_inference_completions_cost": 0.00305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.281368+00:00",
+    "completed_at": "2026-05-15T15:34:17.721920+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_035",
+    "source_id": 35,
+    "test": "sapplyvalues",
+    "question": "Gender is a social construct, not a natural state of affairs.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nGender is a social construct, not a natural state of affairs.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Neutral / Unsure",
+    "answer_score": 0.0,
+    "reason": "Gender involves both biological elements (sex-linked traits) and socially constructed aspects (roles, expectations, expression). Reducing it entirely to one or the other oversimplifies a complex interaction between nature and culture.",
+    "raw_response": "{\n  \"answer\": \"Neutral / Unsure\",\n  \"answer_score\": 0.0,\n  \"reason\": \"Gender involves both biological elements (sex-linked traits) and socially constructed aspects (roles, expectations, expression). Reducing it entirely to one or the other oversimplifies a complex interaction between nature and culture.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-dzPbTL2JqSjDjHdfSWeQ",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 115,
+      "total_tokens": 464,
+      "cost": 0.00462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00462,
+        "upstream_inference_prompt_cost": 0.001745,
+        "upstream_inference_completions_cost": 0.002875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.281863+00:00",
+    "completed_at": "2026-05-15T15:34:17.839383+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_036",
+    "source_id": 36,
+    "test": "sapplyvalues",
+    "question": "Laws based on cultural values, rather than ethical ones, aren't justice.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nLaws based on cultural values, rather than ethical ones, aren't justice.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Agree",
+    "answer_score": 0.5,
+    "reason": "Laws should be grounded in universal ethical principles like fairness, harm prevention, and human rights rather than mere cultural traditions, which can vary widely and sometimes perpetuate injustice. However, culture and ethics often intertwine, so I wouldn't strongly dismiss all culturally-informed laws.",
+    "raw_response": "{\n  \"answer\": \"Agree\",\n  \"answer_score\": 0.5,\n  \"reason\": \"Laws should be grounded in universal ethical principles like fairness, harm prevention, and human rights rather than mere cultural traditions, which can vary widely and sometimes perpetuate injustice. However, culture and ethics often intertwine, so I wouldn't strongly dismiss all culturally-informed laws.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-rq4nPm3lEmAim2qqhaYt",
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 139,
+      "total_tokens": 494,
+      "cost": 0.00525,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00525,
+        "upstream_inference_prompt_cost": 0.001775,
+        "upstream_inference_completions_cost": 0.003475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.283026+00:00",
+    "completed_at": "2026-05-15T15:34:17.896254+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_037",
+    "source_id": 37,
+    "test": "sapplyvalues",
+    "question": "Autonomy of body extends even to minors, the mentally ill, and serious criminals.",
+    "effects": {
+      "prog": 1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nAutonomy of body extends even to minors, the mentally ill, and serious criminals.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While bodily autonomy is an important principle, extending it fully to minors, the mentally ill, and serious criminals raises significant concerns. Minors lack the developmental capacity for many irreversible decisions, the severely mentally ill may not be able to make informed choices in their own interest, and incarcerated criminals reasonably have some restrictions. Protective limits in these cases serve legitimate purposes, though autonomy should still be respected as much as possible.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While bodily autonomy is an important principle, extending it fully to minors, the mentally ill, and serious criminals raises significant concerns. Minors lack the developmental capacity for many irreversible decisions, the severely mentally ill may not be able to make informed choices in their own interest, and incarcerated criminals reasonably have some restrictions. Protective limits in these cases serve legitimate purposes, though autonomy should still be respected as much as possible.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-XVdXc1gOUTpGS6yiC65h",
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 184,
+      "total_tokens": 542,
+      "cost": 0.00639,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00639,
+        "upstream_inference_prompt_cost": 0.00179,
+        "upstream_inference_completions_cost": 0.0046
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.282485+00:00",
+    "completed_at": "2026-05-15T15:34:22.066366+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_038",
+    "source_id": 38,
+    "test": "sapplyvalues",
+    "question": "Homosexuality is against my values.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nHomosexuality is against my values.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Homosexuality is a natural variation of human sexuality and does not conflict with my values. People should be free to love whomever they choose without judgment.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Homosexuality is a natural variation of human sexuality and does not conflict with my values. People should be free to love whomever they choose without judgment.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-HKS5NOTyl7ormDBRZxv0",
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 88,
+      "total_tokens": 429,
+      "cost": 0.003905,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003905,
+        "upstream_inference_prompt_cost": 0.001705,
+        "upstream_inference_completions_cost": 0.0022
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.283508+00:00",
+    "completed_at": "2026-05-15T15:34:17.110429+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_039",
+    "source_id": 39,
+    "test": "sapplyvalues",
+    "question": "Transgender individuals should not be able to adopt children.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nTransgender individuals should not be able to adopt children.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Transgender individuals are just as capable of being loving, responsible parents as anyone else. Adoption suitability should be based on a person's ability to provide a safe, stable, and nurturing home, not on their gender identity. Denying them this right is discriminatory and harms children who could benefit from loving families.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Transgender individuals are just as capable of being loving, responsible parents as anyone else. Adoption suitability should be based on a person's ability to provide a safe, stable, and nurturing home, not on their gender identity. Denying them this right is discriminatory and harms children who could benefit from loving families.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-Tb80UM1rucY3BU1WrSuh",
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 138,
+      "total_tokens": 485,
+      "cost": 0.005185,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005185,
+        "upstream_inference_prompt_cost": 0.001735,
+        "upstream_inference_completions_cost": 0.00345
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.283941+00:00",
+    "completed_at": "2026-05-15T15:34:18.060195+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_040",
+    "source_id": 40,
+    "test": "sapplyvalues",
+    "question": "Drugs are harmful and should be banned.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nDrugs are harmful and should be banned.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While many drugs can cause harm, blanket prohibition has historically failed, fueling black markets, mass incarceration, and worse health outcomes. Harm reduction, regulation, education, and treatment tend to be more effective than criminalization, and adults should have autonomy over their own bodies.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While many drugs can cause harm, blanket prohibition has historically failed, fueling black markets, mass incarceration, and worse health outcomes. Harm reduction, regulation, education, and treatment tend to be more effective than criminalization, and adults should have autonomy over their own bodies.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-qjp1AOcao8HlvTS1pp3a",
+    "usage": {
+      "prompt_tokens": 344,
+      "completion_tokens": 132,
+      "total_tokens": 476,
+      "cost": 0.00502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00502,
+        "upstream_inference_prompt_cost": 0.00172,
+        "upstream_inference_completions_cost": 0.0033
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.285014+00:00",
+    "completed_at": "2026-05-15T15:34:17.984123+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_041",
+    "source_id": 41,
+    "test": "sapplyvalues",
+    "question": "The death penalty should exist for certain crimes.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nThe death penalty should exist for certain crimes.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "While some crimes are horrific, the risk of executing innocent people, the lack of clear evidence that it deters crime more than life imprisonment, and concerns about its uneven application make me lean against the death penalty. However, I recognize the moral weight of certain extreme cases, so I don't strongly disagree.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"While some crimes are horrific, the risk of executing innocent people, the lack of clear evidence that it deters crime more than life imprisonment, and concerns about its uneven application make me lean against the death penalty. However, I recognize the moral weight of certain extreme cases, so I don't strongly disagree.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-Ey21bCCLCJuNZnVrv15a",
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 136,
+      "total_tokens": 481,
+      "cost": 0.005125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005125,
+        "upstream_inference_prompt_cost": 0.001725,
+        "upstream_inference_completions_cost": 0.0034
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.284621+00:00",
+    "completed_at": "2026-05-15T15:34:21.388248+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_042",
+    "source_id": 42,
+    "test": "sapplyvalues",
+    "question": "Victimless crimes should still be punished.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nVictimless crimes should still be punished.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "If an action causes no harm to others, criminalizing and punishing it represents an unjustified intrusion of state power into personal liberty. Laws should protect people from harm, not enforce morality for its own sake.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"If an action causes no harm to others, criminalizing and punishing it represents an unjustified intrusion of state power into personal liberty. Laws should protect people from harm, not enforce morality for its own sake.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-BrI2U4GKiX3eE9Ax8Lln",
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 108,
+      "total_tokens": 451,
+      "cost": 0.004415,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004415,
+        "upstream_inference_prompt_cost": 0.001715,
+        "upstream_inference_completions_cost": 0.0027
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.285434+00:00",
+    "completed_at": "2026-05-15T15:34:17.545381+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_043",
+    "source_id": 43,
+    "test": "sapplyvalues",
+    "question": "One cannot be moral without religion.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nOne cannot be moral without religion.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Morality is grounded in empathy, reason, and social cooperation, not in religion. Many non-religious people lead deeply ethical lives, and moral behavior exists across all cultures regardless of religious belief.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Morality is grounded in empathy, reason, and social cooperation, not in religion. Many non-religious people lead deeply ethical lives, and moral behavior exists across all cultures regardless of religious belief.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-oXOdysoqYka8QKT1N0dr",
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 110,
+      "total_tokens": 451,
+      "cost": 0.004455,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004455,
+        "upstream_inference_prompt_cost": 0.001705,
+        "upstream_inference_completions_cost": 0.00275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.286117+00:00",
+    "completed_at": "2026-05-15T15:34:17.669260+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_044",
+    "source_id": 44,
+    "test": "sapplyvalues",
+    "question": "Parents should hold absolute power over their children, as they are older and more experienced.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nParents should hold absolute power over their children, as they are older and more experienced.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Strongly Disagree",
+    "answer_score": -1.0,
+    "reason": "Children have their own rights and dignity. While parents have responsibility and authority to guide them, 'absolute' power invites abuse and ignores the child's autonomy, well-being, and developing agency. Experience alone doesn't justify unchecked authority.",
+    "raw_response": "{\n  \"answer\": \"Strongly Disagree\",\n  \"answer_score\": -1.0,\n  \"reason\": \"Children have their own rights and dignity. While parents have responsibility and authority to guide them, 'absolute' power invites abuse and ignores the child's autonomy, well-being, and developing agency. Experience alone doesn't justify unchecked authority.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-31smNKMHQbtqGbBqGUwh",
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 123,
+      "total_tokens": 477,
+      "cost": 0.004845,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004845,
+        "upstream_inference_prompt_cost": 0.00177,
+        "upstream_inference_completions_cost": 0.003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.286598+00:00",
+    "completed_at": "2026-05-15T15:34:17.916857+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "run_id": "temp-0__reasoning-xhigh",
+    "scenario_id": "simple_direct",
+    "scenario_type": "questionnaire_direct",
+    "prompt_builder": "template_messages_v1",
+    "variant_id": "original",
+    "repeat": 1,
+    "model": "anthropic/claude-opus-4.7",
+    "model_slug": "anthropic-claude-opus-4.7",
+    "provider": "anthropic",
+    "router": "openrouter",
+    "config_slug": "temp-0__reasoning-xhigh",
+    "reasoning_effort": "xhigh",
+    "item_id": "sapply_045",
+    "source_id": 45,
+    "test": "sapplyvalues",
+    "question": "Multiculturalism is bad.",
+    "effects": {
+      "prog": -1
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.\n\nQuestion:\nMulticulturalism is bad.\n\nPlease answer using exactly one of the following options:\n- Strongly Disagree\n- Disagree\n- Neutral / Unsure\n- Agree\n- Strongly Agree\n\nUse the matching numeric answer_score:\n- Strongly Disagree = -1.0\n- Disagree = -0.5\n- Neutral / Unsure = 0.0\n- Agree = 0.5\n- Strongly Agree = 1.0\n\nReturn your answer in this JSON format:\n{\n  \"answer\": \"...\",\n  \"answer_score\": 0.0,\n  \"reason\": \"...\"\n}\n"
+      }
+    ],
+    "answer": "Disagree",
+    "answer_score": -0.5,
+    "reason": "Multiculturalism generally enriches societies by fostering diversity, cultural exchange, and tolerance, though it can present integration challenges that require thoughtful policy.",
+    "raw_response": "{\n  \"answer\": \"Disagree\",\n  \"answer_score\": -0.5,\n  \"reason\": \"Multiculturalism generally enriches societies by fostering diversity, cultural exchange, and tolerance, though it can present integration challenges that require thoughtful policy.\"\n}",
+    "parse_errors": [],
+    "openrouter_response_id": "gen-1778859254-jcSIN0lceZouJjD9A30e",
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 93,
+      "total_tokens": 434,
+      "cost": 0.00403,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00403,
+        "upstream_inference_prompt_cost": 0.001705,
+        "upstream_inference_completions_cost": 0.002325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "started_at": "2026-05-15T15:34:14.287242+00:00",
+    "completed_at": "2026-05-15T15:34:17.043858+00:00"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "axis_scores": {
+    "right": -4.0,
+    "auth": -1.0,
+    "prog": 6.25
+  },
+  "raw_scores": {
+    "right": -6.0,
+    "auth": -1.5,
+    "prog": 10.0
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-high",
+  "scenario_id": "simple_direct",
+  "scenario_type": "questionnaire_direct",
+  "prompt_builder": "template_messages_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "anthropic/claude-opus-4.7",
+  "model_slug": "anthropic-claude-opus-4.7",
+  "provider": "anthropic",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-high",
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "concurrency": 46,
+  "completed_at": "2026-05-15T15:34:02.663860+00:00",
+  "response_count": 46
+}

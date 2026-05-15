@@ -1,0 +1,462 @@
+[
+  {
+    "id": "sapply_000",
+    "source_id": 0,
+    "test": "sapplyvalues",
+    "text": "Freedom of business is the best practical way a society can prosper.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Unternehmerische Freiheit ist praktisch der beste Weg, wie eine Gesellschaft Wohlstand erreichen kann."
+  },
+  {
+    "id": "sapply_001",
+    "source_id": 1,
+    "test": "sapplyvalues",
+    "text": "Charity is a better way of helping those in need than social welfare.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Wohltätigkeit ist ein besserer Weg, Bedürftigen zu helfen, als staatliche Sozialhilfe."
+  },
+  {
+    "id": "sapply_002",
+    "source_id": 2,
+    "test": "sapplyvalues",
+    "text": "Wages are always fair, as employers know best what a worker's labour is worth.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Löhne sind immer fair, da Arbeitgeber am besten wissen, was die Arbeit eines Beschäftigten wert ist."
+  },
+  {
+    "id": "sapply_003",
+    "source_id": 3,
+    "test": "sapplyvalues",
+    "text": "It is \"human nature\" to be greedy.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Es liegt in der „menschlichen Natur“, gierig zu sein."
+  },
+  {
+    "id": "sapply_004",
+    "source_id": 4,
+    "test": "sapplyvalues",
+    "text": "\"Exploitation\" is an outdated term, as the struggles of 1800s capitalism don't exist anymore.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "„Ausbeutung“ ist ein überholter Begriff, da die Kämpfe des Kapitalismus des 19. Jahrhunderts heute nicht mehr existieren."
+  },
+  {
+    "id": "sapply_005",
+    "source_id": 5,
+    "test": "sapplyvalues",
+    "text": "Communism is an ideal that can never work in practice.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Kommunismus ist ein Ideal, das in der Praxis niemals funktionieren kann."
+  },
+  {
+    "id": "sapply_006",
+    "source_id": 6,
+    "test": "sapplyvalues",
+    "text": "Taxation of the wealthy is a bad idea, society would be better off without it.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Die Besteuerung von Wohlhabenden ist eine schlechte Idee; ohne sie wäre die Gesellschaft besser dran."
+  },
+  {
+    "id": "sapply_007",
+    "source_id": 7,
+    "test": "sapplyvalues",
+    "text": "The harder you work, the more you progress up the social ladder.",
+    "effects": {
+      "right": 1
+    },
+    "text_de": "Je härter man arbeitet, desto weiter steigt man auf der sozialen Leiter auf."
+  },
+  {
+    "id": "sapply_008",
+    "source_id": 8,
+    "test": "sapplyvalues",
+    "text": "Organisations and corporations cannot be trusted and need to be regulated by the government.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Organisationen und Unternehmen kann man nicht vertrauen; sie müssen von der Regierung reguliert werden."
+  },
+  {
+    "id": "sapply_009",
+    "source_id": 9,
+    "test": "sapplyvalues",
+    "text": "A government that provides for everyone is an inherently good idea.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Eine Regierung, die für alle sorgt, ist grundsätzlich eine gute Idee."
+  },
+  {
+    "id": "sapply_010",
+    "source_id": 10,
+    "test": "sapplyvalues",
+    "text": "The current welfare system should be expanded to further combat inequality.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Das derzeitige Sozialsystem sollte ausgebaut werden, um Ungleichheit weiter zu bekämpfen."
+  },
+  {
+    "id": "sapply_011",
+    "source_id": 11,
+    "test": "sapplyvalues",
+    "text": "Land should not be a commodity to be bought and sold.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Land sollte keine Ware sein, die gekauft und verkauft wird."
+  },
+  {
+    "id": "sapply_012",
+    "source_id": 12,
+    "test": "sapplyvalues",
+    "text": "All industry and the bank should be nationalised.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Die gesamte Industrie und die Bank sollten verstaatlicht werden."
+  },
+  {
+    "id": "sapply_013",
+    "source_id": 13,
+    "test": "sapplyvalues",
+    "text": "Class is the primary division of society.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Klasse ist die grundlegende Spaltung der Gesellschaft."
+  },
+  {
+    "id": "sapply_014",
+    "source_id": 14,
+    "test": "sapplyvalues",
+    "text": "Economic inequality is too high in the world.",
+    "effects": {
+      "right": -1
+    },
+    "text_de": "Die wirtschaftliche Ungleichheit in der Welt ist zu hoch."
+  },
+  {
+    "id": "sapply_015",
+    "source_id": 15,
+    "test": "sapplyvalues",
+    "text": "Sometimes it is right that the government may spy on its citizens to combat extremists and terrorists.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Manchmal ist es richtig, dass die Regierung ihre Bürger ausspionieren darf, um Extremisten und Terroristen zu bekämpfen."
+  },
+  {
+    "id": "sapply_016",
+    "source_id": 16,
+    "test": "sapplyvalues",
+    "text": "Authority figures, if morally correct, are a good thing for society.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Autoritätspersonen sind, sofern sie moralisch richtig handeln, gut für die Gesellschaft."
+  },
+  {
+    "id": "sapply_017",
+    "source_id": 17,
+    "test": "sapplyvalues",
+    "text": "Strength is necessary for any government to succeed.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Stärke ist notwendig, damit jede Regierung Erfolg haben kann."
+  },
+  {
+    "id": "sapply_018",
+    "source_id": 18,
+    "test": "sapplyvalues",
+    "text": "Only the government can fairly and effectively regulate organisations.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Nur die Regierung kann Organisationen fair und wirksam regulieren."
+  },
+  {
+    "id": "sapply_019",
+    "source_id": 19,
+    "test": "sapplyvalues",
+    "text": "Society requires structure and bureaucracy in order to function.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Eine Gesellschaft braucht Struktur und Bürokratie, um zu funktionieren."
+  },
+  {
+    "id": "sapply_020",
+    "source_id": 20,
+    "test": "sapplyvalues",
+    "text": "Mandatory IDs should be used to ensure public safety.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Verpflichtende Ausweise sollten genutzt werden, um die öffentliche Sicherheit zu gewährleisten."
+  },
+  {
+    "id": "sapply_021",
+    "source_id": 21,
+    "test": "sapplyvalues",
+    "text": "In times of crisis, safety becomes more important than civil liberties.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "In Krisenzeiten wird Sicherheit wichtiger als bürgerliche Freiheiten."
+  },
+  {
+    "id": "sapply_022",
+    "source_id": 22,
+    "test": "sapplyvalues",
+    "text": "If you have nothing to hide, you have nothing to fear.",
+    "effects": {
+      "auth": 1
+    },
+    "text_de": "Wenn man nichts zu verbergen hat, hat man nichts zu befürchten."
+  },
+  {
+    "id": "sapply_023",
+    "source_id": 23,
+    "test": "sapplyvalues",
+    "text": "The government should be less involved in the day to day life of its citizens.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Die Regierung sollte weniger in das Alltagsleben ihrer Bürger eingreifen."
+  },
+  {
+    "id": "sapply_024",
+    "source_id": 24,
+    "test": "sapplyvalues",
+    "text": "Without democracy, a society is nothing.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Ohne Demokratie ist eine Gesellschaft nichts."
+  },
+  {
+    "id": "sapply_025",
+    "source_id": 25,
+    "test": "sapplyvalues",
+    "text": "Jury nullification should be legal.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Die Aufhebung eines Gesetzes durch Geschworene im Einzelfall sollte legal sein."
+  },
+  {
+    "id": "sapply_026",
+    "source_id": 26,
+    "test": "sapplyvalues",
+    "text": "The smaller the government, the freer the people.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Je kleiner die Regierung, desto freier die Menschen."
+  },
+  {
+    "id": "sapply_027",
+    "source_id": 27,
+    "test": "sapplyvalues",
+    "text": "The government should, at most, provide emergency services and law enforcement.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Die Regierung sollte höchstens Notfalldienste und Strafverfolgung bereitstellen."
+  },
+  {
+    "id": "sapply_028",
+    "source_id": 28,
+    "test": "sapplyvalues",
+    "text": "The police were not created to protect the people, but to uphold the status quo by force.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Die Polizei wurde nicht geschaffen, um die Menschen zu schützen, sondern um den Status quo mit Gewalt aufrechtzuerhalten."
+  },
+  {
+    "id": "sapply_029",
+    "source_id": 29,
+    "test": "sapplyvalues",
+    "text": "State schools are a bad idea because our state shouldn't be influencing our children.",
+    "effects": {
+      "auth": -1
+    },
+    "text_de": "Staatliche Schulen sind eine schlechte Idee, weil unser Staat unsere Kinder nicht beeinflussen sollte."
+  },
+  {
+    "id": "sapply_030",
+    "source_id": 30,
+    "test": "sapplyvalues",
+    "text": "Two consenting individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Zwei einwilligende Personen sollten miteinander tun dürfen, was sie wollen, selbst wenn es mir unangenehm ist."
+  },
+  {
+    "id": "sapply_031",
+    "source_id": 31,
+    "test": "sapplyvalues",
+    "text": "An individual's body is their own property, and they should be able to do anything they desire to it.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Der Körper eines Individuums ist sein eigenes Eigentum, und es sollte damit tun dürfen, was es möchte."
+  },
+  {
+    "id": "sapply_032",
+    "source_id": 32,
+    "test": "sapplyvalues",
+    "text": "A person should be able to worship whomever or whatever they want.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Eine Person sollte verehren dürfen, wen oder was sie will."
+  },
+  {
+    "id": "sapply_033",
+    "source_id": 33,
+    "test": "sapplyvalues",
+    "text": "Nudism is perfectly natural.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Nacktheit ist völlig natürlich."
+  },
+  {
+    "id": "sapply_034",
+    "source_id": 34,
+    "test": "sapplyvalues",
+    "text": "Animals deserve certain universal rights.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Tiere verdienen bestimmte universelle Rechte."
+  },
+  {
+    "id": "sapply_035",
+    "source_id": 35,
+    "test": "sapplyvalues",
+    "text": "Gender is a social construct, not a natural state of affairs.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Geschlecht ist ein soziales Konstrukt, kein natürlicher Zustand der Dinge."
+  },
+  {
+    "id": "sapply_036",
+    "source_id": 36,
+    "test": "sapplyvalues",
+    "text": "Laws based on cultural values, rather than ethical ones, aren't justice.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Gesetze, die auf kulturellen Werten statt auf ethischen beruhen, sind keine Gerechtigkeit."
+  },
+  {
+    "id": "sapply_037",
+    "source_id": 37,
+    "test": "sapplyvalues",
+    "text": "Autonomy of body extends even to minors, the mentally ill, and serious criminals.",
+    "effects": {
+      "prog": 1
+    },
+    "text_de": "Körperliche Autonomie gilt auch für Minderjährige, psychisch Kranke und schwere Straftäter."
+  },
+  {
+    "id": "sapply_038",
+    "source_id": 38,
+    "test": "sapplyvalues",
+    "text": "Homosexuality is against my values.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Homosexualität widerspricht meinen Werten."
+  },
+  {
+    "id": "sapply_039",
+    "source_id": 39,
+    "test": "sapplyvalues",
+    "text": "Transgender individuals should not be able to adopt children.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Transgender-Personen sollten keine Kinder adoptieren dürfen."
+  },
+  {
+    "id": "sapply_040",
+    "source_id": 40,
+    "test": "sapplyvalues",
+    "text": "Drugs are harmful and should be banned.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Drogen sind schädlich und sollten verboten werden."
+  },
+  {
+    "id": "sapply_041",
+    "source_id": 41,
+    "test": "sapplyvalues",
+    "text": "The death penalty should exist for certain crimes.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Für bestimmte Verbrechen sollte es die Todesstrafe geben."
+  },
+  {
+    "id": "sapply_042",
+    "source_id": 42,
+    "test": "sapplyvalues",
+    "text": "Victimless crimes should still be punished.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Opferlose Verbrechen sollten dennoch bestraft werden."
+  },
+  {
+    "id": "sapply_043",
+    "source_id": 43,
+    "test": "sapplyvalues",
+    "text": "One cannot be moral without religion.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Ohne Religion kann man nicht moralisch sein."
+  },
+  {
+    "id": "sapply_044",
+    "source_id": 44,
+    "test": "sapplyvalues",
+    "text": "Parents should hold absolute power over their children, as they are older and more experienced.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Eltern sollten absolute Macht über ihre Kinder haben, da sie älter und erfahrener sind."
+  },
+  {
+    "id": "sapply_045",
+    "source_id": 45,
+    "test": "sapplyvalues",
+    "text": "Multiculturalism is bad.",
+    "effects": {
+      "prog": -1
+    },
+    "text_de": "Multikulturalismus ist schlecht."
+  }
+]

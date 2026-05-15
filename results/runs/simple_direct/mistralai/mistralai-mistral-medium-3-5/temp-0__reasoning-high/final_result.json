@@ -1,0 +1,35 @@
+{
+  "axis_scores": {
+    "right": -3.33,
+    "auth": -3.0,
+    "prog": 7.81
+  },
+  "raw_scores": {
+    "right": -5.0,
+    "auth": -4.5,
+    "prog": 12.5
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-high",
+  "scenario_id": "simple_direct",
+  "scenario_type": "questionnaire_direct",
+  "prompt_builder": "template_messages_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "mistralai/mistral-medium-3-5",
+  "model_slug": "mistralai-mistral-medium-3-5",
+  "provider": "mistralai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-high",
+  "temperature": 0.0,
+  "reasoning_effort": "high",
+  "concurrency": 46,
+  "completed_at": "2026-05-15T15:48:03.885873+00:00",
+  "response_count": 46
+}

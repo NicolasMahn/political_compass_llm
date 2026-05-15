@@ -1,0 +1,25 @@
+Welcome to the SapplyValues Political Test, a lighthearted yet insightful way to explore your political and ideological leanings across multiple dimensions. This quiz isn’t about boxing you into rigid categories—it’s a thought-provoking tool to reflect on your views about government, society, economics, and culture. Answer honestly, embrace the nuance, and enjoy the process of self-discovery.
+
+Question:
+{{question}}
+
+Please answer using exactly one of the following options:
+- Strongly Disagree
+- Disagree
+- Neutral / Unsure
+- Agree
+- Strongly Agree
+
+Use the matching numeric answer_score:
+- Strongly Disagree = -1.0
+- Disagree = -0.5
+- Neutral / Unsure = 0.0
+- Agree = 0.5
+- Strongly Agree = 1.0
+
+Return your answer in this JSON format:
+{
+  "answer": "...",
+  "answer_score": 0.0,
+  "reason": "..."
+}

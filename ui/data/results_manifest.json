@@ -1,0 +1,2263 @@
+{
+  "schema_version": "1.0",
+  "generated_from": "results/runs",
+  "run_count": 52,
+  "tree": {
+    "simple_direct": {
+      "anthropic": {
+        "anthropic-claude-haiku-4.5": {
+          "temp-0__reasoning-none": "simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none"
+        },
+        "anthropic-claude-opus-4.7": {
+          "temp-0__reasoning-high": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
+          "temp-0__reasoning-xhigh": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh"
+        },
+        "anthropic-claude-sonnet-4.6": {
+          "temp-0__reasoning-high": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
+          "temp-0__reasoning-xhigh": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh"
+        }
+      },
+      "deepseek": {
+        "deepseek-deepseek-v4-flash": {
+          "temp-0__reasoning-none": "simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none"
+        },
+        "deepseek-deepseek-v4-pro": {
+          "temp-0__reasoning-none": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none"
+        }
+      },
+      "google": {
+        "google-gemini-3-flash-preview": {
+          "temp-0__reasoning-high": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none"
+        },
+        "google-gemini-3.1-flash-lite": {
+          "temp-0__reasoning-none": "simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none"
+        },
+        "google-gemini-3.1-pro-preview": {
+          "temp-0__reasoning-high": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none"
+        }
+      },
+      "mistralai": {
+        "mistralai-mistral-medium-3-5": {
+          "temp-0__reasoning-high": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none"
+        },
+        "mistralai-mistral-small-2603": {
+          "temp-0__reasoning-high": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none"
+        },
+        "mistralai-mistral-small-3.2-24b-instruct": {
+          "temp-0__reasoning-high": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none"
+        }
+      },
+      "moonshotai": {
+        "moonshotai-kimi-k2.6": {
+          "temp-0__reasoning-none": "simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none"
+        }
+      },
+      "openai": {
+        "openai-gpt-5.4-mini": {
+          "temp-0__reasoning-none": "simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none"
+        },
+        "openai-gpt-5.4-nano": {
+          "temp-0__reasoning-none": "simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none"
+        },
+        "openai-gpt-5.5": {
+          "temp-0__reasoning-high": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none",
+          "temp-0__reasoning-xhigh": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh"
+        }
+      },
+      "qwen": {
+        "qwen-qwen3.6-plus": {
+          "temp-0__reasoning-none": "simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none"
+        }
+      },
+      "x-ai": {
+        "x-ai-grok-4.1-fast": {
+          "temp-0__reasoning-none": "simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none"
+        },
+        "x-ai-grok-4.3": {
+          "temp-0__reasoning-high": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none"
+        }
+      },
+      "xiaomi": {
+        "xiaomi-mimo-v2-flash": {
+          "temp-0__reasoning-none": "simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none"
+        },
+        "xiaomi-mimo-v2.5-pro": {
+          "temp-0__reasoning-none": "simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none"
+        }
+      },
+      "z-ai": {
+        "z-ai-glm-5.1": {
+          "temp-0__reasoning-none": "simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none"
+        }
+      }
+    },
+    "simple_direct_de": {
+      "mistralai": {
+        "mistralai-mistral-small-3.2-24b-instruct": {
+          "temp-0__reasoning-none": "simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none"
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-haiku-4.5",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-haiku-4.5",
+      "openrouter_model_name": "Anthropic: Claude Haiku 4.5",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:46:26.774148+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": -0.33,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 10,
+      "neutral_rate": 0.21739130434782608,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 21,
+        "neutral": 10,
+        "agree": 10,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-haiku-4.5/temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Haiku 4.5",
+      "label": "Claude Haiku 4.5",
+      "color": "#d97706"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:34:02.663860+00:00",
+      "axis_scores": {
+        "right": -4.0,
+        "auth": -1.0,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 17,
+        "neutral": 4,
+        "agree": 14,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-high",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:33:43.850683+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": -1.0,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 15,
+        "neutral": 4,
+        "agree": 14,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-low",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:33:52.493732+00:00",
+      "axis_scores": {
+        "right": -4.0,
+        "auth": -1.0,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 17,
+        "neutral": 4,
+        "agree": 14,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
+      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-medium",
+      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-medium",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:46:17.908013+00:00",
+      "axis_scores": {
+        "right": -3.33,
+        "auth": -1.0,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 17,
+        "neutral": 6,
+        "agree": 12,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-none",
+      "label": "Claude Opus 4.7",
+      "color": "#d97706"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-xhigh",
+      "runtime_config_slug": "temp-0__reasoning-xhigh",
+      "run_id": "temp-0__reasoning-xhigh",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "xhigh",
+      "completed_at": "2026-05-15T15:34:22.073013+00:00",
+      "axis_scores": {
+        "right": -4.0,
+        "auth": -1.0,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 17,
+        "neutral": 4,
+        "agree": 14,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh",
+      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-xhigh",
+      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-xhigh",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:36:32.504748+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 0.67,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 10,
+      "neutral_rate": 0.21739130434782608,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 20,
+        "neutral": 10,
+        "agree": 10,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-high",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:35:44.305210+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 0.33,
+        "prog": 4.69
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 20,
+        "neutral": 12,
+        "agree": 9,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-low",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:36:08.411799+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.33,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 18,
+        "neutral": 9,
+        "agree": 12,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-medium",
+      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-medium",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:46:46.326567+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": -0.33,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 5,
+      "neutral_rate": 0.10869565217391304,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 21,
+        "neutral": 5,
+        "agree": 12,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-none",
+      "label": "Claude Sonnet 4.6",
+      "color": "#d97706"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-xhigh",
+      "runtime_config_slug": "temp-0__reasoning-xhigh",
+      "run_id": "temp-0__reasoning-xhigh",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "xhigh",
+      "completed_at": "2026-05-15T15:40:47.321396+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 1.0,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 22,
+        "neutral": 9,
+        "agree": 11,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh",
+        "final_result": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/final_result.json",
+        "responses": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/responses.json",
+        "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/metadata.json"
+      },
+      "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-xhigh",
+      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-xhigh",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-flash",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-flash",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Flash",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:47:08.227044+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": 0.33,
+        "prog": 5.62
+      },
+      "response_count": 46,
+      "neutral_count": 13,
+      "neutral_rate": 0.2826086956521739,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 9,
+        "neutral": 13,
+        "agree": 9,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none",
+      "default_label": "DeepSeek: DeepSeek V4 Flash",
+      "label": "DeepSeek V4 Flash",
+      "color": "#06b6d4"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:47:31.753265+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": -2.33,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 17,
+        "neutral": 6,
+        "agree": 12,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none",
+      "default_label": "DeepSeek: DeepSeek V4 Pro",
+      "label": "DeepSeek V4 Pro",
+      "color": "#06b6d4"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:18:01.054866+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 1.0,
+        "prog": 3.75
+      },
+      "response_count": 46,
+      "neutral_count": 30,
+      "neutral_rate": 0.6521739130434783,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 3,
+        "neutral": 30,
+        "agree": 8,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-high",
+      "label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-high",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:17:27.868465+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -0.67,
+        "prog": 4.69
+      },
+      "response_count": 46,
+      "neutral_count": 30,
+      "neutral_rate": 0.6521739130434783,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 2,
+        "neutral": 30,
+        "agree": 5,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-low",
+      "label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-low",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:17:49.844877+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 1.33,
+        "prog": 3.75
+      },
+      "response_count": 46,
+      "neutral_count": 27,
+      "neutral_rate": 0.5869565217391305,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 3,
+        "neutral": 27,
+        "agree": 7,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
+      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-medium",
+      "label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-medium",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:43:31.710342+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": 0.67,
+        "prog": 5.62
+      },
+      "response_count": 46,
+      "neutral_count": 22,
+      "neutral_rate": 0.4782608695652174,
+      "answers": {
+        "strongly_disagree": 12,
+        "disagree": 1,
+        "neutral": 22,
+        "agree": 8,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-none",
+      "label": "Gemini 3 Flash",
+      "color": "#4285f4"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-flash-lite",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-flash-lite",
+      "openrouter_model_name": "Google: Gemini 3.1 Flash Lite",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:43:41.301016+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": -1.33,
+        "prog": 5.62
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 9,
+        "neutral": 12,
+        "agree": 14,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3.1-flash-lite/temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3.1 Flash Lite",
+      "label": "Gemini 3.1 Flash Lite",
+      "color": "#4285f4"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:16:52.277427+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.33,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 44,
+      "neutral_rate": 0.9565217391304348,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "neutral": 44,
+        "agree": 1,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-high",
+      "label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-high",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:16:19.931224+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": -0.67,
+        "prog": 0.0
+      },
+      "response_count": 46,
+      "neutral_count": 45,
+      "neutral_rate": 0.9782608695652174,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 0,
+        "neutral": 45,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-low",
+      "label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-low",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:16:33.384352+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.0,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 45,
+      "neutral_rate": 0.9782608695652174,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "neutral": 45,
+        "agree": 0,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
+      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-medium",
+      "label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-medium",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:43:01.332479+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.67,
+        "prog": 0.31
+      },
+      "response_count": 46,
+      "neutral_count": 43,
+      "neutral_rate": 0.9347826086956522,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 1,
+        "neutral": 43,
+        "agree": 0,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-none",
+      "label": "Gemini 3.1 Pro",
+      "color": "#4285f4"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-medium-3-5",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-medium-3-5",
+      "openrouter_model_name": "Mistral: Mistral Medium 3.5",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:48:03.885873+00:00",
+      "axis_scores": {
+        "right": -3.33,
+        "auth": -3.0,
+        "prog": 7.81
+      },
+      "response_count": 46,
+      "neutral_count": 2,
+      "neutral_rate": 0.043478260869565216,
+      "answers": {
+        "strongly_disagree": 15,
+        "disagree": 8,
+        "neutral": 2,
+        "agree": 14,
+        "strongly_agree": 7
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-high",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-medium-3-5",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-medium-3-5",
+      "openrouter_model_name": "Mistral: Mistral Medium 3.5",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:46:00.994133+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": -1.0,
+        "prog": 7.5
+      },
+      "response_count": 46,
+      "neutral_count": 5,
+      "neutral_rate": 0.10869565217391304,
+      "answers": {
+        "strongly_disagree": 11,
+        "disagree": 13,
+        "neutral": 5,
+        "agree": 11,
+        "strongly_agree": 6
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-low",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-medium-3-5",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-medium-3-5",
+      "openrouter_model_name": "Mistral: Mistral Medium 3.5",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:46:35.340008+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": -1.0,
+        "prog": 7.5
+      },
+      "response_count": 46,
+      "neutral_count": 8,
+      "neutral_rate": 0.17391304347826086,
+      "answers": {
+        "strongly_disagree": 11,
+        "disagree": 8,
+        "neutral": 8,
+        "agree": 12,
+        "strongly_agree": 7
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium",
+      "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-medium",
+      "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-medium",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-medium-3-5",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-medium-3-5",
+      "openrouter_model_name": "Mistral: Mistral Medium 3.5",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T15:45:42.418220+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": -1.0,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 23,
+      "neutral_rate": 0.5,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 5,
+        "neutral": 23,
+        "agree": 9,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none",
+      "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-none",
+      "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-none",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:05:59.406354+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": 0.0,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 14,
+        "neutral": 12,
+        "agree": 11,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 4 · temp-0__reasoning-high",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:06:31.206953+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -0.33,
+        "prog": 5.62
+      },
+      "response_count": 46,
+      "neutral_count": 15,
+      "neutral_rate": 0.32608695652173914,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 12,
+        "neutral": 15,
+        "agree": 12,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 4 · temp-0__reasoning-low",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:06:19.260555+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": 0.67,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 10,
+      "neutral_rate": 0.21739130434782608,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 14,
+        "neutral": 10,
+        "agree": 16,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
+      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-medium",
+      "label": "Mistral: Mistral Small 4 · temp-0__reasoning-medium",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:37:20.298841+00:00",
+      "axis_scores": {
+        "right": -3.0,
+        "auth": -0.67,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 26,
+      "neutral_rate": 0.5652173913043478,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 4,
+        "neutral": 26,
+        "agree": 4,
+        "strongly_agree": 6
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none",
+      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-none",
+      "label": "Mistral Small 4",
+      "color": "#ff7000"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-3.2-24b-instruct",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "openrouter_model_name": "Mistral: Mistral Small 3.2 24B",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:07:57.520686+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": 0.33,
+        "prog": 3.44
+      },
+      "response_count": 46,
+      "neutral_count": 27,
+      "neutral_rate": 0.5869565217391305,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 1,
+        "neutral": 27,
+        "agree": 9,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-high",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-3.2-24b-instruct",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "openrouter_model_name": "Mistral: Mistral Small 3.2 24B",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:07:37.805557+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 1.0,
+        "prog": 4.06
+      },
+      "response_count": 46,
+      "neutral_count": 29,
+      "neutral_rate": 0.6304347826086957,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 2,
+        "neutral": 29,
+        "agree": 6,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-low",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-3.2-24b-instruct",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "openrouter_model_name": "Mistral: Mistral Small 3.2 24B",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:07:49.495453+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": 0.0,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 22,
+      "neutral_rate": 0.4782608695652174,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 1,
+        "neutral": 22,
+        "agree": 11,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium",
+      "default_label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-medium",
+      "label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-medium",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-3.2-24b-instruct",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "openrouter_model_name": "Mistral: Mistral Small 3.2 24B",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:40:52.859208+00:00",
+      "axis_scores": {
+        "right": -3.0,
+        "auth": 0.67,
+        "prog": 4.06
+      },
+      "response_count": 46,
+      "neutral_count": 17,
+      "neutral_rate": 0.3695652173913043,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 4,
+        "neutral": 17,
+        "agree": 16,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none",
+      "default_label": "Mistral: Mistral Small 3.2 24B · simple_direct · temp-0__reasoning-none",
+      "label": "Mistral Small 3.2",
+      "color": "#ff7000"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "moonshotai",
+      "router": "openrouter",
+      "model_slug": "moonshotai-kimi-k2.6",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "moonshotai/kimi-k2.6",
+      "openrouter_model_name": "MoonshotAI: Kimi K2.6",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:54:26.116894+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -1.0,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 11,
+      "neutral_rate": 0.2391304347826087,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 16,
+        "neutral": 11,
+        "agree": 12,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/moonshotai/moonshotai-kimi-k2.6/temp-0__reasoning-none",
+      "default_label": "MoonshotAI: Kimi K2.6",
+      "label": "Kimi K2.6",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.4-mini",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.4-mini",
+      "openrouter_model_name": "OpenAI: GPT-5.4 Mini",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:44:38.752247+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -1.33,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 11,
+        "neutral": 7,
+        "agree": 19,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.4-mini/temp-0__reasoning-none",
+      "default_label": "OpenAI: GPT-5.4 Mini",
+      "label": "GPT-5.4 Mini",
+      "color": "#10a37f"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.4-nano",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.4-nano",
+      "openrouter_model_name": "OpenAI: GPT-5.4 Nano",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:44:49.015009+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": -0.33,
+        "prog": 4.06
+      },
+      "response_count": 46,
+      "neutral_count": 24,
+      "neutral_rate": 0.5217391304347826,
+      "answers": {
+        "strongly_disagree": 2,
+        "disagree": 9,
+        "neutral": 24,
+        "agree": 9,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.4-nano/temp-0__reasoning-none",
+      "default_label": "OpenAI: GPT-5.4 Nano",
+      "label": "GPT-5.4 Nano",
+      "color": "#10a37f"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:08:58.667991+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": 0.67,
+        "prog": 7.19
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 14,
+        "neutral": 9,
+        "agree": 12,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high",
+      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-high",
+      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-high",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:08:29.639615+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -1.0,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 15,
+        "neutral": 7,
+        "agree": 16,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low",
+      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-low",
+      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-low",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:08:45.043732+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": 0.67,
+        "prog": 7.5
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 14,
+        "neutral": 9,
+        "agree": 12,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium",
+      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-medium",
+      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-medium",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:44:23.543300+00:00",
+      "axis_scores": {
+        "right": -4.33,
+        "auth": 0.67,
+        "prog": 7.5
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 11,
+        "neutral": 9,
+        "agree": 14,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none",
+      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-none",
+      "label": "GPT-5.5",
+      "color": "#10a37f"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-xhigh",
+      "runtime_config_slug": "temp-0__reasoning-xhigh",
+      "run_id": "temp-0__reasoning-xhigh",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "xhigh",
+      "completed_at": "2026-05-15T15:15:05.239132+00:00",
+      "axis_scores": {
+        "right": -3.33,
+        "auth": 0.33,
+        "prog": 7.81
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 14,
+        "neutral": 7,
+        "agree": 12,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh",
+        "final_result": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/final_result.json",
+        "responses": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/responses.json",
+        "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/metadata.json"
+      },
+      "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh",
+      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-xhigh",
+      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-xhigh",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "qwen",
+      "router": "openrouter",
+      "model_slug": "qwen-qwen3.6-plus",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "qwen/qwen3.6-plus",
+      "openrouter_model_name": "Qwen: Qwen3.6 Plus",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:48:26.757317+00:00",
+      "axis_scores": {
+        "right": -0.67,
+        "auth": -0.67,
+        "prog": 2.5
+      },
+      "response_count": 46,
+      "neutral_count": 37,
+      "neutral_rate": 0.8043478260869565,
+      "answers": {
+        "strongly_disagree": 2,
+        "disagree": 4,
+        "neutral": 37,
+        "agree": 2,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/qwen/qwen-qwen3.6-plus/temp-0__reasoning-none",
+      "default_label": "Qwen: Qwen3.6 Plus",
+      "label": "Qwen3.6 Plus",
+      "color": "#8b5cf6"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.1-fast",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.1-fast",
+      "openrouter_model_name": "xAI: Grok 4.1 Fast",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:46:03.304870+00:00",
+      "axis_scores": {
+        "right": 4.0,
+        "auth": -3.67,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 0,
+      "neutral_rate": 0.0,
+      "answers": {
+        "strongly_disagree": 14,
+        "disagree": 13,
+        "neutral": 0,
+        "agree": 11,
+        "strongly_agree": 8
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/x-ai/x-ai-grok-4.1-fast/temp-0__reasoning-none",
+      "default_label": "xAI: Grok 4.1 Fast",
+      "label": "Grok 4.1 Fast",
+      "color": "#111827"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T15:32:43.314403+00:00",
+      "axis_scores": {
+        "right": 2.33,
+        "auth": -1.0,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 2,
+      "neutral_rate": 0.043478260869565216,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 18,
+        "neutral": 2,
+        "agree": 14,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-high",
+      "label": "xAI: Grok 4.3 · temp-0__reasoning-high",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T15:31:36.499153+00:00",
+      "axis_scores": {
+        "right": 1.67,
+        "auth": -2.33,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 0,
+      "neutral_rate": 0.0,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 22,
+        "neutral": 0,
+        "agree": 12,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-low",
+      "label": "xAI: Grok 4.3 · temp-0__reasoning-low",
+      "color": "#0f766e"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T15:32:15.989402+00:00",
+      "axis_scores": {
+        "right": 2.33,
+        "auth": -1.67,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 0,
+      "neutral_rate": 0.0,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 25,
+        "neutral": 0,
+        "agree": 11,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
+      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-medium",
+      "label": "xAI: Grok 4.3 · temp-0__reasoning-medium",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:45:42.781346+00:00",
+      "axis_scores": {
+        "right": 1.67,
+        "auth": -2.67,
+        "prog": 4.38
+      },
+      "response_count": 46,
+      "neutral_count": 0,
+      "neutral_rate": 0.0,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 18,
+        "neutral": 0,
+        "agree": 17,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none",
+      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-none",
+      "label": "Grok 4.3",
+      "color": "#111827"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "xiaomi",
+      "router": "openrouter",
+      "model_slug": "xiaomi-mimo-v2-flash",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "xiaomi/mimo-v2-flash",
+      "openrouter_model_name": "Xiaomi: MiMo-V2-Flash",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:49:00.738274+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": -1.33,
+        "prog": 4.69
+      },
+      "response_count": 46,
+      "neutral_count": 15,
+      "neutral_rate": 0.32608695652173914,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 15,
+        "neutral": 15,
+        "agree": 10,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/xiaomi/xiaomi-mimo-v2-flash/temp-0__reasoning-none",
+      "default_label": "Xiaomi: MiMo-V2-Flash",
+      "label": "MiMo V2 Flash",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "xiaomi",
+      "router": "openrouter",
+      "model_slug": "xiaomi-mimo-v2.5-pro",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "xiaomi/mimo-v2.5-pro",
+      "openrouter_model_name": "Xiaomi: MiMo-V2.5-Pro",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:48:42.572950+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 1.0,
+        "prog": 3.44
+      },
+      "response_count": 46,
+      "neutral_count": 16,
+      "neutral_rate": 0.34782608695652173,
+      "answers": {
+        "strongly_disagree": 2,
+        "disagree": 15,
+        "neutral": 16,
+        "agree": 11,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/xiaomi/xiaomi-mimo-v2.5-pro/temp-0__reasoning-none",
+      "default_label": "Xiaomi: MiMo-V2.5-Pro",
+      "label": "MiMo V2.5 Pro",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "z-ai",
+      "router": "openrouter",
+      "model_slug": "z-ai-glm-5.1",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "z-ai/glm-5.1",
+      "openrouter_model_name": "Z.ai: GLM 5.1",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T14:50:02.157312+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": -0.33,
+        "prog": 3.12
+      },
+      "response_count": 46,
+      "neutral_count": 26,
+      "neutral_rate": 0.5652173913043478,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 11,
+        "neutral": 26,
+        "agree": 4,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct/z-ai/z-ai-glm-5.1/temp-0__reasoning-none",
+      "default_label": "Z.ai: GLM 5.1",
+      "label": "GLM 5.1",
+      "color": "#22c55e"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-3.2-24b-instruct",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "openrouter_model_name": "Mistral: Mistral Small 3.2 24B",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:00:23.265638+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -1.33,
+        "prog": 7.5
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 11,
+        "disagree": 3,
+        "neutral": 3,
+        "agree": 18,
+        "strongly_agree": 11
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none",
+      "default_label": "Mistral: Mistral Small 3.2 24B · simple_direct_de · temp-0__reasoning-none",
+      "label": "Mistral: Mistral Small 3.2 24B · simple_direct_de · temp-0__reasoning-none",
+      "color": "#f97316"
+    }
+  ]
+}
