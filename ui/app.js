@@ -1,8 +1,12 @@
 const state = {
   manifest: null,
   selectedModels: new Set(),
-  activeLanguage: 'en',
+  compassLanguage: 'en',
+  neutralLanguage: 'en',
+  deltaSourceLanguage: 'en',
+  deltaTargetLanguage: 'de',
   compassReasoningEfforts: new Set(['low', 'high']),
+  deltaReasoningEfforts: new Set(['low', 'high']),
   compassPoints: [],
   hoveredRunId: null,
   displayColors: new Map(),
@@ -14,13 +18,12 @@ const colors = [
 ];
 
 const providerColorOverrides = {
+  google: '#4285f4',
   mistralai: '#db2777',
 };
 
 const defaultSelectedModels = new Set([
   'anthropic/anthropic-claude-opus-4.7',
-  'anthropic/anthropic-claude-sonnet-4.6',
-  'google/google-gemini-3-flash-preview',
   'google/google-gemini-3.1-pro-preview',
   'openai/openai-gpt-5.5',
   'x-ai/x-ai-grok-4.3',
@@ -31,6 +34,7 @@ const defaultSelectedModels = new Set([
 const languageScenarios = {
   en: { label: 'English', scenarioId: 'simple_direct' },
   de: { label: 'German', scenarioId: 'simple_direct_de' },
+  zh: { label: 'Chinese', scenarioId: 'simple_direct_zh' },
 };
 
 async function main() {
@@ -39,8 +43,7 @@ async function main() {
   state.manifest = await response.json();
   assignDisplayColors();
   initializeDefaultSelection();
-  renderLanguageControls();
-  renderReasoningControls();
+  renderAllControls();
   renderRunTree();
   setupCompassInteractions();
   renderAll();
@@ -50,13 +53,13 @@ function byId(id) { return document.getElementById(id); }
 function runById(id) { return state.manifest.runs.find((run) => run.id === id); }
 function modelKey(run) { return `${run.provider}/${run.model_slug}`; }
 function selectedModelRuns() { return state.manifest.runs.filter((run) => state.selectedModels.has(modelKey(run))); }
-function activeLanguageScenario() { return languageScenarios[state.activeLanguage]?.scenarioId; }
+function languageScenario(language) { return languageScenarios[language]?.scenarioId; }
 function runEffort(run) { return run.reasoning_effort || 'none'; }
-function activeLanguageRuns() { return selectedModelRuns().filter((run) => run.scenario_id === activeLanguageScenario()); }
+function runsForLanguage(language) { return selectedModelRuns().filter((run) => run.scenario_id === languageScenario(language)); }
 function selectedCompassRuns() {
-  return activeLanguageRuns().filter((run) => state.compassReasoningEfforts.has(runEffort(run)));
+  return runsForLanguage(state.compassLanguage).filter((run) => state.compassReasoningEfforts.has(runEffort(run)));
 }
-function selectedNeutralRuns() { return activeLanguageRuns(); }
+function selectedNeutralRuns() { return runsForLanguage(state.neutralLanguage); }
 
 function initializeDefaultSelection() {
   const availableModelKeys = new Set(state.manifest.runs.map(modelKey));
@@ -178,27 +181,36 @@ function reasoningLabel(effort) {
   return ({ none: 'Default / no reasoning', low: 'Low', medium: 'Medium', high: 'High', xhigh: 'X-high' })[effort] || effort;
 }
 
-function renderLanguageControls() {
-  const root = byId('languageControls');
+function renderAllControls() {
+  renderLanguageControls('compassLanguageControls', state.compassLanguage, (language) => { state.compassLanguage = language; });
+  renderLanguageControls('neutralLanguageControls', state.neutralLanguage, (language) => { state.neutralLanguage = language; });
+  renderLanguageControls('deltaSourceLanguageControls', state.deltaSourceLanguage, (language) => { state.deltaSourceLanguage = language; });
+  renderLanguageControls('deltaTargetLanguageControls', state.deltaTargetLanguage, (language) => { state.deltaTargetLanguage = language; });
+  renderReasoningControls('compassReasoningControls', state.compassReasoningEfforts);
+  renderReasoningControls('deltaReasoningControls', state.deltaReasoningEfforts);
+}
+
+function renderLanguageControls(rootId, activeLanguage, updateLanguage) {
+  const root = byId(rootId);
   if (!root) return;
   root.innerHTML = '';
   for (const [language, config] of Object.entries(languageScenarios)) {
     const button = document.createElement('button');
     button.type = 'button';
-    button.className = `segmented-button${language === state.activeLanguage ? ' active' : ''}`;
+    button.className = `segmented-button${language === activeLanguage ? ' active' : ''}`;
     button.textContent = config.label;
     button.addEventListener('click', () => {
-      state.activeLanguage = language;
+      updateLanguage(language);
       state.hoveredRunId = null;
-      renderLanguageControls();
+      renderAllControls();
       renderAll();
     });
     root.appendChild(button);
   }
 }
 
-function renderReasoningControls() {
-  const root = byId('reasoningControls');
+function renderReasoningControls(rootId, selectedEfforts) {
+  const root = byId(rootId);
   if (!root) return;
   root.innerHTML = '';
   for (const effort of ['none', 'low', 'medium', 'high', 'xhigh']) {
@@ -206,9 +218,9 @@ function renderReasoningControls() {
     label.className = 'toggle-label chip-toggle';
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.checked = state.compassReasoningEfforts.has(effort);
+    checkbox.checked = selectedEfforts.has(effort);
     checkbox.addEventListener('change', () => {
-      checkbox.checked ? state.compassReasoningEfforts.add(effort) : state.compassReasoningEfforts.delete(effort);
+      checkbox.checked ? selectedEfforts.add(effort) : selectedEfforts.delete(effort);
       state.hoveredRunId = null;
       renderAll();
     });
@@ -220,33 +232,46 @@ function renderReasoningControls() {
 function renderAll() {
   const compassRuns = selectedCompassRuns();
   const neutralRuns = selectedNeutralRuns();
-  const delta = languageDeltaPairs('en', 'de');
+  const delta = languageDeltaPairs(state.deltaSourceLanguage, state.deltaTargetLanguage);
   byId('selectedCount').textContent = `${state.selectedModels.size} models`;
-  renderMissingRunWarnings(compassRuns, neutralRuns);
+  renderCompassWarnings(compassRuns);
+  renderNeutralWarnings(neutralRuns);
   renderLanguageDeltaWarnings(delta.missing);
   drawCompass(compassRuns);
   drawNeutralBars(neutralRuns);
-  drawLanguageDelta(delta.pairs, languageScenarios.en, languageScenarios.de);
+  drawLanguageDelta(delta.pairs, languageScenarios[state.deltaSourceLanguage], languageScenarios[state.deltaTargetLanguage]);
   renderDetails(compassRuns);
 }
 
-function renderMissingRunWarnings(compassRuns, neutralRuns) {
-  const root = byId('runWarnings');
+function renderCompassWarnings(compassRuns) {
+  const root = byId('compassWarnings');
   if (!root) return;
-  const activeLanguage = languageScenarios[state.activeLanguage];
   const selectedKeys = [...state.selectedModels].sort();
-  const languageKeys = new Set(neutralRuns.map(modelKey));
+  const languageRuns = runsForLanguage(state.compassLanguage);
+  const languageKeys = new Set(languageRuns.map(modelKey));
   const compassKeys = new Set(compassRuns.map(modelKey));
   const missingLanguage = selectedKeys.filter((key) => !languageKeys.has(key));
   const missingReasoning = selectedKeys.filter((key) => languageKeys.has(key) && !compassKeys.has(key));
   const messages = [];
-  if (missingLanguage.length) {
-    messages.push(`Missing ${activeLanguage.label} runs for: ${missingLanguage.map(modelNameForKey).join(', ')}.`);
-  }
-  if (missingReasoning.length && state.compassReasoningEfforts.size) {
-    messages.push(`No selected reasoning runs (${[...state.compassReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
-  }
+  if (missingLanguage.length) messages.push(`Missing ${languageScenarios[state.compassLanguage].label} runs for: ${missingLanguage.map(modelNameForKey).join(', ')}.`);
+  if (missingReasoning.length && state.compassReasoningEfforts.size) messages.push(`No selected reasoning runs (${[...state.compassReasoningEfforts].map(reasoningLabel).join(', ')}) for: ${missingReasoning.map(modelNameForKey).join(', ')}.`);
   if (!state.compassReasoningEfforts.size) messages.push('No reasoning efforts selected for the compass.');
+  renderWarningBox(root, messages);
+}
+
+function renderNeutralWarnings(neutralRuns) {
+  const root = byId('neutralWarnings');
+  if (!root) return;
+  const selectedKeys = [...state.selectedModels].sort();
+  const languageKeys = new Set(neutralRuns.map(modelKey));
+  const missingLanguage = selectedKeys.filter((key) => !languageKeys.has(key));
+  const messages = missingLanguage.length
+    ? [`Missing ${languageScenarios[state.neutralLanguage].label} runs for: ${missingLanguage.map(modelNameForKey).join(', ')}.`]
+    : [];
+  renderWarningBox(root, messages);
+}
+
+function renderWarningBox(root, messages) {
   root.innerHTML = messages.map((message) => `<div>${escapeHtml(message)}</div>`).join('');
   root.hidden = messages.length === 0;
 }
@@ -259,7 +284,7 @@ function modelNameForKey(key) {
 function languageDeltaPairs(sourceLanguage, targetLanguage) {
   const sourceScenario = languageScenarios[sourceLanguage]?.scenarioId;
   const targetScenario = languageScenarios[targetLanguage]?.scenarioId;
-  const efforts = [...state.compassReasoningEfforts];
+  const efforts = [...state.deltaReasoningEfforts];
   const pairs = [];
   const missing = [];
 
@@ -281,11 +306,14 @@ function languageDeltaPairs(sourceLanguage, targetLanguage) {
 function renderLanguageDeltaWarnings(missing) {
   const root = byId('languageDeltaWarnings');
   if (!root) return;
+  const source = languageScenarios[state.deltaSourceLanguage];
+  const target = languageScenarios[state.deltaTargetLanguage];
+  byId('languageDeltaTitle').textContent = `Language delta: ${source.label} → ${target.label}`;
   const messages = [];
-  if (!state.compassReasoningEfforts.size) messages.push('No reasoning efforts selected for language delta.');
-  if (missing.length) messages.push(`Cannot compute English → German delta for: ${missing.join(', ')}.`);
-  root.innerHTML = messages.map((message) => `<div>${escapeHtml(message)}</div>`).join('');
-  root.hidden = messages.length === 0;
+  if (state.deltaSourceLanguage === state.deltaTargetLanguage) messages.push('Choose two different languages for the delta graph.');
+  if (!state.deltaReasoningEfforts.size) messages.push('No reasoning efforts selected for language delta.');
+  if (missing.length) messages.push(`Cannot compute ${source.label} → ${target.label} delta for: ${missing.join(', ')}.`);
+  renderWarningBox(root, messages);
 }
 
 function drawCompass(runs) {
@@ -649,7 +677,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage) {
     ctx.fillStyle = '#64748b';
     ctx.font = '700 16px system-ui, sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('No matching English/German runs for the selected models and reasoning levels.', centerX, centerY);
+    ctx.fillText(`No matching ${sourceLanguage.label}/${targetLanguage.label} runs for the selected models and reasoning levels.`, centerX, centerY);
     drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 635, 70);
     return;
   }
@@ -683,7 +711,7 @@ function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y) {
   ctx.fillText(`${sourceLanguage.label} → ${targetLanguage.label}`, x, y);
   ctx.font = '12px system-ui, sans-serif';
   ctx.fillStyle = '#64748b';
-  ctx.fillText('Hollow = English start · Filled = German end', x, y + 18);
+  ctx.fillText(`Hollow = ${sourceLanguage.label} start · Filled = ${targetLanguage.label} end`, x, y + 18);
 
   pairs.slice(0, 12).forEach(({ sourceRun, targetRun, effort }, index) => {
     const yy = y + 44 + index * 34;

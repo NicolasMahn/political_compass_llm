@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_from": "results/runs",
-  "run_count": 52,
+  "run_count": 103,
   "tree": {
     "simple_direct": {
       "anthropic": {
@@ -28,6 +28,8 @@
           "temp-0__reasoning-none": "simple_direct/deepseek/deepseek-deepseek-v4-flash/temp-0__reasoning-none"
         },
         "deepseek-deepseek-v4-pro": {
+          "temp-0__reasoning-high": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
           "temp-0__reasoning-none": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none"
         }
       },
@@ -119,9 +121,114 @@
       }
     },
     "simple_direct_de": {
+      "anthropic": {
+        "anthropic-claude-opus-4.7": {
+          "temp-0__reasoning-high": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
+          "temp-0__reasoning-xhigh": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh"
+        },
+        "anthropic-claude-sonnet-4.6": {
+          "temp-0__reasoning-high": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
+          "temp-0__reasoning-xhigh": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh"
+        }
+      },
+      "deepseek": {
+        "deepseek-deepseek-v4-pro": {
+          "temp-0__reasoning-high": "simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low"
+        }
+      },
+      "google": {
+        "google-gemini-3-flash-preview": {
+          "temp-0__reasoning-high": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-none"
+        },
+        "google-gemini-3.1-pro-preview": {
+          "temp-0__reasoning-high": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none"
+        }
+      },
       "mistralai": {
+        "mistralai-mistral-small-2603": {
+          "temp-0__reasoning-high": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none"
+        },
         "mistralai-mistral-small-3.2-24b-instruct": {
           "temp-0__reasoning-none": "simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none"
+        }
+      },
+      "openai": {
+        "openai-gpt-5.5": {
+          "temp-0__reasoning-high": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-none",
+          "temp-0__reasoning-xhigh": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-xhigh"
+        }
+      },
+      "x-ai": {
+        "x-ai-grok-4.3": {
+          "temp-0__reasoning-high": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+          "temp-0__reasoning-medium": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
+          "temp-0__reasoning-none": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-none"
+        }
+      }
+    },
+    "simple_direct_zh": {
+      "anthropic": {
+        "anthropic-claude-opus-4.7": {
+          "temp-0__reasoning-high": "simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low"
+        },
+        "anthropic-claude-sonnet-4.6": {
+          "temp-0__reasoning-high": "simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low"
+        }
+      },
+      "deepseek": {
+        "deepseek-deepseek-v4-pro": {
+          "temp-0__reasoning-high": "simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low"
+        }
+      },
+      "google": {
+        "google-gemini-3-flash-preview": {
+          "temp-0__reasoning-high": "simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-low"
+        },
+        "google-gemini-3.1-pro-preview": {
+          "temp-0__reasoning-high": "simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low"
+        }
+      },
+      "mistralai": {
+        "mistralai-mistral-small-2603": {
+          "temp-0__reasoning-high": "simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low"
+        }
+      },
+      "openai": {
+        "openai-gpt-5.5": {
+          "temp-0__reasoning-high": "simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-low"
+        }
+      },
+      "x-ai": {
+        "x-ai-grok-4.3": {
+          "temp-0__reasoning-high": "simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+          "temp-0__reasoning-low": "simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low"
         }
       }
     }
@@ -205,8 +312,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
-      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-high",
-      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-high",
       "color": "#2563eb"
     },
     {
@@ -246,8 +353,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
-      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-low",
-      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-low",
       "color": "#16a34a"
     },
     {
@@ -287,8 +394,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
-      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-medium",
-      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-medium",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-medium",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-medium",
       "color": "#f97316"
     },
     {
@@ -328,7 +435,7 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
-      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-none",
       "label": "Claude Opus 4.7",
       "color": "#d97706"
     },
@@ -369,8 +476,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh",
-      "default_label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-xhigh",
-      "label": "Anthropic: Claude Opus 4.7 · temp-0__reasoning-xhigh",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-xhigh",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct · temp-0__reasoning-xhigh",
       "color": "#0891b2"
     },
     {
@@ -410,8 +517,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
-      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-high",
-      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-high",
       "color": "#be123c"
     },
     {
@@ -451,8 +558,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
-      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-low",
-      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-low",
       "color": "#4d7c0f"
     },
     {
@@ -492,8 +599,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
-      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-medium",
-      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-medium",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-medium",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-medium",
       "color": "#9333ea"
     },
     {
@@ -533,7 +640,7 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
-      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-none",
       "label": "Claude Sonnet 4.6",
       "color": "#d97706"
     },
@@ -574,8 +681,8 @@
         "metadata": "results/runs/simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/metadata.json"
       },
       "id": "simple_direct/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh",
-      "default_label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-xhigh",
-      "label": "Anthropic: Claude Sonnet 4.6 · temp-0__reasoning-xhigh",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-xhigh",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct · temp-0__reasoning-xhigh",
       "color": "#ca8a04"
     },
     {
@@ -624,6 +731,88 @@
       "provider": "deepseek",
       "router": "openrouter",
       "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:50:31.487125+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -0.33,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 16,
+        "neutral": 12,
+        "agree": 9,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · simple_direct · temp-0__reasoning-high",
+      "label": "DeepSeek: DeepSeek V4 Pro · simple_direct · temp-0__reasoning-high",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:48:47.833718+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -1.0,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 10,
+      "neutral_rate": 0.21739130434782608,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 16,
+        "neutral": 10,
+        "agree": 13,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · simple_direct · temp-0__reasoning-low",
+      "label": "DeepSeek: DeepSeek V4 Pro · simple_direct · temp-0__reasoning-low",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
       "config_slug": "temp-0__reasoning-none",
       "runtime_config_slug": "temp-0__reasoning-none",
       "run_id": "temp-0__reasoning-none",
@@ -656,7 +845,7 @@
         "metadata": "results/runs/simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-none",
-      "default_label": "DeepSeek: DeepSeek V4 Pro",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · temp-0__reasoning-none",
       "label": "DeepSeek V4 Pro",
       "color": "#06b6d4"
     },
@@ -697,9 +886,9 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
-      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-high",
-      "label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-high",
-      "color": "#2563eb"
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-high",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-high",
+      "color": "#f97316"
     },
     {
       "scenario_id": "simple_direct",
@@ -738,9 +927,9 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
-      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-low",
-      "label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-low",
-      "color": "#16a34a"
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-low",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-low",
+      "color": "#7c3aed"
     },
     {
       "scenario_id": "simple_direct",
@@ -779,9 +968,9 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
-      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-medium",
-      "label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-medium",
-      "color": "#f97316"
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-medium",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-medium",
+      "color": "#0891b2"
     },
     {
       "scenario_id": "simple_direct",
@@ -820,7 +1009,7 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3-flash-preview/temp-0__reasoning-none",
-      "default_label": "Google: Gemini 3 Flash Preview · temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct · temp-0__reasoning-none",
       "label": "Gemini 3 Flash",
       "color": "#4285f4"
     },
@@ -902,9 +1091,9 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
-      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-high",
-      "label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-high",
-      "color": "#be123c"
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-high",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-high",
+      "color": "#9333ea"
     },
     {
       "scenario_id": "simple_direct",
@@ -943,9 +1132,9 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
-      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-low",
-      "label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-low",
-      "color": "#4d7c0f"
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-low",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-low",
+      "color": "#0f766e"
     },
     {
       "scenario_id": "simple_direct",
@@ -984,9 +1173,9 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
-      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-medium",
-      "label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-medium",
-      "color": "#9333ea"
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-medium",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-medium",
+      "color": "#ca8a04"
     },
     {
       "scenario_id": "simple_direct",
@@ -1025,7 +1214,7 @@
         "metadata": "results/runs/simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none",
-      "default_label": "Google: Gemini 3.1 Pro Preview · temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct · temp-0__reasoning-none",
       "label": "Gemini 3.1 Pro",
       "color": "#4285f4"
     },
@@ -1068,7 +1257,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-high",
       "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-high",
       "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-high",
-      "color": "#ca8a04"
+      "color": "#ef4444"
     },
     {
       "scenario_id": "simple_direct",
@@ -1109,7 +1298,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-low",
       "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-low",
       "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-low",
-      "color": "#475569"
+      "color": "#2563eb"
     },
     {
       "scenario_id": "simple_direct",
@@ -1150,7 +1339,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-medium",
       "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-medium",
       "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-medium",
-      "color": "#ef4444"
+      "color": "#16a34a"
     },
     {
       "scenario_id": "simple_direct",
@@ -1191,7 +1380,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-medium-3-5/temp-0__reasoning-none",
       "default_label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-none",
       "label": "Mistral: Mistral Medium 3.5 · temp-0__reasoning-none",
-      "color": "#2563eb"
+      "color": "#f97316"
     },
     {
       "scenario_id": "simple_direct",
@@ -1230,9 +1419,9 @@
         "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
-      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-high",
-      "label": "Mistral: Mistral Small 4 · temp-0__reasoning-high",
-      "color": "#16a34a"
+      "default_label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-high",
+      "color": "#7c3aed"
     },
     {
       "scenario_id": "simple_direct",
@@ -1271,9 +1460,9 @@
         "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
-      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-low",
-      "label": "Mistral: Mistral Small 4 · temp-0__reasoning-low",
-      "color": "#f97316"
+      "default_label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-low",
+      "color": "#0891b2"
     },
     {
       "scenario_id": "simple_direct",
@@ -1312,9 +1501,9 @@
         "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
-      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-medium",
-      "label": "Mistral: Mistral Small 4 · temp-0__reasoning-medium",
-      "color": "#7c3aed"
+      "default_label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-medium",
+      "label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-medium",
+      "color": "#be123c"
     },
     {
       "scenario_id": "simple_direct",
@@ -1353,7 +1542,7 @@
         "metadata": "results/runs/simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none",
-      "default_label": "Mistral: Mistral Small 4 · temp-0__reasoning-none",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct · temp-0__reasoning-none",
       "label": "Mistral Small 4",
       "color": "#ff7000"
     },
@@ -1396,7 +1585,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-high",
       "default_label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-high",
       "label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-high",
-      "color": "#be123c"
+      "color": "#9333ea"
     },
     {
       "scenario_id": "simple_direct",
@@ -1437,7 +1626,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-low",
       "default_label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-low",
       "label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-low",
-      "color": "#4d7c0f"
+      "color": "#0f766e"
     },
     {
       "scenario_id": "simple_direct",
@@ -1478,7 +1667,7 @@
       "id": "simple_direct/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-medium",
       "default_label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-medium",
       "label": "Mistral: Mistral Small 3.2 24B · temp-0__reasoning-medium",
-      "color": "#9333ea"
+      "color": "#ca8a04"
     },
     {
       "scenario_id": "simple_direct",
@@ -1681,9 +1870,9 @@
         "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-high",
-      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-high",
-      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-high",
-      "color": "#2563eb"
+      "default_label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-high",
+      "label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-high",
+      "color": "#f97316"
     },
     {
       "scenario_id": "simple_direct",
@@ -1722,9 +1911,9 @@
         "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-low",
-      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-low",
-      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-low",
-      "color": "#16a34a"
+      "default_label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-low",
+      "label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-low",
+      "color": "#7c3aed"
     },
     {
       "scenario_id": "simple_direct",
@@ -1763,9 +1952,9 @@
         "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-medium",
-      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-medium",
-      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-medium",
-      "color": "#f97316"
+      "default_label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-medium",
+      "label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-medium",
+      "color": "#0891b2"
     },
     {
       "scenario_id": "simple_direct",
@@ -1804,7 +1993,7 @@
         "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-none",
-      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-none",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-none",
       "label": "GPT-5.5",
       "color": "#10a37f"
     },
@@ -1845,9 +2034,9 @@
         "metadata": "results/runs/simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/metadata.json"
       },
       "id": "simple_direct/openai/openai-gpt-5.5/temp-0__reasoning-xhigh",
-      "default_label": "OpenAI: GPT-5.5 · temp-0__reasoning-xhigh",
-      "label": "OpenAI: GPT-5.5 · temp-0__reasoning-xhigh",
-      "color": "#0891b2"
+      "default_label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-xhigh",
+      "label": "OpenAI: GPT-5.5 · simple_direct · temp-0__reasoning-xhigh",
+      "color": "#4d7c0f"
     },
     {
       "scenario_id": "simple_direct",
@@ -1968,9 +2157,9 @@
         "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/metadata.json"
       },
       "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
-      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-high",
-      "label": "xAI: Grok 4.3 · temp-0__reasoning-high",
-      "color": "#9333ea"
+      "default_label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-high",
+      "label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-high",
+      "color": "#ca8a04"
     },
     {
       "scenario_id": "simple_direct",
@@ -2009,9 +2198,9 @@
         "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/metadata.json"
       },
       "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
-      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-low",
-      "label": "xAI: Grok 4.3 · temp-0__reasoning-low",
-      "color": "#0f766e"
+      "default_label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-low",
+      "label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-low",
+      "color": "#475569"
     },
     {
       "scenario_id": "simple_direct",
@@ -2050,9 +2239,9 @@
         "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/metadata.json"
       },
       "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
-      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-medium",
-      "label": "xAI: Grok 4.3 · temp-0__reasoning-medium",
-      "color": "#ca8a04"
+      "default_label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-medium",
+      "label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-medium",
+      "color": "#ef4444"
     },
     {
       "scenario_id": "simple_direct",
@@ -2091,7 +2280,7 @@
         "metadata": "results/runs/simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/metadata.json"
       },
       "id": "simple_direct/x-ai/x-ai-grok-4.3/temp-0__reasoning-none",
-      "default_label": "xAI: Grok 4.3 · temp-0__reasoning-none",
+      "default_label": "xAI: Grok 4.3 · simple_direct · temp-0__reasoning-none",
       "label": "Grok 4.3",
       "color": "#111827"
     },
@@ -2220,6 +2409,990 @@
     },
     {
       "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:33:18.559062+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 14,
+      "neutral_rate": 0.30434782608695654,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 14,
+        "neutral": 14,
+        "agree": 7,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-high",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:32:16.480629+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 14,
+      "neutral_rate": 0.30434782608695654,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 14,
+        "neutral": 14,
+        "agree": 7,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-low",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:32:45.219431+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 0.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 14,
+      "neutral_rate": 0.30434782608695654,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 13,
+        "neutral": 14,
+        "agree": 7,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-medium",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-medium",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:31:45.136750+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 1.0,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 15,
+        "neutral": 12,
+        "agree": 7,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-none",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-none",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-xhigh",
+      "runtime_config_slug": "temp-0__reasoning-xhigh",
+      "run_id": "temp-0__reasoning-xhigh",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "xhigh",
+      "completed_at": "2026-05-15T16:33:50.630124+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 0.33,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 13,
+      "neutral_rate": 0.2826086956521739,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 13,
+        "neutral": 13,
+        "agree": 8,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-xhigh",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-xhigh",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_de · temp-0__reasoning-xhigh",
+      "color": "#0f766e"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:38:51.394406+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -0.67,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 13,
+      "neutral_rate": 0.2826086956521739,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 17,
+        "neutral": 13,
+        "agree": 7,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-high",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:35:52.643509+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 0.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 16,
+        "neutral": 12,
+        "agree": 10,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-low",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:37:17.144582+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 1.0,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 11,
+      "neutral_rate": 0.2391304347826087,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 16,
+        "neutral": 11,
+        "agree": 10,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-medium",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-medium",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:34:28.345324+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 1.0,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 11,
+      "neutral_rate": 0.2391304347826087,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 15,
+        "neutral": 11,
+        "agree": 8,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-none",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-none",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-none",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-xhigh",
+      "runtime_config_slug": "temp-0__reasoning-xhigh",
+      "run_id": "temp-0__reasoning-xhigh",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "xhigh",
+      "completed_at": "2026-05-15T16:40:15.135474+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": 0.67,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 16,
+        "neutral": 12,
+        "agree": 9,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh",
+        "final_result": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/final_result.json",
+        "responses": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/responses.json",
+        "metadata": "results/runs/simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh/metadata.json"
+      },
+      "id": "simple_direct_de/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-xhigh",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-xhigh",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_de · temp-0__reasoning-xhigh",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:55:10.746739+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": -1.0,
+        "prog": 7.19
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 13,
+        "neutral": 3,
+        "agree": 16,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · simple_direct_de · temp-0__reasoning-high",
+      "label": "DeepSeek: DeepSeek V4 Pro · simple_direct_de · temp-0__reasoning-high",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:53:09.944491+00:00",
+      "axis_scores": {
+        "right": -3.0,
+        "auth": 1.33,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 19,
+        "neutral": 6,
+        "agree": 14,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · simple_direct_de · temp-0__reasoning-low",
+      "label": "DeepSeek: DeepSeek V4 Pro · simple_direct_de · temp-0__reasoning-low",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:42:35.314161+00:00",
+      "axis_scores": {
+        "right": -1.0,
+        "auth": 0.67,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 24,
+      "neutral_rate": 0.5217391304347826,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 5,
+        "neutral": 24,
+        "agree": 10,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-high",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-high",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:41:13.521003+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 21,
+      "neutral_rate": 0.45652173913043476,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 7,
+        "neutral": 21,
+        "agree": 8,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-low",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-low",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:42:00.540278+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": 0.0,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 24,
+      "neutral_rate": 0.5217391304347826,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 4,
+        "neutral": 24,
+        "agree": 6,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-medium",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-medium",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:40:45.641087+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -0.33,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 20,
+      "neutral_rate": 0.43478260869565216,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 2,
+        "neutral": 20,
+        "agree": 10,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3-flash-preview/temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-none",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct_de · temp-0__reasoning-none",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:47:36.957563+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": 0.0,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 44,
+      "neutral_rate": 0.9565217391304348,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 1,
+        "neutral": 44,
+        "agree": 0,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-high",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-high",
+      "color": "#0f766e"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:45:12.470764+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.0,
+        "prog": 0.0
+      },
+      "response_count": 46,
+      "neutral_count": 46,
+      "neutral_rate": 1.0,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "neutral": 46,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-low",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-low",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:46:16.293470+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.0,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 45,
+      "neutral_rate": 0.9782608695652174,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "neutral": 45,
+        "agree": 0,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-medium",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-medium",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:43:53.049759+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.33,
+        "prog": 0.62
+      },
+      "response_count": 46,
+      "neutral_count": 44,
+      "neutral_rate": 0.9565217391304348,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "neutral": 44,
+        "agree": 1,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/google/google-gemini-3.1-pro-preview/temp-0__reasoning-none",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-none",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct_de · temp-0__reasoning-none",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:58:25.950978+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -0.33,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 8,
+      "neutral_rate": 0.17391304347826086,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 11,
+        "neutral": 8,
+        "agree": 17,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-high",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:57:26.411053+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": 0.67,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 14,
+        "neutral": 3,
+        "agree": 17,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-low",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:57:59.888856+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": -1.0,
+        "prog": 7.5
+      },
+      "response_count": 46,
+      "neutral_count": 5,
+      "neutral_rate": 0.10869565217391304,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 12,
+        "neutral": 5,
+        "agree": 14,
+        "strongly_agree": 7
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-medium",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-medium",
+      "label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:56:59.233242+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": -1.0,
+        "prog": 7.81
+      },
+      "response_count": 46,
+      "neutral_count": 10,
+      "neutral_rate": 0.21739130434782608,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 10,
+        "neutral": 10,
+        "agree": 12,
+        "strongly_agree": 8
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-none",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-none",
+      "label": "Mistral: Mistral Small 4 · simple_direct_de · temp-0__reasoning-none",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "simple_direct_de",
       "provider": "mistralai",
       "router": "openrouter",
       "model_slug": "mistralai-mistral-small-3.2-24b-instruct",
@@ -2257,7 +3430,1032 @@
       "id": "simple_direct_de/mistralai/mistralai-mistral-small-3.2-24b-instruct/temp-0__reasoning-none",
       "default_label": "Mistral: Mistral Small 3.2 24B · simple_direct_de · temp-0__reasoning-none",
       "label": "Mistral: Mistral Small 3.2 24B · simple_direct_de · temp-0__reasoning-none",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:50:06.829470+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": 0.33,
+        "prog": 7.81
+      },
+      "response_count": 46,
+      "neutral_count": 5,
+      "neutral_rate": 0.10869565217391304,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 13,
+        "neutral": 5,
+        "agree": 16,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-high",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-high",
+      "label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-high",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:48:46.435424+00:00",
+      "axis_scores": {
+        "right": -3.67,
+        "auth": 0.33,
+        "prog": 8.12
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 11,
+        "neutral": 7,
+        "agree": 13,
+        "strongly_agree": 6
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-low",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-low",
+      "label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-low",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:49:20.485044+00:00",
+      "axis_scores": {
+        "right": -4.0,
+        "auth": 0.0,
+        "prog": 7.81
+      },
+      "response_count": 46,
+      "neutral_count": 8,
+      "neutral_rate": 0.17391304347826086,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 10,
+        "neutral": 8,
+        "agree": 15,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-medium",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-medium",
+      "label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:48:12.660169+00:00",
+      "axis_scores": {
+        "right": -4.0,
+        "auth": 0.33,
+        "prog": 7.81
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 11,
+        "neutral": 6,
+        "agree": 17,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-none",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-none",
+      "label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-none",
+      "color": "#0f766e"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-xhigh",
+      "runtime_config_slug": "temp-0__reasoning-xhigh",
+      "run_id": "temp-0__reasoning-xhigh",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "xhigh",
+      "completed_at": "2026-05-15T16:51:18.383311+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": 0.33,
+        "prog": 7.19
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 14,
+        "neutral": 7,
+        "agree": 14,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-xhigh",
+        "final_result": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/final_result.json",
+        "responses": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/responses.json",
+        "metadata": "results/runs/simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-xhigh/metadata.json"
+      },
+      "id": "simple_direct_de/openai/openai-gpt-5.5/temp-0__reasoning-xhigh",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-xhigh",
+      "label": "OpenAI: GPT-5.5 · simple_direct_de · temp-0__reasoning-xhigh",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T16:56:23.888940+00:00",
+      "axis_scores": {
+        "right": 3.0,
+        "auth": -0.67,
+        "prog": 5.31
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 18,
+        "neutral": 4,
+        "agree": 8,
+        "strongly_agree": 8
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+      "default_label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-high",
+      "label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-high",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T16:53:10.179682+00:00",
+      "axis_scores": {
+        "right": 2.0,
+        "auth": 0.0,
+        "prog": 4.69
+      },
+      "response_count": 46,
+      "neutral_count": 4,
+      "neutral_rate": 0.08695652173913043,
+      "answers": {
+        "strongly_disagree": 10,
+        "disagree": 16,
+        "neutral": 4,
+        "agree": 11,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+      "default_label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-low",
+      "label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-low",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-medium",
+      "runtime_config_slug": "temp-0__reasoning-medium",
+      "run_id": "temp-0__reasoning-medium",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "medium",
+      "completed_at": "2026-05-15T16:55:00.946216+00:00",
+      "axis_scores": {
+        "right": 2.67,
+        "auth": -1.67,
+        "prog": 5.0
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 20,
+        "neutral": 3,
+        "agree": 9,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
+        "final_result": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/final_result.json",
+        "responses": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/responses.json",
+        "metadata": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium/metadata.json"
+      },
+      "id": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-medium",
+      "default_label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-medium",
+      "label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-medium",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct_de",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-none",
+      "runtime_config_slug": "temp-0__reasoning-none",
+      "run_id": "temp-0__reasoning-none",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": null,
+      "completed_at": "2026-05-15T16:52:14.214422+00:00",
+      "axis_scores": {
+        "right": 2.33,
+        "auth": -1.0,
+        "prog": 4.69
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 22,
+        "neutral": 3,
+        "agree": 9,
+        "strongly_agree": 5
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-none",
+        "final_result": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/final_result.json",
+        "responses": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/responses.json",
+        "metadata": "results/runs/simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-none/metadata.json"
+      },
+      "id": "simple_direct_de/x-ai/x-ai-grok-4.3/temp-0__reasoning-none",
+      "default_label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-none",
+      "label": "xAI: Grok 4.3 · simple_direct_de · temp-0__reasoning-none",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:32:53.145011+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -0.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 11,
+      "neutral_rate": 0.2391304347826087,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 13,
+        "neutral": 11,
+        "agree": 12,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_zh · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_zh · temp-0__reasoning-high",
       "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-opus-4.7",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-opus-4.7",
+      "openrouter_model_name": "Anthropic: Claude Opus 4.7",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:32:16.498778+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": -1.0,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 13,
+        "neutral": 9,
+        "agree": 15,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/anthropic/anthropic-claude-opus-4.7/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Opus 4.7 · simple_direct_zh · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Opus 4.7 · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:45:46.794449+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 0.33,
+        "prog": 6.56
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "answers": {
+        "strongly_disagree": 7,
+        "disagree": 18,
+        "neutral": 6,
+        "agree": 14,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-high",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_zh · temp-0__reasoning-high",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "anthropic",
+      "router": "openrouter",
+      "model_slug": "anthropic-claude-sonnet-4.6",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "anthropic/claude-sonnet-4.6",
+      "openrouter_model_name": "Anthropic: Claude Sonnet 4.6",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:44:34.550235+00:00",
+      "axis_scores": {
+        "right": -2.0,
+        "auth": 0.0,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 20,
+        "neutral": 7,
+        "agree": 13,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/anthropic/anthropic-claude-sonnet-4.6/temp-0__reasoning-low",
+      "default_label": "Anthropic: Claude Sonnet 4.6 · simple_direct_zh · temp-0__reasoning-low",
+      "label": "Anthropic: Claude Sonnet 4.6 · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#be123c"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:57:23.950892+00:00",
+      "axis_scores": {
+        "right": -2.33,
+        "auth": -0.33,
+        "prog": 5.94
+      },
+      "response_count": 46,
+      "neutral_count": 10,
+      "neutral_rate": 0.21739130434782608,
+      "answers": {
+        "strongly_disagree": 4,
+        "disagree": 14,
+        "neutral": 10,
+        "agree": 15,
+        "strongly_agree": 3
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-high",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · simple_direct_zh · temp-0__reasoning-high",
+      "label": "DeepSeek: DeepSeek V4 Pro · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#4d7c0f"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "deepseek",
+      "router": "openrouter",
+      "model_slug": "deepseek-deepseek-v4-pro",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "deepseek/deepseek-v4-pro",
+      "openrouter_model_name": "DeepSeek: DeepSeek V4 Pro",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:59:13.580574+00:00",
+      "axis_scores": {
+        "right": -1.0,
+        "auth": -0.67,
+        "prog": 4.69
+      },
+      "response_count": 46,
+      "neutral_count": 12,
+      "neutral_rate": 0.2608695652173913,
+      "answers": {
+        "strongly_disagree": 3,
+        "disagree": 17,
+        "neutral": 12,
+        "agree": 13,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/deepseek/deepseek-deepseek-v4-pro/temp-0__reasoning-low",
+      "default_label": "DeepSeek: DeepSeek V4 Pro · simple_direct_zh · temp-0__reasoning-low",
+      "label": "DeepSeek: DeepSeek V4 Pro · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#9333ea"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:35:49.928744+00:00",
+      "axis_scores": {
+        "right": -0.67,
+        "auth": 0.0,
+        "prog": 4.06
+      },
+      "response_count": 46,
+      "neutral_count": 28,
+      "neutral_rate": 0.6086956521739131,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 2,
+        "neutral": 28,
+        "agree": 9,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct_zh · temp-0__reasoning-high",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#0f766e"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3-flash-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3-flash-preview",
+      "openrouter_model_name": "Google: Gemini 3 Flash Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:35:16.912144+00:00",
+      "axis_scores": {
+        "right": -1.33,
+        "auth": -0.67,
+        "prog": 4.06
+      },
+      "response_count": 46,
+      "neutral_count": 29,
+      "neutral_rate": 0.6304347826086957,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 2,
+        "neutral": 29,
+        "agree": 7,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/google/google-gemini-3-flash-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3 Flash Preview · simple_direct_zh · temp-0__reasoning-low",
+      "label": "Google: Gemini 3 Flash Preview · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#ca8a04"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:38:33.588211+00:00",
+      "axis_scores": {
+        "right": 0.0,
+        "auth": 0.0,
+        "prog": 0.0
+      },
+      "response_count": 46,
+      "neutral_count": 46,
+      "neutral_rate": 1.0,
+      "answers": {
+        "strongly_disagree": 0,
+        "disagree": 0,
+        "neutral": 46,
+        "agree": 0,
+        "strongly_agree": 0
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-high",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct_zh · temp-0__reasoning-high",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#475569"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "google",
+      "router": "openrouter",
+      "model_slug": "google-gemini-3.1-pro-preview",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "google/gemini-3.1-pro-preview",
+      "openrouter_model_name": "Google: Gemini 3.1 Pro Preview",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:36:41.193994+00:00",
+      "axis_scores": {
+        "right": -0.33,
+        "auth": 0.0,
+        "prog": 1.25
+      },
+      "response_count": 46,
+      "neutral_count": 43,
+      "neutral_rate": 0.9347826086956522,
+      "answers": {
+        "strongly_disagree": 1,
+        "disagree": 1,
+        "neutral": 43,
+        "agree": 0,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/google/google-gemini-3.1-pro-preview/temp-0__reasoning-low",
+      "default_label": "Google: Gemini 3.1 Pro Preview · simple_direct_zh · temp-0__reasoning-low",
+      "label": "Google: Gemini 3.1 Pro Preview · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#ef4444"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:42:57.480065+00:00",
+      "axis_scores": {
+        "right": -1.67,
+        "auth": -1.33,
+        "prog": 6.25
+      },
+      "response_count": 46,
+      "neutral_count": 9,
+      "neutral_rate": 0.1956521739130435,
+      "answers": {
+        "strongly_disagree": 8,
+        "disagree": 3,
+        "neutral": 9,
+        "agree": 20,
+        "strongly_agree": 6
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-high",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct_zh · temp-0__reasoning-high",
+      "label": "Mistral: Mistral Small 4 · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#2563eb"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "mistralai",
+      "router": "openrouter",
+      "model_slug": "mistralai-mistral-small-2603",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "mistralai/mistral-small-2603",
+      "openrouter_model_name": "Mistral: Mistral Small 4",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:42:22.413886+00:00",
+      "axis_scores": {
+        "right": -3.0,
+        "auth": -1.67,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 7,
+      "neutral_rate": 0.15217391304347827,
+      "answers": {
+        "strongly_disagree": 11,
+        "disagree": 6,
+        "neutral": 7,
+        "agree": 14,
+        "strongly_agree": 8
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/mistralai/mistralai-mistral-small-2603/temp-0__reasoning-low",
+      "default_label": "Mistral: Mistral Small 4 · simple_direct_zh · temp-0__reasoning-low",
+      "label": "Mistral: Mistral Small 4 · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#16a34a"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:39:42.805690+00:00",
+      "axis_scores": {
+        "right": -3.33,
+        "auth": 1.0,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 6,
+      "neutral_rate": 0.13043478260869565,
+      "answers": {
+        "strongly_disagree": 9,
+        "disagree": 11,
+        "neutral": 6,
+        "agree": 18,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-high",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_zh · temp-0__reasoning-high",
+      "label": "OpenAI: GPT-5.5 · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#f97316"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "openai",
+      "router": "openrouter",
+      "model_slug": "openai-gpt-5.5",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "openai/gpt-5.5",
+      "openrouter_model_name": "OpenAI: GPT-5.5",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:39:03.726627+00:00",
+      "axis_scores": {
+        "right": -2.67,
+        "auth": 1.33,
+        "prog": 6.88
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 15,
+        "neutral": 3,
+        "agree": 21,
+        "strongly_agree": 1
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/openai/openai-gpt-5.5/temp-0__reasoning-low",
+      "default_label": "OpenAI: GPT-5.5 · simple_direct_zh · temp-0__reasoning-low",
+      "label": "OpenAI: GPT-5.5 · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#7c3aed"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-high",
+      "runtime_config_slug": "temp-0__reasoning-high",
+      "run_id": "temp-0__reasoning-high",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "high",
+      "completed_at": "2026-05-15T18:41:46.417371+00:00",
+      "axis_scores": {
+        "right": 3.33,
+        "auth": -2.33,
+        "prog": 3.75
+      },
+      "response_count": 46,
+      "neutral_count": 3,
+      "neutral_rate": 0.06521739130434782,
+      "answers": {
+        "strongly_disagree": 6,
+        "disagree": 22,
+        "neutral": 3,
+        "agree": 11,
+        "strongly_agree": 4
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+        "final_result": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/final_result.json",
+        "responses": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/responses.json",
+        "metadata": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-high/metadata.json"
+      },
+      "id": "simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-high",
+      "default_label": "xAI: Grok 4.3 · simple_direct_zh · temp-0__reasoning-high",
+      "label": "xAI: Grok 4.3 · simple_direct_zh · temp-0__reasoning-high",
+      "color": "#0891b2"
+    },
+    {
+      "scenario_id": "simple_direct_zh",
+      "provider": "x-ai",
+      "router": "openrouter",
+      "model_slug": "x-ai-grok-4.3",
+      "config_slug": "temp-0__reasoning-low",
+      "runtime_config_slug": "temp-0__reasoning-low",
+      "run_id": "temp-0__reasoning-low",
+      "scenario_type": "questionnaire_direct_translation",
+      "questionnaire_id": "sapplyvalues",
+      "model": "x-ai/grok-4.3",
+      "openrouter_model_name": "xAI: Grok 4.3",
+      "temperature": 0.0,
+      "reasoning_effort": "low",
+      "completed_at": "2026-05-15T18:40:31.165238+00:00",
+      "axis_scores": {
+        "right": 3.0,
+        "auth": -2.33,
+        "prog": 4.06
+      },
+      "response_count": 46,
+      "neutral_count": 0,
+      "neutral_rate": 0.0,
+      "answers": {
+        "strongly_disagree": 5,
+        "disagree": 22,
+        "neutral": 0,
+        "agree": 17,
+        "strongly_agree": 2
+      },
+      "paths": {
+        "run_dir": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+        "final_result": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/final_result.json",
+        "responses": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/responses.json",
+        "metadata": "results/runs/simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low/metadata.json"
+      },
+      "id": "simple_direct_zh/x-ai/x-ai-grok-4.3/temp-0__reasoning-low",
+      "default_label": "xAI: Grok 4.3 · simple_direct_zh · temp-0__reasoning-low",
+      "label": "xAI: Grok 4.3 · simple_direct_zh · temp-0__reasoning-low",
+      "color": "#be123c"
     }
   ]
 }

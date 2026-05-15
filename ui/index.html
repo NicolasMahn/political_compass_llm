@@ -43,22 +43,6 @@
           </p>
         </section>
 
-        <section class="card controls-card">
-          <div>
-            <h2>Graph controls</h2>
-            <p class="hint">Current charts show one language at a time. Compass reasoning defaults to low + high.</p>
-          </div>
-          <div class="control-row">
-            <span class="control-label">Language</span>
-            <div id="languageControls" class="segmented-controls"></div>
-          </div>
-          <div class="control-row">
-            <span class="control-label">Compass reasoning</span>
-            <div id="reasoningControls" class="chip-controls"></div>
-          </div>
-          <div id="runWarnings" class="warning-box" hidden></div>
-        </section>
-
         <section class="card">
           <div class="card-header">
             <div>
@@ -73,6 +57,17 @@
               <div id="selectedCount" class="pill">0 models</div>
             </div>
           </div>
+          <div class="graph-controls">
+            <div class="control-row">
+              <span class="control-label">Language</span>
+              <div id="compassLanguageControls" class="segmented-controls"></div>
+            </div>
+            <div class="control-row">
+              <span class="control-label">Reasoning</span>
+              <div id="compassReasoningControls" class="chip-controls"></div>
+            </div>
+            <div id="compassWarnings" class="warning-box" hidden></div>
+          </div>
           <div class="compass-wrap">
             <canvas id="compassCanvas" width="900" height="620" aria-label="Political compass chart"></canvas>
           </div>
@@ -82,8 +77,15 @@
           <div class="card-header">
             <div>
               <h2>Neutral / abstention by reasoning effort</h2>
-              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model for the active language.</p>
+              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model for this graph's language.</p>
             </div>
+          </div>
+          <div class="graph-controls">
+            <div class="control-row">
+              <span class="control-label">Language</span>
+              <div id="neutralLanguageControls" class="segmented-controls"></div>
+            </div>
+            <div id="neutralWarnings" class="warning-box" hidden></div>
           </div>
           <div class="bar-wrap">
             <canvas id="neutralCanvas" width="900" height="360" aria-label="Neutral answer bar chart"></canvas>
@@ -93,11 +95,25 @@
         <section class="card">
           <div class="card-header">
             <div>
-              <h2>Language delta: English → German</h2>
-              <p>Arrows show how each selected model/reasoning run moves when the same test is taken in German.</p>
+              <h2 id="languageDeltaTitle">Language delta</h2>
+              <p>Arrows show how each selected model/reasoning run moves between two test languages.</p>
             </div>
           </div>
-          <div id="languageDeltaWarnings" class="warning-box" hidden></div>
+          <div class="graph-controls">
+            <div class="control-row">
+              <span class="control-label">From</span>
+              <div id="deltaSourceLanguageControls" class="segmented-controls"></div>
+            </div>
+            <div class="control-row">
+              <span class="control-label">To</span>
+              <div id="deltaTargetLanguageControls" class="segmented-controls"></div>
+            </div>
+            <div class="control-row">
+              <span class="control-label">Reasoning</span>
+              <div id="deltaReasoningControls" class="chip-controls"></div>
+            </div>
+            <div id="languageDeltaWarnings" class="warning-box" hidden></div>
+          </div>
           <div class="compass-wrap">
             <canvas id="languageDeltaCanvas" width="900" height="620" aria-label="Language delta compass chart"></canvas>
           </div>
