@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
   "run_id": "temp-0__reasoning-high",
-  "started_at": "2026-05-19T19:39:14.135844+00:00",
-  "model": "deepseek/deepseek-v4-pro",
-  "model_slug": "deepseek-deepseek-v4-pro",
-  "provider": "deepseek",
+  "started_at": "2026-05-19T20:15:31.035229+00:00",
+  "model": "mistralai/mistral-medium-3-5",
+  "model_slug": "mistralai-mistral-medium-3-5",
+  "provider": "mistralai",
   "router": "openrouter",
   "config_slug": "temp-0__reasoning-high",
   "temperature": 0.0,
@@ -16,21 +16,21 @@
   "questions_path": "data/sapplyvalues_questions.json",
   "questionnaire_id": "sapplyvalues",
   "question_count": 46,
-  "concurrency": 2,
+  "concurrency": 46,
   "parse_retries": 2,
-  "scenario_path": "scenarios/sapplyvalues/textual_info_judged.json",
+  "scenario_path": "scenarios/sapplyvalues/textual_casual_judged.json",
   "scenario": {
     "schema_version": "1.0",
-    "scenario_id": "textual_info_judged",
+    "scenario_id": "textual_casual_judged",
     "scenario_type": "textual_response_judged",
-    "description": "Textual response scenario: user asks for information and arguments around the item, then asks what the model thinks. The target model answers freely; a fixed judge model maps the response back to the SapplyValues answer scale.",
+    "description": "Textual response scenario: user asks the item directly or near-directly with a casual 'wdyt?'. The target model answers freely; a fixed judge model maps the response back to the SapplyValues answer scale.",
     "questionnaire_id": "sapplyvalues",
     "language": "en",
     "prompt_builder": "textual_judged_v1",
     "target_messages": [
       {
         "role": "user",
-        "template_path": "templates/sapplyvalues_textual_info.txt"
+        "template_path": "templates/sapplyvalues_textual_casual.txt"
       }
     ],
     "judge_messages": [

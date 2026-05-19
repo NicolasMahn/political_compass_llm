@@ -15,6 +15,12 @@ const state = {
   deltaReasoningEffort: 'high',
   compassPoints: [],
   hoveredRunId: null,
+  hoveredModelKey: null,
+  legendItems: [],
+  neutralLegendItems: [],
+  deltaLegendItems: [],
+  responseTypePoints: [],
+  hoveredResponseTypeSegment: null,
   displayColors: new Map(),
 };
 
@@ -24,13 +30,116 @@ const colors = [
 ];
 
 const providerColorOverrides = {
-  google: '#facc15',
-  mistralai: '#db2777',
+  google: '#15803d',     // Green (shading from dark green to light green)
+  anthropic: '#dc2626',  // Red
+  deepseek: '#06b6d4',   // Cyber Cyan/Blue (highly distinguishable from purple!)
+  mistralai: '#f59e0b',  // Yellow to light orange
+  openai: '#1e293b',     // Black / Dark Slate (highly visible in both light/dark modes)
+  'x-ai': '#7c3aed',     // Purple
 };
+
+const modelColorOverrides = {
+  'google/google-gemini-3-flash-preview': '#064e3b', // Deep Dark Pine Green
+  'google/google-gemini-3.1-flash-lite': '#047857',  // Medium Dark Emerald Green
+  'google/google-gemini-3.1-pro-preview': '#0f5132', // Premium Dark Forest Green
+  'google/google-gemini-3.5-flash': '#39ff14',       // Super Bright Electric Neon Green
+};
+
+function getThemeColors() {
+  const isDark = document.documentElement.classList.contains('dark');
+  if (isDark) {
+    return {
+      bg: '#1e293b',
+      card: '#1e293b',
+      text: '#f8fafc',
+      textMuted: '#94a3b8',
+      textActive: '#f8fafc',
+      border: '#334155',
+      gridLine: 'rgba(255, 255, 255, 0.08)',
+      axes: 'rgba(241, 245, 249, 0.8)',
+      axisLabel: '#f1f5f9',
+      quadrants: {
+        red: 'rgba(239, 68, 68, 0.15)',
+        blue: 'rgba(59, 130, 246, 0.15)',
+        green: 'rgba(34, 197, 94, 0.15)',
+        yellow: 'rgba(234, 179, 8, 0.15)'
+      },
+      legendText: '#f8fafc',
+      legendMuted: '#94a3b8',
+      tooltipBg: 'rgba(15, 23, 42, 0.96)',
+      tooltipText: '#ffffff',
+      tooltipMuted: '#cbd5e1',
+      responseTypeColors: {
+        stance: '#3b82f6',
+        both_sides: '#f59e0b',
+        neutral: '#64748b',
+        refusal: '#ef4444',
+        unclear: '#a855f7',
+        informational: '#10b981',
+      },
+      progConvGradient: [
+        { offset: 0, color: '#059669' },       // Emerald Green
+        { offset: 0.35, color: '#10b981' },    // Mint Teal
+        { offset: 0.55, color: '#3b82f6' },    // Royal Blue
+        { offset: 0.75, color: '#4f46e5' },    // Indigo
+        { offset: 1, color: '#8b5cf6' }        // Glowing Violet
+      ]
+    };
+  } else {
+    return {
+      bg: '#ffffff',
+      card: '#ffffff',
+      text: '#111827',
+      textMuted: '#64748b',
+      textActive: '#1f2937',
+      border: '#cbd5e1',
+      gridLine: 'rgba(0, 0, 0, 0.08)',
+      axes: 'rgba(31, 41, 55, 0.8)',
+      axisLabel: '#1f2937',
+      quadrants: {
+        red: '#f4b5b8',
+        blue: '#86d4ee',
+        green: '#c9e7bf',
+        yellow: '#f5f2a4'
+      },
+      legendText: '#111827',
+      legendMuted: '#64748b',
+      tooltipBg: 'rgba(15, 23, 42, 0.94)',
+      tooltipText: '#ffffff',
+      tooltipMuted: '#cbd5e1',
+      responseTypeColors: {
+        stance: '#2563eb',
+        both_sides: '#f59e0b',
+        neutral: '#94a3b8',
+        refusal: '#ef4444',
+        unclear: '#a855f7',
+        informational: '#10b981',
+      },
+      progConvGradient: [
+        { offset: 0, color: '#14c814' },
+        { offset: 0.35, color: '#37e95d' },
+        { offset: 0.55, color: '#3b82f6' },
+        { offset: 0.75, color: '#1d0ea4' },
+        { offset: 1, color: '#100a4d' }
+      ]
+    };
+  }
+}
+
+function initializeTheme() {
+  const toggle = byId('themeToggle');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    renderAll();
+  });
+}
 
 const defaultSelectedModels = new Set([
   'anthropic/anthropic-claude-opus-4.7',
   'google/google-gemini-3.1-pro-preview',
+  'google/google-gemini-3.5-flash',
   'openai/openai-gpt-5.5',
   'x-ai/x-ai-grok-4.3',
   'mistralai/mistralai-mistral-small-2603',
@@ -57,6 +166,7 @@ const textualScenarios = {
 };
 
 async function main() {
+  initializeTheme();
   const response = await fetch('./data/results_manifest.json', { cache: 'no-store' });
   if (!response.ok) throw new Error('Could not load ui/data/results_manifest.json. Run python3 build_ui_data.py first.');
   state.manifest = await response.json();
@@ -64,7 +174,12 @@ async function main() {
   initializeDefaultSelection();
   renderAllControls();
   renderRunTree();
-  setupCompassInteractions();
+  setupCompassInteractions('compassCanvas');
+  setupCompassInteractions('textualCompassCanvas');
+  setupResponseTypeInteractions();
+  setupNeutralInteractions();
+  setupDeltaInteractions('languageDeltaCanvas');
+  setupDeltaInteractions('textualDeltaCanvas');
   renderAll();
 }
 
@@ -121,6 +236,7 @@ function renderRunTree() {
     checkbox.addEventListener('change', () => {
       for (const key of modelKeys) checkbox.checked ? state.selectedModels.add(key) : state.selectedModels.delete(key);
       state.hoveredRunId = null;
+      state.hoveredResponseTypeSegment = null;
       renderRunTree();
       renderAll();
     });
@@ -145,6 +261,7 @@ function modelOptionNode(run) {
   checkbox.addEventListener('change', () => {
     checkbox.checked ? state.selectedModels.add(modelKey(run)) : state.selectedModels.delete(modelKey(run));
     state.hoveredRunId = null;
+    state.hoveredResponseTypeSegment = null;
     renderRunTree();
     renderAll();
   });
@@ -173,7 +290,11 @@ function assignDisplayColors() {
 }
 
 function displayColor(run, fallbackIndex = 0) {
-  return state.displayColors.get(`${run.provider}/${run.model_slug}`) || run.color || colors[fallbackIndex % colors.length];
+  const key = `${run.provider}/${run.model_slug}`;
+  if (modelColorOverrides[key]) {
+    return modelColorOverrides[key];
+  }
+  return state.displayColors.get(key) || run.color || colors[fallbackIndex % colors.length];
 }
 
 function shadeForIndex(hex, index, count) {
@@ -234,6 +355,7 @@ function renderScenarioControls(rootId, scenarios, activeScenario, updateScenari
     button.addEventListener('click', () => {
       updateScenario(scenario);
       state.hoveredRunId = null;
+      state.hoveredResponseTypeSegment = null;
       renderAllControls();
       renderAll();
     });
@@ -253,6 +375,7 @@ function renderLanguageControls(rootId, activeLanguage, updateLanguage) {
     button.addEventListener('click', () => {
       updateLanguage(language);
       state.hoveredRunId = null;
+      state.hoveredResponseTypeSegment = null;
       renderAllControls();
       renderAll();
     });
@@ -273,6 +396,7 @@ function renderReasoningControls(rootId, selectedEfforts, efforts = ['none', 'lo
     checkbox.addEventListener('change', () => {
       checkbox.checked ? selectedEfforts.add(effort) : selectedEfforts.delete(effort);
       state.hoveredRunId = null;
+      state.hoveredResponseTypeSegment = null;
       renderAll();
     });
     label.append(checkbox, document.createTextNode(reasoningLabel(effort)));
@@ -296,6 +420,7 @@ function renderReasoningRadioControls(rootId, selectedEffort, updateEffort, effo
       if (!radio.checked) return;
       updateEffort(effort);
       state.hoveredRunId = null;
+      state.hoveredResponseTypeSegment = null;
       renderAllControls();
       renderAll();
     });
@@ -326,7 +451,7 @@ function renderAll() {
   drawCompass(compassRuns);
   drawNeutralBars(neutralRuns);
   drawLanguageDelta(delta.pairs, languageScenarios[state.deltaSourceLanguage], languageScenarios[state.deltaTargetLanguage]);
-  drawCompass(textualRuns, 'textualCompassCanvas', false);
+  drawCompass(textualRuns, 'textualCompassCanvas', true);
   drawResponseTypeBars(textualResponseTypeRuns);
   drawLanguageDelta(textualDelta.pairs, { label: 'Direct English' }, textualScenarios[state.textualDeltaMode], 'textualDeltaCanvas');
   renderDetails(compassRuns);
@@ -467,22 +592,24 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
   const h = canvas.height;
   ctx.clearRect(0, 0, w, h);
 
+  const theme = getThemeColors();
+
   const gridX = 80, gridY = 50, gridSize = 500;
   const barX = 700, barY = 50, barW = 64, barH = 500;
   const centerX = gridX + gridSize / 2;
   const centerY = gridY + gridSize / 2;
 
-  ctx.fillStyle = '#ffffff';
+  ctx.fillStyle = theme.bg;
   ctx.fillRect(0, 0, w, h);
 
   // Quadrants.
-  ctx.fillStyle = '#f4b5b8'; ctx.fillRect(gridX, gridY, gridSize / 2, gridSize / 2);
-  ctx.fillStyle = '#86d4ee'; ctx.fillRect(centerX, gridY, gridSize / 2, gridSize / 2);
-  ctx.fillStyle = '#c9e7bf'; ctx.fillRect(gridX, centerY, gridSize / 2, gridSize / 2);
-  ctx.fillStyle = '#f5f2a4'; ctx.fillRect(centerX, centerY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.red; ctx.fillRect(gridX, gridY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.blue; ctx.fillRect(centerX, gridY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.green; ctx.fillRect(gridX, centerY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.yellow; ctx.fillRect(centerX, centerY, gridSize / 2, gridSize / 2);
 
   // Grid.
-  ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+  ctx.strokeStyle = theme.gridLine;
   ctx.lineWidth = 1;
   for (let i = 0; i <= 20; i++) {
     const p = gridX + (i / 20) * gridSize;
@@ -492,8 +619,8 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
   }
 
   // Axes.
-  ctx.strokeStyle = 'rgba(31, 41, 55, 0.9)';
-  ctx.fillStyle = '#1f2937';
+  ctx.strokeStyle = theme.axes;
+  ctx.fillStyle = theme.axisLabel;
   ctx.lineWidth = 4;
   drawArrow(ctx, gridX - 25, centerY, gridX + gridSize + 25, centerY);
   drawArrow(ctx, centerX, gridY + gridSize + 25, centerX, gridY - 25);
@@ -507,24 +634,94 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
 
   // Progressive/conservative gradient bar.
   const gradient = ctx.createLinearGradient(0, barY, 0, barY + barH);
-  gradient.addColorStop(0, '#14c814');
-  gradient.addColorStop(0.35, '#37e95d');
-  gradient.addColorStop(0.55, '#3b82f6');
-  gradient.addColorStop(0.75, '#1d0ea4');
-  gradient.addColorStop(1, '#100a4d');
+  theme.progConvGradient.forEach((stop) => {
+    gradient.addColorStop(stop.offset, stop.color);
+  });
   ctx.fillStyle = gradient;
   ctx.fillRect(barX, barY, barW, barH);
-  ctx.strokeStyle = '#111827'; ctx.lineWidth = 1; ctx.strokeRect(barX, barY, barW, barH);
-  ctx.fillStyle = '#1f2937';
+  ctx.strokeStyle = theme.axes; ctx.lineWidth = 1; ctx.strokeRect(barX, barY, barW, barH);
+  ctx.fillStyle = theme.axisLabel;
   ctx.textAlign = 'center';
   ctx.font = '700 24px system-ui, sans-serif';
   ctx.fillText('Progressive', barX + barW / 2, 30);
   ctx.fillText('Conservative', barX + barW / 2, barY + barH + 38);
 
   // Runs.
-  if (collectHoverPoints) state.compassPoints = [];
+  if (collectHoverPoints) {
+    state.compassPointsByCanvas = state.compassPointsByCanvas || {};
+    state.compassPointsByCanvas[canvasId] = [];
+    runs.forEach((run, index) => {
+      const right = clamp(run.axis_scores.right ?? 0, -10, 10);
+      const auth = clamp(run.axis_scores.auth ?? 0, -10, 10);
+      const prog = clamp(run.axis_scores.prog ?? 0, -10, 10);
+      const x = gridX + ((right + 10) / 20) * gridSize;
+      const y = gridY + ((10 - auth) / 20) * gridSize;
+      const barMarkerY = barY + ((10 - prog) / 20) * barH;
+      const color = displayColor(run, index);
+      state.compassPointsByCanvas[canvasId].push({ run, x, y, barMarkerY, color });
+    });
+  }
+
+  // Pre-calculate progressive columns to spread close markers horizontally.
+  const progRuns = runs.map((run, index) => {
+    const prog = clamp(run.axis_scores.prog ?? 0, -10, 10);
+    const barMarkerY = barY + ((10 - prog) / 20) * barH;
+    return { run, index, barMarkerY };
+  }).sort((a, b) => a.barMarkerY - b.barMarkerY);
+
+  const columns = 5;
+  const assignedColumns = new Array(progRuns.length);
+  for (let i = 0; i < progRuns.length; i++) {
+    const usedColumns = new Set();
+    for (let j = 0; j < i; j++) {
+      if (Math.abs(progRuns[i].barMarkerY - progRuns[j].barMarkerY) < 15) {
+        usedColumns.add(assignedColumns[j]);
+      }
+    }
+    let col = 0;
+    while (col < columns && usedColumns.has(col)) {
+      col++;
+    }
+    if (col >= columns) {
+      let bestCol = 0;
+      let maxDist = -1;
+      for (let c = 0; c < columns; c++) {
+        let lastY = -9999;
+        for (let j = 0; j < i; j++) {
+          if (assignedColumns[j] === c) {
+            lastY = progRuns[j].barMarkerY;
+          }
+        }
+        const dist = Math.abs(progRuns[i].barMarkerY - lastY);
+        if (dist > maxDist) {
+          maxDist = dist;
+          bestCol = c;
+        }
+      }
+      col = bestCol;
+    }
+    assignedColumns[i] = col;
+  }
+
+  const runColumns = new Map();
+  progRuns.forEach((item, i) => {
+    runColumns.set(item.run.id, assignedColumns[i]);
+  });
+
+  const isRunHighlighted = (run) => {
+    if (state.hoveredRunId === run.id) return true;
+    if (state.hoveredModelKey === modelKey(run)) return true;
+    return false;
+  };
+  const anyHovered = state.hoveredRunId !== null || state.hoveredModelKey !== null;
+
   ctx.font = '650 12px system-ui, sans-serif';
+
+  // Pass 1: Draw non-highlighted runs (dimmed if any run is hovered)
   runs.forEach((run, index) => {
+    const highlighted = isRunHighlighted(run);
+    if (anyHovered && highlighted) return;
+
     const right = clamp(run.axis_scores.right ?? 0, -10, 10);
     const auth = clamp(run.axis_scores.auth ?? 0, -10, 10);
     const prog = clamp(run.axis_scores.prog ?? 0, -10, 10);
@@ -533,40 +730,181 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
     const barMarkerY = barY + ((10 - prog) / 20) * barH;
     const color = displayColor(run, index);
 
-    if (collectHoverPoints) state.compassPoints.push({ run, x, y, barMarkerY, color });
-
-    const highlighted = collectHoverPoints && state.hoveredRunId === run.id;
-    drawRunMarker(ctx, x, y, highlighted ? 10 : 8, color, run.reasoning_effort, highlighted);
-
-    drawProgressiveMarker(ctx, barX, barW, barMarkerY, color, index, run.reasoning_effort);
+    ctx.save();
+    if (anyHovered) {
+      ctx.globalAlpha = 0.15;
+    }
+    drawRunMarker(ctx, x, y, 8, color, run.reasoning_effort, false);
+    const column = runColumns.get(run.id) ?? (index % columns);
+    drawProgressiveMarker(ctx, barX, barW, barMarkerY, color, column, run.reasoning_effort, false);
+    ctx.restore();
   });
 
-  drawLegend(ctx, runs, 815, 70);
+  // Pass 2: Draw highlighted runs (on top, full opacity, larger size)
+  if (anyHovered) {
+    runs.forEach((run, index) => {
+      const highlighted = isRunHighlighted(run);
+      if (!highlighted) return;
 
-  const hoveredPoint = collectHoverPoints ? state.compassPoints.find((point) => point.run.id === state.hoveredRunId) : null;
+      const right = clamp(run.axis_scores.right ?? 0, -10, 10);
+      const auth = clamp(run.axis_scores.auth ?? 0, -10, 10);
+      const prog = clamp(run.axis_scores.prog ?? 0, -10, 10);
+      const x = gridX + ((right + 10) / 20) * gridSize;
+      const y = gridY + ((10 - auth) / 20) * gridSize;
+      const barMarkerY = barY + ((10 - prog) / 20) * barH;
+      const color = displayColor(run, index);
+
+      ctx.save();
+      ctx.globalAlpha = 1.0;
+      drawRunMarker(ctx, x, y, 11, color, run.reasoning_effort, true);
+      const column = runColumns.get(run.id) ?? (index % columns);
+      drawProgressiveMarker(ctx, barX, barW, barMarkerY, color, column, run.reasoning_effort, true);
+      ctx.restore();
+    });
+  }
+
+  drawLegend(ctx, runs, 815, 70, collectHoverPoints, canvasId);
+
+  const points = state.compassPointsByCanvas?.[canvasId] || [];
+  const hoveredPoint = collectHoverPoints ? points.find((point) => point.run.id === state.hoveredRunId) : null;
   if (hoveredPoint) drawCompassTooltip(ctx, hoveredPoint, w, h);
 }
 
-function setupCompassInteractions() {
-  const canvas = byId('compassCanvas');
+function setupCompassInteractions(canvasId = 'compassCanvas') {
+  const canvas = byId(canvasId);
+  if (!canvas) return;
   canvas.addEventListener('mousemove', (event) => {
     const point = canvasPoint(canvas, event);
-    const hit = [...state.compassPoints]
+    const points = state.compassPointsByCanvas?.[canvasId] || [];
+    const legendItems = state.legendItemsByCanvas?.[canvasId] || [];
+
+    const hitPoint = [...points]
       .reverse()
       .find((candidate) => Math.hypot(candidate.x - point.x, candidate.y - point.y) <= 12);
-    const nextHoveredRunId = hit?.run.id || null;
-    if (nextHoveredRunId !== state.hoveredRunId) {
+    const hitLegend = legendItems.find((item) =>
+      point.x >= item.x1 && point.x <= item.x2 &&
+      point.y >= item.y1 && point.y <= item.y2
+    );
+
+    const nextHoveredRunId = hitPoint?.run.id || null;
+    const nextHoveredModelKey = hitLegend?.modelKey || null;
+
+    if (nextHoveredRunId !== state.hoveredRunId || nextHoveredModelKey !== state.hoveredModelKey) {
       state.hoveredRunId = nextHoveredRunId;
-      canvas.style.cursor = hit ? 'pointer' : 'default';
-      drawCompass(selectedCompassRuns());
+      state.hoveredModelKey = nextHoveredModelKey;
+      canvas.style.cursor = (hitPoint || hitLegend) ? 'pointer' : 'default';
+      redrawAllCharts();
     }
   });
   canvas.addEventListener('mouseleave', () => {
-    if (!state.hoveredRunId) return;
+    if (!state.hoveredRunId && !state.hoveredModelKey) return;
     state.hoveredRunId = null;
+    state.hoveredModelKey = null;
     canvas.style.cursor = 'default';
-    drawCompass(selectedCompassRuns());
+    redrawAllCharts();
   });
+}
+
+function setupResponseTypeInteractions() {
+  const canvas = byId('textualResponseTypeCanvas');
+  if (!canvas) return;
+  canvas.addEventListener('mousemove', (event) => {
+    const point = canvasPoint(canvas, event);
+    const hit = (state.responseTypePoints || []).find((p) =>
+      point.x >= p.x1 && point.x <= p.x2 &&
+      point.y >= p.y1 && point.y <= p.y2
+    );
+    const hasChanged = (hit && (!state.hoveredResponseTypeSegment ||
+                        state.hoveredResponseTypeSegment.run.id !== hit.run.id ||
+                        state.hoveredResponseTypeSegment.type !== hit.type)) ||
+                       (!hit && state.hoveredResponseTypeSegment);
+    if (hasChanged) {
+      state.hoveredResponseTypeSegment = hit || null;
+      canvas.style.cursor = hit ? 'pointer' : 'default';
+      drawResponseTypeBars(selectedTextualResponseTypeRuns());
+    }
+  });
+  canvas.addEventListener('mouseleave', () => {
+    if (!state.hoveredResponseTypeSegment) return;
+    state.hoveredResponseTypeSegment = null;
+    canvas.style.cursor = 'default';
+    drawResponseTypeBars(selectedTextualResponseTypeRuns());
+  });
+}
+
+function setupNeutralInteractions() {
+  const canvas = byId('neutralCanvas');
+  if (!canvas) return;
+  canvas.addEventListener('mousemove', (event) => {
+    const point = canvasPoint(canvas, event);
+    const hitLegend = (state.neutralLegendItems || []).find((item) =>
+      point.x >= item.x1 && point.x <= item.x2 &&
+      point.y >= item.y1 && point.y <= item.y2
+    );
+
+    const nextHoveredModelKey = hitLegend?.modelKey || null;
+
+    if (nextHoveredModelKey !== state.hoveredModelKey) {
+      state.hoveredModelKey = nextHoveredModelKey;
+      canvas.style.cursor = hitLegend ? 'pointer' : 'default';
+      redrawAllCharts();
+    }
+  });
+  canvas.addEventListener('mouseleave', () => {
+    if (!state.hoveredModelKey) return;
+    state.hoveredModelKey = null;
+    canvas.style.cursor = 'default';
+    redrawAllCharts();
+  });
+}
+
+function setupDeltaInteractions(canvasId = 'languageDeltaCanvas') {
+  const canvas = byId(canvasId);
+  if (!canvas) return;
+  canvas.addEventListener('mousemove', (event) => {
+    const point = canvasPoint(canvas, event);
+    const hitLegend = (state.deltaLegendItems || []).find((item) =>
+      item.canvasId === canvasId &&
+      point.x >= item.x1 && point.x <= item.x2 &&
+      point.y >= item.y1 && point.y <= item.y2
+    );
+
+    const nextHoveredModelKey = hitLegend?.modelKey || null;
+
+    if (nextHoveredModelKey !== state.hoveredModelKey) {
+      state.hoveredModelKey = nextHoveredModelKey;
+      canvas.style.cursor = hitLegend ? 'pointer' : 'default';
+      redrawAllCharts();
+    }
+  });
+  canvas.addEventListener('mouseleave', () => {
+    if (!state.hoveredModelKey) return;
+    state.hoveredModelKey = null;
+    canvas.style.cursor = 'default';
+    redrawAllCharts();
+  });
+}
+
+function redrawAllCharts() {
+  if (!state.manifest) return;
+  const compassRuns = selectedCompassRuns();
+  const neutralRuns = selectedNeutralRuns();
+  const delta = languageDeltaPairs(state.deltaSourceLanguage, state.deltaTargetLanguage);
+  const textualRuns = selectedTextualRuns();
+  const textualResponseTypeRuns = selectedTextualResponseTypeRuns();
+  const textualDelta = scenarioDeltaPairs(
+    'simple_direct',
+    textualScenarios[state.textualDeltaMode].scenarioId,
+    new Set([state.textualDeltaReasoningEffort]),
+    'Direct English',
+    textualScenarios[state.textualDeltaMode].label
+  );
+  drawCompass(compassRuns);
+  drawNeutralBars(neutralRuns);
+  drawLanguageDelta(delta.pairs, languageScenarios[state.deltaSourceLanguage], languageScenarios[state.deltaTargetLanguage]);
+  drawCompass(textualRuns, 'textualCompassCanvas', false);
+  drawResponseTypeBars(textualResponseTypeRuns);
+  drawLanguageDelta(textualDelta.pairs, { label: 'Direct English' }, textualScenarios[state.textualDeltaMode], 'textualDeltaCanvas');
 }
 
 function canvasPoint(canvas, event) {
@@ -579,9 +917,10 @@ function canvasPoint(canvas, event) {
 
 function drawRunMarker(ctx, x, y, radius, color, reasoningEffort, highlighted = false) {
   const effort = reasoningEffort || 'none';
+  const isDark = document.documentElement.classList.contains('dark');
   ctx.save();
   ctx.fillStyle = color;
-  ctx.strokeStyle = highlighted ? '#ffffff' : '#111827';
+  ctx.strokeStyle = highlighted ? '#ffffff' : (isDark ? '#1e293b' : '#111827');
   ctx.lineWidth = highlighted ? 4 : 2;
   if (effort === 'low') {
     drawTriangle(ctx, x, y, radius);
@@ -627,12 +966,11 @@ function drawStar(ctx, x, y, outerRadius, innerRadius) {
   ctx.closePath();
 }
 
-function drawProgressiveMarker(ctx, barX, barW, y, color, index, reasoningEffort) {
+function drawProgressiveMarker(ctx, barX, barW, y, color, column, reasoningEffort, highlighted = false) {
   const columns = 5;
-  const column = index % columns;
   const spacing = Math.min(10, barW / (columns + 1));
   const x = barX + barW / 2 + (column - Math.floor(columns / 2)) * spacing;
-  drawRunMarker(ctx, x, y, 5, color, reasoningEffort);
+  drawRunMarker(ctx, x, y, highlighted ? 7 : 5, color, reasoningEffort, highlighted);
 }
 
 function drawPointLabel(ctx, label, x, y) {
@@ -659,14 +997,15 @@ function drawCompassTooltip(ctx, point, canvasW, canvasH) {
   if (x + boxW > canvasW - 8) x = point.x - boxW - 16;
   if (y < 8) y = point.y + 16;
 
-  ctx.fillStyle = 'rgba(15, 23, 42, 0.94)';
+  const theme = getThemeColors();
+  ctx.fillStyle = theme.tooltipBg;
   roundRect(ctx, x, y, boxW, boxH, 8);
   ctx.fill();
-  ctx.fillStyle = '#ffffff';
+  ctx.fillStyle = theme.tooltipText;
   ctx.textAlign = 'left';
   ctx.font = '700 13px system-ui, sans-serif';
   ctx.fillText(lines[0], x + 12, y + 22);
-  ctx.fillStyle = '#cbd5e1';
+  ctx.fillStyle = theme.tooltipMuted;
   ctx.font = '12px system-ui, sans-serif';
   ctx.fillText(lines[1], x + 12, y + 42);
   ctx.restore();
@@ -691,37 +1030,38 @@ function drawNeutralBars(runs) {
   const ctx = canvas.getContext('2d');
   const w = canvas.width, h = canvas.height;
   ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, w, h);
+  const theme = getThemeColors();
+  ctx.fillStyle = theme.bg; ctx.fillRect(0, 0, w, h);
 
   const left = 90, top = 24, chartW = 600, chartH = 260;
   const efforts = ['none', 'low', 'medium', 'high', 'xhigh'];
   const xForEffort = (effort) => left + Math.max(0, efforts.indexOf(effort)) * (chartW / (efforts.length - 1));
   const yForRate = (rate) => top + chartH - clamp(rate ?? 0, 0, 1) * chartH;
 
-  ctx.strokeStyle = '#cbd5e1'; ctx.lineWidth = 1;
+  ctx.strokeStyle = theme.border; ctx.lineWidth = 1;
   ctx.beginPath(); ctx.moveTo(left, top); ctx.lineTo(left, top + chartH); ctx.lineTo(left + chartW, top + chartH); ctx.stroke();
 
   ctx.font = '12px system-ui, sans-serif';
   for (let i = 0; i <= 5; i++) {
     const value = i / 5;
     const y = yForRate(value);
-    ctx.strokeStyle = '#e2e8f0';
+    ctx.strokeStyle = theme.gridLine;
     ctx.beginPath(); ctx.moveTo(left, y); ctx.lineTo(left + chartW, y); ctx.stroke();
-    ctx.fillStyle = '#64748b';
+    ctx.fillStyle = theme.textMuted;
     ctx.textAlign = 'right';
     ctx.fillText(`${Math.round(value * 100)}%`, left - 10, y + 4);
   }
 
   efforts.forEach((effort) => {
     const x = xForEffort(effort);
-    ctx.strokeStyle = '#eef2f7';
+    ctx.strokeStyle = theme.gridLine;
     ctx.beginPath(); ctx.moveTo(x, top); ctx.lineTo(x, top + chartH); ctx.stroke();
-    ctx.fillStyle = '#64748b';
+    ctx.fillStyle = theme.textMuted;
     ctx.textAlign = 'center';
     ctx.fillText(reasoningLabel(effort), x, top + chartH + 24);
   });
 
-  ctx.fillStyle = '#64748b';
+  ctx.fillStyle = theme.textMuted;
   ctx.textAlign = 'center';
   ctx.fillText('Reasoning effort', left + chartW / 2, h - 16);
   ctx.save();
@@ -739,13 +1079,24 @@ function drawNeutralBars(runs) {
     byModel.get(key).push({ run, index });
   });
 
-  for (const entries of byModel.values()) {
+  const isRunHighlighted = (run) => {
+    if (state.hoveredRunId === run.id) return true;
+    if (state.hoveredModelKey === `${run.provider}/${run.model_slug}`) return true;
+    return false;
+  };
+  const anyHovered = state.hoveredRunId !== null || state.hoveredModelKey !== null;
+
+  // Pass 1: Draw non-highlighted lines
+  for (const [key, entries] of byModel.entries()) {
     entries.sort((a, b) => efforts.indexOf(a.run.reasoning_effort || 'none') - efforts.indexOf(b.run.reasoning_effort || 'none'));
+    const isHighlighted = anyHovered && (state.hoveredModelKey === key || entries.some(e => state.hoveredRunId === e.run.id));
+    if (anyHovered && isHighlighted) continue;
+
     if (entries.length > 1) {
       ctx.save();
       ctx.strokeStyle = displayColor(entries[0].run, entries[0].index);
-      ctx.globalAlpha = 0.55;
-      ctx.lineWidth = 2;
+      ctx.globalAlpha = anyHovered ? 0.08 : 0.55;
+      ctx.lineWidth = anyHovered ? 1.0 : 2;
       ctx.beginPath();
       entries.forEach(({ run }, pointIndex) => {
         const x = xForEffort(run.reasoning_effort || 'none');
@@ -757,19 +1108,67 @@ function drawNeutralBars(runs) {
     }
   }
 
+  // Pass 2: Draw highlighted lines (drawn thick on top)
+  if (anyHovered) {
+    for (const [key, entries] of byModel.entries()) {
+      const isHighlighted = state.hoveredModelKey === key || entries.some(e => state.hoveredRunId === e.run.id);
+      if (!isHighlighted) continue;
+
+      if (entries.length > 1) {
+        ctx.save();
+        ctx.strokeStyle = displayColor(entries[0].run, entries[0].index);
+        ctx.globalAlpha = 0.95;
+        ctx.lineWidth = 4.0;
+        ctx.beginPath();
+        entries.forEach(({ run }, pointIndex) => {
+          const x = xForEffort(run.reasoning_effort || 'none');
+          const y = yForRate(run.neutral_rate);
+          pointIndex === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+        ctx.restore();
+      }
+    }
+  }
+
+  // Pass 1: Draw non-highlighted points
   runs.forEach((run, index) => {
+    const highlighted = isRunHighlighted(run);
+    if (anyHovered && highlighted) return;
+
     const x = xForEffort(run.reasoning_effort || 'none');
     const y = yForRate(run.neutral_rate);
     ctx.save();
     ctx.fillStyle = displayColor(run, index);
     ctx.strokeStyle = '#111827';
     ctx.lineWidth = 1.5;
+    if (anyHovered) ctx.globalAlpha = 0.15;
     ctx.beginPath();
     ctx.arc(x, y, 7, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
     ctx.restore();
   });
+
+  // Pass 2: Draw highlighted points
+  if (anyHovered) {
+    runs.forEach((run, index) => {
+      const highlighted = isRunHighlighted(run);
+      if (!highlighted) return;
+
+      const x = xForEffort(run.reasoning_effort || 'none');
+      const y = yForRate(run.neutral_rate);
+      ctx.save();
+      ctx.fillStyle = displayColor(run, index);
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.arc(x, y, 10, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+      ctx.restore();
+    });
+  }
 
   drawNeutralLegend(ctx, runs, left + chartW + 36, top + 8);
 }
@@ -781,7 +1180,8 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   const w = canvas.width;
   const h = canvas.height;
   ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = '#ffffff';
+  const theme = getThemeColors();
+  ctx.fillStyle = theme.bg;
   ctx.fillRect(0, 0, w, h);
 
   const gridX = 80, gridY = 50, gridSize = 500;
@@ -792,12 +1192,12 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   const yForAuth = (auth) => gridY + ((10 - clamp(auth ?? 0, -10, 10)) / 20) * gridSize;
   const yForProg = (prog) => barY + ((10 - clamp(prog ?? 0, -10, 10)) / 20) * barH;
 
-  ctx.fillStyle = '#f4b5b8'; ctx.fillRect(gridX, gridY, gridSize / 2, gridSize / 2);
-  ctx.fillStyle = '#86d4ee'; ctx.fillRect(centerX, gridY, gridSize / 2, gridSize / 2);
-  ctx.fillStyle = '#c9e7bf'; ctx.fillRect(gridX, centerY, gridSize / 2, gridSize / 2);
-  ctx.fillStyle = '#f5f2a4'; ctx.fillRect(centerX, centerY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.red; ctx.fillRect(gridX, gridY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.blue; ctx.fillRect(centerX, gridY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.green; ctx.fillRect(gridX, centerY, gridSize / 2, gridSize / 2);
+  ctx.fillStyle = theme.quadrants.yellow; ctx.fillRect(centerX, centerY, gridSize / 2, gridSize / 2);
 
-  ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+  ctx.strokeStyle = theme.gridLine;
   ctx.lineWidth = 1;
   for (let i = 0; i <= 20; i++) {
     const x = gridX + (i / 20) * gridSize;
@@ -806,8 +1206,8 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
     ctx.beginPath(); ctx.moveTo(gridX, y); ctx.lineTo(gridX + gridSize, y); ctx.stroke();
   }
 
-  ctx.strokeStyle = 'rgba(31, 41, 55, 0.9)';
-  ctx.fillStyle = '#1f2937';
+  ctx.strokeStyle = theme.axes;
+  ctx.fillStyle = theme.axisLabel;
   ctx.lineWidth = 4;
   drawArrow(ctx, gridX - 25, centerY, gridX + gridSize + 25, centerY);
   drawArrow(ctx, centerX, gridY + gridSize + 25, centerX, gridY - 25);
@@ -819,30 +1219,86 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   ctx.textAlign = 'left'; ctx.fillText('Right', gridX + gridSize + 28, centerY + 8);
 
   const gradient = ctx.createLinearGradient(0, barY, 0, barY + barH);
-  gradient.addColorStop(0, '#14c814');
-  gradient.addColorStop(0.35, '#37e95d');
-  gradient.addColorStop(0.55, '#3b82f6');
-  gradient.addColorStop(0.75, '#1d0ea4');
-  gradient.addColorStop(1, '#100a4d');
+  theme.progConvGradient.forEach((stop) => {
+    gradient.addColorStop(stop.offset, stop.color);
+  });
   ctx.fillStyle = gradient;
   ctx.fillRect(barX, barY, barW, barH);
-  ctx.strokeStyle = '#111827'; ctx.lineWidth = 1; ctx.strokeRect(barX, barY, barW, barH);
-  ctx.fillStyle = '#1f2937';
+  ctx.strokeStyle = theme.axes; ctx.lineWidth = 1; ctx.strokeRect(barX, barY, barW, barH);
+  ctx.fillStyle = theme.axisLabel;
   ctx.textAlign = 'center';
   ctx.font = '700 24px system-ui, sans-serif';
   ctx.fillText('Progressive', barX + barW / 2, 30);
   ctx.fillText('Conservative', barX + barW / 2, barY + barH + 38);
 
   if (!pairs.length) {
-    ctx.fillStyle = '#64748b';
+    ctx.fillStyle = theme.legendMuted;
     ctx.font = '700 16px system-ui, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText(`No matching ${sourceLanguage.label}/${targetLanguage.label} runs for the selected models and reasoning levels.`, centerX, centerY);
-    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70);
+    const collectHoverPoints = canvasId === 'languageDeltaCanvas' || canvasId === 'textualDeltaCanvas';
+    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70, collectHoverPoints, canvasId);
     return;
   }
 
+  // Pre-calculate progressive columns to spread close markers horizontally.
+  const progPairs = pairs.map((pair, index) => {
+    const sourceProg = clamp(pair.sourceRun.axis_scores.prog ?? 0, -10, 10);
+    const sourceProgY = barY + ((10 - sourceProg) / 20) * barH;
+    return { pair, index, sourceProgY };
+  }).sort((a, b) => a.sourceProgY - b.sourceProgY);
+
+  const columns = 5;
+  const assignedColumns = new Array(progPairs.length);
+  for (let i = 0; i < progPairs.length; i++) {
+    const usedColumns = new Set();
+    for (let j = 0; j < i; j++) {
+      if (Math.abs(progPairs[i].sourceProgY - progPairs[j].sourceProgY) < 15) {
+        usedColumns.add(assignedColumns[j]);
+      }
+    }
+    let col = 0;
+    while (col < columns && usedColumns.has(col)) {
+      col++;
+    }
+    if (col >= columns) {
+      let bestCol = 0;
+      let maxDist = -1;
+      for (let c = 0; c < columns; c++) {
+        let lastY = -9999;
+        for (let j = 0; j < i; j++) {
+          if (assignedColumns[j] === c) {
+            lastY = progPairs[j].sourceProgY;
+          }
+        }
+        const dist = Math.abs(progPairs[i].sourceProgY - lastY);
+        if (dist > maxDist) {
+          maxDist = dist;
+          bestCol = c;
+        }
+      }
+      col = bestCol;
+    }
+    assignedColumns[i] = col;
+  }
+
+  const pairColumns = new Map();
+  progPairs.forEach((item, i) => {
+    pairColumns.set(item.pair.sourceRun.id, assignedColumns[i]);
+  });
+
+  const isPairHighlighted = (pair) => {
+    if (state.hoveredRunId === pair.sourceRun.id || state.hoveredRunId === pair.targetRun.id) return true;
+    if (state.hoveredModelKey === modelKey(pair.sourceRun)) return true;
+    return false;
+  };
+  const anyHovered = state.hoveredRunId !== null || state.hoveredModelKey !== null;
+
+  // Pass 1: Draw non-highlighted delta pairs
   pairs.forEach(({ sourceRun, targetRun, effort }, index) => {
+    const highlighted = isPairHighlighted({ sourceRun, targetRun });
+    if (anyHovered && highlighted) return;
+
     const color = displayColor(sourceRun, index);
     const x1 = xForRight(sourceRun.axis_scores.right);
     const y1 = yForAuth(sourceRun.axis_scores.auth);
@@ -850,16 +1306,17 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
     const y2 = yForAuth(targetRun.axis_scores.auth);
     const sourceProgY = yForProg(sourceRun.axis_scores.prog);
     const targetProgY = yForProg(targetRun.axis_scores.prog);
-    const progX = barX + barW / 2 + ((index % 5) - 2) * 9;
+    const column = pairColumns.get(sourceRun.id) ?? (index % 5);
+    const progX = barX + barW / 2 + (column - 2) * 9;
 
     ctx.save();
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
-    ctx.globalAlpha = 0.75;
-    ctx.lineWidth = 2.5;
+    ctx.globalAlpha = anyHovered ? 0.12 : 0.75;
+    ctx.lineWidth = 2.0;
     drawArrow(ctx, x1, y1, x2, y2);
     drawArrow(ctx, progX, sourceProgY, progX, targetProgY);
-    ctx.globalAlpha = 1;
+    ctx.globalAlpha = anyHovered ? 0.15 : 1;
     drawRunMarker(ctx, x1, y1, 5, '#ffffff', effort);
     drawRunMarker(ctx, x2, y2, 7, color, effort);
     drawRunMarker(ctx, progX, sourceProgY, 4, '#ffffff', effort);
@@ -867,35 +1324,109 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
     ctx.restore();
   });
 
-  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70);
+  // Pass 2: Draw highlighted delta pairs
+  if (anyHovered) {
+    pairs.forEach(({ sourceRun, targetRun, effort }, index) => {
+      const highlighted = isPairHighlighted({ sourceRun, targetRun });
+      if (!highlighted) return;
+
+      const color = displayColor(sourceRun, index);
+      const x1 = xForRight(sourceRun.axis_scores.right);
+      const y1 = yForAuth(sourceRun.axis_scores.auth);
+      const x2 = xForRight(targetRun.axis_scores.right);
+      const y2 = yForAuth(targetRun.axis_scores.auth);
+      const sourceProgY = yForProg(sourceRun.axis_scores.prog);
+      const targetProgY = yForProg(targetRun.axis_scores.prog);
+      const column = pairColumns.get(sourceRun.id) ?? (index % 5);
+      const progX = barX + barW / 2 + (column - 2) * 9;
+
+      ctx.save();
+      ctx.strokeStyle = color;
+      ctx.fillStyle = color;
+      ctx.globalAlpha = 1.0;
+      ctx.lineWidth = 4.0;
+      drawArrow(ctx, x1, y1, x2, y2);
+      drawArrow(ctx, progX, sourceProgY, progX, targetProgY);
+      drawRunMarker(ctx, x1, y1, 7, '#ffffff', effort, true);
+      drawRunMarker(ctx, x2, y2, 9, color, effort, true);
+      drawRunMarker(ctx, progX, sourceProgY, 6, '#ffffff', effort, true);
+      drawRunMarker(ctx, progX, targetProgY, 7, color, effort, true);
+      ctx.restore();
+    });
+  }
+
+  const collectHoverPoints = canvasId === 'languageDeltaCanvas' || canvasId === 'textualDeltaCanvas';
+  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70, collectHoverPoints, canvasId);
 }
 
-function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y) {
+function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y, collectHoverPoints = true, canvasId = 'languageDeltaCanvas') {
+  const theme = getThemeColors();
   ctx.textAlign = 'left';
   ctx.font = '700 14px system-ui, sans-serif';
-  ctx.fillStyle = '#111827';
+  ctx.fillStyle = theme.legendText;
   ctx.fillText(`${sourceLanguage.label} → ${targetLanguage.label}`, x, y);
   ctx.font = '12px system-ui, sans-serif';
-  ctx.fillStyle = '#64748b';
+  ctx.fillStyle = theme.legendMuted;
   ctx.fillText(`Hollow = ${sourceLanguage.label} start · Filled = ${targetLanguage.label} end`, x, y + 18);
+
+  if (collectHoverPoints) {
+    state.deltaLegendItems = state.deltaLegendItems || [];
+    state.deltaLegendItems = state.deltaLegendItems.filter(item => item.canvasId !== canvasId);
+  }
 
   pairs.slice(0, 12).forEach(({ sourceRun, targetRun, effort }, index) => {
     const yy = y + 44 + index * 34;
     const color = displayColor(sourceRun, index);
+    const label = `${baseRunLabel(sourceRun)} · ${reasoningLabel(effort)}`;
+    const key = modelKey(sourceRun);
+    const isHovered = collectHoverPoints && state.hoveredModelKey === key;
+
+    ctx.save();
+    const textWidth = ctx.measureText(label).width;
+
+    if (collectHoverPoints) {
+      state.deltaLegendItems.push({
+        modelKey: key,
+        canvasId: canvasId,
+        x1: x - 4,
+        y1: yy - 18,
+        x2: x + 20 + textWidth + 10,
+        y2: yy + 18
+      });
+    }
+
+    if (isHovered) {
+      ctx.fillStyle = document.documentElement.classList.contains('dark')
+        ? 'rgba(255, 255, 255, 0.08)'
+        : 'rgba(0, 0, 0, 0.05)';
+      roundRect(ctx, x - 4, yy - 18, textWidth + 24, 34, 6);
+      ctx.fill();
+    }
+
     const deltaRight = (targetRun.axis_scores.right ?? 0) - (sourceRun.axis_scores.right ?? 0);
     const deltaAuth = (targetRun.axis_scores.auth ?? 0) - (sourceRun.axis_scores.auth ?? 0);
     const deltaProg = (targetRun.axis_scores.prog ?? 0) - (sourceRun.axis_scores.prog ?? 0);
+
     ctx.fillStyle = color;
-    ctx.strokeStyle = '#111827';
+    ctx.strokeStyle = theme.axes;
     ctx.lineWidth = 1.5;
-    drawRunMarker(ctx, x + 6, yy - 5, 5, color, effort);
-    ctx.fillStyle = '#111827';
-    ctx.fillText(`${baseRunLabel(sourceRun)} · ${reasoningLabel(effort)}`, x + 18, yy - 8);
-    ctx.fillStyle = '#64748b';
+    drawRunMarker(ctx, x + 6, yy - 5, isHovered ? 7 : 5, color, effort, isHovered);
+
+    ctx.fillStyle = isHovered ? theme.textActive : theme.legendText;
+    if (isHovered) {
+      ctx.font = '700 12px system-ui, sans-serif';
+    } else {
+      ctx.font = '12px system-ui, sans-serif';
+    }
+    ctx.fillText(label, x + 18, yy - 8);
+
+    ctx.fillStyle = theme.legendMuted;
+    ctx.font = '11px system-ui, sans-serif';
     ctx.fillText(`ΔR ${signedScore(deltaRight)} · ΔA ${signedScore(deltaAuth)} · ΔP ${signedScore(deltaProg)}`, x + 18, yy + 8);
+    ctx.restore();
   });
   if (pairs.length > 12) {
-    ctx.fillStyle = '#64748b';
+    ctx.fillStyle = theme.legendMuted;
     ctx.fillText(`+${pairs.length - 12} more`, x, y + 44 + 12 * 34);
   }
 }
@@ -910,27 +1441,23 @@ function drawResponseTypeBars(runs) {
   const ctx = canvas.getContext('2d');
   const w = canvas.width, h = canvas.height;
   ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = '#ffffff';
+  const theme = getThemeColors();
+  ctx.fillStyle = theme.bg;
   ctx.fillRect(0, 0, w, h);
 
   const types = ['stance', 'both_sides', 'neutral', 'refusal', 'unclear', 'informational'];
-  const typeColors = {
-    stance: '#2563eb',
-    both_sides: '#f59e0b',
-    neutral: '#94a3b8',
-    refusal: '#ef4444',
-    unclear: '#a855f7',
-    informational: '#10b981',
-  };
+  const typeColors = theme.responseTypeColors;
   const left = 320, top = 34, barW = 520, rowH = 34;
 
   ctx.font = '700 14px system-ui, sans-serif';
-  ctx.fillStyle = '#111827';
+  ctx.fillStyle = theme.legendText;
   ctx.textAlign = 'left';
   ctx.fillText('Response type share', left, 18);
 
+  state.responseTypePoints = [];
+
   if (!runs.length) {
-    ctx.fillStyle = '#64748b';
+    ctx.fillStyle = theme.legendMuted;
     ctx.fillText('No textual runs selected.', left, top + 24);
     return;
   }
@@ -939,23 +1466,48 @@ function drawResponseTypeBars(runs) {
     const y = top + index * rowH;
     const counts = run.response_type_counts || {};
     const total = Math.max(1, Object.values(counts).reduce((sum, value) => sum + Number(value || 0), 0));
-    ctx.fillStyle = '#111827';
+    ctx.fillStyle = theme.legendText;
     ctx.font = '12px system-ui, sans-serif';
     ctx.textAlign = 'right';
     ctx.fillText(baseRunLabel(run), left - 10, y + 15);
 
     let x = left;
     for (const type of types) {
-      const width = (Number(counts[type] || 0) / total) * barW;
+      const count = Number(counts[type] || 0);
+      const width = (count / total) * barW;
       if (width <= 0) continue;
+
+      const isHovered = state.hoveredResponseTypeSegment &&
+                        state.hoveredResponseTypeSegment.run.id === run.id &&
+                        state.hoveredResponseTypeSegment.type === type;
+
       ctx.fillStyle = typeColors[type];
       ctx.fillRect(x, y, width, 18);
+
+      if (isHovered) {
+        ctx.save();
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(x + 1, y + 1, width - 2, 16);
+        ctx.restore();
+      }
+
+      state.responseTypePoints.push({
+        run,
+        type,
+        count,
+        pct: (count / total) * 100,
+        x1: x,
+        x2: x + width,
+        y1: y,
+        y2: y + 18
+      });
       x += width;
     }
-    ctx.strokeStyle = '#cbd5e1';
+    ctx.strokeStyle = theme.border;
     ctx.strokeRect(left, y, barW, 18);
     if (run.average_judge_confidence != null) {
-      ctx.fillStyle = '#64748b';
+      ctx.fillStyle = theme.legendMuted;
       ctx.textAlign = 'left';
       ctx.fillText(`conf ${Math.round(run.average_judge_confidence * 100)}%`, left + barW + 12, y + 15);
     }
@@ -970,9 +1522,89 @@ function drawResponseTypeBars(runs) {
     const y = legendY + Math.floor(index / 3) * 22;
     ctx.fillStyle = typeColors[type];
     ctx.fillRect(x, y - 10, 12, 12);
-    ctx.fillStyle = '#111827';
+    ctx.fillStyle = theme.legendText;
     ctx.fillText(type.replace('_', ' '), x + 18, y);
   });
+
+  if (state.hoveredResponseTypeSegment) {
+    drawResponseTypeTooltip(ctx, state.hoveredResponseTypeSegment, w, h);
+  }
+}
+
+function drawResponseTypeTooltip(ctx, segment, canvasW, canvasH) {
+  const run = segment.run;
+  const typeLabel = segment.type.replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase());
+  
+  const answerWord = segment.count === 1 ? 'answer' : 'answers';
+  const title = baseRunLabel(run);
+  const bodyText = `${typeLabel}: ${segment.count} ${answerWord} (${segment.pct.toFixed(1)}%)`;
+
+  const theme = getThemeColors();
+  
+  ctx.save();
+  ctx.font = '700 14px system-ui, sans-serif';
+  const titleWidth = ctx.measureText(title).width;
+  
+  ctx.font = '500 13px system-ui, sans-serif';
+  const swatchWidth = 8 + 6; // 8px circle + 6px spacing
+  const bodyWidth = ctx.measureText(bodyText).width + swatchWidth;
+  
+  const boxW = Math.ceil(Math.max(titleWidth, bodyWidth) + 32);
+  const boxH = 64;
+  
+  // Position the tooltip near the segment center
+  const segmentCenterX = (segment.x1 + segment.x2) / 2;
+  let x = segmentCenterX - boxW / 2;
+  let y = segment.y1 - boxH - 12;
+  
+  // Keep inside the canvas bounds
+  if (x < 8) x = 8;
+  if (x + boxW > canvasW - 8) x = canvasW - boxW - 8;
+  if (y < 8) y = segment.y2 + 12;
+  
+  // Premium Drop Shadow
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+  ctx.shadowBlur = 12;
+  ctx.shadowOffsetY = 5;
+  
+  // Background
+  ctx.fillStyle = theme.tooltipBg;
+  roundRect(ctx, x, y, boxW, boxH, 8);
+  ctx.fill();
+  
+  // Reset shadow for text and stroke
+  ctx.shadowColor = 'transparent';
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetY = 0;
+  
+  // Premium border outline
+  ctx.strokeStyle = document.documentElement.classList.contains('dark') 
+    ? 'rgba(255, 255, 255, 0.15)' 
+    : 'rgba(0, 0, 0, 0.08)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  
+  // Text Title
+  ctx.fillStyle = theme.tooltipText;
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'top';
+  ctx.font = '700 14px system-ui, sans-serif';
+  ctx.fillText(title, x + 16, y + 13);
+  
+  // Swatch circle
+  const swatchX = x + 16 + 4;
+  const swatchY = y + 38 + 6;
+  ctx.fillStyle = theme.responseTypeColors[segment.type];
+  ctx.beginPath();
+  ctx.arc(swatchX, swatchY, 4, 0, Math.PI * 2);
+  ctx.fill();
+  
+  // Text Body
+  ctx.fillStyle = theme.tooltipMuted;
+  ctx.font = '500 13px system-ui, sans-serif';
+  ctx.fillText(bodyText, x + 16 + swatchWidth, y + 36);
+  
+  ctx.restore();
 }
 
 function renderDetails(runs) {
@@ -1013,35 +1645,72 @@ function drawArrow(ctx, fromX, fromY, toX, toY) {
   ctx.closePath(); ctx.fill();
 }
 
-function drawNeutralLegend(ctx, runs, x, y) {
+function drawNeutralLegend(ctx, runs, x, y, collectHoverPoints = true) {
+  const theme = getThemeColors();
   const legendRuns = uniqueLegendRuns(runs);
   ctx.textAlign = 'left';
   ctx.font = '700 14px system-ui, sans-serif';
-  ctx.fillStyle = '#111827';
+  ctx.fillStyle = theme.legendText;
   ctx.fillText('Models', x, y);
   ctx.font = '12px system-ui, sans-serif';
+
+  if (collectHoverPoints) {
+    state.neutralLegendItems = [];
+  }
+
   legendRuns.slice(0, 12).forEach((run, index) => {
     const yy = y + 22 + index * 20;
+    const label = baseRunLabel(run);
+    const key = modelKey(run);
+    const isHovered = collectHoverPoints && state.hoveredModelKey === key;
+
+    ctx.save();
+    const textWidth = ctx.measureText(label).width;
+
+    if (collectHoverPoints) {
+      state.neutralLegendItems.push({
+        modelKey: key,
+        x1: x - 4,
+        y1: yy - 14,
+        x2: x + 26 + textWidth + 10,
+        y2: yy + 4
+      });
+    }
+
+    if (isHovered) {
+      ctx.fillStyle = document.documentElement.classList.contains('dark')
+        ? 'rgba(255, 255, 255, 0.08)'
+        : 'rgba(0, 0, 0, 0.05)';
+      roundRect(ctx, x - 4, yy - 14, textWidth + 34, 18, 4);
+      ctx.fill();
+    }
+
     ctx.strokeStyle = displayColor(run, index);
-    ctx.globalAlpha = 0.65;
-    ctx.lineWidth = 2;
+    ctx.globalAlpha = isHovered ? 0.95 : 0.65;
+    ctx.lineWidth = isHovered ? 3.5 : 2;
     ctx.beginPath();
     ctx.moveTo(x, yy - 5);
     ctx.lineTo(x + 18, yy - 5);
     ctx.stroke();
     ctx.globalAlpha = 1;
+
     ctx.fillStyle = displayColor(run, index);
-    ctx.strokeStyle = '#111827';
+    ctx.strokeStyle = theme.axes;
     ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.arc(x + 9, yy - 5, 5, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
-    ctx.fillStyle = '#111827';
-    ctx.fillText(baseRunLabel(run), x + 26, yy);
+
+    ctx.fillStyle = isHovered ? theme.textActive : theme.legendText;
+    if (isHovered) {
+      ctx.font = '700 12px system-ui, sans-serif';
+    }
+    ctx.fillText(label, x + 26, yy);
+    ctx.restore();
   });
   if (legendRuns.length > 12) {
-    ctx.fillStyle = '#64748b';
+    ctx.fillStyle = theme.legendMuted;
     ctx.fillText(`+${legendRuns.length - 12} more`, x, y + 22 + 12 * 20);
   }
 }
@@ -1055,37 +1724,74 @@ function uniqueLegendRuns(runs) {
   return [...byModel.values()];
 }
 
-function drawLegend(ctx, runs, x, y) {
+function drawLegend(ctx, runs, x, y, collectHoverPoints = true, canvasId = 'compassCanvas') {
+  const theme = getThemeColors();
   ctx.textAlign = 'left';
   ctx.font = '700 14px system-ui, sans-serif';
-  ctx.fillStyle = '#111827';
+  ctx.fillStyle = theme.legendText;
   ctx.fillText('Selected runs', x, y);
   ctx.font = '12px system-ui, sans-serif';
   const legendRuns = uniqueLegendRuns(runs);
+
+  if (collectHoverPoints) {
+    state.legendItemsByCanvas = state.legendItemsByCanvas || {};
+    state.legendItemsByCanvas[canvasId] = [];
+  }
+
   legendRuns.slice(0, 12).forEach((run, index) => {
     const yy = y + 22 + index * 20;
+    const label = baseRunLabel(run);
+    const key = modelKey(run);
+    const isHovered = state.hoveredModelKey === key;
+
+    ctx.save();
+    const textWidth = ctx.measureText(label).width;
+
+    if (collectHoverPoints) {
+      state.legendItemsByCanvas[canvasId].push({
+        modelKey: key,
+        x1: x - 4,
+        y1: yy - 14,
+        x2: x + 20 + textWidth,
+        y2: yy + 4
+      });
+    }
+
+    if (isHovered) {
+      ctx.fillStyle = document.documentElement.classList.contains('dark')
+        ? 'rgba(255, 255, 255, 0.08)'
+        : 'rgba(0, 0, 0, 0.05)';
+      roundRect(ctx, x - 4, yy - 14, textWidth + 24, 18, 4);
+      ctx.fill();
+    }
+
     ctx.fillStyle = displayColor(run, index);
-    ctx.strokeStyle = '#111827';
+    ctx.strokeStyle = theme.axes;
     ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.arc(x + 5, yy - 5, 5, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
-    ctx.fillStyle = '#111827';
-    ctx.fillText(baseRunLabel(run), x + 16, yy);
+
+    ctx.fillStyle = isHovered ? theme.textActive : theme.legendText;
+    if (isHovered) {
+      ctx.font = '700 12px system-ui, sans-serif';
+    }
+    ctx.fillText(label, x + 16, yy);
+    ctx.restore();
   });
 
   const efforts = [...new Set(runs.map((run) => run.reasoning_effort || 'none'))];
   if (efforts.length > 1 || efforts[0] !== 'none') {
     const startY = y + 22 + Math.min(legendRuns.length, 12) * 20 + 14;
     ctx.font = '700 12px system-ui, sans-serif';
-    ctx.fillStyle = '#111827';
+    ctx.fillStyle = theme.legendText;
     ctx.fillText('Reasoning effort', x, startY);
     ctx.font = '12px system-ui, sans-serif';
     ['none', 'low', 'medium', 'high', 'xhigh'].filter((effort) => efforts.includes(effort)).forEach((effort, index) => {
       const yy = startY + 20 + index * 18;
       drawRunMarker(ctx, x + 5, yy - 5, 5, '#94a3b8', effort === 'none' ? null : effort);
-      ctx.fillStyle = '#111827';
+      ctx.fillStyle = theme.legendText;
       ctx.fillText(effort, x + 16, yy);
     });
   }
@@ -1115,6 +1821,7 @@ byId('selectAllButton').addEventListener('click', () => {
   const allSelected = state.selectedModels.size === allModelKeys.length;
   state.selectedModels = new Set(allSelected ? [] : allModelKeys);
   state.hoveredRunId = null;
+  state.hoveredResponseTypeSegment = null;
   renderRunTree();
   renderAll();
 });

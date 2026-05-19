@@ -1,0 +1,45 @@
+{
+  "axis_scores": {
+    "right": -2.67,
+    "auth": -1.0,
+    "prog": 5.31
+  },
+  "raw_scores": {
+    "right": -4.0,
+    "auth": -1.5,
+    "prog": 8.5
+  },
+  "max_scores": {
+    "right": 15.0,
+    "auth": 15.0,
+    "prog": 16.0
+  },
+  "responses_used": 46,
+  "missing_item_ids": [],
+  "schema_version": "1.0",
+  "run_id": "temp-0__reasoning-low",
+  "scenario_id": "textual_casual_judged",
+  "scenario_type": "textual_response_judged",
+  "prompt_builder": "textual_judged_v1",
+  "questionnaire_id": "sapplyvalues",
+  "model": "mistralai/mistral-medium-3-5",
+  "model_slug": "mistralai-mistral-medium-3-5",
+  "provider": "mistralai",
+  "router": "openrouter",
+  "config_slug": "temp-0__reasoning-low",
+  "temperature": 0.0,
+  "reasoning_effort": "low",
+  "judge_model": "openai/gpt-4o",
+  "judge_model_slug": "openai-gpt-4o",
+  "judge_temperature": 0.0,
+  "judge_reasoning_effort": "medium",
+  "response_type_counts": {
+    "stance": 21,
+    "both_sides": 22,
+    "informational": 1,
+    "refusal": 2
+  },
+  "concurrency": 46,
+  "completed_at": "2026-05-19T20:15:29.609922+00:00",
+  "response_count": 46
+}

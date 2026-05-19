@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LLM Political Compass Results</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=7" />
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <header class="page-header">
@@ -13,7 +21,17 @@
         <h1>LLM Political Compass Results</h1>
         <p>Static viewer for persisted benchmark runs.</p>
       </div>
-      <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-controls="modelSidebar" aria-expanded="false">☰ Models</button>
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+        <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-controls="modelSidebar" aria-expanded="false">☰ Models</button>
+      </div>
     </header>
 
     <main class="layout">
@@ -51,12 +69,20 @@
           <div class="card-header">
             <div>
               <h2>Political compass</h2>
-              <p>Right axis = left/right. Auth axis = liberty/authority. Bar color = progressive/conservative.</p>
+              <p>Right axis = left/right. Auth axis = liberty/authority. Bar color = progressive/conservative. Compares runs within the selected test language.</p>
             </div>
-            </div>
+          </div>
           <div class="graph-controls">
             <div class="control-row">
-              <span class="control-label">Language</span>
+              <span class="control-label">
+                Language
+                <span class="info-trigger" data-tooltip="Translates both the system prompt wrapper and individual questionnaire items to test whether a model's worldview shifts under a different language.">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="compassLanguageControls" class="segmented-controls"></div>
             </div>
             <div class="control-row">
@@ -69,40 +95,64 @@
             <canvas id="compassCanvas" width="1100" height="620" aria-label="Political compass chart"></canvas>
           </div>
         </section>
-
+ 
         <section class="card">
           <div class="card-header">
             <div>
               <h2>Neutral / abstention by reasoning effort</h2>
-              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model for this graph's language.</p>
+              <p>X axis = reasoning effort. Y axis = neutral answer rate. Lines connect runs of the same model for the selected test language.</p>
             </div>
           </div>
           <div class="graph-controls">
             <div class="control-row">
-              <span class="control-label">Language</span>
+              <span class="control-label">
+                Language
+                <span class="info-trigger" data-tooltip="Translates both the system prompt wrapper and individual questionnaire items to test whether a model's worldview shifts under a different language.">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="neutralLanguageControls" class="segmented-controls"></div>
             </div>
             <div id="neutralWarnings" class="warning-box" hidden></div>
           </div>
           <div class="bar-wrap">
-            <canvas id="neutralCanvas" width="900" height="360" aria-label="Neutral answer bar chart"></canvas>
+            <canvas id="neutralCanvas" width="1100" height="360" aria-label="Neutral answer bar chart"></canvas>
           </div>
         </section>
-
+ 
         <section class="card">
           <div class="card-header">
             <div>
               <h2 id="languageDeltaTitle">Language delta</h2>
-              <p>Arrows show how each selected model/reasoning run moves between two test languages.</p>
+              <p>Arrows show how each selected model/reasoning run shifts between two languages, demonstrating translation-induced framing and linguistic biases.</p>
             </div>
           </div>
           <div class="graph-controls">
             <div class="control-row">
-              <span class="control-label">From</span>
+              <span class="control-label">
+                From
+                <span class="info-trigger" data-tooltip="Select the baseline source language to compare against.">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="deltaSourceLanguageControls" class="segmented-controls"></div>
             </div>
             <div class="control-row">
-              <span class="control-label">To</span>
+              <span class="control-label">
+                To
+                <span class="info-trigger" data-tooltip="Select the target language to see directional shift arrows, highlighting translation-induced framing and cultural biases.">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="deltaTargetLanguageControls" class="segmented-controls"></div>
             </div>
             <div class="control-row">
@@ -115,7 +165,7 @@
             <canvas id="languageDeltaCanvas" width="1100" height="620" aria-label="Language delta compass chart"></canvas>
           </div>
         </section>
-
+ 
         <section class="card">
           <div class="card-header">
             <div>
@@ -126,7 +176,15 @@
           </div>
           <div class="graph-controls">
             <div class="control-row">
-              <span class="control-label">Textual mode</span>
+              <span class="control-label">
+                Textual mode
+                <span class="info-trigger" data-tooltip="Compares how models respond to direct opinion questions (Direct free-text) versus queries for general information and explanations (Explanatory answer).">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="textualModeControls" class="segmented-controls"></div>
             </div>
             <div class="control-row">
@@ -139,7 +197,7 @@
             <canvas id="textualCompassCanvas" width="1100" height="620" aria-label="Textual judged compass chart"></canvas>
           </div>
         </section>
-
+ 
         <section class="card">
           <div class="card-header">
             <div>
@@ -149,7 +207,15 @@
           </div>
           <div class="graph-controls">
             <div class="control-row">
-              <span class="control-label">Textual mode</span>
+              <span class="control-label">
+                Textual mode
+                <span class="info-trigger" data-tooltip="Compares free-text responses: asking for opinions (Direct free-text) vs asking for general informational explanations (Explanatory answer).">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="textualResponseTypeModeControls" class="segmented-controls"></div>
             </div>
             <div class="control-row">
@@ -162,7 +228,7 @@
             <canvas id="textualResponseTypeCanvas" width="1100" height="520" aria-label="Textual response type stacked bar chart"></canvas>
           </div>
         </section>
-
+ 
         <section class="card">
           <div class="card-header">
             <div>
@@ -173,7 +239,15 @@
           </div>
           <div class="graph-controls">
             <div class="control-row">
-              <span class="control-label">Textual mode</span>
+              <span class="control-label">
+                Textual mode
+                <span class="info-trigger" data-tooltip="Selects the free-text prompt format (Direct free-text or Explanatory answer) to compare against direct JSON forced-choice answers.">
+                  <svg class="info-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor"></circle>
+                    <path d="M12 9v6M12 7h.01" stroke="var(--card)" stroke-width="2.5" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+              </span>
               <div id="textualDeltaModeControls" class="segmented-controls"></div>
             </div>
             <div class="control-row">
