@@ -181,6 +181,11 @@ async function main() {
   setupDeltaInteractions('languageDeltaCanvas');
   setupDeltaInteractions('textualDeltaCanvas');
   renderAll();
+  window.addEventListener('resize', () => {
+    if (state.manifest) {
+      renderAll();
+    }
+  });
 }
 
 function byId(id) { return document.getElementById(id); }
@@ -585,17 +590,111 @@ function renderTextualDeltaWarnings(missing) {
   renderWarningBox(root, messages);
 }
 
+function getLayout(canvasId) {
+  const isMobile = window.innerWidth <= 900;
+  if (isMobile) {
+    if (canvasId === 'neutralCanvas') {
+      return {
+        isMobile: true,
+        w: 600,
+        h: 680,
+        left: 70,
+        top: 30,
+        chartW: 460,
+        chartH: 260,
+        legendX: 70,
+        legendY: 360
+      };
+    } else if (canvasId === 'textualResponseTypeCanvas') {
+      return {
+        isMobile: true,
+        w: 600,
+        h: 580,
+        left: 150,
+        top: 34,
+        barW: 380,
+        rowH: 34,
+        legendX: 150,
+        legendY: 462
+      };
+    } else {
+      return {
+        isMobile: true,
+        w: 600,
+        h: 1020,
+        gridX: 60,
+        gridY: 70,
+        gridSize: 480,
+        barX: 80,
+        barY: 610,
+        barW: 60,
+        barH: 340,
+        legendX: 200,
+        legendY: 620
+      };
+    }
+  } else {
+    if (canvasId === 'neutralCanvas') {
+      return {
+        isMobile: false,
+        w: 1100,
+        h: 360,
+        left: 90,
+        top: 24,
+        chartW: 600,
+        chartH: 260,
+        legendX: 726,
+        legendY: 32
+      };
+    } else if (canvasId === 'textualResponseTypeCanvas') {
+      return {
+        isMobile: false,
+        w: 1100,
+        h: 520,
+        left: 320,
+        top: 34,
+        barW: 520,
+        rowH: 34,
+        legendX: 320,
+        legendY: 462
+      };
+    } else {
+      return {
+        isMobile: false,
+        w: 1100,
+        h: 620,
+        gridX: 80,
+        gridY: 50,
+        gridSize: 500,
+        barX: 700,
+        barY: 50,
+        barW: 64,
+        barH: 500,
+        legendX: 815,
+        legendY: 70
+      };
+    }
+  }
+}
+
 function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true) {
   const canvas = byId(canvasId);
   const ctx = canvas.getContext('2d');
+  
+  const layout = getLayout(canvasId);
+  if (canvas.width !== layout.w || canvas.height !== layout.h) {
+    canvas.width = layout.w;
+    canvas.height = layout.h;
+  }
+  
   const w = canvas.width;
   const h = canvas.height;
   ctx.clearRect(0, 0, w, h);
 
   const theme = getThemeColors();
 
-  const gridX = 80, gridY = 50, gridSize = 500;
-  const barX = 700, barY = 50, barW = 64, barH = 500;
+  const gridX = layout.gridX, gridY = layout.gridY, gridSize = layout.gridSize;
+  const barX = layout.barX, barY = layout.barY, barW = layout.barW, barH = layout.barH;
   const centerX = gridX + gridSize / 2;
   const centerY = gridY + gridSize / 2;
 
@@ -627,7 +726,7 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
 
   ctx.font = '700 24px system-ui, sans-serif';
   ctx.textAlign = 'center';
-  ctx.fillText('Authority', centerX, 30);
+  ctx.fillText('Authority', centerX, gridY - 20);
   ctx.fillText('Liberty', centerX, gridY + gridSize + 45);
   ctx.textAlign = 'right'; ctx.fillText('Left', gridX - 28, centerY + 8);
   ctx.textAlign = 'left'; ctx.fillText('Right', gridX + gridSize + 28, centerY + 8);
@@ -643,8 +742,8 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
   ctx.fillStyle = theme.axisLabel;
   ctx.textAlign = 'center';
   ctx.font = '700 24px system-ui, sans-serif';
-  ctx.fillText('Progressive', barX + barW / 2, 30);
-  ctx.fillText('Conservative', barX + barW / 2, barY + barH + 38);
+  ctx.fillText('Progressive', barX + barW / 2, barY - 20);
+  ctx.fillText('Conservative', barX + barW / 2, barY + barH + 28);
 
   // Runs.
   if (collectHoverPoints) {
@@ -763,7 +862,7 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
     });
   }
 
-  drawLegend(ctx, runs, 815, 70, collectHoverPoints, canvasId);
+  drawLegend(ctx, runs, layout.legendX, layout.legendY, collectHoverPoints, canvasId);
 
   const points = state.compassPointsByCanvas?.[canvasId] || [];
   const hoveredPoint = collectHoverPoints ? points.find((point) => point.run.id === state.hoveredRunId) : null;
@@ -773,7 +872,10 @@ function drawCompass(runs, canvasId = 'compassCanvas', collectHoverPoints = true
 function setupCompassInteractions(canvasId = 'compassCanvas') {
   const canvas = byId(canvasId);
   if (!canvas) return;
-  canvas.addEventListener('mousemove', (event) => {
+  const handleInteraction = (event) => {
+    if (event.type === 'touchmove' || event.type === 'touchstart') {
+      event.preventDefault();
+    }
     const point = canvasPoint(canvas, event);
     const points = state.compassPointsByCanvas?.[canvasId] || [];
     const legendItems = state.legendItemsByCanvas?.[canvasId] || [];
@@ -795,20 +897,31 @@ function setupCompassInteractions(canvasId = 'compassCanvas') {
       canvas.style.cursor = (hitPoint || hitLegend) ? 'pointer' : 'default';
       redrawAllCharts();
     }
-  });
-  canvas.addEventListener('mouseleave', () => {
+  };
+
+  canvas.addEventListener('mousemove', handleInteraction);
+  canvas.addEventListener('touchstart', handleInteraction, { passive: false });
+  canvas.addEventListener('touchmove', handleInteraction, { passive: false });
+
+  const handleLeave = () => {
     if (!state.hoveredRunId && !state.hoveredModelKey) return;
     state.hoveredRunId = null;
     state.hoveredModelKey = null;
     canvas.style.cursor = 'default';
     redrawAllCharts();
-  });
+  };
+
+  canvas.addEventListener('mouseleave', handleLeave);
+  canvas.addEventListener('touchend', handleLeave);
 }
 
 function setupResponseTypeInteractions() {
   const canvas = byId('textualResponseTypeCanvas');
   if (!canvas) return;
-  canvas.addEventListener('mousemove', (event) => {
+  const handleInteraction = (event) => {
+    if (event.type === 'touchmove' || event.type === 'touchstart') {
+      event.preventDefault();
+    }
     const point = canvasPoint(canvas, event);
     const hit = (state.responseTypePoints || []).find((p) =>
       point.x >= p.x1 && point.x <= p.x2 &&
@@ -823,19 +936,30 @@ function setupResponseTypeInteractions() {
       canvas.style.cursor = hit ? 'pointer' : 'default';
       drawResponseTypeBars(selectedTextualResponseTypeRuns());
     }
-  });
-  canvas.addEventListener('mouseleave', () => {
+  };
+
+  canvas.addEventListener('mousemove', handleInteraction);
+  canvas.addEventListener('touchstart', handleInteraction, { passive: false });
+  canvas.addEventListener('touchmove', handleInteraction, { passive: false });
+
+  const handleLeave = () => {
     if (!state.hoveredResponseTypeSegment) return;
     state.hoveredResponseTypeSegment = null;
     canvas.style.cursor = 'default';
     drawResponseTypeBars(selectedTextualResponseTypeRuns());
-  });
+  };
+
+  canvas.addEventListener('mouseleave', handleLeave);
+  canvas.addEventListener('touchend', handleLeave);
 }
 
 function setupNeutralInteractions() {
   const canvas = byId('neutralCanvas');
   if (!canvas) return;
-  canvas.addEventListener('mousemove', (event) => {
+  const handleInteraction = (event) => {
+    if (event.type === 'touchmove' || event.type === 'touchstart') {
+      event.preventDefault();
+    }
     const point = canvasPoint(canvas, event);
     const hitLegend = (state.neutralLegendItems || []).find((item) =>
       point.x >= item.x1 && point.x <= item.x2 &&
@@ -849,19 +973,30 @@ function setupNeutralInteractions() {
       canvas.style.cursor = hitLegend ? 'pointer' : 'default';
       redrawAllCharts();
     }
-  });
-  canvas.addEventListener('mouseleave', () => {
+  };
+
+  canvas.addEventListener('mousemove', handleInteraction);
+  canvas.addEventListener('touchstart', handleInteraction, { passive: false });
+  canvas.addEventListener('touchmove', handleInteraction, { passive: false });
+
+  const handleLeave = () => {
     if (!state.hoveredModelKey) return;
     state.hoveredModelKey = null;
     canvas.style.cursor = 'default';
     redrawAllCharts();
-  });
+  };
+
+  canvas.addEventListener('mouseleave', handleLeave);
+  canvas.addEventListener('touchend', handleLeave);
 }
 
 function setupDeltaInteractions(canvasId = 'languageDeltaCanvas') {
   const canvas = byId(canvasId);
   if (!canvas) return;
-  canvas.addEventListener('mousemove', (event) => {
+  const handleInteraction = (event) => {
+    if (event.type === 'touchmove' || event.type === 'touchstart') {
+      event.preventDefault();
+    }
     const point = canvasPoint(canvas, event);
     const hitLegend = (state.deltaLegendItems || []).find((item) =>
       item.canvasId === canvasId &&
@@ -876,17 +1011,24 @@ function setupDeltaInteractions(canvasId = 'languageDeltaCanvas') {
       canvas.style.cursor = hitLegend ? 'pointer' : 'default';
       redrawAllCharts();
     }
-  });
-  canvas.addEventListener('mouseleave', () => {
+  };
+
+  canvas.addEventListener('mousemove', handleInteraction);
+  canvas.addEventListener('touchstart', handleInteraction, { passive: false });
+  canvas.addEventListener('touchmove', handleInteraction, { passive: false });
+
+  const handleLeave = () => {
     if (!state.hoveredModelKey) return;
     state.hoveredModelKey = null;
     canvas.style.cursor = 'default';
     redrawAllCharts();
-  });
+  };
+
+  canvas.addEventListener('mouseleave', handleLeave);
+  canvas.addEventListener('touchend', handleLeave);
 }
 
 function redrawAllCharts() {
-  if (!state.manifest) return;
   const compassRuns = selectedCompassRuns();
   const neutralRuns = selectedNeutralRuns();
   const delta = languageDeltaPairs(state.deltaSourceLanguage, state.deltaTargetLanguage);
@@ -909,9 +1051,11 @@ function redrawAllCharts() {
 
 function canvasPoint(canvas, event) {
   const rect = canvas.getBoundingClientRect();
+  const clientX = event.touches && event.touches.length ? event.touches[0].clientX : event.clientX;
+  const clientY = event.touches && event.touches.length ? event.touches[0].clientY : event.clientY;
   return {
-    x: ((event.clientX - rect.left) / rect.width) * canvas.width,
-    y: ((event.clientY - rect.top) / rect.height) * canvas.height,
+    x: ((clientX - rect.left) / rect.width) * canvas.width,
+    y: ((clientY - rect.top) / rect.height) * canvas.height,
   };
 }
 
@@ -1028,12 +1172,19 @@ function roundRect(ctx, x, y, width, height, radius) {
 function drawNeutralBars(runs) {
   const canvas = byId('neutralCanvas');
   const ctx = canvas.getContext('2d');
+  
+  const layout = getLayout('neutralCanvas');
+  if (canvas.width !== layout.w || canvas.height !== layout.h) {
+    canvas.width = layout.w;
+    canvas.height = layout.h;
+  }
+  
   const w = canvas.width, h = canvas.height;
   ctx.clearRect(0, 0, w, h);
   const theme = getThemeColors();
   ctx.fillStyle = theme.bg; ctx.fillRect(0, 0, w, h);
 
-  const left = 90, top = 24, chartW = 600, chartH = 260;
+  const left = layout.left, top = layout.top, chartW = layout.chartW, chartH = layout.chartH;
   const efforts = ['none', 'low', 'medium', 'high', 'xhigh'];
   const xForEffort = (effort) => left + Math.max(0, efforts.indexOf(effort)) * (chartW / (efforts.length - 1));
   const yForRate = (rate) => top + chartH - clamp(rate ?? 0, 0, 1) * chartH;
@@ -1063,7 +1214,7 @@ function drawNeutralBars(runs) {
 
   ctx.fillStyle = theme.textMuted;
   ctx.textAlign = 'center';
-  ctx.fillText('Reasoning effort', left + chartW / 2, h - 16);
+  ctx.fillText('Reasoning effort', left + chartW / 2, top + chartH + 46);
   ctx.save();
   ctx.translate(18, top + chartH / 2);
   ctx.rotate(-Math.PI / 2);
@@ -1170,13 +1321,20 @@ function drawNeutralBars(runs) {
     });
   }
 
-  drawNeutralLegend(ctx, runs, left + chartW + 36, top + 8);
+  drawNeutralLegend(ctx, runs, layout.legendX, layout.legendY);
 }
 
 function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'languageDeltaCanvas') {
   const canvas = byId(canvasId);
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
+  
+  const layout = getLayout(canvasId);
+  if (canvas.width !== layout.w || canvas.height !== layout.h) {
+    canvas.width = layout.w;
+    canvas.height = layout.h;
+  }
+  
   const w = canvas.width;
   const h = canvas.height;
   ctx.clearRect(0, 0, w, h);
@@ -1184,8 +1342,8 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   ctx.fillStyle = theme.bg;
   ctx.fillRect(0, 0, w, h);
 
-  const gridX = 80, gridY = 50, gridSize = 500;
-  const barX = 670, barY = 50, barW = 64, barH = 500;
+  const gridX = layout.gridX, gridY = layout.gridY, gridSize = layout.gridSize;
+  const barX = layout.barX, barY = layout.barY, barW = layout.barW, barH = layout.barH;
   const centerX = gridX + gridSize / 2;
   const centerY = gridY + gridSize / 2;
   const xForRight = (right) => gridX + ((clamp(right ?? 0, -10, 10) + 10) / 20) * gridSize;
@@ -1213,7 +1371,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   drawArrow(ctx, centerX, gridY + gridSize + 25, centerX, gridY - 25);
   ctx.font = '700 24px system-ui, sans-serif';
   ctx.textAlign = 'center';
-  ctx.fillText('Authority', centerX, 30);
+  ctx.fillText('Authority', centerX, gridY - 20);
   ctx.fillText('Liberty', centerX, gridY + gridSize + 45);
   ctx.textAlign = 'right'; ctx.fillText('Left', gridX - 28, centerY + 8);
   ctx.textAlign = 'left'; ctx.fillText('Right', gridX + gridSize + 28, centerY + 8);
@@ -1228,8 +1386,8 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   ctx.fillStyle = theme.axisLabel;
   ctx.textAlign = 'center';
   ctx.font = '700 24px system-ui, sans-serif';
-  ctx.fillText('Progressive', barX + barW / 2, 30);
-  ctx.fillText('Conservative', barX + barW / 2, barY + barH + 38);
+  ctx.fillText('Progressive', barX + barW / 2, barY - 20);
+  ctx.fillText('Conservative', barX + barW / 2, barY + barH + 28);
 
   if (!pairs.length) {
     ctx.fillStyle = theme.legendMuted;
@@ -1237,7 +1395,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
     ctx.textAlign = 'center';
     ctx.fillText(`No matching ${sourceLanguage.label}/${targetLanguage.label} runs for the selected models and reasoning levels.`, centerX, centerY);
     const collectHoverPoints = canvasId === 'languageDeltaCanvas' || canvasId === 'textualDeltaCanvas';
-    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70, collectHoverPoints, canvasId);
+    drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, layout.legendX, layout.legendY, collectHoverPoints, canvasId);
     return;
   }
 
@@ -1356,7 +1514,7 @@ function drawLanguageDelta(pairs, sourceLanguage, targetLanguage, canvasId = 'la
   }
 
   const collectHoverPoints = canvasId === 'languageDeltaCanvas' || canvasId === 'textualDeltaCanvas';
-  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, 770, 70, collectHoverPoints, canvasId);
+  drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, layout.legendX, layout.legendY, collectHoverPoints, canvasId);
 }
 
 function drawDeltaLegend(ctx, pairs, sourceLanguage, targetLanguage, x, y, collectHoverPoints = true, canvasId = 'languageDeltaCanvas') {
@@ -1439,6 +1597,13 @@ function drawResponseTypeBars(runs) {
   const canvas = byId('textualResponseTypeCanvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
+  
+  const layout = getLayout('textualResponseTypeCanvas');
+  if (canvas.width !== layout.w || canvas.height !== layout.h) {
+    canvas.width = layout.w;
+    canvas.height = layout.h;
+  }
+  
   const w = canvas.width, h = canvas.height;
   ctx.clearRect(0, 0, w, h);
   const theme = getThemeColors();
@@ -1447,7 +1612,7 @@ function drawResponseTypeBars(runs) {
 
   const types = ['stance', 'both_sides', 'neutral', 'refusal', 'unclear', 'informational'];
   const typeColors = theme.responseTypeColors;
-  const left = 320, top = 34, barW = 520, rowH = 34;
+  const left = layout.left, top = layout.top, barW = layout.barW, rowH = layout.rowH;
 
   ctx.font = '700 14px system-ui, sans-serif';
   ctx.fillStyle = theme.legendText;
@@ -1513,13 +1678,17 @@ function drawResponseTypeBars(runs) {
     }
   });
 
-  const legendX = left;
+  const legendX = layout.legendX;
   const legendY = top + Math.min(runs.length, 12) * rowH + 18;
   ctx.textAlign = 'left';
   ctx.font = '12px system-ui, sans-serif';
+  
+  const columns = layout.isMobile ? 2 : 3;
+  const spacingX = layout.isMobile ? 190 : 170;
+
   types.forEach((type, index) => {
-    const x = legendX + (index % 3) * 170;
-    const y = legendY + Math.floor(index / 3) * 22;
+    const x = legendX + (index % columns) * spacingX;
+    const y = legendY + Math.floor(index / columns) * 22;
     ctx.fillStyle = typeColors[type];
     ctx.fillRect(x, y - 10, 12, 12);
     ctx.fillStyle = theme.legendText;

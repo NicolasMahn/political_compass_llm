@@ -460,3 +460,12 @@ html.dark .warning-box {
   .content { overflow: visible; }
   .page-header { align-items: start; flex-direction: column; }
 }
+
+@media (max-width: 500px) {
+  .content {
+    padding: 0.5rem;
+  }
+  .card {
+    padding: 0.75rem;
+  }
+}
